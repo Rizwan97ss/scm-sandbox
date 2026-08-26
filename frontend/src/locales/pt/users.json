@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "Nome",
+    "email": "E-mail",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "password": "Senha",
+    "confirmPassword": "Confirmar senha",
+    "roles": "Funções",
+    "status": "Status",
+    "designation": "Cargo",
+    "employeeId": "ID do funcionário",
+    "hireDate": "Data de contratação",
+    "optional": "Opcional",
+    "none": "Nenhum",
+    "edit": "Editar"
+  },
+  "list": {
+    "title": "Equipe e Usuários",
+    "description": "Gerencie todas as contas de usuário e suas funções.",
+    "export": "Exportar",
+    "import": "Importar",
+    "newUser": "Novo usuário",
+    "searchPlaceholder": "Buscar por nome…",
+    "columnRoles": "Funções",
+    "downloadIdCardAriaLabel": "Baixar a carteirinha de {{name}}",
+    "emptyTitleSearch": "Nenhum usuário corresponde a \"{{query}}\"",
+    "emptyTitle": "Nenhum usuário encontrado",
+    "emptyDescriptionSearch": "Tente outro nome ou limpe a busca para ver todos."
+  },
+  "userImport": {
+    "title": "Importação em massa de equipe",
+    "breadcrumbUsers": "Equipe e Usuários",
+    "breadcrumbImport": "Importar",
+    "entityLabel": "membro da equipe",
+    "descriptionBeforeCode": "Envie um arquivo Excel (.xlsx) ou CSV seguindo o modelo. ",
+    "descriptionAfterCode": " deve corresponder exatamente ao nome de uma função existente, e você só pode conceder funções que já tem permissão para atribuir. Nunca inclua uma coluna de senha — toda conta importada recebe uma senha segura gerada aleatoriamente e recebe imediatamente um e-mail de redefinição de senha para definir a sua."
+  },
+  "formModal": {
+    "editTitle": "Editar usuário",
+    "newTitle": "Novo usuário",
+    "saveChanges": "Salvar alterações",
+    "createUser": "Criar usuário",
+    "createdToast": "Usuário criado.",
+    "updatedToast": "Usuário atualizado."
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "Mais ações",
+    "sendPasswordReset": "Enviar redefinição de senha",
+    "resetMfa": "Redefinir autenticação de dois fatores",
+    "setActive": "Definir como ativo",
+    "setInactive": "Definir como inativo",
+    "suspend": "Suspender",
+    "statusUpdatedToast": "Status atualizado.",
+    "passwordResetSentToast": "Link de redefinição de senha enviado.",
+    "mfaResetToast": "Autenticação de dois fatores redefinida — eles poderão configurá-la novamente no próximo login."
+  }
+}

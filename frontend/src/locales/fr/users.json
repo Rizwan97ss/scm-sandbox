@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "Nom",
+    "email": "E-mail",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "roles": "Rôles",
+    "status": "Statut",
+    "designation": "Fonction",
+    "employeeId": "ID employé",
+    "hireDate": "Date d'embauche",
+    "optional": "Facultatif",
+    "none": "Aucun",
+    "edit": "Modifier"
+  },
+  "list": {
+    "title": "Personnel et Utilisateurs",
+    "description": "Gérez tous les comptes utilisateurs et leurs rôles.",
+    "export": "Exporter",
+    "import": "Importer",
+    "newUser": "Nouvel utilisateur",
+    "searchPlaceholder": "Rechercher par nom…",
+    "columnRoles": "Rôles",
+    "downloadIdCardAriaLabel": "Télécharger la carte d'identité de {{name}}",
+    "emptyTitleSearch": "Aucun utilisateur ne correspond à « {{query}} »",
+    "emptyTitle": "Aucun utilisateur trouvé",
+    "emptyDescriptionSearch": "Essayez un autre nom, ou effacez la recherche pour voir tout le monde."
+  },
+  "userImport": {
+    "title": "Import groupé du personnel",
+    "breadcrumbUsers": "Personnel et Utilisateurs",
+    "breadcrumbImport": "Import",
+    "entityLabel": "membre du personnel",
+    "descriptionBeforeCode": "Téléversez un fichier Excel (.xlsx) ou CSV suivant le modèle. ",
+    "descriptionAfterCode": " doit correspondre exactement au nom d'un rôle existant, et vous ne pouvez attribuer que les rôles que vous êtes déjà autorisé à attribuer. N'incluez jamais de colonne de mot de passe : chaque compte importé reçoit un mot de passe sécurisé généré aléatoirement et un e-mail de réinitialisation lui est immédiatement envoyé pour qu'il définisse le sien."
+  },
+  "formModal": {
+    "editTitle": "Modifier l'utilisateur",
+    "newTitle": "Nouvel utilisateur",
+    "saveChanges": "Enregistrer les modifications",
+    "createUser": "Créer l'utilisateur",
+    "createdToast": "Utilisateur créé.",
+    "updatedToast": "Utilisateur mis à jour."
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "Plus d'actions",
+    "sendPasswordReset": "Envoyer une réinitialisation de mot de passe",
+    "resetMfa": "Réinitialiser l'authentification à deux facteurs",
+    "setActive": "Marquer comme actif",
+    "setInactive": "Marquer comme inactif",
+    "suspend": "Suspendre",
+    "statusUpdatedToast": "Statut mis à jour.",
+    "passwordResetSentToast": "Lien de réinitialisation du mot de passe envoyé.",
+    "mfaResetToast": "Authentification à deux facteurs réinitialisée — ils pourront la reconfigurer à leur prochaine connexion."
+  }
+}

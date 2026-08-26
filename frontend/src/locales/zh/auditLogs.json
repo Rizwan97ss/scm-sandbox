@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "审计日志",
+    "description": "记录在您学校中执行的敏感操作。",
+    "columnWhen": "时间",
+    "columnBy": "操作人",
+    "columnEvent": "事件",
+    "columnSubject": "对象",
+    "columnDescription": "描述",
+    "system": "系统",
+    "emptyTitle": "暂无活动记录",
+    "emptyDescription": "系统中执行的操作将在此处记录。"
+  }
+}

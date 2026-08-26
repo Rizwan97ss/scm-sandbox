@@ -1,0 +1,67 @@
+{
+  "center": {
+    "title": "Centro de importación",
+    "description": "Crea registros en masa desde un archivo Excel o CSV.",
+    "noPermission": "Aún no tienes permiso para importar ningún registro.",
+    "options": {
+      "students": {
+        "label": "Estudiantes",
+        "description": "Admite estudiantes en masa, con hasta dos tutores por fila."
+      },
+      "staff": {
+        "label": "Personal y usuarios",
+        "description": "Crea cuentas de personal en masa, cada una con un rol. Las contraseñas nunca se importan: cada cuenta recibe un correo de restablecimiento de contraseña."
+      },
+      "guardians": {
+        "label": "Tutores",
+        "description": "Vincula tutores a estudiantes ya existentes en el sistema por número de admisión; un tutor que coincida por correo se reutiliza en lugar de duplicarse."
+      },
+      "departments": {
+        "label": "Departamentos",
+        "description": "Configura departamentos de agrupación de materias en masa, útil al configurar una nueva escuela por primera vez."
+      },
+      "grade-levels": {
+        "label": "Grados",
+        "description": "Crea en masa los grados que enseña tu escuela, con la secuencia de promoción de cada uno."
+      },
+      "sections": {
+        "label": "Secciones",
+        "description": "Crea en masa secciones (clases en las que se admite a los estudiantes) para el año académico actual, con una sala asignada opcionalmente."
+      },
+      "subjects": {
+        "label": "Materias",
+        "description": "Crea materias en masa, vinculadas opcionalmente a un departamento por su código."
+      },
+      "rooms": {
+        "label": "Salas",
+        "description": "Crea salas físicas en masa con capacidad y tipo."
+      }
+    }
+  },
+  "logs": {
+    "title": "Registros de importación",
+    "description": "Todos los intentos de importación masiva de la escuela, incluidas las vistas previas que nunca se confirmaron.",
+    "columnWhen": "Cuándo",
+    "columnEntity": "Entidad",
+    "columnBy": "Por",
+    "columnFile": "Archivo",
+    "columnMode": "Modo",
+    "columnResult": "Resultado",
+    "columnActions": "",
+    "unknownPerformer": "—",
+    "previewOnly": "Solo vista previa",
+    "createdCount": "{{count}} creado(s)",
+    "updatedCount": "{{count}} actualizado(s)",
+    "failedCount": "{{count}} fallido(s)",
+    "undoneAt": "Deshecho el {{date}}",
+    "undo": "Deshacer",
+    "emptyTitle": "Aún no hay importaciones",
+    "emptyDescription": "Los archivos que importes se registrarán aquí, con la opción de deshacer.",
+    "undoDialogTitle": "¿Deshacer esta importación de {{entity}}?",
+    "undoDialogDescription": "Esto elimina los {{count}} registro(s) que creó desde \"{{fileName}}\". Los registros que esta importación solo actualizó nunca se tocan, y cualquier registro con dependientes creados desde entonces se omitirá y se informará. Esto no se puede rehacer desde aquí: los registros eliminados van a la papelera igual que una eliminación normal.",
+    "undoConfirmLabel": "Deshacer importación",
+    "undoBlockedItem": "{{type}} \"{{label}}\"",
+    "undoWarning": "{{deleted}} registro(s) deshecho(s). {{blockedCount}} no se pudieron deshacer: {{blockedList}} — algo más depende ahora de ellos.",
+    "undoSuccess": "{{count}} registro(s) deshecho(s)."
+  }
+}

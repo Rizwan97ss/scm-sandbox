@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "标题",
+    "description": "说明",
+    "dueDate": "截止日期",
+    "maxScore": "满分",
+    "subject": "科目",
+    "section": "班级",
+    "teacher": "教师",
+    "status": "状态",
+    "notSubmitted": "未提交",
+    "optional": "选填"
+  },
+  "list": {
+    "title": "作业",
+    "descriptionStudent": "布置给你所在班级的作业 —— 请在截止日期前提交。",
+    "descriptionStaff": "为你的班级布置和批改作业。",
+    "newHomework": "新建作业",
+    "columnTitle": "标题",
+    "columnSubject": "科目",
+    "columnSection": "班级",
+    "columnDueDate": "截止日期",
+    "columnStatus": "状态",
+    "columnTeacher": "教师",
+    "emptyTitle": "暂无作业",
+    "emptyDescription": "布置第一份作业以开始使用。",
+    "modalTitle": "新建作业",
+    "classLabel": "班级",
+    "classHint": "此作业适用的班级/科目",
+    "classPlaceholder": "选择班级",
+    "dueDateLabel": "截止日期",
+    "maxScoreLabel": "满分",
+    "assignHomework": "布置作业"
+  },
+  "detail": {
+    "breadcrumbHomework": "作业",
+    "descriptionLine": "{{subject}} · {{section}} · 截止日期 {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · 满分：{{score}}",
+    "instructions": "说明",
+    "columnAdmissionNumber": "学籍号",
+    "columnName": "姓名",
+    "columnStatus": "状态",
+    "columnSubmission": "提交内容",
+    "columnScore": "得分",
+    "columnFeedback": "反馈",
+    "saveGradeAriaLabel": "保存 {{name}} 的成绩",
+    "gradeSaved": "成绩已保存。"
+  },
+  "submitModal": {
+    "descriptionLine": "截止日期 {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · 满分：{{score}}",
+    "instructions": "说明",
+    "answerLabel": "你的答案",
+    "answerPlaceholder": "在此输入你的答案或备注（如附加文件则可不填）",
+    "attachmentLabel": "附件",
+    "resubmit": "重新提交",
+    "submitHomework": "提交作业",
+    "submittedSuccess": "作业已提交。"
+  }
+}

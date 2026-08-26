@@ -1,0 +1,67 @@
+{
+  "center": {
+    "title": "导入中心",
+    "description": "从 Excel 或 CSV 文件批量创建记录。",
+    "noPermission": "您目前还没有导入任何记录的权限。",
+    "options": {
+      "students": {
+        "label": "学生",
+        "description": "批量招收学生，每行最多可附加两名监护人。"
+      },
+      "staff": {
+        "label": "员工与用户",
+        "description": "批量创建员工账户，每个账户分配一个角色。密码永远不会被导入——每个账户都会收到一封密码重置邮件。"
+      },
+      "guardians": {
+        "label": "监护人",
+        "description": "通过学号将监护人关联到系统中已有的学生——按邮箱匹配到的监护人将被重复使用，而非重复创建。"
+      },
+      "departments": {
+        "label": "部门",
+        "description": "批量设置学科分组部门——在首次配置新学校时非常有用。"
+      },
+      "grade-levels": {
+        "label": "年级",
+        "description": "批量创建学校教授的年级，并设置每个年级的升级顺序。"
+      },
+      "sections": {
+        "label": "班级",
+        "description": "为当前学年批量创建班级（学生被录取进入的班级），可选择分配教室。"
+      },
+      "subjects": {
+        "label": "科目",
+        "description": "批量创建科目，可选择通过代码关联到某个部门。"
+      },
+      "rooms": {
+        "label": "教室",
+        "description": "批量创建具有容量和类型的实体教室。"
+      }
+    }
+  },
+  "logs": {
+    "title": "导入日志",
+    "description": "全校范围内的所有批量导入尝试，包括从未确认的预览。",
+    "columnWhen": "时间",
+    "columnEntity": "实体",
+    "columnBy": "操作人",
+    "columnFile": "文件",
+    "columnMode": "模式",
+    "columnResult": "结果",
+    "columnActions": "",
+    "unknownPerformer": "—",
+    "previewOnly": "仅预览",
+    "createdCount": "已创建 {{count}} 条",
+    "updatedCount": "已更新 {{count}} 条",
+    "failedCount": "失败 {{count}} 条",
+    "undoneAt": "已于 {{date}} 撤销",
+    "undo": "撤销",
+    "emptyTitle": "暂无导入记录",
+    "emptyDescription": "您导入的文件将记录在此处，并可选择撤销。",
+    "undoDialogTitle": "撤销此 {{entity}} 导入？",
+    "undoDialogDescription": "这将删除从“{{fileName}}”创建的 {{count}} 条记录。此次导入仅更新过的记录不会受到影响，此后创建了依赖项的记录将被跳过并在报告中列出。此操作在此处无法重做——被删除的记录会像正常删除一样进入回收站。",
+    "undoConfirmLabel": "撤销导入",
+    "undoBlockedItem": "{{type}}“{{label}}”",
+    "undoWarning": "已撤销 {{deleted}} 条记录。{{blockedCount}} 条无法撤销：{{blockedList}}——现在有其他内容依赖于它们。",
+    "undoSuccess": "已撤销 {{count}} 条记录。"
+  }
+}

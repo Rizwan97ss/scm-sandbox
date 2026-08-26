@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "Título",
+    "message": "Mensaje",
+    "audience": "Audiencia",
+    "channels": "Canales"
+  },
+  "list": {
+    "title": "Anuncios",
+    "description": "Difunde un mensaje a estudiantes, personal o padres de familia.",
+    "compose": "Redactar anuncio",
+    "columnTitle": "Título",
+    "columnAudience": "Audiencia",
+    "columnChannels": "Canales",
+    "columnRecipients": "Destinatarios",
+    "columnSentBy": "Enviado por",
+    "columnSent": "Enviado",
+    "emptyTitle": "Aún no se han enviado anuncios",
+    "emptyDescription": "Los anuncios que publiques aparecerán aquí para su audiencia."
+  },
+  "composeModal": {
+    "title": "Redactar anuncio",
+    "submit": "Enviar anuncio",
+    "successToast": "Anuncio enviado a {{count}} destinatario(s)."
+  }
+}

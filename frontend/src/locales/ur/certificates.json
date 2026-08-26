@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "طالب علم",
+    "type": "قسم",
+    "name": "نام",
+    "status": "صورتحال",
+    "active": "فعال",
+    "inactive": "غیر فعال"
+  },
+  "list": {
+    "title": "سرٹیفکیٹس",
+    "descriptionAll": "کسی طالب علم کو جاری کردہ ہر سرٹیفکیٹ۔",
+    "descriptionOwn": "آپ کے جاری کردہ سرٹیفکیٹس۔",
+    "columnCertificateNumber": "سرٹیفکیٹ نمبر",
+    "columnIssued": "جاری کردہ",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "سرٹیفکیٹ {{number}} ڈاؤن لوڈ کریں",
+    "emptyTitle": "ابھی تک کوئی سرٹیفکیٹ نہیں",
+    "emptyDescription": "طلبہ کو جاری کیے گئے سرٹیفکیٹس یہاں ظاہر ہوں گے۔"
+  },
+  "templates": {
+    "title": "سرٹیفکیٹ ٹیمپلیٹس",
+    "description": "دوبارہ قابل استعمال سرٹیفکیٹ عبارت — کسی طالب علم کو جاری کریں تاکہ اسے حقیقی سرٹیفکیٹ کے طور پر محفوظ کیا جا سکے۔",
+    "newTemplate": "نیا ٹیمپلیٹ",
+    "searchPlaceholder": "نام سے تلاش کریں…",
+    "issue": "جاری کریں",
+    "edit": "ترمیم کریں",
+    "deleteAriaLabel": "{{name}} حذف کریں",
+    "emptyTitleSearch": "\"{{query}}\" سے کوئی ٹیمپلیٹ مماثل نہیں",
+    "emptyTitle": "ابھی تک کوئی سرٹیفکیٹ ٹیمپلیٹ نہیں",
+    "emptyDescriptionSearch": "کوئی مختلف نام آزمائیں، یا سب دیکھنے کے لیے تلاش صاف کریں۔",
+    "editTitle": "ٹیمپلیٹ میں ترمیم کریں",
+    "newTitle": "نیا ٹیمپلیٹ",
+    "typeHint": "مثلاً بونا فائیڈ، ٹرانسفر",
+    "bodyLabel": "متن",
+    "bodyHint": "پلیس ہولڈرز: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "تبدیلیاں محفوظ کریں",
+    "createTemplate": "ٹیمپلیٹ بنائیں",
+    "deleteConfirmTitle": "{{name}} حذف کریں؟",
+    "deleteConfirmDescription": "اسے واپس نہیں لیا جا سکتا۔",
+    "issueModal": {
+      "title": "\"{{name}}\" جاری کریں",
+      "selectStudentPlaceholder": "ایک طالب علم منتخب کریں",
+      "submit": "سرٹیفکیٹ جاری کریں",
+      "successToast": "سرٹیفکیٹ جاری کر دیا گیا۔"
+    }
+  }
+}

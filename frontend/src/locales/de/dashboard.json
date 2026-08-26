@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "Aufnahme-Nr.",
+    "status": "Status",
+    "gradeSection": "Klassenstufe / Klasse",
+    "dateOfBirth": "Geburtsdatum",
+    "date": "Datum",
+    "amount": "Betrag",
+    "receiptNumber": "Beleg-Nr.",
+    "attendance": "Anwesenheit",
+    "daysMarked": "Erfasste Tage",
+    "absences": "Abwesenheiten",
+    "from": "Von",
+    "to": "Bis",
+    "remarks": "Bemerkungen",
+    "homework": "Hausaufgaben"
+  },
+  "page": {
+    "welcomeBack": "Willkommen zurück, {{name}}",
+    "subtitle": "Das passiert heute.",
+    "stats": {
+      "totalSchools": "Schulen Gesamt",
+      "activeTrialing": "Aktiv / In Testphase",
+      "currentlyTrialing": "Derzeit in Testphase",
+      "activeStudents": "Aktive Schüler",
+      "staffMembers": "Mitarbeiter",
+      "sections": "Klassen",
+      "attendanceMarkedToday": "Heute Erfasste Anwesenheit",
+      "pendingLeaveRequests": "Ausstehende Urlaubsanträge",
+      "feesCollectedThisMonth": "Diesen Monat Eingenommene Gebühren",
+      "overdueBooks": "Überfällige Bücher",
+      "assignedSections": "Zugewiesene Klassen",
+      "students": "Schüler",
+      "homeworkAwaitingGrading": "Hausaufgaben zur Bewertung",
+      "attendanceThisMonth": "Anwesenheit Diesen Monat",
+      "homeworkDue": "Fällige Hausaufgaben",
+      "upcomingExams": "Bevorstehende Prüfungen",
+      "linkedChildren": "Verknüpfte Kinder",
+      "outstandingFees": "Offene Gebühren"
+    },
+    "quickActions": {
+      "takeAttendance": "Anwesenheit Erfassen",
+      "newAdmission": "Neue Aufnahme",
+      "invoices": "Rechnungen"
+    },
+    "trends": {
+      "attendanceTitle": "Anwesenheit — Letzte 14 Tage",
+      "feesTitle": "Eingenommene Gebühren — Letzte 6 Monate",
+      "feesTooltipLabel": "Eingenommen"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "Meine Kinder",
+    "tabExams": "Prüfungen",
+    "tabFees": "Gebühren"
+  },
+  "childrenList": {
+    "title": "Meine Kinder",
+    "description": "Wählen Sie ein Kind aus, um das Profil anzuzeigen.",
+    "emptyTitle": "Noch keine Kinder mit Ihrem Konto verknüpft",
+    "emptyDescription": "Wenden Sie sich an das Schulsekretariat, falls dies falsch erscheint."
+  },
+  "attendanceTab": {
+    "emptyRecords": "Keine Anwesenheitsaufzeichnungen in diesem Zeitraum."
+  },
+  "examResultsTab": {
+    "tabByExam": "Nach Prüfung",
+    "tabByTerm": "Zusammengefasstes Halbjahresergebnis",
+    "selectExamPlaceholder": "Prüfung auswählen…",
+    "noPublishedExams": "Noch keine veröffentlichten Prüfungen",
+    "selectTermPlaceholder": "Halbjahr auswählen…"
+  },
+  "feesTab": {
+    "totalBilled": "Gesamt abgerechnet",
+    "totalPaid": "Gesamt bezahlt",
+    "totalCredited": "Gesamt gutgeschrieben",
+    "outstanding": "Offen",
+    "emptyTitle": "Noch keine Rechnungen",
+    "issuedDue": "Ausgestellt {{issueDate}} · Fällig {{dueDate}}",
+    "totalPaidBalance": "Gesamt {{total}} · Bezahlt {{paid}} · Saldo",
+    "receipt": "Beleg",
+    "downloadReceiptAriaLabel": "Beleg {{number}} herunterladen"
+  },
+  "homeworkTab": {
+    "emptyTitle": "Noch keine Hausaufgaben zugewiesen",
+    "notSubmitted": "Nicht eingereicht",
+    "subjectDue": "{{subject}} · Fällig {{date}}",
+    "maxScoreSuffix": " · Höchstpunktzahl: {{score}}",
+    "score": "Punktzahl: {{score}}",
+    "scoreWithMax": "Punktzahl: {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "Noch keine Bemerkungen",
+    "authoredBy": "— {{name}}"
+  }
+}

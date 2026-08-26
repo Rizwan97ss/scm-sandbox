@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "Overall",
+    "from": "From",
+    "to": "To"
+  },
+  "attendance": {
+    "title": "Attendance Report",
+    "description": "Student and staff attendance trends over time.",
+    "studentAttendance": "Student Attendance",
+    "staffAttendance": "Staff Attendance",
+    "bySection": "By Section",
+    "noDataForRole": "No attendance data visible to your role.",
+    "noRecordsInRange": "No records in this range.",
+    "tooltipLabel": "Attendance"
+  },
+  "academic": {
+    "title": "Academic Performance",
+    "description": "Average score and pass rate across the most recent published exams.",
+    "columnExam": "Exam",
+    "columnMarksEntered": "Marks Entered",
+    "columnAverage": "Average",
+    "columnPassRate": "Pass Rate",
+    "noExams": "No published exams with marks yet.",
+    "legendAverage": "Average %",
+    "legendPassRate": "Pass Rate %"
+  },
+  "operations": {
+    "title": "Operations Report",
+    "description": "Library, transport, and hostel at a glance.",
+    "noDataForRole": "No operational data visible to your role.",
+    "library": "Library",
+    "totalBooks": "Total Books",
+    "issuedThisMonth": "Issued This Month",
+    "currentlyOverdue": "Currently Overdue",
+    "transport": "Transport",
+    "activeVehicles": "Active Vehicles",
+    "studentsAssigned": "Students Assigned",
+    "hostel": "Hostel",
+    "rooms": "Rooms",
+    "occupiedCapacity": "Occupied / Capacity",
+    "occupancy": "Occupancy"
+  },
+  "enrollment": {
+    "title": "Enrollment Report",
+    "description": "Admissions, withdrawals, and graduations over the last six months.",
+    "activeStudents": "Active Students",
+    "legendAdmissions": "Admissions",
+    "legendWithdrawals": "Withdrawals",
+    "legendGraduations": "Graduations",
+    "activeStudentsByGrade": "Active Students by Grade",
+    "noActiveStudents": "No active students yet."
+  }
+}

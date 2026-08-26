@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "Titel",
+    "body": "Inhalt",
+    "type": "Typ",
+    "audience": "Zielgruppe",
+    "eventDate": "Veranstaltungsdatum",
+    "startTime": "Startzeit",
+    "location": "Ort",
+    "optional": "Optional"
+  },
+  "list": {
+    "title": "Anschlagbrett",
+    "description": "Schulweite Mitteilungen und bevorstehende Veranstaltungen.",
+    "newNotice": "Neue Mitteilung",
+    "emptyTitle": "Noch keine Mitteilungen",
+    "draft": "Entwurf",
+    "postedBy": "Personal",
+    "publish": "Veröffentlichen",
+    "deleteAriaLabel": "{{title}} löschen",
+    "deleteConfirmTitle": "„{{title}}“ löschen?",
+    "deleteConfirmDescription": "Dies kann nicht rückgängig gemacht werden.",
+    "publishedToast": "Mitteilung veröffentlicht.",
+    "deletedToast": "Mitteilung gelöscht."
+  },
+  "createModal": {
+    "title": "Neue Mitteilung",
+    "submit": "Mitteilung erstellen",
+    "successToast": "Mitteilung erstellt."
+  }
+}

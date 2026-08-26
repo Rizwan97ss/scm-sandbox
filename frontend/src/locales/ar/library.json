@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "العنوان",
+    "author": "المؤلف",
+    "category": "الفئة",
+    "status": "الحالة",
+    "dueDate": "تاريخ الاستحقاق",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "student": "طالب",
+    "staffMember": "عضو طاقم العمل"
+  },
+  "books": {
+    "title": "الكتب",
+    "description": "فهرس المكتبة ومخزون النسخ.",
+    "newBook": "كتاب جديد",
+    "searchPlaceholder": "البحث حسب العنوان…",
+    "columnAvailableTotal": "المتاح / الإجمالي",
+    "issue": "إعارة",
+    "edit": "تعديل",
+    "deleteAriaLabel": "حذف {{title}}",
+    "emptyTitleSearch": "لا توجد كتب مطابقة لـ \"{{query}}\"",
+    "emptyTitle": "لا توجد كتب بعد",
+    "emptyDescription": "جرّب عنوانًا مختلفًا، أو امسح البحث لعرض جميع الكتب.",
+    "editModalTitle": "تعديل الكتاب",
+    "newModalTitle": "كتاب جديد",
+    "isbn": "الرقم الدولي المعياري للكتاب",
+    "totalCopies": "إجمالي النسخ",
+    "saveChanges": "حفظ التغييرات",
+    "createBook": "إنشاء كتاب",
+    "deleteConfirmTitle": "حذف {{title}}؟",
+    "deleteConfirmDescription": "لا يمكن التراجع عن هذا الإجراء.",
+    "issueModal": {
+      "title": "إعارة \"{{title}}\"",
+      "successToast": "تمت إعارة الكتاب.",
+      "borrowerType": "نوع المستعير",
+      "selectStudentPlaceholder": "اختر طالبًا",
+      "selectStaffPlaceholder": "اختر عضو طاقم عمل",
+      "submit": "إعارة الكتاب"
+    }
+  },
+  "bookIssues": {
+    "title": "إعارة الكتب",
+    "description": "جميع الكتب المُعارة حاليًا وسجل إعادتها.",
+    "columnBook": "الكتاب",
+    "columnBorrower": "المستعير",
+    "columnIssued": "تاريخ الإعارة",
+    "columnDue": "تاريخ الاستحقاق",
+    "columnReturned": "تاريخ الإعادة",
+    "columnFine": "الغرامة",
+    "returnAction": "إعادة",
+    "returnedToast": "تمت إعادة الكتاب.",
+    "emptyTitle": "لا توجد إعارات كتب بعد",
+    "emptyDescription": "ستظهر هنا الكتب المُعارة للطلاب أو طاقم العمل."
+  }
+}

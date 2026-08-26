@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "标题",
+    "body": "内容",
+    "type": "类型",
+    "audience": "受众",
+    "eventDate": "活动日期",
+    "startTime": "开始时间",
+    "location": "地点",
+    "optional": "可选"
+  },
+  "list": {
+    "title": "公告栏",
+    "description": "全校通知和即将举行的活动。",
+    "newNotice": "新建公告",
+    "emptyTitle": "暂无公告",
+    "draft": "草稿",
+    "postedBy": "教职员工",
+    "publish": "发布",
+    "deleteAriaLabel": "删除{{title}}",
+    "deleteConfirmTitle": "删除“{{title}}”？",
+    "deleteConfirmDescription": "此操作无法撤销。",
+    "publishedToast": "公告已发布。",
+    "deletedToast": "公告已删除。"
+  },
+  "createModal": {
+    "title": "新建公告",
+    "submit": "创建公告",
+    "successToast": "公告已创建。"
+  }
+}

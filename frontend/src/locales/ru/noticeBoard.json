@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "Заголовок",
+    "body": "Текст",
+    "type": "Тип",
+    "audience": "Аудитория",
+    "eventDate": "Дата события",
+    "startTime": "Время начала",
+    "location": "Место",
+    "optional": "Необязательно"
+  },
+  "list": {
+    "title": "Доска Объявлений",
+    "description": "Общешкольные объявления и предстоящие события.",
+    "newNotice": "Новое Объявление",
+    "emptyTitle": "Пока нет объявлений",
+    "draft": "Черновик",
+    "postedBy": "Сотрудник",
+    "publish": "Опубликовать",
+    "deleteAriaLabel": "Удалить {{title}}",
+    "deleteConfirmTitle": "Удалить «{{title}}»?",
+    "deleteConfirmDescription": "Это действие нельзя отменить.",
+    "publishedToast": "Объявление опубликовано.",
+    "deletedToast": "Объявление удалено."
+  },
+  "createModal": {
+    "title": "Новое Объявление",
+    "submit": "Создать объявление",
+    "successToast": "Объявление создано."
+  }
+}

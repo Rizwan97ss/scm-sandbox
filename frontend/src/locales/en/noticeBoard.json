@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "Title",
+    "body": "Body",
+    "type": "Type",
+    "audience": "Audience",
+    "eventDate": "Event Date",
+    "startTime": "Start Time",
+    "location": "Location",
+    "optional": "Optional"
+  },
+  "list": {
+    "title": "Notice Board",
+    "description": "School-wide notices and upcoming events.",
+    "newNotice": "New Notice",
+    "emptyTitle": "No notices yet",
+    "draft": "Draft",
+    "postedBy": "Staff",
+    "publish": "Publish",
+    "deleteAriaLabel": "Delete {{title}}",
+    "deleteConfirmTitle": "Delete “{{title}}”?",
+    "deleteConfirmDescription": "This cannot be undone.",
+    "publishedToast": "Notice published.",
+    "deletedToast": "Notice deleted."
+  },
+  "createModal": {
+    "title": "New Notice",
+    "submit": "Create notice",
+    "successToast": "Notice created."
+  }
+}

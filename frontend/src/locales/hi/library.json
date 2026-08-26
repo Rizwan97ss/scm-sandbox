@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "शीर्षक",
+    "author": "लेखक",
+    "category": "श्रेणी",
+    "status": "स्थिति",
+    "dueDate": "नियत तारीख",
+    "active": "सक्रिय",
+    "inactive": "निष्क्रिय",
+    "student": "छात्र",
+    "staffMember": "स्टाफ सदस्य"
+  },
+  "books": {
+    "title": "पुस्तकें",
+    "description": "पुस्तकालय की सूची और प्रतियों का भंडार।",
+    "newBook": "नई पुस्तक",
+    "searchPlaceholder": "शीर्षक से खोजें…",
+    "columnAvailableTotal": "उपलब्ध / कुल",
+    "issue": "जारी करें",
+    "edit": "संपादित करें",
+    "deleteAriaLabel": "{{title}} हटाएं",
+    "emptyTitleSearch": "\"{{query}}\" से मेल खाती कोई पुस्तक नहीं",
+    "emptyTitle": "अभी तक कोई पुस्तक नहीं",
+    "emptyDescription": "कोई अलग शीर्षक आज़माएं, या सभी देखने के लिए खोज साफ़ करें।",
+    "editModalTitle": "पुस्तक संपादित करें",
+    "newModalTitle": "नई पुस्तक",
+    "isbn": "आईएसबीएन",
+    "totalCopies": "कुल प्रतियां",
+    "saveChanges": "परिवर्तन सहेजें",
+    "createBook": "पुस्तक बनाएं",
+    "deleteConfirmTitle": "{{title}} हटाएं?",
+    "deleteConfirmDescription": "इसे पूर्ववत नहीं किया जा सकता।",
+    "issueModal": {
+      "title": "“{{title}}” जारी करें",
+      "successToast": "पुस्तक जारी की गई।",
+      "borrowerType": "उधारकर्ता प्रकार",
+      "selectStudentPlaceholder": "एक छात्र चुनें",
+      "selectStaffPlaceholder": "एक स्टाफ सदस्य चुनें",
+      "submit": "पुस्तक जारी करें"
+    }
+  },
+  "bookIssues": {
+    "title": "पुस्तक निर्गम",
+    "description": "वर्तमान में उधार ली गई सभी पुस्तकें, और उनका वापसी इतिहास।",
+    "columnBook": "पुस्तक",
+    "columnBorrower": "उधारकर्ता",
+    "columnIssued": "जारी की गई",
+    "columnDue": "नियत तारीख",
+    "columnReturned": "वापस की गई",
+    "columnFine": "जुर्माना",
+    "returnAction": "वापस करें",
+    "returnedToast": "पुस्तक वापस की गई।",
+    "emptyTitle": "अभी तक कोई पुस्तक निर्गम नहीं",
+    "emptyDescription": "छात्रों या स्टाफ को जारी की गई पुस्तकें यहां दिखाई देंगी।"
+  }
+}

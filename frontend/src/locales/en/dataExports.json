@@ -1,0 +1,20 @@
+{
+  "dataExportsList": {
+    "loading": "Loading…",
+    "requestedOn": "Requested {{date}}",
+    "requestedBy": "by {{name}}",
+    "availableUntil": "Available until {{date}}",
+    "download": "Download",
+    "exportStarted": "Export started — this list will update once it's ready.",
+    "statusPending": "Pending",
+    "statusProcessing": "Processing",
+    "statusReady": "Ready",
+    "statusFailed": "Failed"
+  },
+  "myDataExportPage": {
+    "title": "Export my data",
+    "description": "Download a copy of the data this platform holds about you.",
+    "requestLabel": "Request an export",
+    "emptyLabel": "No exports requested yet"
+  }
+}

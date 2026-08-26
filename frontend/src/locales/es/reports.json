@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "General",
+    "from": "Desde",
+    "to": "Hasta"
+  },
+  "attendance": {
+    "title": "Informe de Asistencia",
+    "description": "Tendencias de asistencia de estudiantes y personal a lo largo del tiempo.",
+    "studentAttendance": "Asistencia de Estudiantes",
+    "staffAttendance": "Asistencia del Personal",
+    "bySection": "Por Sección",
+    "noDataForRole": "No hay datos de asistencia visibles para su rol.",
+    "noRecordsInRange": "No hay registros en este rango.",
+    "tooltipLabel": "Asistencia"
+  },
+  "academic": {
+    "title": "Rendimiento Académico",
+    "description": "Puntuación media y tasa de aprobación en los exámenes publicados más recientes.",
+    "columnExam": "Examen",
+    "columnMarksEntered": "Calificaciones Registradas",
+    "columnAverage": "Promedio",
+    "columnPassRate": "Tasa de Aprobación",
+    "noExams": "Aún no hay exámenes publicados con calificaciones.",
+    "legendAverage": "Promedio %",
+    "legendPassRate": "Tasa de Aprobación %"
+  },
+  "operations": {
+    "title": "Informe de Operaciones",
+    "description": "Biblioteca, transporte y residencia de un vistazo.",
+    "noDataForRole": "No hay datos operativos visibles para su rol.",
+    "library": "Biblioteca",
+    "totalBooks": "Total de Libros",
+    "issuedThisMonth": "Prestados Este Mes",
+    "currentlyOverdue": "Actualmente Vencidos",
+    "transport": "Transporte",
+    "activeVehicles": "Vehículos Activos",
+    "studentsAssigned": "Estudiantes Asignados",
+    "hostel": "Residencia",
+    "rooms": "Habitaciones",
+    "occupiedCapacity": "Ocupados / Capacidad",
+    "occupancy": "Ocupación"
+  },
+  "enrollment": {
+    "title": "Informe de Matrícula",
+    "description": "Admisiones, retiros y graduaciones durante los últimos seis meses.",
+    "activeStudents": "Estudiantes Activos",
+    "legendAdmissions": "Admisiones",
+    "legendWithdrawals": "Retiros",
+    "legendGraduations": "Graduaciones",
+    "activeStudentsByGrade": "Estudiantes Activos por Grado",
+    "noActiveStudents": "Aún no hay estudiantes activos."
+  }
+}

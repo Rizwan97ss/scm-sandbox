@@ -1,0 +1,397 @@
+{
+  "topbar": {
+    "openMenu": "فتح قائمة التنقل"
+  },
+  "nav": {
+    "groups": {
+      "overview": "نظرة عامة",
+      "people": "الأشخاص",
+      "attendance": "الحضور",
+      "exams": "الامتحانات",
+      "teaching": "التدريس",
+      "feesAccounting": "الرسوم والمحاسبة",
+      "hrPayroll": "الموارد البشرية والرواتب",
+      "library": "المكتبة",
+      "transport": "النقل",
+      "hostel": "السكن الداخلي",
+      "frontDesk": "الاستقبال",
+      "certificatesIdCards": "الشهادات وبطاقات الهوية",
+      "noticeBoard": "لوحة الإعلانات",
+      "communication": "التواصل",
+      "reportsAnalytics": "التقارير والتحليلات",
+      "academics": "الشؤون الأكاديمية",
+      "administration": "الإدارة"
+    },
+    "items": {
+      "dashboard": "لوحة التحكم",
+      "students": "الطلاب",
+      "guardians": "أولياء الأمور",
+      "staffUsers": "الموظفون والمستخدمون",
+      "takeAttendance": "تسجيل الحضور",
+      "staffAttendance": "حضور الموظفين",
+      "exams": "الامتحانات",
+      "gradingScales": "مقاييس التقييم",
+      "examConfiguration": "إعداد الامتحانات",
+      "homework": "الواجبات المنزلية",
+      "invoices": "الفواتير",
+      "feeStructures": "هياكل الرسوم",
+      "feeCategories": "فئات الرسوم",
+      "feeReports": "تقارير الرسوم",
+      "leaveRequests": "طلبات الإجازة",
+      "payslips": "قسائم الرواتب",
+      "designations": "المسميات الوظيفية",
+      "leaveTypes": "أنواع الإجازات",
+      "salaryStructures": "هياكل الرواتب",
+      "books": "الكتب",
+      "bookIssues": "إعارة الكتب",
+      "vehicles": "المركبات",
+      "routes": "خطوط السير",
+      "studentAssignments": "تعيينات الطلاب",
+      "hostels": "المباني السكنية",
+      "hostelRooms": "الغرف",
+      "allocations": "التخصيصات",
+      "visitors": "الزوار",
+      "certificateTemplates": "قوالب الشهادات",
+      "issuedCertificates": "الشهادات الصادرة",
+      "noticeBoard": "لوحة الإعلانات",
+      "announcements": "الإعلانات",
+      "attendanceReport": "تقرير الحضور",
+      "academicPerformance": "الأداء الأكاديمي",
+      "enrollmentReport": "تقرير القيد",
+      "operationsReport": "تقرير العمليات",
+      "academicYears": "السنوات الدراسية",
+      "terms": "الفصول الدراسية",
+      "departments": "الأقسام",
+      "gradeLevels": "المراحل الدراسية",
+      "sections": "الشعب",
+      "subjects": "المواد الدراسية",
+      "academicRooms": "القاعات",
+      "timetable": "الجدول الزمني",
+      "holidays": "العطلات",
+      "rolesPermissions": "الأدوار والصلاحيات",
+      "settings": "الإعدادات",
+      "systemHealth": "حالة النظام",
+      "auditLog": "سجل التدقيق",
+      "importLogs": "سجلات الاستيراد",
+      "dataExport": "تصدير البيانات",
+      "importCenter": "مركز الاستيراد",
+      "myChildren": "أبنائي",
+      "myOnlineTests": "اختباراتي الإلكترونية",
+      "myResult": "نتيجتي",
+      "myFees": "رسومي",
+      "certificates": "الشهادات"
+    }
+  },
+  "search": {
+    "placeholder": "ابحث عن طلاب، موظفين، فواتير...",
+    "ariaLabel": "بحث شامل",
+    "clear": "مسح البحث",
+    "searching": "جارٍ البحث…",
+    "noResultsFor": "لا توجد نتائج لـ \"{{query}}\".",
+    "categories": {
+      "students": "الطلاب",
+      "guardians": "أولياء الأمور",
+      "staff": "الموظفون",
+      "books": "الكتب",
+      "invoices": "الفواتير"
+    }
+  },
+  "notifications": {
+    "ariaLabel": "الإشعارات",
+    "ariaLabelUnread": "الإشعارات ({{count}} غير مقروءة)",
+    "title": "الإشعارات",
+    "markAllRead": "تحديد الكل كمقروء",
+    "empty": "لا توجد إشعارات بعد."
+  },
+  "userMenu": {
+    "accountMenu": "قائمة الحساب",
+    "downloadIdCard": "تنزيل بطاقة الهوية الخاصة بي",
+    "exportMyData": "تصدير بياناتي",
+    "setupGuide": "دليل الإعداد",
+    "deleteAccount": "حذف حسابي",
+    "logout": "تسجيل الخروج",
+    "deleteConfirmTitle": "هل تريد حذف حسابك؟",
+    "deleteConfirmDescription": "سيؤدي هذا إلى إزالة بياناتك الشخصية (الاسم، بيانات الاتصال، المعلومات الطبية/الطوارئ) فورًا ولا يمكن التراجع عنه. سيتم الاحتفاظ بالسجلات الأكاديمية والمالية المرتبطة بحسابك حسب الحاجة.",
+    "deleteConfirmLabel": "حذف حسابي"
+  },
+  "theme": {
+    "changeTheme": "تغيير المظهر",
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "حسب النظام"
+  },
+  "language": {
+    "changeLanguage": "تغيير اللغة"
+  },
+  "mfaBanner": {
+    "required": "المصادقة الثنائية مطلوبة لهذا الحساب — {{action}}.",
+    "setupNow": "قم بإعدادها الآن",
+    "daysLeft_zero": "لم يتبقَّ لديك وقت لإعدادها",
+    "daysLeft_one": "تبقّى لديك يوم واحد لإعدادها",
+    "daysLeft_two": "تبقّى لديك يومان لإعدادها",
+    "daysLeft_few": "تبقّى لديك {{count}} أيام لإعدادها",
+    "daysLeft_many": "تبقّى لديك {{count}} يومًا لإعدادها",
+    "daysLeft_other": "تبقّى لديك {{count}} يوم لإعدادها",
+    "link": "إعداد الآن"
+  },
+  "offlineBanner": {
+    "message": "أنت غير متصل بالإنترنت. لن يتم حفظ التغييرات التي تجريها الآن حتى تعود الاتصال."
+  },
+  "confirmDialog": {
+    "confirm": "تأكيد",
+    "cancel": "إلغاء"
+  },
+  "queryError": {
+    "title": "حدث خطأ ما",
+    "description": "تعذّر تحميل هذا المحتوى. يرجى المحاولة مرة أخرى.",
+    "retry": "إعادة المحاولة"
+  },
+  "pagination": {
+    "showing": "عرض {{from}}–{{to}} من {{total}}",
+    "previousPage": "الصفحة السابقة",
+    "nextPage": "الصفحة التالية",
+    "pageOf": "الصفحة {{current}} من {{last}}"
+  },
+  "dataTable": {
+    "noRecordsFound": "لم يتم العثور على سجلات",
+    "selectAll": "تحديد الكل في هذه الصفحة",
+    "selectRow": "تحديد الصف"
+  },
+  "modal": {
+    "closeDialog": "إغلاق الحوار"
+  },
+  "bulkActions": {
+    "selected": "تم تحديد {{count}}",
+    "clear": "مسح"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "مسار التنقل"
+  },
+  "drawer": {
+    "closePanel": "إغلاق اللوحة"
+  },
+  "select": {
+    "placeholder": "اختر…",
+    "searchPlaceholder": "بحث…",
+    "noResults": "لا توجد نتائج."
+  },
+  "fileUpload": {
+    "removeFile": "إزالة الملف",
+    "clickToUpload": "انقر للتحميل",
+    "orDragAndDrop": "أو اسحب وأفلت",
+    "tooLarge": "الملف كبير جدًا. الحجم الأقصى هو {{maxSizeMb}} ميجابايت."
+  },
+  "importFileMapper": {
+    "dontImportColumn": "عدم استيراد هذا العمود",
+    "uploadPrompt": "قم بتحميل ملف يحتوي على عناوين الأعمدة الموجودة به بالفعل — ستقوم بعد ذلك بمطابقة كل منها مع الحقل الصحيح، دون الحاجة إلى إعادة تسمية أي شيء أولاً.",
+    "readingFile": "جارٍ قراءة الملف…",
+    "matchPrompt": "طابق كل عمود من ملفك مع حقل أدناه. يتم استبعاد الأعمدة المضبوطة على \"عدم الاستيراد\" بالكامل.",
+    "truncatedNotice": " يتم عرض الصفوف الأولى هنا فقط، ولكن سيتم استيراد كل صف في الملف.",
+    "columnYourColumn": "عمودك",
+    "columnSampleValues": "قيم نموذجية",
+    "columnMapsTo": "يُطابق",
+    "mapsToAriaLabel": "يطابق \"{{header}}\" مع",
+    "continueWithMapped_zero": "المتابعة بدون أعمدة مطابقة",
+    "continueWithMapped_one": "المتابعة بعمود واحد مطابق",
+    "continueWithMapped_two": "المتابعة بعمودين مطابقين",
+    "continueWithMapped_few": "المتابعة بـ {{count}} أعمدة مطابقة",
+    "continueWithMapped_many": "المتابعة بـ {{count}} عمودًا مطابقًا",
+    "continueWithMapped_other": "المتابعة بـ {{count}} عمود مطابق",
+    "chooseDifferentFile": "اختيار ملف آخر"
+  },
+  "importForm": {
+    "downloadTemplate": "تنزيل القالب",
+    "modeLabel": "الوضع",
+    "modeCreate": "الإنشاء فقط (رفض الموجود)",
+    "modeUpdate": "التحديث فقط (فشل إذا لم يُعثر عليه)",
+    "modeUpsert": "الإنشاء أو التحديث",
+    "tabUploadFile": "تحميل ملف",
+    "tabPasteData": "لصق البيانات",
+    "tabUploadMap": "تحميل ومطابقة الأعمدة",
+    "previewImport": "معاينة الاستيراد",
+    "recheck": "إعادة التحقق",
+    "confirmImport": "تأكيد الاستيراد",
+    "chooseDifferentFile": "اختيار ملف آخر",
+    "nothingSavedYet": "لم يتم حفظ أي شيء بعد — راجع المعاينة أدناه، ثم أكد.",
+    "gridInstructions": "اكتب مباشرة في الشبكة، أو الصق صفوفًا منسوخة من Excel/Google Sheets بدءًا من الخلية الأولى. يتم التحقق من كل صف بنفس الطريقة التي يتم بها التحقق من ملف مُحمّل — يتم تمييز أي خلية فاشلة أدناه؛ قم بإصلاحها وأعد المعاينة.",
+    "loadingGrid": "جارٍ تحميل الشبكة…",
+    "loading": "جارٍ التحميل…",
+    "queuedInBackground": "هذا الملف كبير بما يكفي ليُعالج في الخلفية — ستُحدَّث هذه الصفحة بمجرد الانتهاء.",
+    "queuedNotice": "هذا الملف كبير بما يكفي ليُعالج في الخلفية. ستُحدَّث هذه الصفحة تلقائيًا بمجرد الانتهاء — لا حاجة للبقاء عليها.",
+    "backgroundImportFailed": "فشل الاستيراد في الخلفية.",
+    "importAnotherFile": "استيراد ملف آخر",
+    "resultCreated": "تم الإنشاء",
+    "resultUpdated": "تم التحديث",
+    "resultNothingToImport": "لا شيء لاستيراده",
+    "resultNothingToReport": "لا شيء للإبلاغ عنه",
+    "resultWouldBeCreated": "سيُنشأ",
+    "resultWouldBeUpdated": "سيُحدَّث",
+    "resultPossibleDuplicate_zero": "لا تكرارات محتملة",
+    "resultPossibleDuplicate_one": "تكرار محتمل واحد",
+    "resultPossibleDuplicate_two": "تكراران محتملان",
+    "resultPossibleDuplicate_few": "{{count}} تكرارات محتملة",
+    "resultPossibleDuplicate_many": "{{count}} تكرارًا محتملًا",
+    "resultPossibleDuplicate_other": "{{count}} تكرار محتمل",
+    "resultFailed": "فشل",
+    "resultWouldFail": "سيفشل",
+    "reviewBeforeNewRecords": "راجع قبل التعامل معها كسجلات جديدة",
+    "rowLabel": "الصف {{row}}:",
+    "columnRow": "الصف",
+    "columnField": "الحقل",
+    "columnError": "الخطأ",
+    "entitySummary": "{{entity}}: {{summary}}",
+    "nothingChanged": "لم يتغير شيء"
+  },
+  "enums": {
+    "gender": {
+      "male": "ذكر",
+      "female": "أنثى",
+      "other": "آخر"
+    },
+    "userStatus": {
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "suspended": "موقوف"
+    },
+    "studentStatus": {
+      "active": "نشط",
+      "transferred_out": "منقول",
+      "withdrawn": "منسحب",
+      "graduated": "متخرج",
+      "alumni": "خريج سابق"
+    },
+    "enrollmentAction": {
+      "admission": "قبول",
+      "promotion": "ترقية",
+      "transfer_in": "نقل وارد",
+      "transfer_out": "نقل صادر",
+      "withdrawal": "انسحاب",
+      "graduation": "تخرج",
+      "reactivation": "إعادة تفعيل"
+    },
+    "guardianRelationship": {
+      "father": "الأب",
+      "mother": "الأم",
+      "guardian": "ولي الأمر",
+      "other": "آخر"
+    },
+    "roomType": {
+      "classroom": "فصل دراسي",
+      "lab": "مختبر",
+      "hall": "قاعة",
+      "other": "آخر"
+    },
+    "holidayType": {
+      "public": "عطلة رسمية",
+      "school_specific": "خاصة بالمدرسة"
+    },
+    "attendanceStatus": {
+      "present": "حاضر",
+      "absent": "غائب",
+      "late": "متأخر",
+      "half_day": "نصف يوم",
+      "excused": "معذور",
+      "on_leave": "في إجازة"
+    },
+    "daysOfWeek": {
+      "0": "الأحد",
+      "1": "الاثنين",
+      "2": "الثلاثاء",
+      "3": "الأربعاء",
+      "4": "الخميس",
+      "5": "الجمعة",
+      "6": "السبت"
+    },
+    "announcementChannel": {
+      "in_app": "داخل التطبيق",
+      "email": "البريد الإلكتروني",
+      "sms": "رسالة نصية",
+      "push": "إشعار فوري"
+    },
+    "noticeType": {
+      "general": "إشعار",
+      "event": "فعالية"
+    },
+    "audience": {
+      "all": "الجميع",
+      "students": "الطلاب",
+      "staff": "الموظفون",
+      "parents": "أولياء الأمور"
+    },
+    "feeFrequency": {
+      "one_time": "مرة واحدة",
+      "monthly": "شهري",
+      "quarterly": "ربع سنوي",
+      "term": "فصلي",
+      "annual": "سنوي"
+    },
+    "discountType": {
+      "none": "لا شيء",
+      "percentage": "نسبة مئوية",
+      "fixed": "مبلغ ثابت"
+    },
+    "invoiceStatus": {
+      "draft": "مسودة",
+      "issued": "صادرة",
+      "partially_paid": "مدفوعة جزئيًا",
+      "paid": "مدفوعة",
+      "void": "ملغاة"
+    },
+    "paymentMethod": {
+      "cash": "نقدًا",
+      "cheque": "شيك",
+      "bank_transfer": "تحويل بنكي",
+      "upi": "UPI",
+      "card": "بطاقة",
+      "other": "آخر"
+    },
+    "hostelType": {
+      "boys": "أولاد",
+      "girls": "بنات",
+      "mixed": "مختلط"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "مخصص",
+      "vacated": "مُخلى"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "تم التسليم",
+      "graded": "تم التصحيح"
+    },
+    "remarkCategory": {
+      "academic": "أكاديمي",
+      "behavioral": "سلوكي",
+      "general": "عام"
+    },
+    "bookIssueStatus": {
+      "issued": "مُعار",
+      "returned": "تمت الإعادة",
+      "overdue": "متأخر"
+    },
+    "leaveStatus": {
+      "pending": "قيد الانتظار",
+      "approved": "موافق عليها",
+      "rejected": "مرفوضة",
+      "cancelled": "ملغاة"
+    },
+    "payslipStatus": {
+      "generated": "تم الإنشاء",
+      "paid": "مدفوعة"
+    },
+    "questionType": {
+      "mcq": "اختيار من متعدد",
+      "true_false": "صح / خطأ"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "الصفحة غير موجودة",
+    "notFoundDescription": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "backToDashboard": "العودة إلى لوحة التحكم",
+    "somethingWentWrong": "حدث خطأ ما",
+    "somethingWentWrongDescription": "يرجى محاولة إعادة تحميل الصفحة. إذا استمرت المشكلة، تواصل مع الدعم.",
+    "reloadPage": "إعادة تحميل الصفحة",
+    "accessDenied": "تم رفض الوصول",
+    "accessDeniedDescription": "ليس لديك إذن لعرض هذه الصفحة.",
+    "loading": "جارٍ التحميل…"
+  }
+}

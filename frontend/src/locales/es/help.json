@@ -1,0 +1,175 @@
+{
+  "page": {
+    "title": "Guía de Configuración",
+    "description": "El flujo completo, en el orden de dependencias, para poner en marcha tu escuela: qué configurar primero y por qué.",
+    "footer": "Cada pantalla mencionada anteriormente se encuentra en la barra lateral izquierda, agrupada de la misma manera que esta guía."
+  },
+  "tabs": {
+    "start": "Primeros Pasos",
+    "classes": "Clases y Estudiantes",
+    "operations": "Asistencia y Exámenes",
+    "fees": "Cuotas y Facturación",
+    "modules": "Otros Módulos",
+    "communication": "Comunicación",
+    "roles": "Roles y Permisos",
+    "faq": "Preguntas Frecuentes"
+  },
+  "requires": "Requiere: {{phase}}",
+  "gettingStarted": {
+    "phase1": {
+      "title": "Fase 1 — Fundamentos académicos",
+      "steps": {
+        "academicYear": { "title": "Año académico", "description": "Crea el año en curso (p. ej. \"2025-2026\") y márcalo como actual. Solo un año puede estar activo a la vez: los estudiantes, las secciones, los exámenes y las cuotas se asignan a él de forma predeterminada." },
+        "terms": { "title": "Períodos", "description": "Divide el año en períodos de calificación. Los exámenes y los boletines se limitan a un período." },
+        "departments": { "title": "Departamentos (opcional)", "description": "Agrupa asignaturas para fines de informes, p. ej. \"Matemáticas y Ciencias\"." },
+        "gradeLevels": { "title": "Niveles de Grado", "description": "La escala de niveles que imparte tu escuela: desde Preescolar hasta el grado más alto, cada uno con un número de secuencia." },
+        "rooms": { "title": "Aulas", "description": "Espacios físicos con una capacidad y un tipo. Se necesitan antes de las Secciones, ya que una sección suele tener un aula asignada." },
+        "sections": { "title": "Secciones", "description": "Las clases reales en las que se admite a los estudiantes.", "bold": "No puedes admitir a un estudiante hasta que exista al menos una sección." },
+        "subjects": { "title": "Asignaturas", "description": "Lo que se enseña: Matemáticas, Ciencias, Inglés, etc." },
+        "timetablePeriods": { "title": "Períodos del Horario", "description": "La estructura diaria del horario (Período 1, Recreo, Período 2, ...), compartida por todas las secciones." }
+      }
+    },
+    "phase2": {
+      "title": "Fase 2 — Personal",
+      "blocked": "Fase 1",
+      "steps": {
+        "inviteStaff": { "title": "Invitar personal", "description": "Nombre, correo electrónico y un rol: el rol determina lo que puede hacer. Consulta la pestaña Roles para ver el detalle completo." },
+        "designations": { "title": "Cargos", "description": "Puestos como \"Profesor\" o \"Subdirector\": asigna uno a cada miembro del personal (con un ID de empleado y una fecha de contratación) si planeas usar la nómina más adelante." },
+        "classTeachers": { "title": "Profesores Titulares", "description": "Asigna un miembro del personal por sección como su Profesor Titular, distinto de los profesores de asignatura." }
+      }
+    }
+  },
+  "classes": {
+    "phase3": {
+      "title": "Fase 3 — Horario y asignaciones de asignaturas",
+      "blocked": "Fases 1–2",
+      "steps": {
+        "assignments": { "title": "Asignaciones de Clase–Asignatura–Profesor", "description": "Para cada sección, decide qué profesor imparte qué asignatura: esto es lo que hace que \"mis clases\" se muestren correctamente para un Profesor o Profesor Titular, y lo que usan las pantallas de registro de calificaciones y tareas para saber quién puede calificar qué." },
+        "timetableEntries": { "title": "Entradas del horario", "description": "Ubica cada combinación (sección, asignatura, profesor) en una franja real de día/período/aula. Una entrada por sección+período+día: el sistema no te permitirá reservar dos veces el mismo período de una sección en el mismo día." }
+      }
+    },
+    "phase4": {
+      "title": "Fase 4 — Estudiantes y Tutores",
+      "blocked": "Fase 1 (secciones)",
+      "steps": {
+        "admitStudents": { "title": "Admitir estudiantes", "description": "Nombre, género, fecha de nacimiento, grado y sección (deben existir previamente). La admisión genera automáticamente un número de admisión y registra el historial de matrícula." },
+        "addGuardians": { "title": "Agregar tutores", "description": "Vincula un padre/madre/tutor a cada estudiante, marcando uno como principal. Invita a un tutor para darle acceso al portal: podrá ver la asistencia, las calificaciones, las facturas y las tareas de su hijo/a." }
+      }
+    }
+  },
+  "operations": {
+    "phase5": {
+      "title": "Fase 5 — Asistencia",
+      "steps": {
+        "nothingToConfigure": { "title": "Nada que configurar", "description": "Ve a Tomar Asistencia, elige una sección y una fecha, y marca a cada estudiante como presente / ausente / tarde / medio día / justificado / de permiso. La Asistencia del Personal funciona de la misma manera." }
+      }
+    },
+    "phase6": {
+      "title": "Fase 6 — Calificaciones y Exámenes",
+      "blocked": "Fase 3 (secciones/asignaturas)",
+      "steps": {
+        "gradingScale": { "title": "Escala de Calificación + Rangos", "description": "Define rangos de porcentaje y sus notas por letra (A: 90–100, B: 80–89, ...). Marca una escala como predeterminada: cualquier asignatura de examen que no especifique su propia escala usará esta de forma predeterminada." },
+        "exams": { "title": "Exámenes", "description": "Nombre, año académico, período y un peso (usado al promediar varios exámenes en una nota final)." },
+        "examSubjects": { "title": "Asignaturas de Examen", "description": "Qué combinaciones (asignatura, sección) se evalúan realmente, con la nota máxima/mínima de aprobación y una fecha. Un examen sin una Asignatura de Examen para la sección de un estudiante no aparecerá en absoluto para ese estudiante." },
+        "enterPublishMarks": { "title": "Registrar y publicar calificaciones", "description": "El registro de calificaciones se habilita una vez que existe una asignatura de examen. Publica cuando esté listo: los estudiantes y padres no podrán ver las calificaciones hasta entonces." }
+      }
+    },
+    "phase7": {
+      "title": "Fase 7 — Tareas",
+      "blocked": "Fase 3",
+      "steps": {
+        "createHomework": { "title": "Crear tarea", "description": "Sección, asignatura, profesor, fecha de entrega y puntuación máxima. Las entregas y la calificación se realizan por estudiante después." }
+      }
+    }
+  },
+  "fees": {
+    "phase8": {
+      "title": "Fase 8 — Cuotas y Facturación (tu escuela factura a sus estudiantes)",
+      "steps": {
+        "feeCategories": { "title": "Categorías de Cuotas", "description": "Matrícula, Transporte, Biblioteca, Exámenes, etc." },
+        "feeStructures": { "title": "Estructuras de Cuotas", "description": "Asocia un importe y una frecuencia a una categoría para el año en curso, opcionalmente por grado." },
+        "feeAssignments": { "title": "Asignaciones de Cuotas de Estudiantes (opcional)", "description": "Un descuento por estudiante (porcentual o fijo) sobre una estructura de cuota, p. ej. un descuento por hermanos.", "bold": "Configura esto antes de generar la factura de ese estudiante", "suffix": "— los descuentos no se aplican de forma retroactiva." },
+        "invoices": { "title": "Facturas", "description": "Se generan por estudiante, incorporando las estructuras de cuotas correspondientes y cualquier descuento como líneas de factura." },
+        "payments": { "title": "Pagos y Notas de Crédito", "description": "Registra el dinero recibido (efectivo, cheque, transferencia bancaria, UPI, tarjeta): el estado de la factura se actualiza automáticamente. Emite una nota de crédito para ajustes parciales sin alterar la factura original." }
+      }
+    }
+  },
+  "modules": {
+    "phase9": {
+      "title": "Fase 9 — Biblioteca",
+      "steps": {
+        "addBooks": { "title": "Agregar libros", "description": "Título, autor, ISBN, categoría y número de ejemplares." },
+        "issueReturn": { "title": "Prestar y devolver", "description": "Presta un ejemplar a un estudiante o miembro del personal, y luego regístralo como devuelto más tarde. Las multas (si las hay) se calculan automáticamente según la configuración de multas de la Biblioteca, y el número de ejemplares disponibles se ajusta al prestar/devolver." }
+      }
+    },
+    "phase10": {
+      "title": "Fase 10 — Transporte",
+      "steps": {
+        "vehiclesRoutes": { "title": "Vehículos y Rutas", "description": "Configúralos en cualquier orden: datos de matrícula/conductor para los vehículos, paradas ordenadas para cada ruta." },
+        "studentAssignments": { "title": "Asignaciones de Estudiantes", "description": "Vincula a un estudiante con una ruta, una parada y un vehículo. Un estudiante solo puede tener una asignación activa: al asignar una nueva, la anterior se cierra automáticamente." }
+      }
+    },
+    "phase11": {
+      "title": "Fase 11 — Residencia",
+      "steps": {
+        "hostels": { "title": "Residencias", "description": "Masculina / Femenina / Mixta, cada una con un encargado." },
+        "rooms": { "title": "Habitaciones", "description": "Cada una con una capacidad de camas." },
+        "allocations": { "title": "Asignaciones", "description": "Asigna a un estudiante a una habitación y una cama. No se permite asignar más allá de la capacidad de una habitación: primero desocupa una asignación existente para liberar una cama." }
+      }
+    },
+    "phase12": {
+      "title": "Fase 12 — RR. HH. y Nómina",
+      "blocked": "Fase 2 (cargos)",
+      "steps": {
+        "salaryStructures": { "title": "Estructuras Salariales", "description": "Salario básico, bonificaciones y deducciones por cada miembro del personal. Solo una estructura activa por persona: una nueva reemplaza automáticamente a la anterior." },
+        "payslips": { "title": "Recibos de Pago", "description": "Se generan para un mes/año: esto captura los valores de la estructura salarial activa en ese momento, de modo que los cambios salariales posteriores no modifican los recibos ya generados." },
+        "leaveTypes": { "title": "Tipos de Permiso y Solicitudes", "description": "Define los tipos de permiso (Casual, Enfermedad, Acumulado, No remunerado) con una cuota anual. El personal solicita y RR. HH./Administración revisa. Al aprobar una solicitud de permiso, se marcan automáticamente como \"de permiso\" los registros de asistencia del personal correspondientes a ese rango de fechas, sin necesidad de marcar la asistencia por separado." }
+      }
+    },
+    "phase13": {
+      "title": "Fase 13 — Certificados",
+      "steps": {
+        "templates": { "title": "Plantillas", "description": "Escribe un cuerpo reutilizable con marcadores:" },
+        "issue": { "title": "Emitir", "description": "Emítelo para un estudiante específico: los marcadores se completan y quedan fijados de forma permanente, de modo que editar la plantilla después nunca modifica los certificados ya emitidos." }
+      }
+    }
+  },
+  "communication": {
+    "phase14": {
+      "title": "Fase 14 — Comunicación",
+      "steps": {
+        "noticeBoard": { "title": "Tablón de Anuncios", "description": "Avisos generales o eventos con fecha, dirigidos a todos / estudiantes / personal / padres, con una fecha de caducidad opcional." },
+        "announcements": { "title": "Anuncios", "description": "Una difusión que también crea una notificación dentro de la aplicación para cada destinatario correspondiente, entregada en tiempo real a través de la campana de notificaciones donde la entrega en tiempo real esté configurada; de lo contrario, los destinatarios la reciben en su próxima actualización automática." },
+        "studentRemarks": { "title": "Observaciones de Estudiantes", "description": "Un profesor puede dejar notas académicas, de comportamiento o generales sobre un estudiante, visibles opcionalmente para los tutores de ese estudiante." }
+      }
+    }
+  },
+  "roles": {
+    "intro": "Un usuario puede tener más de un rol si tu organigrama no encaja exactamente en ninguno de estos, por ejemplo, un Subdirector que también da clases.",
+    "columnRole": "Rol",
+    "columnUse": "Uso típico",
+    "columnAccess": "Acceso general",
+    "rows": {
+      "schoolAdmin": { "role": "Administrador Escolar", "use": "La cuenta de administrador de nivel superior de la escuela", "access": "Todo: usuarios, roles, configuración, todos los módulos" },
+      "principal": { "role": "Director", "use": "Dirección del centro", "access": "Acceso de lectura amplio en general, gestiona lo académico/horario/exámenes" },
+      "management": { "role": "Gerencia", "use": "Fideicomisarios/propietarios que necesitan visibilidad", "access": "Solo lectura en casi todo" },
+      "accountant": { "role": "Contador", "use": "Operaciones de cuotas/facturación", "access": "Categorías/estructuras de cuotas, facturas, pagos, notas de crédito" },
+      "hrStaff": { "role": "Personal de RR. HH.", "use": "Gestión de personas", "access": "Usuarios, cargos, permisos, nómina, asistencia del personal" },
+      "receptionist": { "role": "Recepcionista", "use": "Recepción", "access": "Creación de estudiantes/tutores, registro de visitantes" },
+      "teacher": { "role": "Profesor", "use": "Profesor de asignatura", "access": "Sus propias clases: asistencia, calificaciones de examen, tareas, observaciones" },
+      "classTeacher": { "role": "Profesor Titular", "use": "Profesor a cargo de la sección", "access": "Todo lo que tiene el Profesor, además de exportación de asistencia y observaciones de toda la sección" },
+      "librarian": { "role": "Bibliotecario", "use": "Mostrador de biblioteca", "access": "Solo libros y préstamos" },
+      "transportStaff": { "role": "Personal de Transporte", "use": "Área de transporte", "access": "Solo rutas, vehículos y asignaciones" },
+      "student": { "role": "Estudiante", "use": "Acceso de estudiante matriculado", "access": "Solo lectura: su propio horario, asistencia, calificaciones, tareas, facturas, certificados" },
+      "parent": { "role": "Tutor", "use": "Acceso de tutor (si fue invitado)", "access": "Igual que el Estudiante, limitado a sus hijos vinculados" }
+    }
+  },
+  "faq": {
+    "items": {
+      "tooManyAttempts": { "q": "\"Demasiados intentos\" al iniciar sesión.", "a": "Es un límite de seguridad temporal ante intentos repetidos de inicio de sesión (protege contra la adivinación de contraseñas). Se restablece por sí solo en un minuto: espera e inténtalo de nuevo en lugar de reintentar rápidamente." },
+      "emptyDropdown": { "q": "Una lista desplegable no tiene opciones.", "a": "Casi siempre significa que falta completar una fase de configuración anterior; por ejemplo, la lista desplegable de Sección en el formulario de estudiante está vacía porque aún no se ha creado ninguna Sección. Revisa la fase anterior a la que te encuentras." },
+      "discountNotShowing": { "q": "Un descuento que configuré no aparece en una factura.", "a": "Los descuentos de Asignación de Cuota de Estudiante solo se aplican a las facturas generadas después de crear el descuento; nunca se aplican de forma retroactiva a una factura existente." },
+      "recordDisappeared": { "q": "Creé una nueva asignación de transporte / asignación de residencia / estructura salarial y la anterior desapareció.", "a": "Esto es lo esperado: todos estos casos siguen la regla de \"un solo registro activo por persona\", que se aplica cerrando automáticamente el anterior en lugar de bloquear el nuevo." }
+    }
+  }
+}

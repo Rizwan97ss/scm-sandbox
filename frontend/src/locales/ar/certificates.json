@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "الطالب",
+    "type": "النوع",
+    "name": "الاسم",
+    "status": "الحالة",
+    "active": "نشط",
+    "inactive": "غير نشط"
+  },
+  "list": {
+    "title": "الشهادات",
+    "descriptionAll": "كل شهادة صادرة لطالب.",
+    "descriptionOwn": "الشهادات الصادرة لك.",
+    "columnCertificateNumber": "رقم الشهادة",
+    "columnIssued": "تاريخ الإصدار",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "تنزيل الشهادة {{number}}",
+    "emptyTitle": "لا توجد شهادات بعد",
+    "emptyDescription": "ستظهر هنا الشهادات التي تصدرها للطلاب."
+  },
+  "templates": {
+    "title": "قوالب الشهادات",
+    "description": "نصوص شهادات قابلة لإعادة الاستخدام — أصدرها لطالب لتحويلها إلى شهادة فعلية.",
+    "newTemplate": "قالب جديد",
+    "searchPlaceholder": "البحث بالاسم…",
+    "issue": "إصدار",
+    "edit": "تعديل",
+    "deleteAriaLabel": "حذف {{name}}",
+    "emptyTitleSearch": "لا توجد قوالب مطابقة لـ \"{{query}}\"",
+    "emptyTitle": "لا توجد قوالب شهادات بعد",
+    "emptyDescriptionSearch": "جرّب اسمًا آخر، أو امسح البحث لرؤية الكل.",
+    "editTitle": "تعديل القالب",
+    "newTitle": "قالب جديد",
+    "typeHint": "مثال: شهادة قيد، نقل",
+    "bodyLabel": "النص",
+    "bodyHint": "العناصر النائبة: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "حفظ التغييرات",
+    "createTemplate": "إنشاء قالب",
+    "deleteConfirmTitle": "حذف {{name}}؟",
+    "deleteConfirmDescription": "لا يمكن التراجع عن هذا الإجراء.",
+    "issueModal": {
+      "title": "إصدار \"{{name}}\"",
+      "selectStudentPlaceholder": "اختر طالبًا",
+      "submit": "إصدار الشهادة",
+      "successToast": "تم إصدار الشهادة."
+    }
+  }
+}

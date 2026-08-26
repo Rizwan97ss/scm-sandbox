@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "Roles y permisos",
+    "description": "Crea roles personalizados y controla exactamente qué puede hacer cada uno.",
+    "newRole": "Nuevo rol",
+    "systemRoleAriaLabel": "Rol del sistema",
+    "edit": "Editar",
+    "deleteAriaLabel": "Eliminar {{name}}",
+    "emptyTitle": "Aún no hay roles",
+    "permissionsCount": "{{count}} permiso(s)",
+    "morePermissions": "+{{count}} más",
+    "deleteConfirmTitle": "¿Eliminar el rol \"{{name}}\"?",
+    "deleteConfirmDescription": "Los usuarios que solo tengan este rol perderán todos sus permisos.",
+    "deleteSuccessToast": "Rol eliminado."
+  },
+  "formModal": {
+    "editTitle": "Editar rol",
+    "newTitle": "Nuevo rol",
+    "roleNameLabel": "Nombre del rol",
+    "permissionsLabel": "Permisos",
+    "saveChanges": "Guardar cambios",
+    "createRole": "Crear rol",
+    "updateSuccessToast": "Rol actualizado.",
+    "createSuccessToast": "Rol creado."
+  }
+}

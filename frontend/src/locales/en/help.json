@@ -1,0 +1,175 @@
+{
+  "page": {
+    "title": "Setup Guide",
+    "description": "The complete, dependency-ordered flow for getting your school running — what to set up first, and why.",
+    "footer": "Every screen mentioned above lives in the sidebar to the left, grouped the same way as this guide."
+  },
+  "tabs": {
+    "start": "Getting Started",
+    "classes": "Classes & Students",
+    "operations": "Attendance & Exams",
+    "fees": "Fees & Billing",
+    "modules": "Other Modules",
+    "communication": "Communication",
+    "roles": "Roles & Permissions",
+    "faq": "FAQ"
+  },
+  "requires": "Requires: {{phase}}",
+  "gettingStarted": {
+    "phase1": {
+      "title": "Phase 1 — Academic foundations",
+      "steps": {
+        "academicYear": { "title": "Academic Year", "description": "Create the current year (e.g. \"2025-2026\") and mark it current. Only one year should be current at a time — students, sections, exams, and fees all default to it." },
+        "terms": { "title": "Terms", "description": "Split the year into grading periods. Exams and report cards are scoped to a term." },
+        "departments": { "title": "Departments (optional)", "description": "Group subjects for reporting, e.g. \"Mathematics & Science\"." },
+        "gradeLevels": { "title": "Grade Levels", "description": "The ladder your school teaches — Kindergarten through your highest grade, each with a sequence number." },
+        "rooms": { "title": "Rooms", "description": "Physical rooms with a capacity and type. Needed before Sections, since a section usually has a home room." },
+        "sections": { "title": "Sections", "description": "The actual classes students get admitted into.", "bold": "You cannot admit a student until at least one section exists." },
+        "subjects": { "title": "Subjects", "description": "What's taught — Mathematics, Science, English, and so on." },
+        "timetablePeriods": { "title": "Timetable Periods", "description": "The daily schedule skeleton (Period 1, Break, Period 2, ...), shared across every section." }
+      }
+    },
+    "phase2": {
+      "title": "Phase 2 — Staff",
+      "blocked": "Phase 1",
+      "steps": {
+        "inviteStaff": { "title": "Invite staff", "description": "Name, email, and a role — the role decides what they can do. See the Roles tab for the full breakdown." },
+        "designations": { "title": "Designations", "description": "Job titles like \"Teacher\" or \"Vice Principal\" — attach one to each staff member (with an employee ID and hire date) if you plan to use payroll later." },
+        "classTeachers": { "title": "Class Teachers", "description": "Assign one staff member per section as its Class Teacher, distinct from subject teachers." }
+      }
+    }
+  },
+  "classes": {
+    "phase3": {
+      "title": "Phase 3 — Timetable & subject assignments",
+      "blocked": "Phases 1–2",
+      "steps": {
+        "assignments": { "title": "Class–Subject–Teacher assignments", "description": "For each section, decide which teacher teaches which subject — this is what makes \"my classes\" show up correctly for a Teacher/Class Teacher, and what exam-mark-entry and homework screens use to know who's allowed to grade what." },
+        "timetableEntries": { "title": "Timetable entries", "description": "Place each (section, subject, teacher) into an actual day/period/room slot. One entry per section+period+day — the system won't let you double-book a section's same period on the same day." }
+      }
+    },
+    "phase4": {
+      "title": "Phase 4 — Students & Guardians",
+      "blocked": "Phase 1 (sections)",
+      "steps": {
+        "admitStudents": { "title": "Admit students", "description": "Name, gender, date of birth, grade level, and section (must already exist). Admission automatically generates an admission number and records enrollment history." },
+        "addGuardians": { "title": "Add guardians", "description": "Link a father/mother/guardian to each student, with one marked primary. Invite a guardian to give them a Parent login — they'll see their child's attendance, grades, invoices, and homework." }
+      }
+    }
+  },
+  "operations": {
+    "phase5": {
+      "title": "Phase 5 — Attendance",
+      "steps": {
+        "nothingToConfigure": { "title": "Nothing to configure", "description": "Go to Take Attendance, pick a section and date, mark each student present / absent / late / half-day / excused / on-leave. Staff Attendance works the same way." }
+      }
+    },
+    "phase6": {
+      "title": "Phase 6 — Grading & Exams",
+      "blocked": "Phase 3 (sections/subjects)",
+      "steps": {
+        "gradingScale": { "title": "Grading Scale + Bands", "description": "Define percentage ranges and their letter grades (A: 90–100, B: 80–89, ...). Mark one scale default — any exam subject that doesn't specify its own scale falls back to it." },
+        "exams": { "title": "Exams", "description": "Name, academic year, term, and a weight (used when averaging multiple exams into a final grade)." },
+        "examSubjects": { "title": "Exam Subjects", "description": "Which (subject, section) pairs are actually being tested, with max/passing marks and a date. An exam with no Exam Subject for a student's section won't show up for that student at all." },
+        "enterPublishMarks": { "title": "Enter & publish marks", "description": "Marks entry opens once an exam subject exists. Publish when ready — students/parents can't see marks until then." }
+      }
+    },
+    "phase7": {
+      "title": "Phase 7 — Homework",
+      "blocked": "Phase 3",
+      "steps": {
+        "createHomework": { "title": "Create homework", "description": "Section, subject, teacher, due date, and max score. Submissions and grading happen per-student after." }
+      }
+    }
+  },
+  "fees": {
+    "phase8": {
+      "title": "Phase 8 — Fees & Billing (your school billing its students)",
+      "steps": {
+        "feeCategories": { "title": "Fee Categories", "description": "Tuition, Transport, Library, Examination, and so on." },
+        "feeStructures": { "title": "Fee Structures", "description": "Attach an amount and frequency to a category for the current year, optionally per grade level." },
+        "feeAssignments": { "title": "Student Fee Assignments (optional)", "description": "A per-student discount (percentage or fixed) against a fee structure — e.g. a sibling discount.", "bold": "Set this up before generating that student's invoice", "suffix": "— discounts don't apply retroactively." },
+        "invoices": { "title": "Invoices", "description": "Generate per-student, pulling in the relevant fee structures and any discount as line items." },
+        "payments": { "title": "Payments & Credit Notes", "description": "Record money received (cash, cheque, bank transfer, UPI, card) — the invoice's status updates automatically. Issue a credit note for partial adjustments without altering the original invoice." }
+      }
+    }
+  },
+  "modules": {
+    "phase9": {
+      "title": "Phase 9 — Library",
+      "steps": {
+        "addBooks": { "title": "Add books", "description": "Title, author, ISBN, category, and copy count." },
+        "issueReturn": { "title": "Issue & return", "description": "Issue a copy to a student or staff member, then return it later. Fines (if any) are computed automatically from your Library fine settings, and available-copy counts adjust on issue/return." }
+      }
+    },
+    "phase10": {
+      "title": "Phase 10 — Transport",
+      "steps": {
+        "vehiclesRoutes": { "title": "Vehicles and Routes", "description": "Set up in either order — registration/driver details for vehicles, ordered stops for each route." },
+        "studentAssignments": { "title": "Student Assignments", "description": "Link a student to a route, stop, and vehicle. A student can only have one active assignment — assigning a new one automatically closes out the old one." }
+      }
+    },
+    "phase11": {
+      "title": "Phase 11 — Hostel",
+      "steps": {
+        "hostels": { "title": "Hostels", "description": "Boys / Girls / Mixed, each with a warden." },
+        "rooms": { "title": "Rooms", "description": "Each with a bed capacity." },
+        "allocations": { "title": "Allocations", "description": "Assign a student to a room + bed. Allocating past a room's capacity is rejected — vacate an existing allocation to free a bed first." }
+      }
+    },
+    "phase12": {
+      "title": "Phase 12 — HR & Payroll",
+      "blocked": "Phase 2 (designations)",
+      "steps": {
+        "salaryStructures": { "title": "Salary Structures", "description": "Basic salary, allowances, deductions per staff member. Only one active structure per person — a new one automatically supersedes the old." },
+        "payslips": { "title": "Payslips", "description": "Generate for a month/year — this snapshots the currently-active salary structure's numbers, so later salary changes don't rewrite old payslips." },
+        "leaveTypes": { "title": "Leave Types & Requests", "description": "Define leave types (Casual, Sick, Earned, Unpaid) with an annual allowance. Staff apply, HR/Admin reviews. Approving a leave request automatically marks matching staff-attendance rows \"on leave\" for that date range — no need to mark attendance separately." }
+      }
+    },
+    "phase13": {
+      "title": "Phase 13 — Certificates",
+      "steps": {
+        "templates": { "title": "Templates", "description": "Write a reusable body with placeholders:" },
+        "issue": { "title": "Issue", "description": "Issue against a specific student — placeholders are interpolated and permanently snapshotted, so editing the template later never changes certificates already issued." }
+      }
+    }
+  },
+  "communication": {
+    "phase14": {
+      "title": "Phase 14 — Communication",
+      "steps": {
+        "noticeBoard": { "title": "Notice Board", "description": "General notices or dated events, targeted at everyone / students / staff / parents, with an optional expiry." },
+        "announcements": { "title": "Announcements", "description": "A broadcast that also creates an in-app notification for every matching recipient, delivered live via the notification bell where real-time delivery is configured — otherwise recipients still get it on their next automatic refresh." },
+        "studentRemarks": { "title": "Student Remarks", "description": "A teacher can leave academic, behavioral, or general notes on a student, optionally visible to that student's guardians." }
+      }
+    }
+  },
+  "roles": {
+    "intro": "A user can hold more than one role if your org chart doesn't map cleanly onto one of these — e.g. a Vice Principal who also teaches.",
+    "columnRole": "Role",
+    "columnUse": "Typical use",
+    "columnAccess": "Broad access",
+    "rows": {
+      "schoolAdmin": { "role": "School Admin", "use": "The school's top-level administrator account", "access": "Everything — users, roles, settings, all modules" },
+      "principal": { "role": "Principal", "use": "School leadership", "access": "Read-heavy across the board, manages academics/timetable/exams" },
+      "management": { "role": "Management", "use": "Trustees/owners who need visibility", "access": "Read-only across almost everything" },
+      "accountant": { "role": "Accountant", "use": "Fees/billing operations", "access": "Fee categories/structures, invoices, payments, credit notes" },
+      "hrStaff": { "role": "HR Staff", "use": "People operations", "access": "Users, designations, leave, payroll, staff attendance" },
+      "receptionist": { "role": "Receptionist", "use": "Front desk", "access": "Student/guardian creation, visitor log" },
+      "teacher": { "role": "Teacher", "use": "Subject teacher", "access": "Their own classes: attendance, exam marks, homework, remarks" },
+      "classTeacher": { "role": "Class Teacher", "use": "Homeroom teacher", "access": "Everything Teacher has, plus attendance export and section-wide remarks" },
+      "librarian": { "role": "Librarian", "use": "Library desk", "access": "Books and issues only" },
+      "transportStaff": { "role": "Transport Staff", "use": "Transport desk", "access": "Routes, vehicles, assignments only" },
+      "student": { "role": "Student", "use": "Enrolled student login", "access": "Read-only: own timetable, attendance, grades, homework, invoices, certificates" },
+      "parent": { "role": "Parent", "use": "Guardian login (if invited)", "access": "Same as Student, scoped to their linked children" }
+    }
+  },
+  "faq": {
+    "items": {
+      "tooManyAttempts": { "q": "\"Too Many Attempts\" when logging in.", "a": "A short-lived safety limit on repeated login tries (protects against password guessing). It clears on its own within a minute — wait and try again rather than retrying rapidly." },
+      "emptyDropdown": { "q": "A dropdown has no options in it.", "a": "That almost always means an earlier setup phase is missing — e.g. the Student form's Section dropdown is empty because no Section has been created yet. Check the phase before the one you're on." },
+      "discountNotShowing": { "q": "A discount I set up isn't showing on an invoice.", "a": "Student Fee Assignment discounts only apply to invoices generated after the discount was created — they never apply retroactively to an existing invoice." },
+      "recordDisappeared": { "q": "I created a new transport assignment / hostel allocation / salary structure and the old one disappeared.", "a": "That's expected — these all follow a \"one active record per person\" rule, enforced by automatically closing out the previous one rather than blocking the new one." }
+    }
+  }
+}

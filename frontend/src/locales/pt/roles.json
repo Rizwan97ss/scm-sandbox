@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "Funções e permissões",
+    "description": "Crie funções personalizadas e controle exatamente o que cada uma pode fazer.",
+    "newRole": "Nova função",
+    "systemRoleAriaLabel": "Função do sistema",
+    "edit": "Editar",
+    "deleteAriaLabel": "Excluir {{name}}",
+    "emptyTitle": "Ainda não há funções",
+    "permissionsCount": "{{count}} permissão(ões)",
+    "morePermissions": "+{{count}} mais",
+    "deleteConfirmTitle": "Excluir a função \"{{name}}\"?",
+    "deleteConfirmDescription": "Usuários que possuem apenas esta função perderão todas as suas permissões.",
+    "deleteSuccessToast": "Função excluída."
+  },
+  "formModal": {
+    "editTitle": "Editar função",
+    "newTitle": "Nova função",
+    "roleNameLabel": "Nome da função",
+    "permissionsLabel": "Permissões",
+    "saveChanges": "Salvar alterações",
+    "createRole": "Criar função",
+    "updateSuccessToast": "Função atualizada.",
+    "createSuccessToast": "Função criada."
+  }
+}

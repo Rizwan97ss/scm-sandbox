@@ -1,0 +1,20 @@
+{
+  "dataExportsList": {
+    "loading": "加载中…",
+    "requestedOn": "请求于 {{date}}",
+    "requestedBy": "由 {{name}} 请求",
+    "availableUntil": "有效期至 {{date}}",
+    "download": "下载",
+    "exportStarted": "导出已开始——准备就绪后此列表将自动更新。",
+    "statusPending": "待处理",
+    "statusProcessing": "处理中",
+    "statusReady": "已就绪",
+    "statusFailed": "失败"
+  },
+  "myDataExportPage": {
+    "title": "导出我的数据",
+    "description": "下载此平台保存的与您相关的数据副本。",
+    "requestLabel": "请求导出",
+    "emptyLabel": "尚未请求过导出"
+  }
+}

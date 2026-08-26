@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "آڈٹ لاگ",
+    "description": "آپ کے سکول میں انجام دی گئی حساس کارروائیوں کا ریکارڈ۔",
+    "columnWhen": "کب",
+    "columnBy": "بذریعہ",
+    "columnEvent": "واقعہ",
+    "columnSubject": "موضوع",
+    "columnDescription": "تفصیل",
+    "system": "سسٹم",
+    "emptyTitle": "ابھی تک کوئی سرگرمی درج نہیں ہوئی",
+    "emptyDescription": "سسٹم میں کی گئی کارروائیاں یہاں درج کی جائیں گی۔"
+  }
+}

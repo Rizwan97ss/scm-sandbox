@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "Title",
+    "message": "Message",
+    "audience": "Audience",
+    "channels": "Channels"
+  },
+  "list": {
+    "title": "Announcements",
+    "description": "Broadcast a message to students, staff, or parents.",
+    "compose": "Compose Announcement",
+    "columnTitle": "Title",
+    "columnAudience": "Audience",
+    "columnChannels": "Channels",
+    "columnRecipients": "Recipients",
+    "columnSentBy": "Sent By",
+    "columnSent": "Sent",
+    "emptyTitle": "No announcements sent yet",
+    "emptyDescription": "Announcements you publish will appear here for their audience."
+  },
+  "composeModal": {
+    "title": "Compose Announcement",
+    "submit": "Send announcement",
+    "successToast": "Announcement sent to {{count}} recipient(s)."
+  }
+}

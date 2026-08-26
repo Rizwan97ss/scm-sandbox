@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "入学编号",
+    "status": "状态",
+    "gradeSection": "年级 / 班级",
+    "dateOfBirth": "出生日期",
+    "date": "日期",
+    "amount": "金额",
+    "receiptNumber": "收据编号",
+    "attendance": "考勤",
+    "daysMarked": "已记录天数",
+    "absences": "缺勤次数",
+    "from": "从",
+    "to": "至",
+    "remarks": "评语",
+    "homework": "作业"
+  },
+  "page": {
+    "welcomeBack": "欢迎回来，{{name}}",
+    "subtitle": "以下是今天的情况。",
+    "stats": {
+      "totalSchools": "学校总数",
+      "activeTrialing": "活跃 / 试用中",
+      "currentlyTrialing": "当前试用中",
+      "activeStudents": "在校学生",
+      "staffMembers": "教职员工",
+      "sections": "班级",
+      "attendanceMarkedToday": "今日已记录考勤",
+      "pendingLeaveRequests": "待处理请假申请",
+      "feesCollectedThisMonth": "本月已收费用",
+      "overdueBooks": "逾期图书",
+      "assignedSections": "分配的班级",
+      "students": "学生",
+      "homeworkAwaitingGrading": "待批改作业",
+      "attendanceThisMonth": "本月考勤",
+      "homeworkDue": "待交作业",
+      "upcomingExams": "即将进行的考试",
+      "linkedChildren": "已关联的孩子",
+      "outstandingFees": "未结费用"
+    },
+    "quickActions": {
+      "takeAttendance": "签到",
+      "newAdmission": "新生入学",
+      "invoices": "账单"
+    },
+    "trends": {
+      "attendanceTitle": "考勤 — 最近14天",
+      "feesTitle": "已收费用 — 最近6个月",
+      "feesTooltipLabel": "已收"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "我的孩子",
+    "tabExams": "考试",
+    "tabFees": "费用"
+  },
+  "childrenList": {
+    "title": "我的孩子",
+    "description": "选择一个孩子以查看其档案。",
+    "emptyTitle": "您的账户尚未关联任何孩子",
+    "emptyDescription": "如果这看起来不对，请联系学校办公室。"
+  },
+  "attendanceTab": {
+    "emptyRecords": "此时间段内没有考勤记录。"
+  },
+  "examResultsTab": {
+    "tabByExam": "按考试",
+    "tabByTerm": "学期综合成绩",
+    "selectExamPlaceholder": "选择一场考试…",
+    "noPublishedExams": "尚无已发布的考试",
+    "selectTermPlaceholder": "选择一个学期…"
+  },
+  "feesTab": {
+    "totalBilled": "已开票总额",
+    "totalPaid": "已付总额",
+    "totalCredited": "已贷记总额",
+    "outstanding": "未结欠款",
+    "emptyTitle": "暂无账单",
+    "issuedDue": "开票日期 {{issueDate}} · 到期日期 {{dueDate}}",
+    "totalPaidBalance": "总额 {{total}} · 已付 {{paid}} · 余额",
+    "receipt": "收据",
+    "downloadReceiptAriaLabel": "下载收据 {{number}}"
+  },
+  "homeworkTab": {
+    "emptyTitle": "暂无布置的作业",
+    "notSubmitted": "未提交",
+    "subjectDue": "{{subject}} · 截止 {{date}}",
+    "maxScoreSuffix": " · 满分：{{score}}",
+    "score": "得分：{{score}}",
+    "scoreWithMax": "得分：{{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "暂无评语",
+    "authoredBy": "— {{name}}"
+  }
+}

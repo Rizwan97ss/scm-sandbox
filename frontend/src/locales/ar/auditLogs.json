@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "سجل التدقيق",
+    "description": "سجل بالإجراءات الحساسة المنفذة في مدرستك.",
+    "columnWhen": "متى",
+    "columnBy": "بواسطة",
+    "columnEvent": "الحدث",
+    "columnSubject": "الموضوع",
+    "columnDescription": "الوصف",
+    "system": "النظام",
+    "emptyTitle": "لم يتم تسجيل أي نشاط بعد",
+    "emptyDescription": "سيتم تسجيل الإجراءات المتخذة في النظام هنا."
+  }
+}

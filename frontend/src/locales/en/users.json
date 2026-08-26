@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "roles": "Roles",
+    "status": "Status",
+    "designation": "Designation",
+    "employeeId": "Employee ID",
+    "hireDate": "Hire Date",
+    "optional": "Optional",
+    "none": "None",
+    "edit": "Edit"
+  },
+  "list": {
+    "title": "Staff & Users",
+    "description": "Manage every user account and their roles.",
+    "export": "Export",
+    "import": "Import",
+    "newUser": "New User",
+    "searchPlaceholder": "Search by name…",
+    "columnRoles": "Roles",
+    "downloadIdCardAriaLabel": "Download {{name}}'s ID card",
+    "emptyTitleSearch": "No users match \"{{query}}\"",
+    "emptyTitle": "No users found",
+    "emptyDescriptionSearch": "Try a different name, or clear the search to see everyone."
+  },
+  "userImport": {
+    "title": "Bulk Import Staff",
+    "breadcrumbUsers": "Staff & Users",
+    "breadcrumbImport": "Import",
+    "entityLabel": "staff member",
+    "descriptionBeforeCode": "Upload an Excel (.xlsx) or CSV file following the template. ",
+    "descriptionAfterCode": " must match an existing role name exactly, and you can only grant roles you're already permitted to assign. Never include a password column — every imported account gets a secure, randomly generated password and is immediately sent a password-reset email to set their own."
+  },
+  "formModal": {
+    "editTitle": "Edit User",
+    "newTitle": "New User",
+    "saveChanges": "Save changes",
+    "createUser": "Create user",
+    "createdToast": "User created.",
+    "updatedToast": "User updated."
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "More actions",
+    "sendPasswordReset": "Send password reset",
+    "resetMfa": "Reset two-factor authentication",
+    "setActive": "Set active",
+    "setInactive": "Set inactive",
+    "suspend": "Suspend",
+    "statusUpdatedToast": "Status updated.",
+    "passwordResetSentToast": "Password reset link sent.",
+    "mfaResetToast": "Two-factor authentication reset — they can set it up again on next login."
+  }
+}

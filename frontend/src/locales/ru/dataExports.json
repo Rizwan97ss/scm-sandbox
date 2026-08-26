@@ -1,0 +1,20 @@
+{
+  "dataExportsList": {
+    "loading": "Загрузка…",
+    "requestedOn": "Запрошено {{date}}",
+    "requestedBy": "автор: {{name}}",
+    "availableUntil": "Доступно до {{date}}",
+    "download": "Скачать",
+    "exportStarted": "Экспорт запущен — список обновится, когда он будет готов.",
+    "statusPending": "Ожидание",
+    "statusProcessing": "Обработка",
+    "statusReady": "Готово",
+    "statusFailed": "Ошибка"
+  },
+  "myDataExportPage": {
+    "title": "Экспортировать мои данные",
+    "description": "Скачайте копию данных, которые эта платформа хранит о вас.",
+    "requestLabel": "Запросить экспорт",
+    "emptyLabel": "Экспорт ещё не запрашивался"
+  }
+}

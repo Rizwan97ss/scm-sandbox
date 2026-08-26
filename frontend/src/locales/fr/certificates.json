@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "Étudiant",
+    "type": "Type",
+    "name": "Nom",
+    "status": "Statut",
+    "active": "Actif",
+    "inactive": "Inactif"
+  },
+  "list": {
+    "title": "Certificats",
+    "descriptionAll": "Tous les certificats délivrés à un étudiant.",
+    "descriptionOwn": "Vos certificats délivrés.",
+    "columnCertificateNumber": "N° de certificat",
+    "columnIssued": "Délivré",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "Télécharger le certificat {{number}}",
+    "emptyTitle": "Aucun certificat pour l'instant",
+    "emptyDescription": "Les certificats que vous délivrez aux étudiants apparaîtront ici."
+  },
+  "templates": {
+    "title": "Modèles de Certificats",
+    "description": "Textes de certificat réutilisables — délivrez-en un à un étudiant pour le transformer en certificat réel.",
+    "newTemplate": "Nouveau modèle",
+    "searchPlaceholder": "Rechercher par nom…",
+    "issue": "Délivrer",
+    "edit": "Modifier",
+    "deleteAriaLabel": "Supprimer {{name}}",
+    "emptyTitleSearch": "Aucun modèle ne correspond à « {{query}} »",
+    "emptyTitle": "Aucun modèle de certificat pour l'instant",
+    "emptyDescriptionSearch": "Essayez un autre nom, ou effacez la recherche pour tous les voir.",
+    "editTitle": "Modifier le modèle",
+    "newTitle": "Nouveau modèle",
+    "typeHint": "p. ex. Attestation, Transfert",
+    "bodyLabel": "Contenu",
+    "bodyHint": "Espaces réservés : {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "Enregistrer les modifications",
+    "createTemplate": "Créer le modèle",
+    "deleteConfirmTitle": "Supprimer {{name}} ?",
+    "deleteConfirmDescription": "Cette action est irréversible.",
+    "issueModal": {
+      "title": "Délivrer « {{name}} »",
+      "selectStudentPlaceholder": "Sélectionnez un étudiant",
+      "submit": "Délivrer le certificat",
+      "successToast": "Certificat délivré."
+    }
+  }
+}

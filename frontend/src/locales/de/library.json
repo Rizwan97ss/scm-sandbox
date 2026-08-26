@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "Titel",
+    "author": "Autor",
+    "category": "Kategorie",
+    "status": "Status",
+    "dueDate": "Fälligkeitsdatum",
+    "active": "Aktiv",
+    "inactive": "Inaktiv",
+    "student": "Schüler",
+    "staffMember": "Mitarbeiter"
+  },
+  "books": {
+    "title": "Bücher",
+    "description": "Der Bibliothekskatalog und die Bestandsverwaltung.",
+    "newBook": "Neues Buch",
+    "searchPlaceholder": "Nach Titel suchen…",
+    "columnAvailableTotal": "Verfügbar / Gesamt",
+    "issue": "Ausleihen",
+    "edit": "Bearbeiten",
+    "deleteAriaLabel": "{{title}} löschen",
+    "emptyTitleSearch": "Keine Bücher entsprechen „{{query}}“",
+    "emptyTitle": "Noch keine Bücher",
+    "emptyDescription": "Versuchen Sie einen anderen Titel oder löschen Sie die Suche, um alle anzuzeigen.",
+    "editModalTitle": "Buch Bearbeiten",
+    "newModalTitle": "Neues Buch",
+    "isbn": "ISBN",
+    "totalCopies": "Gesamtzahl der Exemplare",
+    "saveChanges": "Änderungen speichern",
+    "createBook": "Buch erstellen",
+    "deleteConfirmTitle": "{{title}} löschen?",
+    "deleteConfirmDescription": "Dies kann nicht rückgängig gemacht werden.",
+    "issueModal": {
+      "title": "„{{title}}“ Ausleihen",
+      "successToast": "Buch ausgeliehen.",
+      "borrowerType": "Ausleihertyp",
+      "selectStudentPlaceholder": "Schüler auswählen",
+      "selectStaffPlaceholder": "Mitarbeiter auswählen",
+      "submit": "Buch ausleihen"
+    }
+  },
+  "bookIssues": {
+    "title": "Buchausleihen",
+    "description": "Alle derzeit ausgeliehenen Bücher und ihre Rückgabehistorie.",
+    "columnBook": "Buch",
+    "columnBorrower": "Ausleiher",
+    "columnIssued": "Ausgeliehen",
+    "columnDue": "Fällig",
+    "columnReturned": "Zurückgegeben",
+    "columnFine": "Gebühr",
+    "returnAction": "Zurückgeben",
+    "returnedToast": "Buch zurückgegeben.",
+    "emptyTitle": "Noch keine Buchausleihen",
+    "emptyDescription": "An Schüler oder Mitarbeiter ausgeliehene Bücher werden hier angezeigt."
+  }
+}

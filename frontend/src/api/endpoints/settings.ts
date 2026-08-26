@@ -1,0 +1,24 @@
+import { httpClient } from '@/api/client'
+import type { ApiResponse } from '@/types/api'
+import type { SettingsMap, UpdateSettingsPayload } from '@/types/settings'
+import type { SystemHealth } from '@/types/systemHealth'
+
+export async function fetchSystemHealth(): Promise<SystemHealth> {
+  const { data } = await httpClient.get<ApiResponse<SystemHealth>>('/settings/health')
+  return data.data
+}
+
+export async function fetchSettings(): Promise<SettingsMap> {
+  const { data } = await httpClient.get<ApiResponse<SettingsMap>>('/settings')
+  return data.data
+}
+
+export async function fetchPublicSettings(): Promise<SettingsMap> {
+  const { data } = await httpClient.get<ApiResponse<SettingsMap>>('/settings/public')
+  return data.data
+}
+
+export async function updateSettings(payload: UpdateSettingsPayload): Promise<SettingsMap> {
+  const { data } = await httpClient.put<ApiResponse<SettingsMap>>('/settings', payload)
+  return data.data
+}

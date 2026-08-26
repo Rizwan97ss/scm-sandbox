@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "عنوان",
+    "body": "تفصیل",
+    "type": "قسم",
+    "audience": "سامعین",
+    "eventDate": "تقریب کی تاریخ",
+    "startTime": "شروع کا وقت",
+    "location": "مقام",
+    "optional": "اختیاری"
+  },
+  "list": {
+    "title": "نوٹس بورڈ",
+    "description": "اسکول بھر کے نوٹسز اور آئندہ تقریبات۔",
+    "newNotice": "نیا نوٹس",
+    "emptyTitle": "ابھی تک کوئی نوٹس نہیں",
+    "draft": "مسودہ",
+    "postedBy": "عملہ",
+    "publish": "شائع کریں",
+    "deleteAriaLabel": "{{title}} حذف کریں",
+    "deleteConfirmTitle": "“{{title}}” حذف کریں؟",
+    "deleteConfirmDescription": "اسے واپس نہیں کیا جا سکتا۔",
+    "publishedToast": "نوٹس شائع کر دیا گیا۔",
+    "deletedToast": "نوٹس حذف کر دیا گیا۔"
+  },
+  "createModal": {
+    "title": "نیا نوٹس",
+    "submit": "نوٹس بنائیں",
+    "successToast": "نوٹس بن گیا۔"
+  }
+}

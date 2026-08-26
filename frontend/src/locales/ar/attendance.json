@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "الشعبة",
+    "date": "التاريخ",
+    "period": "الحصة",
+    "wholeDay": "اليوم كاملاً",
+    "status": "الحالة",
+    "remarks": "الملاحظات",
+    "remarksOptional": "ملاحظات اختيارية",
+    "remarksOptionalPlaceholder": "اختياري",
+    "staffMember": "عضو الطاقم"
+  },
+  "takeAttendance": {
+    "title": "تسجيل الحضور",
+    "description": "سجّل الحضور اليومي أو حسب الحصة لإحدى الشعب.",
+    "selectSectionPlaceholder": "اختر شعبة…",
+    "emptySelectSectionTitle": "اختر شعبة للبدء",
+    "emptySelectSectionDescription": "اختر الشعبة والتاريخ والحصة أعلاه لتحميل قائمة الطلاب.",
+    "emptyNoStudentsTitle": "لا يوجد طلاب في هذه الشعبة",
+    "emptyNoStudentsDescription": "لا يوجد حالياً أي طلاب مسجلين في هذه الشعبة.",
+    "columnAdmissionNumber": "رقم القبول",
+    "columnName": "الاسم",
+    "columnStatus": "الحالة",
+    "columnRemarks": "الملاحظات",
+    "saveAttendance": "حفظ الحضور",
+    "savedSuccess": "تم حفظ {{count}} من سجلات الحضور."
+  },
+  "staffAttendance": {
+    "title": "حضور الموظفين",
+    "description": "تسجيل الدخول والخروج الذاتي وسجلات حضور الموظفين.",
+    "markAttendance": "تسجيل الحضور",
+    "today": "اليوم، {{date}}",
+    "checkedInAt": "تم تسجيل الدخول في {{time}}",
+    "checkedInOutAt": "تسجيل الدخول في {{checkIn}}، والخروج في {{checkOut}}",
+    "notCheckedInYet": "لم تسجّل دخولك بعد اليوم.",
+    "checkIn": "تسجيل الدخول",
+    "checkOut": "تسجيل الخروج",
+    "checkedInSuccess": "تم تسجيل الدخول.",
+    "checkedOutSuccess": "تم تسجيل الخروج.",
+    "correctAriaLabel": "تصحيح حضور {{name}}",
+    "columnDate": "التاريخ",
+    "columnStaff": "الموظف",
+    "columnStatus": "الحالة",
+    "columnCheckIn": "الدخول",
+    "columnCheckOut": "الخروج",
+    "columnRemarks": "الملاحظات",
+    "emptyTitle": "لا توجد سجلات حضور بعد",
+    "emptyDescription": "ستظهر السجلات هنا بمجرد أن يسجّل الموظفون دخولهم أو تقوم بتسجيل الحضور يدوياً.",
+    "markModal": {
+      "title": "تسجيل حضور الموظف",
+      "selectStaffPlaceholder": "اختر عضو طاقم…",
+      "save": "حفظ",
+      "savedSuccess": "تم حفظ الحضور."
+    },
+    "correctModal": {
+      "title": "تصحيح الحضور — {{name}}",
+      "save": "حفظ التصحيح",
+      "savedSuccess": "تم تصحيح الحضور."
+    }
+  },
+  "history": {
+    "from": "من",
+    "to": "إلى",
+    "attendance": "الحضور",
+    "daysMarked": "الأيام المسجَّلة",
+    "absences": "الغيابات",
+    "columnDate": "التاريخ",
+    "columnStatus": "الحالة",
+    "columnRemarks": "الملاحظات",
+    "emptyDescription": "لا توجد سجلات حضور خلال هذه الفترة."
+  }
+}

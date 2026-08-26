@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "name": "Nombre",
+    "phone": "Teléfono",
+    "purpose": "Motivo",
+    "whomToMeet": "Persona a visitar",
+    "notes": "Notas",
+    "checkedIn": "Registrado",
+    "checkedOut": "Salida registrada"
+  },
+  "list": {
+    "title": "Visitantes",
+    "description": "Registro de visitantes de recepción.",
+    "logVisitor": "Registrar visitante",
+    "columnToMeet": "A quién visita",
+    "columnStatus": "Estado",
+    "checkOut": "Registrar salida",
+    "checkedOutToast": "Salida del visitante registrada.",
+    "emptyTitle": "Aún no se han registrado visitantes",
+    "emptyDescription": "Los visitantes que registre en recepción aparecerán aquí."
+  },
+  "checkInModal": {
+    "title": "Registrar visitante",
+    "notesHint": "Opcional",
+    "submit": "Registrar entrada",
+    "checkedInToast": "Entrada del visitante registrada."
+  }
+}

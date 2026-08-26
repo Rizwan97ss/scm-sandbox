@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "Section",
+    "date": "Date",
+    "period": "Period",
+    "wholeDay": "Whole Day",
+    "status": "Status",
+    "remarks": "Remarks",
+    "remarksOptional": "Optional remarks",
+    "remarksOptionalPlaceholder": "Optional",
+    "staffMember": "Staff member"
+  },
+  "takeAttendance": {
+    "title": "Take Attendance",
+    "description": "Mark daily or period-based attendance for a section.",
+    "selectSectionPlaceholder": "Select a section…",
+    "emptySelectSectionTitle": "Select a section to begin",
+    "emptySelectSectionDescription": "Choose a section, date, and period above to load its roster.",
+    "emptyNoStudentsTitle": "No students in this section",
+    "emptyNoStudentsDescription": "This section has no students currently enrolled.",
+    "columnAdmissionNumber": "Admission #",
+    "columnName": "Name",
+    "columnStatus": "Status",
+    "columnRemarks": "Remarks",
+    "saveAttendance": "Save Attendance",
+    "savedSuccess": "{{count}} attendance record(s) saved."
+  },
+  "staffAttendance": {
+    "title": "Staff Attendance",
+    "description": "Self check-in/check-out and staff attendance records.",
+    "markAttendance": "Mark Attendance",
+    "today": "Today, {{date}}",
+    "checkedInAt": "Checked in at {{time}}",
+    "checkedInOutAt": "Checked in at {{checkIn}}, out at {{checkOut}}",
+    "notCheckedInYet": "You have not checked in today.",
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "checkedInSuccess": "Checked in.",
+    "checkedOutSuccess": "Checked out.",
+    "correctAriaLabel": "Correct attendance for {{name}}",
+    "columnDate": "Date",
+    "columnStaff": "Staff",
+    "columnStatus": "Status",
+    "columnCheckIn": "Check In",
+    "columnCheckOut": "Check Out",
+    "columnRemarks": "Remarks",
+    "emptyTitle": "No attendance records yet",
+    "emptyDescription": "Records appear here once staff check in or you mark attendance manually.",
+    "markModal": {
+      "title": "Mark Staff Attendance",
+      "selectStaffPlaceholder": "Select a staff member…",
+      "save": "Save",
+      "savedSuccess": "Attendance saved."
+    },
+    "correctModal": {
+      "title": "Correct attendance — {{name}}",
+      "save": "Save correction",
+      "savedSuccess": "Attendance corrected."
+    }
+  },
+  "history": {
+    "from": "From",
+    "to": "To",
+    "attendance": "Attendance",
+    "daysMarked": "Days Marked",
+    "absences": "Absences",
+    "columnDate": "Date",
+    "columnStatus": "Status",
+    "columnRemarks": "Remarks",
+    "emptyDescription": "No attendance records in this range."
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "nav": {
+    "groups": {
+      "overview": "Overview",
+      "people": "People",
+      "attendance": "Attendance",
+      "exams": "Exams",
+      "teaching": "Teaching",
+      "feesAccounting": "Fees & Accounting",
+      "hrPayroll": "HR & Payroll",
+      "library": "Library",
+      "transport": "Transport",
+      "hostel": "Hostel",
+      "frontDesk": "Front Desk",
+      "certificatesIdCards": "Certificates & ID Cards",
+      "noticeBoard": "Notice Board",
+      "communication": "Communication",
+      "reportsAnalytics": "Reports & Analytics",
+      "academics": "Academics",
+      "administration": "Administration"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "students": "Students",
+      "guardians": "Guardians",
+      "staffUsers": "Staff & Users",
+      "takeAttendance": "Take Attendance",
+      "staffAttendance": "Staff Attendance",
+      "exams": "Exams",
+      "gradingScales": "Grading Scales",
+      "examConfiguration": "Exam Configuration",
+      "homework": "Homework",
+      "invoices": "Invoices",
+      "feeStructures": "Fee Structures",
+      "feeCategories": "Fee Categories",
+      "feeReports": "Fee Reports",
+      "leaveRequests": "Leave Requests",
+      "payslips": "Payslips",
+      "designations": "Designations",
+      "leaveTypes": "Leave Types",
+      "salaryStructures": "Salary Structures",
+      "books": "Books",
+      "bookIssues": "Book Issues",
+      "vehicles": "Vehicles",
+      "routes": "Routes",
+      "studentAssignments": "Student Assignments",
+      "hostels": "Hostels",
+      "hostelRooms": "Rooms",
+      "allocations": "Allocations",
+      "visitors": "Visitors",
+      "certificateTemplates": "Certificate Templates",
+      "issuedCertificates": "Issued Certificates",
+      "noticeBoard": "Notice Board",
+      "announcements": "Announcements",
+      "attendanceReport": "Attendance Report",
+      "academicPerformance": "Academic Performance",
+      "enrollmentReport": "Enrollment Report",
+      "operationsReport": "Operations Report",
+      "academicYears": "Academic Years",
+      "terms": "Terms",
+      "departments": "Departments",
+      "gradeLevels": "Grade Levels",
+      "sections": "Sections",
+      "subjects": "Subjects",
+      "academicRooms": "Rooms",
+      "timetable": "Timetable",
+      "holidays": "Holidays",
+      "rolesPermissions": "Roles & Permissions",
+      "settings": "Settings",
+      "systemHealth": "System Health",
+      "auditLog": "Audit Log",
+      "importLogs": "Import Logs",
+      "dataExport": "Data Export",
+      "importCenter": "Import Center",
+      "myChildren": "My Children",
+      "myOnlineTests": "My Online Tests",
+      "myResult": "My Result",
+      "myFees": "My Fees",
+      "certificates": "Certificates"
+    }
+  },
+  "search": {
+    "placeholder": "Search students, staff, invoices...",
+    "ariaLabel": "Global search",
+    "clear": "Clear search",
+    "searching": "Searching…",
+    "noResultsFor": "No results for \"{{query}}\".",
+    "categories": {
+      "students": "Students",
+      "guardians": "Guardians",
+      "staff": "Staff",
+      "books": "Books",
+      "invoices": "Invoices"
+    }
+  },
+  "topbar": {
+    "openMenu": "Open navigation menu"
+  },
+  "notifications": {
+    "ariaLabel": "Notifications",
+    "ariaLabelUnread": "Notifications ({{count}} unread)",
+    "title": "Notifications",
+    "markAllRead": "Mark all read",
+    "empty": "No notifications yet."
+  },
+  "userMenu": {
+    "accountMenu": "Account menu",
+    "downloadIdCard": "Download My ID Card",
+    "exportMyData": "Export My Data",
+    "setupGuide": "Setup Guide",
+    "deleteAccount": "Delete My Account",
+    "logout": "Log out",
+    "deleteConfirmTitle": "Delete your account?",
+    "deleteConfirmDescription": "This removes your personal data (name, contact details, medical/emergency info) immediately and cannot be undone. Academic and financial records tied to your account are kept, as required.",
+    "deleteConfirmLabel": "Delete my account"
+  },
+  "theme": {
+    "changeTheme": "Change theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "changeLanguage": "Change language"
+  },
+  "mfaBanner": {
+    "required": "Two-factor authentication is required on this account — {{action}}.",
+    "setupNow": "set it up now",
+    "daysLeft_one": "you have {{count}} day left to set it up",
+    "daysLeft_other": "you have {{count}} days left to set it up",
+    "link": "Set up now"
+  },
+  "offlineBanner": {
+    "message": "You're offline. Changes you make now won't be saved until your connection comes back."
+  },
+  "confirmDialog": {
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "queryError": {
+    "title": "Something went wrong",
+    "description": "This couldn't be loaded. Please try again.",
+    "retry": "Retry"
+  },
+  "pagination": {
+    "showing": "Showing {{from}}–{{to}} of {{total}}",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "pageOf": "Page {{current}} of {{last}}"
+  },
+  "dataTable": {
+    "noRecordsFound": "No records found",
+    "selectAll": "Select all on this page",
+    "selectRow": "Select row"
+  },
+  "modal": {
+    "closeDialog": "Close dialog"
+  },
+  "bulkActions": {
+    "selected": "{{count}} selected",
+    "clear": "Clear"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "Breadcrumb"
+  },
+  "drawer": {
+    "closePanel": "Close panel"
+  },
+  "select": {
+    "placeholder": "Select…",
+    "searchPlaceholder": "Search…",
+    "noResults": "No results."
+  },
+  "fileUpload": {
+    "removeFile": "Remove file",
+    "clickToUpload": "Click to upload",
+    "orDragAndDrop": "or drag and drop",
+    "tooLarge": "File is too large. Maximum size is {{maxSizeMb}}MB."
+  },
+  "importFileMapper": {
+    "dontImportColumn": "Don't import this column",
+    "uploadPrompt": "Upload a file with whatever column headers it already has — you'll match each one to the right field next, no need to rename anything first.",
+    "readingFile": "Reading file…",
+    "matchPrompt": "Match each column from your file to a field below. Columns set to \"Don't import\" are left out entirely.",
+    "truncatedNotice": " Only the first rows are shown here, but every row in the file will be imported.",
+    "columnYourColumn": "Your column",
+    "columnSampleValues": "Sample values",
+    "columnMapsTo": "Maps to",
+    "mapsToAriaLabel": "Maps \"{{header}}\" to",
+    "continueWithMapped_one": "Continue with {{count}} mapped column",
+    "continueWithMapped_other": "Continue with {{count}} mapped columns",
+    "chooseDifferentFile": "Choose a different file"
+  },
+  "importForm": {
+    "downloadTemplate": "Download Template",
+    "modeLabel": "Mode",
+    "modeCreate": "Create only (reject existing)",
+    "modeUpdate": "Update only (fail if not found)",
+    "modeUpsert": "Create or update",
+    "tabUploadFile": "Upload file",
+    "tabPasteData": "Paste data",
+    "tabUploadMap": "Upload & map columns",
+    "previewImport": "Preview Import",
+    "recheck": "Re-check",
+    "confirmImport": "Confirm Import",
+    "chooseDifferentFile": "Choose a different file",
+    "nothingSavedYet": "Nothing has been saved yet — review the preview below, then confirm.",
+    "gridInstructions": "Type directly into the grid, or paste rows copied from Excel/Google Sheets starting at the first cell. Every row is checked the same way an uploaded file would be — a failed cell is highlighted below; fix it and preview again.",
+    "loadingGrid": "Loading grid…",
+    "loading": "Loading…",
+    "queuedInBackground": "This file is large enough that it's processing in the background — this page will update once it's done.",
+    "queuedNotice": "This file is large enough that it's processing in the background. This page will update automatically once it's done — no need to stay on it.",
+    "backgroundImportFailed": "The background import failed.",
+    "importAnotherFile": "Import another file",
+    "resultCreated": "created",
+    "resultUpdated": "updated",
+    "resultNothingToImport": "Nothing to import",
+    "resultNothingToReport": "Nothing to report",
+    "resultWouldBeCreated": "would be created",
+    "resultWouldBeUpdated": "would be updated",
+    "resultPossibleDuplicate_one": "{{count}} possible duplicate",
+    "resultPossibleDuplicate_other": "{{count}} possible duplicates",
+    "resultFailed": "failed",
+    "resultWouldFail": "would fail",
+    "reviewBeforeNewRecords": "Review before treating these as new records",
+    "rowLabel": "Row {{row}}:",
+    "columnRow": "Row",
+    "columnField": "Field",
+    "columnError": "Error",
+    "entitySummary": "{{entity}}(s): {{summary}}",
+    "nothingChanged": "nothing changed"
+  },
+  "enums": {
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    },
+    "userStatus": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "suspended": "Suspended"
+    },
+    "studentStatus": {
+      "active": "Active",
+      "transferred_out": "Transferred Out",
+      "withdrawn": "Withdrawn",
+      "graduated": "Graduated",
+      "alumni": "Alumni"
+    },
+    "enrollmentAction": {
+      "admission": "Admission",
+      "promotion": "Promotion",
+      "transfer_in": "Transfer In",
+      "transfer_out": "Transfer Out",
+      "withdrawal": "Withdrawal",
+      "graduation": "Graduation",
+      "reactivation": "Reactivation"
+    },
+    "guardianRelationship": {
+      "father": "Father",
+      "mother": "Mother",
+      "guardian": "Guardian",
+      "other": "Other"
+    },
+    "roomType": {
+      "classroom": "Classroom",
+      "lab": "Lab",
+      "hall": "Hall",
+      "other": "Other"
+    },
+    "holidayType": {
+      "public": "Public Holiday",
+      "school_specific": "School-Specific"
+    },
+    "attendanceStatus": {
+      "present": "Present",
+      "absent": "Absent",
+      "late": "Late",
+      "half_day": "Half Day",
+      "excused": "Excused",
+      "on_leave": "On Leave"
+    },
+    "daysOfWeek": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    },
+    "announcementChannel": {
+      "in_app": "In-App",
+      "email": "Email",
+      "sms": "SMS",
+      "push": "Push"
+    },
+    "noticeType": {
+      "general": "Notice",
+      "event": "Event"
+    },
+    "audience": {
+      "all": "Everyone",
+      "students": "Students",
+      "staff": "Staff",
+      "parents": "Parents"
+    },
+    "feeFrequency": {
+      "one_time": "One-time",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "term": "Term",
+      "annual": "Annual"
+    },
+    "discountType": {
+      "none": "None",
+      "percentage": "Percentage",
+      "fixed": "Fixed amount"
+    },
+    "invoiceStatus": {
+      "draft": "Draft",
+      "issued": "Issued",
+      "partially_paid": "Partially paid",
+      "paid": "Paid",
+      "void": "Void"
+    },
+    "paymentMethod": {
+      "cash": "Cash",
+      "cheque": "Cheque",
+      "bank_transfer": "Bank transfer",
+      "upi": "UPI",
+      "card": "Card",
+      "other": "Other"
+    },
+    "hostelType": {
+      "boys": "Boys",
+      "girls": "Girls",
+      "mixed": "Mixed"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "Allocated",
+      "vacated": "Vacated"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "Submitted",
+      "graded": "Graded"
+    },
+    "remarkCategory": {
+      "academic": "Academic",
+      "behavioral": "Behavioral",
+      "general": "General"
+    },
+    "bookIssueStatus": {
+      "issued": "Issued",
+      "returned": "Returned",
+      "overdue": "Overdue"
+    },
+    "leaveStatus": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "payslipStatus": {
+      "generated": "Generated",
+      "paid": "Paid"
+    },
+    "questionType": {
+      "mcq": "Multiple Choice",
+      "true_false": "True / False"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "The page you're looking for doesn't exist or was moved.",
+    "backToDashboard": "Back to dashboard",
+    "somethingWentWrong": "Something went wrong",
+    "somethingWentWrongDescription": "Please try reloading the page. If the problem persists, contact support.",
+    "reloadPage": "Reload page",
+    "accessDenied": "Access denied",
+    "accessDeniedDescription": "You don't have permission to view this page.",
+    "loading": "Loading…"
+  }
+}

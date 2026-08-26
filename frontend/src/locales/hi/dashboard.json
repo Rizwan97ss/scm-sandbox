@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "प्रवेश #",
+    "status": "स्थिति",
+    "gradeSection": "ग्रेड / सेक्शन",
+    "dateOfBirth": "जन्म तिथि",
+    "date": "तिथि",
+    "amount": "राशि",
+    "receiptNumber": "रसीद #",
+    "attendance": "उपस्थिति",
+    "daysMarked": "दर्ज किए गए दिन",
+    "absences": "अनुपस्थिति",
+    "from": "से",
+    "to": "तक",
+    "remarks": "टिप्पणियां",
+    "homework": "गृहकार्य"
+  },
+  "page": {
+    "welcomeBack": "वापसी पर स्वागत है, {{name}}",
+    "subtitle": "आज यह हो रहा है।",
+    "stats": {
+      "totalSchools": "कुल स्कूल",
+      "activeTrialing": "सक्रिय / परीक्षण में",
+      "currentlyTrialing": "वर्तमान में परीक्षण में",
+      "activeStudents": "सक्रिय छात्र",
+      "staffMembers": "स्टाफ सदस्य",
+      "sections": "सेक्शन",
+      "attendanceMarkedToday": "आज दर्ज की गई उपस्थिति",
+      "pendingLeaveRequests": "लंबित अवकाश अनुरोध",
+      "feesCollectedThisMonth": "इस महीने प्राप्त फीस",
+      "overdueBooks": "अतिदेय पुस्तकें",
+      "assignedSections": "आवंटित सेक्शन",
+      "students": "छात्र",
+      "homeworkAwaitingGrading": "मूल्यांकन हेतु लंबित गृहकार्य",
+      "attendanceThisMonth": "इस महीने की उपस्थिति",
+      "homeworkDue": "देय गृहकार्य",
+      "upcomingExams": "आगामी परीक्षाएं",
+      "linkedChildren": "जुड़े हुए बच्चे",
+      "outstandingFees": "बकाया फीस"
+    },
+    "quickActions": {
+      "takeAttendance": "उपस्थिति लें",
+      "newAdmission": "नया प्रवेश",
+      "invoices": "चालान"
+    },
+    "trends": {
+      "attendanceTitle": "उपस्थिति — पिछले 14 दिन",
+      "feesTitle": "प्राप्त फीस — पिछले 6 महीने",
+      "feesTooltipLabel": "प्राप्त"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "मेरे बच्चे",
+    "tabExams": "परीक्षाएं",
+    "tabFees": "फीस"
+  },
+  "childrenList": {
+    "title": "मेरे बच्चे",
+    "description": "प्रोफ़ाइल देखने के लिए एक बच्चा चुनें।",
+    "emptyTitle": "अभी तक आपके खाते से कोई बच्चा जुड़ा नहीं है",
+    "emptyDescription": "यदि यह गलत लगता है तो स्कूल कार्यालय से संपर्क करें।"
+  },
+  "attendanceTab": {
+    "emptyRecords": "इस अवधि में कोई उपस्थिति रिकॉर्ड नहीं है।"
+  },
+  "examResultsTab": {
+    "tabByExam": "परीक्षा अनुसार",
+    "tabByTerm": "समेकित सत्र परिणाम",
+    "selectExamPlaceholder": "एक परीक्षा चुनें…",
+    "noPublishedExams": "अभी तक कोई परीक्षा प्रकाशित नहीं हुई",
+    "selectTermPlaceholder": "एक सत्र चुनें…"
+  },
+  "feesTab": {
+    "totalBilled": "कुल बिल किया गया",
+    "totalPaid": "कुल भुगतान",
+    "totalCredited": "कुल क्रेडिट",
+    "outstanding": "बकाया",
+    "emptyTitle": "अभी तक कोई चालान नहीं",
+    "issuedDue": "जारी {{issueDate}} · देय {{dueDate}}",
+    "totalPaidBalance": "कुल {{total}} · भुगतान {{paid}} · शेष",
+    "receipt": "रसीद",
+    "downloadReceiptAriaLabel": "रसीद {{number}} डाउनलोड करें"
+  },
+  "homeworkTab": {
+    "emptyTitle": "अभी तक कोई गृहकार्य नहीं दिया गया",
+    "notSubmitted": "जमा नहीं किया गया",
+    "subjectDue": "{{subject}} · देय {{date}}",
+    "maxScoreSuffix": " · अधिकतम अंक: {{score}}",
+    "score": "अंक: {{score}}",
+    "scoreWithMax": "अंक: {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "अभी तक कोई टिप्पणी नहीं",
+    "authoredBy": "— {{name}}"
+  }
+}

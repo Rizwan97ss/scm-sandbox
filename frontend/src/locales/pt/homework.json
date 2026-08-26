@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "Título",
+    "description": "Descrição",
+    "dueDate": "Data de entrega",
+    "maxScore": "Pontuação máxima",
+    "subject": "Disciplina",
+    "section": "Turma",
+    "teacher": "Professor",
+    "status": "Situação",
+    "notSubmitted": "Não entregue",
+    "optional": "Opcional"
+  },
+  "list": {
+    "title": "Tarefas",
+    "descriptionStudent": "Tarefas atribuídas à sua turma — envie seu trabalho antes do prazo.",
+    "descriptionStaff": "Atribua e avalie tarefas para as suas turmas.",
+    "newHomework": "Nova tarefa",
+    "columnTitle": "Título",
+    "columnSubject": "Disciplina",
+    "columnSection": "Turma",
+    "columnDueDate": "Data de entrega",
+    "columnStatus": "Situação",
+    "columnTeacher": "Professor",
+    "emptyTitle": "Ainda não há tarefas",
+    "emptyDescription": "Atribua sua primeira tarefa para começar.",
+    "modalTitle": "Nova tarefa",
+    "classLabel": "Turma",
+    "classHint": "A qual turma/disciplina esta tarefa se refere",
+    "classPlaceholder": "Selecione uma turma",
+    "dueDateLabel": "Data de entrega",
+    "maxScoreLabel": "Pontuação máxima",
+    "assignHomework": "Atribuir tarefa"
+  },
+  "detail": {
+    "breadcrumbHomework": "Tarefas",
+    "descriptionLine": "{{subject}} · {{section}} · Entrega em {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Pontuação máxima: {{score}}",
+    "instructions": "Instruções",
+    "columnAdmissionNumber": "N.º de matrícula",
+    "columnName": "Nome",
+    "columnStatus": "Situação",
+    "columnSubmission": "Entrega",
+    "columnScore": "Pontuação",
+    "columnFeedback": "Comentários",
+    "saveGradeAriaLabel": "Salvar nota de {{name}}",
+    "gradeSaved": "Nota salva."
+  },
+  "submitModal": {
+    "descriptionLine": "Entrega em {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Pontuação máxima: {{score}}",
+    "instructions": "Instruções",
+    "answerLabel": "Sua resposta",
+    "answerPlaceholder": "Digite sua resposta ou anotações aqui (opcional se anexar um arquivo)",
+    "attachmentLabel": "Anexo",
+    "resubmit": "Reenviar",
+    "submitHomework": "Enviar tarefa",
+    "submittedSuccess": "Tarefa enviada."
+  }
+}

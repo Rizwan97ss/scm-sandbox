@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "Audit Log",
+    "description": "A record of sensitive actions performed across your school.",
+    "columnWhen": "When",
+    "columnBy": "By",
+    "columnEvent": "Event",
+    "columnSubject": "Subject",
+    "columnDescription": "Description",
+    "system": "System",
+    "emptyTitle": "No activity recorded yet",
+    "emptyDescription": "Actions taken across the system will be logged here."
+  }
+}

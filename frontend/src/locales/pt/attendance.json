@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "Turma",
+    "date": "Data",
+    "period": "Período",
+    "wholeDay": "Dia Inteiro",
+    "status": "Status",
+    "remarks": "Observações",
+    "remarksOptional": "Observações opcionais",
+    "remarksOptionalPlaceholder": "Opcional",
+    "staffMember": "Membro da equipe"
+  },
+  "takeAttendance": {
+    "title": "Registrar Frequência",
+    "description": "Registre a frequência diária ou por período de uma turma.",
+    "selectSectionPlaceholder": "Selecione uma turma…",
+    "emptySelectSectionTitle": "Selecione uma turma para começar",
+    "emptySelectSectionDescription": "Escolha uma turma, data e período acima para carregar sua lista de alunos.",
+    "emptyNoStudentsTitle": "Nenhum aluno nesta turma",
+    "emptyNoStudentsDescription": "Esta turma não possui alunos matriculados no momento.",
+    "columnAdmissionNumber": "Nº de admissão",
+    "columnName": "Nome",
+    "columnStatus": "Status",
+    "columnRemarks": "Observações",
+    "saveAttendance": "Salvar Frequência",
+    "savedSuccess": "{{count}} registro(s) de frequência salvo(s)."
+  },
+  "staffAttendance": {
+    "title": "Frequência da Equipe",
+    "description": "Registro de entrada/saída e registros de frequência da equipe.",
+    "markAttendance": "Registrar Frequência",
+    "today": "Hoje, {{date}}",
+    "checkedInAt": "Entrada registrada às {{time}}",
+    "checkedInOutAt": "Entrada às {{checkIn}}, saída às {{checkOut}}",
+    "notCheckedInYet": "Você ainda não registrou entrada hoje.",
+    "checkIn": "Registrar Entrada",
+    "checkOut": "Registrar Saída",
+    "checkedInSuccess": "Entrada registrada.",
+    "checkedOutSuccess": "Saída registrada.",
+    "correctAriaLabel": "Corrigir frequência de {{name}}",
+    "columnDate": "Data",
+    "columnStaff": "Equipe",
+    "columnStatus": "Status",
+    "columnCheckIn": "Entrada",
+    "columnCheckOut": "Saída",
+    "columnRemarks": "Observações",
+    "emptyTitle": "Ainda não há registros de frequência",
+    "emptyDescription": "Os registros aparecerão aqui assim que a equipe registrar entrada ou você registrar a frequência manualmente.",
+    "markModal": {
+      "title": "Registrar Frequência da Equipe",
+      "selectStaffPlaceholder": "Selecione um membro da equipe…",
+      "save": "Salvar",
+      "savedSuccess": "Frequência salva."
+    },
+    "correctModal": {
+      "title": "Corrigir frequência — {{name}}",
+      "save": "Salvar correção",
+      "savedSuccess": "Frequência corrigida."
+    }
+  },
+  "history": {
+    "from": "De",
+    "to": "Até",
+    "attendance": "Frequência",
+    "daysMarked": "Dias Registrados",
+    "absences": "Faltas",
+    "columnDate": "Data",
+    "columnStatus": "Status",
+    "columnRemarks": "Observações",
+    "emptyDescription": "Nenhum registro de frequência neste período."
+  }
+}

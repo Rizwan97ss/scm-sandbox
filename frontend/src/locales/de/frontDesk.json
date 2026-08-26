@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "name": "Name",
+    "phone": "Telefon",
+    "purpose": "Grund",
+    "whomToMeet": "Ansprechpartner",
+    "notes": "Notizen",
+    "checkedIn": "Angemeldet",
+    "checkedOut": "Abgemeldet"
+  },
+  "list": {
+    "title": "Besucher",
+    "description": "Besucherprotokoll des Empfangs.",
+    "logVisitor": "Besucher erfassen",
+    "columnToMeet": "Ansprechpartner",
+    "columnStatus": "Status",
+    "checkOut": "Abmelden",
+    "checkedOutToast": "Besucher abgemeldet.",
+    "emptyTitle": "Noch keine Besucher erfasst",
+    "emptyDescription": "Besucher, die Sie am Empfang anmelden, werden hier angezeigt."
+  },
+  "checkInModal": {
+    "title": "Besucher erfassen",
+    "notesHint": "Optional",
+    "submit": "Anmelden",
+    "checkedInToast": "Besucher angemeldet."
+  }
+}

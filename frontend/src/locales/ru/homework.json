@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "Название",
+    "description": "Описание",
+    "dueDate": "Срок сдачи",
+    "maxScore": "Максимальный балл",
+    "subject": "Предмет",
+    "section": "Класс",
+    "teacher": "Учитель",
+    "status": "Статус",
+    "notSubmitted": "Не сдано",
+    "optional": "Необязательно"
+  },
+  "list": {
+    "title": "Домашние Задания",
+    "descriptionStudent": "Задания для вашего класса — сдайте работу до истечения срока.",
+    "descriptionStaff": "Назначайте и оценивайте домашние задания для своих классов.",
+    "newHomework": "Новое задание",
+    "columnTitle": "Название",
+    "columnSubject": "Предмет",
+    "columnSection": "Класс",
+    "columnDueDate": "Срок сдачи",
+    "columnStatus": "Статус",
+    "columnTeacher": "Учитель",
+    "emptyTitle": "Пока нет заданий",
+    "emptyDescription": "Назначьте своё первое задание, чтобы начать.",
+    "modalTitle": "Новое задание",
+    "classLabel": "Класс",
+    "classHint": "Для какого класса/предмета предназначено это задание",
+    "classPlaceholder": "Выберите класс",
+    "dueDateLabel": "Срок сдачи",
+    "maxScoreLabel": "Максимальный балл",
+    "assignHomework": "Назначить задание"
+  },
+  "detail": {
+    "breadcrumbHomework": "Домашние Задания",
+    "descriptionLine": "{{subject}} · {{section}} · Сдать до {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Максимальный балл: {{score}}",
+    "instructions": "Инструкции",
+    "columnAdmissionNumber": "№ поступления",
+    "columnName": "Имя",
+    "columnStatus": "Статус",
+    "columnSubmission": "Сдано",
+    "columnScore": "Балл",
+    "columnFeedback": "Отзыв",
+    "saveGradeAriaLabel": "Сохранить оценку для {{name}}",
+    "gradeSaved": "Оценка сохранена."
+  },
+  "submitModal": {
+    "descriptionLine": "Сдать до {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Максимальный балл: {{score}}",
+    "instructions": "Инструкции",
+    "answerLabel": "Ваш ответ",
+    "answerPlaceholder": "Введите здесь свой ответ или заметки (необязательно, если прикрепляете файл)",
+    "attachmentLabel": "Вложение",
+    "resubmit": "Отправить повторно",
+    "submitHomework": "Сдать задание",
+    "submittedSuccess": "Задание сдано."
+  }
+}

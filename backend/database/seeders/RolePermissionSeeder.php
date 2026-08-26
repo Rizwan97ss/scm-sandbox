@@ -1,0 +1,227 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\PermissionRegistrar;
+
+/**
+ * Creates the 12 default roles with their default permission sets — the
+ * single source of truth for the default permission matrix. School Admins
+ * can freely create custom roles or adjust these afterward via the Roles UI.
+ * Idempotent — safe to re-run (e.g. after adding a new permission) via
+ * `php artisan db:seed --class=RolePermissionSeeder`.
+ */
+class RolePermissionSeeder extends Seeder
+{
+    private const ROLE_PERMISSIONS = [
+        'School Admin' => [
+            'users.view', 'users.create', 'users.edit', 'users.delete', 'users.manage-mfa', 'users.import', 'users.export',
+            'roles.view', 'roles.create', 'roles.edit', 'roles.delete',
+            'settings.view', 'settings.edit',
+            'audit-logs.view', 'audit-logs.manage',
+            'data-export.school',
+            'academic-years.view', 'academic-years.create', 'academic-years.edit', 'academic-years.delete',
+            'academic-structure.view', 'academic-structure.create', 'academic-structure.edit', 'academic-structure.delete', 'academic-structure.import',
+            'timetable.view', 'timetable.create', 'timetable.edit', 'timetable.delete',
+            'students.view', 'students.create', 'students.edit', 'students.delete', 'students.import', 'students.export',
+            'guardians.view', 'guardians.create', 'guardians.edit', 'guardians.delete', 'guardians.import',
+            'enrollment.manage',
+            'student-attendance.view', 'student-attendance.mark', 'student-attendance.edit', 'student-attendance.export',
+            'staff-attendance.view', 'staff-attendance.mark', 'staff-attendance.edit', 'staff-attendance.export',
+            'grading.view', 'grading.manage',
+            'exams.view', 'exams.create', 'exams.edit', 'exams.delete', 'exams.publish',
+            'exam-marks.view', 'exam-marks.enter', 'exam-marks.edit', 'exam-marks.export', 'exam-marks.publish', 'exam-marks.import',
+            'questions.view', 'questions.create', 'questions.edit', 'questions.delete', 'questions.import',
+            'online-exams.view', 'online-exams.configure',
+            'homework.view', 'homework.create', 'homework.edit', 'homework.delete', 'homework.grade',
+            'remarks.view', 'remarks.create', 'remarks.edit', 'remarks.delete',
+            'dashboard.view',
+            'fees.view', 'fees.create', 'fees.edit', 'fees.delete',
+            'invoices.view', 'invoices.create', 'invoices.edit', 'invoices.delete', 'invoices.void',
+            'invoices.record-payment', 'invoices.issue-credit-note', 'invoices.view-reports',
+            'designations.view', 'designations.create', 'designations.edit', 'designations.delete',
+            'leave.view', 'leave.manage',
+            'payroll.view', 'payroll.manage',
+            'library.view', 'library.manage',
+            'transport.view', 'transport.manage',
+            'hostel.view', 'hostel.manage',
+            'front-desk.view', 'front-desk.manage',
+            'certificates.view', 'certificates.create', 'certificates.edit', 'certificates.delete', 'certificates.issue',
+            'notice-board.view', 'notice-board.create', 'notice-board.edit', 'notice-board.delete', 'notice-board.publish',
+            'communication.view', 'communication.manage',
+        ],
+        'Principal' => [
+            'users.view',
+            'settings.view',
+            'audit-logs.view',
+            'academic-years.view',
+            'academic-structure.view', 'academic-structure.create', 'academic-structure.edit', 'academic-structure.delete', 'academic-structure.import',
+            'timetable.view', 'timetable.create', 'timetable.edit', 'timetable.delete',
+            'students.view', 'students.export',
+            'guardians.view',
+            'enrollment.manage',
+            'student-attendance.view', 'student-attendance.edit', 'student-attendance.export',
+            'staff-attendance.view', 'staff-attendance.edit', 'staff-attendance.export',
+            'grading.view', 'grading.manage',
+            'exams.view', 'exams.create', 'exams.edit', 'exams.delete', 'exams.publish',
+            'exam-marks.view', 'exam-marks.edit', 'exam-marks.export', 'exam-marks.publish',
+            'questions.view', 'questions.edit',
+            'online-exams.view', 'online-exams.configure',
+            'homework.view',
+            'remarks.view',
+            'dashboard.view',
+            'fees.view',
+            'invoices.view', 'invoices.view-reports',
+            'designations.view',
+            'leave.view',
+            'library.view',
+            'transport.view',
+            'hostel.view',
+            'front-desk.view',
+            'certificates.view',
+            'notice-board.view',
+            'communication.view',
+        ],
+        'Management' => [
+            'users.view',
+            'settings.view',
+            'audit-logs.view',
+            'academic-years.view',
+            'academic-structure.view',
+            'timetable.view',
+            'students.view', 'students.export',
+            'guardians.view',
+            'student-attendance.view', 'student-attendance.export',
+            'staff-attendance.view', 'staff-attendance.export',
+            'grading.view',
+            'exams.view',
+            'exam-marks.view', 'exam-marks.export',
+            'questions.view',
+            'online-exams.view',
+            'homework.view',
+            'remarks.view',
+            'dashboard.view',
+            'fees.view',
+            'invoices.view', 'invoices.view-reports',
+            'designations.view',
+            'leave.view',
+            'library.view',
+            'transport.view',
+            'hostel.view',
+            'front-desk.view',
+            'certificates.view',
+            'notice-board.view',
+            'communication.view',
+        ],
+        'Accountant' => [
+            'academic-years.view',
+            'academic-structure.view',
+            'students.view',
+            'guardians.view',
+            'dashboard.view',
+            'fees.view', 'fees.create', 'fees.edit', 'fees.delete',
+            'invoices.view', 'invoices.create', 'invoices.edit', 'invoices.delete', 'invoices.void',
+            'invoices.record-payment', 'invoices.issue-credit-note', 'invoices.view-reports',
+        ],
+        'HR Staff' => [
+            'users.view', 'users.create', 'users.edit', 'users.delete', 'users.import', 'users.export',
+            'roles.view',
+            'academic-years.view', 'academic-structure.view',
+            'timetable.view',
+            'students.view',
+            'staff-attendance.view', 'staff-attendance.mark', 'staff-attendance.edit', 'staff-attendance.export',
+            'dashboard.view',
+            'designations.view', 'designations.create', 'designations.edit', 'designations.delete',
+            'leave.view', 'leave.manage',
+            'payroll.view', 'payroll.manage',
+            'hostel.view', 'hostel.manage',
+        ],
+        'Receptionist' => [
+            'academic-years.view', 'academic-structure.view',
+            'timetable.view',
+            'students.view', 'students.create',
+            'guardians.view', 'guardians.create',
+            'dashboard.view',
+            'front-desk.view', 'front-desk.manage',
+        ],
+        'Teacher' => [
+            'academic-years.view', 'academic-structure.view',
+            'timetable.view',
+            'students.view',
+            'guardians.view',
+            'student-attendance.view', 'student-attendance.mark', 'student-attendance.edit',
+            'exams.view',
+            'exam-marks.view', 'exam-marks.enter', 'exam-marks.edit', 'exam-marks.import',
+            'questions.view', 'questions.create', 'questions.edit', 'questions.import',
+            'online-exams.view', 'online-exams.configure',
+            'homework.view', 'homework.create', 'homework.edit', 'homework.delete', 'homework.grade',
+            'remarks.view', 'remarks.create', 'remarks.edit', 'remarks.delete',
+            'dashboard.view',
+        ],
+        'Class Teacher' => [
+            'academic-years.view', 'academic-structure.view',
+            'timetable.view',
+            'students.view',
+            'guardians.view',
+            'student-attendance.view', 'student-attendance.mark', 'student-attendance.edit', 'student-attendance.export',
+            'exams.view',
+            'exam-marks.view', 'exam-marks.enter', 'exam-marks.edit', 'exam-marks.export', 'exam-marks.publish', 'exam-marks.import',
+            'questions.view', 'questions.create', 'questions.edit', 'questions.import',
+            'online-exams.view', 'online-exams.configure',
+            'homework.view', 'homework.create', 'homework.edit', 'homework.delete', 'homework.grade',
+            'remarks.view', 'remarks.create', 'remarks.edit', 'remarks.delete',
+            'dashboard.view',
+        ],
+        'Student' => [
+            'academic-years.view',
+            'timetable.view',
+            'students.view',
+            'student-attendance.view',
+            'exams.view',
+            'exam-marks.view',
+            'homework.view',
+            'remarks.view',
+            'dashboard.view',
+            'invoices.view',
+            'certificates.view',
+        ],
+        'Parent' => [
+            'academic-years.view',
+            'timetable.view',
+            'students.view',
+            'guardians.view',
+            'student-attendance.view',
+            'exams.view',
+            'exam-marks.view',
+            'homework.view',
+            'remarks.view',
+            'dashboard.view',
+            'invoices.view',
+            'certificates.view',
+        ],
+        'Librarian' => [
+            'dashboard.view',
+            'students.view',
+            'library.view', 'library.manage',
+        ],
+        'Transport Staff' => [
+            'dashboard.view',
+            'students.view',
+            'transport.view', 'transport.manage',
+        ],
+    ];
+
+    public function run(): void
+    {
+        $registrar = app(PermissionRegistrar::class);
+
+        foreach (self::ROLE_PERMISSIONS as $roleName => $permissions) {
+            $role = Role::findOrCreate($roleName, 'web');
+            $role->syncPermissions($permissions);
+        }
+
+        $registrar->forgetCachedPermissions();
+    }
+}

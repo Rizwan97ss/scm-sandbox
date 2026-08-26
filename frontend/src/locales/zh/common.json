@@ -1,0 +1,382 @@
+{
+  "topbar": {
+    "openMenu": "打开导航菜单"
+  },
+  "nav": {
+    "groups": {
+      "overview": "概览",
+      "people": "人员",
+      "attendance": "考勤",
+      "exams": "考试",
+      "teaching": "教学",
+      "feesAccounting": "费用与财务",
+      "hrPayroll": "人事与薪资",
+      "library": "图书馆",
+      "transport": "交通",
+      "hostel": "宿舍",
+      "frontDesk": "前台",
+      "certificatesIdCards": "证书与证件",
+      "noticeBoard": "公告栏",
+      "communication": "通讯",
+      "reportsAnalytics": "报告与分析",
+      "academics": "教务",
+      "administration": "管理"
+    },
+    "items": {
+      "dashboard": "仪表盘",
+      "students": "学生",
+      "guardians": "监护人",
+      "staffUsers": "员工与用户",
+      "takeAttendance": "签到",
+      "staffAttendance": "员工考勤",
+      "exams": "考试",
+      "gradingScales": "评分标准",
+      "examConfiguration": "考试配置",
+      "homework": "作业",
+      "invoices": "账单",
+      "feeStructures": "收费结构",
+      "feeCategories": "收费类别",
+      "feeReports": "收费报告",
+      "leaveRequests": "请假申请",
+      "payslips": "工资单",
+      "designations": "职位",
+      "leaveTypes": "假期类型",
+      "salaryStructures": "薪资结构",
+      "books": "图书",
+      "bookIssues": "图书借阅",
+      "vehicles": "车辆",
+      "routes": "路线",
+      "studentAssignments": "学生分配",
+      "hostels": "宿舍楼",
+      "hostelRooms": "房间",
+      "allocations": "分配",
+      "visitors": "访客",
+      "certificateTemplates": "证书模板",
+      "issuedCertificates": "已颁发证书",
+      "noticeBoard": "公告栏",
+      "announcements": "公告",
+      "attendanceReport": "考勤报告",
+      "academicPerformance": "学业表现",
+      "enrollmentReport": "招生报告",
+      "operationsReport": "运营报告",
+      "academicYears": "学年",
+      "terms": "学期",
+      "departments": "院系",
+      "gradeLevels": "年级",
+      "sections": "班级",
+      "subjects": "科目",
+      "academicRooms": "教室",
+      "timetable": "课程表",
+      "holidays": "假期",
+      "rolesPermissions": "角色与权限",
+      "settings": "设置",
+      "systemHealth": "系统状态",
+      "auditLog": "审计日志",
+      "importLogs": "导入日志",
+      "dataExport": "数据导出",
+      "importCenter": "导入中心",
+      "myChildren": "我的孩子",
+      "myOnlineTests": "我的在线测试",
+      "myResult": "我的成绩",
+      "myFees": "我的费用",
+      "certificates": "证书"
+    }
+  },
+  "search": {
+    "placeholder": "搜索学生、员工、账单...",
+    "ariaLabel": "全局搜索",
+    "clear": "清除搜索",
+    "searching": "搜索中…",
+    "noResultsFor": "未找到与“{{query}}”相关的结果。",
+    "categories": {
+      "students": "学生",
+      "guardians": "监护人",
+      "staff": "员工",
+      "books": "图书",
+      "invoices": "账单"
+    }
+  },
+  "notifications": {
+    "ariaLabel": "通知",
+    "ariaLabelUnread": "通知（{{count}} 条未读）",
+    "title": "通知",
+    "markAllRead": "全部标记为已读",
+    "empty": "暂无通知。"
+  },
+  "userMenu": {
+    "accountMenu": "账户菜单",
+    "downloadIdCard": "下载我的证件",
+    "exportMyData": "导出我的数据",
+    "setupGuide": "设置指南",
+    "deleteAccount": "删除我的账户",
+    "logout": "退出登录",
+    "deleteConfirmTitle": "删除您的账户？",
+    "deleteConfirmDescription": "这将立即删除您的个人数据（姓名、联系方式、医疗/紧急联系信息），且无法撤销。与您账户相关的学业和财务记录将根据需要予以保留。",
+    "deleteConfirmLabel": "删除我的账户"
+  },
+  "theme": {
+    "changeTheme": "切换主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统"
+  },
+  "language": {
+    "changeLanguage": "切换语言"
+  },
+  "mfaBanner": {
+    "required": "此账户需要启用双重身份验证 — {{action}}。",
+    "setupNow": "立即设置",
+    "daysLeft_other": "您还有 {{count}} 天可以完成设置",
+    "link": "立即设置"
+  },
+  "offlineBanner": {
+    "message": "您已离线。现在所做的更改将在恢复连接后才会保存。"
+  },
+  "confirmDialog": {
+    "confirm": "确认",
+    "cancel": "取消"
+  },
+  "queryError": {
+    "title": "出了点问题",
+    "description": "无法加载此内容，请重试。",
+    "retry": "重试"
+  },
+  "pagination": {
+    "showing": "显示第 {{from}}–{{to}} 条，共 {{total}} 条",
+    "previousPage": "上一页",
+    "nextPage": "下一页",
+    "pageOf": "第 {{current}} / {{last}} 页"
+  },
+  "dataTable": {
+    "noRecordsFound": "未找到记录",
+    "selectAll": "选择本页全部",
+    "selectRow": "选择此行"
+  },
+  "modal": {
+    "closeDialog": "关闭对话框"
+  },
+  "bulkActions": {
+    "selected": "已选择 {{count}} 项",
+    "clear": "清除"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "面包屑导航"
+  },
+  "drawer": {
+    "closePanel": "关闭面板"
+  },
+  "select": {
+    "placeholder": "请选择…",
+    "searchPlaceholder": "搜索…",
+    "noResults": "无结果。"
+  },
+  "fileUpload": {
+    "removeFile": "移除文件",
+    "clickToUpload": "点击上传",
+    "orDragAndDrop": "或拖放文件",
+    "tooLarge": "文件过大。最大大小为 {{maxSizeMb}}MB。"
+  },
+  "importFileMapper": {
+    "dontImportColumn": "不导入此列",
+    "uploadPrompt": "上传一个已有列标题的文件——接下来您将把每个列标题匹配到正确的字段，无需事先重命名任何内容。",
+    "readingFile": "正在读取文件…",
+    "matchPrompt": "将文件中的每一列与下方的字段匹配。设置为“不导入”的列将被完全排除。",
+    "truncatedNotice": " 此处仅显示前几行，但文件中的每一行都将被导入。",
+    "columnYourColumn": "您的列",
+    "columnSampleValues": "示例值",
+    "columnMapsTo": "映射到",
+    "mapsToAriaLabel": "将“{{header}}”映射到",
+    "continueWithMapped_other": "继续，已映射 {{count}} 列",
+    "chooseDifferentFile": "选择其他文件"
+  },
+  "importForm": {
+    "downloadTemplate": "下载模板",
+    "modeLabel": "模式",
+    "modeCreate": "仅创建（拒绝已存在的）",
+    "modeUpdate": "仅更新（未找到则失败）",
+    "modeUpsert": "创建或更新",
+    "tabUploadFile": "上传文件",
+    "tabPasteData": "粘贴数据",
+    "tabUploadMap": "上传并映射列",
+    "previewImport": "预览导入",
+    "recheck": "重新检查",
+    "confirmImport": "确认导入",
+    "chooseDifferentFile": "选择其他文件",
+    "nothingSavedYet": "尚未保存任何内容——请先查看下方预览，然后确认。",
+    "gridInstructions": "直接在网格中输入，或从第一个单元格开始粘贴从 Excel/Google 表格复制的行。每一行的检查方式与上传文件相同——出错的单元格会在下方高亮显示；修正后请重新预览。",
+    "loadingGrid": "正在加载网格…",
+    "loading": "加载中…",
+    "queuedInBackground": "此文件较大，正在后台处理——处理完成后本页面将自动更新。",
+    "queuedNotice": "此文件较大，正在后台处理。处理完成后本页面将自动更新——无需停留在此页面。",
+    "backgroundImportFailed": "后台导入失败。",
+    "importAnotherFile": "导入其他文件",
+    "resultCreated": "已创建",
+    "resultUpdated": "已更新",
+    "resultNothingToImport": "没有可导入的内容",
+    "resultNothingToReport": "没有可报告的内容",
+    "resultWouldBeCreated": "将被创建",
+    "resultWouldBeUpdated": "将被更新",
+    "resultPossibleDuplicate_other": "{{count}} 个可能的重复项",
+    "resultFailed": "已失败",
+    "resultWouldFail": "将会失败",
+    "reviewBeforeNewRecords": "在视为新记录前请先审核",
+    "rowLabel": "第 {{row}} 行：",
+    "columnRow": "行",
+    "columnField": "字段",
+    "columnError": "错误",
+    "entitySummary": "{{entity}}：{{summary}}",
+    "nothingChanged": "无变化"
+  },
+  "enums": {
+    "gender": {
+      "male": "男",
+      "female": "女",
+      "other": "其他"
+    },
+    "userStatus": {
+      "active": "启用",
+      "inactive": "停用",
+      "suspended": "已暂停"
+    },
+    "studentStatus": {
+      "active": "在读",
+      "transferred_out": "已转出",
+      "withdrawn": "已退学",
+      "graduated": "已毕业",
+      "alumni": "校友"
+    },
+    "enrollmentAction": {
+      "admission": "入学",
+      "promotion": "升级",
+      "transfer_in": "转入",
+      "transfer_out": "转出",
+      "withdrawal": "退学",
+      "graduation": "毕业",
+      "reactivation": "恢复学籍"
+    },
+    "guardianRelationship": {
+      "father": "父亲",
+      "mother": "母亲",
+      "guardian": "监护人",
+      "other": "其他"
+    },
+    "roomType": {
+      "classroom": "教室",
+      "lab": "实验室",
+      "hall": "礼堂",
+      "other": "其他"
+    },
+    "holidayType": {
+      "public": "公共假日",
+      "school_specific": "校历假日"
+    },
+    "attendanceStatus": {
+      "present": "出勤",
+      "absent": "缺勤",
+      "late": "迟到",
+      "half_day": "半天",
+      "excused": "请假",
+      "on_leave": "休假"
+    },
+    "daysOfWeek": {
+      "0": "星期日",
+      "1": "星期一",
+      "2": "星期二",
+      "3": "星期三",
+      "4": "星期四",
+      "5": "星期五",
+      "6": "星期六"
+    },
+    "announcementChannel": {
+      "in_app": "应用内",
+      "email": "电子邮件",
+      "sms": "短信",
+      "push": "推送通知"
+    },
+    "noticeType": {
+      "general": "通知",
+      "event": "活动"
+    },
+    "audience": {
+      "all": "所有人",
+      "students": "学生",
+      "staff": "教职工",
+      "parents": "家长"
+    },
+    "feeFrequency": {
+      "one_time": "一次性",
+      "monthly": "每月",
+      "quarterly": "每季度",
+      "term": "每学期",
+      "annual": "每年"
+    },
+    "discountType": {
+      "none": "无",
+      "percentage": "百分比",
+      "fixed": "固定金额"
+    },
+    "invoiceStatus": {
+      "draft": "草稿",
+      "issued": "已开具",
+      "partially_paid": "部分已付",
+      "paid": "已付款",
+      "void": "已作废"
+    },
+    "paymentMethod": {
+      "cash": "现金",
+      "cheque": "支票",
+      "bank_transfer": "银行转账",
+      "upi": "UPI",
+      "card": "银行卡",
+      "other": "其他"
+    },
+    "hostelType": {
+      "boys": "男生",
+      "girls": "女生",
+      "mixed": "混合"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "已分配",
+      "vacated": "已腾空"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "已提交",
+      "graded": "已批改"
+    },
+    "remarkCategory": {
+      "academic": "学业",
+      "behavioral": "行为",
+      "general": "一般"
+    },
+    "bookIssueStatus": {
+      "issued": "已借出",
+      "returned": "已归还",
+      "overdue": "已逾期"
+    },
+    "leaveStatus": {
+      "pending": "待处理",
+      "approved": "已批准",
+      "rejected": "已拒绝",
+      "cancelled": "已取消"
+    },
+    "payslipStatus": {
+      "generated": "已生成",
+      "paid": "已支付"
+    },
+    "questionType": {
+      "mcq": "选择题",
+      "true_false": "判断题"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "页面未找到",
+    "notFoundDescription": "您要查找的页面不存在或已被移动。",
+    "backToDashboard": "返回仪表盘",
+    "somethingWentWrong": "出了点问题",
+    "somethingWentWrongDescription": "请尝试重新加载页面。如果问题仍然存在，请联系支持人员。",
+    "reloadPage": "重新加载页面",
+    "accessDenied": "拒绝访问",
+    "accessDeniedDescription": "您没有权限查看此页面。",
+    "loading": "加载中…"
+  }
+}

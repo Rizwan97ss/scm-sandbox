@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "Учащийся",
+    "type": "Тип",
+    "name": "Название",
+    "status": "Статус",
+    "active": "Активен",
+    "inactive": "Неактивен"
+  },
+  "list": {
+    "title": "Сертификаты",
+    "descriptionAll": "Все сертификаты, выданные учащимся.",
+    "descriptionOwn": "Ваши выданные сертификаты.",
+    "columnCertificateNumber": "№ сертификата",
+    "columnIssued": "Выдан",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "Скачать сертификат {{number}}",
+    "emptyTitle": "Пока нет сертификатов",
+    "emptyDescription": "Сертификаты, выданные учащимся, появятся здесь."
+  },
+  "templates": {
+    "title": "Шаблоны Сертификатов",
+    "description": "Готовые тексты сертификатов — выдайте один учащемуся, чтобы превратить его в настоящий сертификат.",
+    "newTemplate": "Новый шаблон",
+    "searchPlaceholder": "Поиск по названию…",
+    "issue": "Выдать",
+    "edit": "Изменить",
+    "deleteAriaLabel": "Удалить {{name}}",
+    "emptyTitleSearch": "Нет шаблонов, соответствующих «{{query}}»",
+    "emptyTitle": "Пока нет шаблонов сертификатов",
+    "emptyDescriptionSearch": "Попробуйте другое название или очистите поиск, чтобы увидеть все.",
+    "editTitle": "Изменить шаблон",
+    "newTitle": "Новый шаблон",
+    "typeHint": "например, Справка, Перевод",
+    "bodyLabel": "Текст",
+    "bodyHint": "Плейсхолдеры: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "Сохранить изменения",
+    "createTemplate": "Создать шаблон",
+    "deleteConfirmTitle": "Удалить {{name}}?",
+    "deleteConfirmDescription": "Это действие необратимо.",
+    "issueModal": {
+      "title": "Выдать «{{name}}»",
+      "selectStudentPlaceholder": "Выберите учащегося",
+      "submit": "Выдать сертификат",
+      "successToast": "Сертификат выдан."
+    }
+  }
+}

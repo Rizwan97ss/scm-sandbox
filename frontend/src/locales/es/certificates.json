@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "Estudiante",
+    "type": "Tipo",
+    "name": "Nombre",
+    "status": "Estado",
+    "active": "Activo",
+    "inactive": "Inactivo"
+  },
+  "list": {
+    "title": "Certificados",
+    "descriptionAll": "Todos los certificados emitidos a un estudiante.",
+    "descriptionOwn": "Tus certificados emitidos.",
+    "columnCertificateNumber": "N.º de certificado",
+    "columnIssued": "Emitido",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "Descargar certificado {{number}}",
+    "emptyTitle": "Aún no hay certificados",
+    "emptyDescription": "Los certificados que emitas a los estudiantes aparecerán aquí."
+  },
+  "templates": {
+    "title": "Plantillas de Certificados",
+    "description": "Textos de certificado reutilizables: emite uno a un estudiante para convertirlo en un certificado real.",
+    "newTemplate": "Nueva plantilla",
+    "searchPlaceholder": "Buscar por nombre…",
+    "issue": "Emitir",
+    "edit": "Editar",
+    "deleteAriaLabel": "Eliminar {{name}}",
+    "emptyTitleSearch": "Ninguna plantilla coincide con \"{{query}}\"",
+    "emptyTitle": "Aún no hay plantillas de certificado",
+    "emptyDescriptionSearch": "Prueba con otro nombre o borra la búsqueda para ver todas.",
+    "editTitle": "Editar plantilla",
+    "newTitle": "Nueva plantilla",
+    "typeHint": "p. ej., Constancia, Traslado",
+    "bodyLabel": "Cuerpo",
+    "bodyHint": "Marcadores: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "Guardar cambios",
+    "createTemplate": "Crear plantilla",
+    "deleteConfirmTitle": "¿Eliminar {{name}}?",
+    "deleteConfirmDescription": "Esta acción no se puede deshacer.",
+    "issueModal": {
+      "title": "Emitir “{{name}}”",
+      "selectStudentPlaceholder": "Selecciona un estudiante",
+      "submit": "Emitir certificado",
+      "successToast": "Certificado emitido."
+    }
+  }
+}

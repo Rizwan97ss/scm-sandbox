@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "Aluno",
+    "type": "Tipo",
+    "name": "Nome",
+    "status": "Status",
+    "active": "Ativo",
+    "inactive": "Inativo"
+  },
+  "list": {
+    "title": "Certificados",
+    "descriptionAll": "Todos os certificados emitidos a um aluno.",
+    "descriptionOwn": "Seus certificados emitidos.",
+    "columnCertificateNumber": "N.º do certificado",
+    "columnIssued": "Emitido",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "Baixar certificado {{number}}",
+    "emptyTitle": "Ainda não há certificados",
+    "emptyDescription": "Os certificados que você emitir para alunos aparecerão aqui."
+  },
+  "templates": {
+    "title": "Modelos de Certificado",
+    "description": "Textos de certificado reutilizáveis — emita um para um aluno para transformá-lo em um certificado real.",
+    "newTemplate": "Novo modelo",
+    "searchPlaceholder": "Buscar por nome…",
+    "issue": "Emitir",
+    "edit": "Editar",
+    "deleteAriaLabel": "Excluir {{name}}",
+    "emptyTitleSearch": "Nenhum modelo corresponde a \"{{query}}\"",
+    "emptyTitle": "Ainda não há modelos de certificado",
+    "emptyDescriptionSearch": "Tente outro nome ou limpe a busca para ver todos.",
+    "editTitle": "Editar modelo",
+    "newTitle": "Novo modelo",
+    "typeHint": "ex.: Declaração, Transferência",
+    "bodyLabel": "Corpo",
+    "bodyHint": "Marcadores: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "Salvar alterações",
+    "createTemplate": "Criar modelo",
+    "deleteConfirmTitle": "Excluir {{name}}?",
+    "deleteConfirmDescription": "Esta ação não pode ser desfeita.",
+    "issueModal": {
+      "title": "Emitir “{{name}}”",
+      "selectStudentPlaceholder": "Selecione um aluno",
+      "submit": "Emitir certificado",
+      "successToast": "Certificado emitido."
+    }
+  }
+}

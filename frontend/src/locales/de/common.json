@@ -1,0 +1,385 @@
+{
+  "topbar": {
+    "openMenu": "Navigationsmenü öffnen"
+  },
+  "nav": {
+    "groups": {
+      "overview": "Übersicht",
+      "people": "Personen",
+      "attendance": "Anwesenheit",
+      "exams": "Prüfungen",
+      "teaching": "Unterricht",
+      "feesAccounting": "Gebühren & Buchhaltung",
+      "hrPayroll": "Personal & Gehaltsabrechnung",
+      "library": "Bibliothek",
+      "transport": "Transport",
+      "hostel": "Wohnheim",
+      "frontDesk": "Empfang",
+      "certificatesIdCards": "Zeugnisse & Ausweise",
+      "noticeBoard": "Anschlagbrett",
+      "communication": "Kommunikation",
+      "reportsAnalytics": "Berichte & Analysen",
+      "academics": "Akademisch",
+      "administration": "Verwaltung"
+    },
+    "items": {
+      "dashboard": "Übersicht",
+      "students": "Schüler",
+      "guardians": "Erziehungsberechtigte",
+      "staffUsers": "Personal & Benutzer",
+      "takeAttendance": "Anwesenheit Erfassen",
+      "staffAttendance": "Personalanwesenheit",
+      "exams": "Prüfungen",
+      "gradingScales": "Notenskalen",
+      "examConfiguration": "Prüfungskonfiguration",
+      "homework": "Hausaufgaben",
+      "invoices": "Rechnungen",
+      "feeStructures": "Gebührenstrukturen",
+      "feeCategories": "Gebührenkategorien",
+      "feeReports": "Gebührenberichte",
+      "leaveRequests": "Urlaubsanträge",
+      "payslips": "Gehaltsabrechnungen",
+      "designations": "Positionen",
+      "leaveTypes": "Urlaubsarten",
+      "salaryStructures": "Gehaltsstrukturen",
+      "books": "Bücher",
+      "bookIssues": "Buchausleihen",
+      "vehicles": "Fahrzeuge",
+      "routes": "Routen",
+      "studentAssignments": "Schülerzuweisungen",
+      "hostels": "Wohnheime",
+      "hostelRooms": "Zimmer",
+      "allocations": "Zuweisungen",
+      "visitors": "Besucher",
+      "certificateTemplates": "Zeugnisvorlagen",
+      "issuedCertificates": "Ausgestellte Zeugnisse",
+      "noticeBoard": "Anschlagbrett",
+      "announcements": "Ankündigungen",
+      "attendanceReport": "Anwesenheitsbericht",
+      "academicPerformance": "Akademische Leistung",
+      "enrollmentReport": "Einschreibungsbericht",
+      "operationsReport": "Betriebsbericht",
+      "academicYears": "Schuljahre",
+      "terms": "Halbjahre",
+      "departments": "Fachbereiche",
+      "gradeLevels": "Jahrgangsstufen",
+      "sections": "Klassen",
+      "subjects": "Fächer",
+      "academicRooms": "Räume",
+      "timetable": "Stundenplan",
+      "holidays": "Feiertage",
+      "rolesPermissions": "Rollen & Berechtigungen",
+      "settings": "Einstellungen",
+      "systemHealth": "Systemstatus",
+      "auditLog": "Prüfprotokoll",
+      "importLogs": "Importprotokolle",
+      "dataExport": "Datenexport",
+      "importCenter": "Importzentrum",
+      "myChildren": "Meine Kinder",
+      "myOnlineTests": "Meine Online-Tests",
+      "myResult": "Mein Ergebnis",
+      "myFees": "Meine Gebühren",
+      "certificates": "Zeugnisse"
+    }
+  },
+  "search": {
+    "placeholder": "Schüler, Personal, Rechnungen suchen...",
+    "ariaLabel": "Globale Suche",
+    "clear": "Suche löschen",
+    "searching": "Suche läuft…",
+    "noResultsFor": "Keine Ergebnisse für „{{query}}“.",
+    "categories": {
+      "students": "Schüler",
+      "guardians": "Erziehungsberechtigte",
+      "staff": "Personal",
+      "books": "Bücher",
+      "invoices": "Rechnungen"
+    }
+  },
+  "notifications": {
+    "ariaLabel": "Benachrichtigungen",
+    "ariaLabelUnread": "Benachrichtigungen ({{count}} ungelesen)",
+    "title": "Benachrichtigungen",
+    "markAllRead": "Alle als gelesen markieren",
+    "empty": "Noch keine Benachrichtigungen."
+  },
+  "userMenu": {
+    "accountMenu": "Kontomenü",
+    "downloadIdCard": "Meinen Ausweis Herunterladen",
+    "exportMyData": "Meine Daten Exportieren",
+    "setupGuide": "Einrichtungsanleitung",
+    "deleteAccount": "Mein Konto Löschen",
+    "logout": "Abmelden",
+    "deleteConfirmTitle": "Konto löschen?",
+    "deleteConfirmDescription": "Dies entfernt Ihre persönlichen Daten (Name, Kontaktdaten, medizinische Angaben/Notfallkontakte) sofort und kann nicht rückgängig gemacht werden. Akademische und finanzielle Datensätze, die mit Ihrem Konto verknüpft sind, werden nach Bedarf aufbewahrt.",
+    "deleteConfirmLabel": "Mein Konto löschen"
+  },
+  "theme": {
+    "changeTheme": "Design ändern",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "language": {
+    "changeLanguage": "Sprache ändern"
+  },
+  "mfaBanner": {
+    "required": "Für dieses Konto ist eine Zwei-Faktor-Authentifizierung erforderlich — {{action}}.",
+    "setupNow": "jetzt einrichten",
+    "daysLeft_one": "Sie haben noch {{count}} Tag, um sie einzurichten",
+    "daysLeft_other": "Sie haben noch {{count}} Tage, um sie einzurichten",
+    "link": "Jetzt einrichten"
+  },
+  "offlineBanner": {
+    "message": "Sie sind offline. Änderungen, die Sie jetzt vornehmen, werden erst gespeichert, wenn die Verbindung wiederhergestellt ist."
+  },
+  "confirmDialog": {
+    "confirm": "Bestätigen",
+    "cancel": "Abbrechen"
+  },
+  "queryError": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Dies konnte nicht geladen werden. Bitte versuchen Sie es erneut.",
+    "retry": "Erneut versuchen"
+  },
+  "pagination": {
+    "showing": "{{from}}–{{to}} von {{total}} werden angezeigt",
+    "previousPage": "Vorherige Seite",
+    "nextPage": "Nächste Seite",
+    "pageOf": "Seite {{current}} von {{last}}"
+  },
+  "dataTable": {
+    "noRecordsFound": "Keine Einträge gefunden",
+    "selectAll": "Alle auf dieser Seite auswählen",
+    "selectRow": "Zeile auswählen"
+  },
+  "modal": {
+    "closeDialog": "Dialog schließen"
+  },
+  "bulkActions": {
+    "selected": "{{count}} ausgewählt",
+    "clear": "Löschen"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "Breadcrumb-Navigation"
+  },
+  "drawer": {
+    "closePanel": "Panel schließen"
+  },
+  "select": {
+    "placeholder": "Auswählen…",
+    "searchPlaceholder": "Suchen…",
+    "noResults": "Keine Ergebnisse."
+  },
+  "fileUpload": {
+    "removeFile": "Datei entfernen",
+    "clickToUpload": "Zum Hochladen klicken",
+    "orDragAndDrop": "oder per Drag & Drop",
+    "tooLarge": "Die Datei ist zu groß. Maximale Größe ist {{maxSizeMb}}MB."
+  },
+  "importFileMapper": {
+    "dontImportColumn": "Diese Spalte nicht importieren",
+    "uploadPrompt": "Laden Sie eine Datei mit den bereits vorhandenen Spaltenüberschriften hoch — Sie ordnen anschließend jede dem richtigen Feld zu, ohne vorher etwas umbenennen zu müssen.",
+    "readingFile": "Datei wird gelesen…",
+    "matchPrompt": "Ordnen Sie jede Spalte Ihrer Datei unten einem Feld zu. Auf \"Nicht importieren\" gesetzte Spalten werden vollständig ausgelassen.",
+    "truncatedNotice": " Hier werden nur die ersten Zeilen angezeigt, aber jede Zeile der Datei wird importiert.",
+    "columnYourColumn": "Ihre Spalte",
+    "columnSampleValues": "Beispielwerte",
+    "columnMapsTo": "Zugeordnet zu",
+    "mapsToAriaLabel": "Ordnet \"{{header}}\" zu",
+    "continueWithMapped_one": "Mit {{count}} zugeordneter Spalte fortfahren",
+    "continueWithMapped_other": "Mit {{count}} zugeordneten Spalten fortfahren",
+    "chooseDifferentFile": "Andere Datei wählen"
+  },
+  "importForm": {
+    "downloadTemplate": "Vorlage herunterladen",
+    "modeLabel": "Modus",
+    "modeCreate": "Nur erstellen (vorhandene ablehnen)",
+    "modeUpdate": "Nur aktualisieren (Fehler, falls nicht gefunden)",
+    "modeUpsert": "Erstellen oder aktualisieren",
+    "tabUploadFile": "Datei hochladen",
+    "tabPasteData": "Daten einfügen",
+    "tabUploadMap": "Hochladen & Spalten zuordnen",
+    "previewImport": "Import-Vorschau",
+    "recheck": "Erneut prüfen",
+    "confirmImport": "Import bestätigen",
+    "chooseDifferentFile": "Andere Datei wählen",
+    "nothingSavedYet": "Es wurde noch nichts gespeichert — überprüfen Sie die Vorschau unten und bestätigen Sie dann.",
+    "gridInstructions": "Geben Sie direkt in das Raster ein oder fügen Sie aus Excel/Google Sheets kopierte Zeilen ab der ersten Zelle ein. Jede Zeile wird auf die gleiche Weise geprüft wie eine hochgeladene Datei — eine fehlerhafte Zelle wird unten hervorgehoben; korrigieren Sie sie und prüfen Sie die Vorschau erneut.",
+    "loadingGrid": "Raster wird geladen…",
+    "loading": "Wird geladen…",
+    "queuedInBackground": "Diese Datei ist groß genug, um im Hintergrund verarbeitet zu werden — diese Seite wird aktualisiert, sobald es fertig ist.",
+    "queuedNotice": "Diese Datei ist groß genug, um im Hintergrund verarbeitet zu werden. Diese Seite wird automatisch aktualisiert, sobald es fertig ist — Sie müssen nicht darauf bleiben.",
+    "backgroundImportFailed": "Der Hintergrundimport ist fehlgeschlagen.",
+    "importAnotherFile": "Weitere Datei importieren",
+    "resultCreated": "erstellt",
+    "resultUpdated": "aktualisiert",
+    "resultNothingToImport": "Nichts zu importieren",
+    "resultNothingToReport": "Nichts zu melden",
+    "resultWouldBeCreated": "würde(n) erstellt",
+    "resultWouldBeUpdated": "würde(n) aktualisiert",
+    "resultPossibleDuplicate_one": "{{count}} mögliches Duplikat",
+    "resultPossibleDuplicate_other": "{{count}} mögliche Duplikate",
+    "resultFailed": "fehlgeschlagen",
+    "resultWouldFail": "würde(n) fehlschlagen",
+    "reviewBeforeNewRecords": "Vor der Behandlung als neue Datensätze überprüfen",
+    "rowLabel": "Zeile {{row}}:",
+    "columnRow": "Zeile",
+    "columnField": "Feld",
+    "columnError": "Fehler",
+    "entitySummary": "{{entity}}(s): {{summary}}",
+    "nothingChanged": "keine Änderung"
+  },
+  "enums": {
+    "gender": {
+      "male": "Männlich",
+      "female": "Weiblich",
+      "other": "Andere"
+    },
+    "userStatus": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "suspended": "Gesperrt"
+    },
+    "studentStatus": {
+      "active": "Aktiv",
+      "transferred_out": "Abgemeldet",
+      "withdrawn": "Zurückgezogen",
+      "graduated": "Absolviert",
+      "alumni": "Ehemalige"
+    },
+    "enrollmentAction": {
+      "admission": "Aufnahme",
+      "promotion": "Versetzung",
+      "transfer_in": "Zugang",
+      "transfer_out": "Abgang",
+      "withdrawal": "Abmeldung",
+      "graduation": "Abschluss",
+      "reactivation": "Reaktivierung"
+    },
+    "guardianRelationship": {
+      "father": "Vater",
+      "mother": "Mutter",
+      "guardian": "Erziehungsberechtigter",
+      "other": "Andere"
+    },
+    "roomType": {
+      "classroom": "Klassenzimmer",
+      "lab": "Labor",
+      "hall": "Saal",
+      "other": "Andere"
+    },
+    "holidayType": {
+      "public": "Gesetzlicher Feiertag",
+      "school_specific": "Schulspezifisch"
+    },
+    "attendanceStatus": {
+      "present": "Anwesend",
+      "absent": "Abwesend",
+      "late": "Verspätet",
+      "half_day": "Halber Tag",
+      "excused": "Entschuldigt",
+      "on_leave": "Beurlaubt"
+    },
+    "daysOfWeek": {
+      "0": "Sonntag",
+      "1": "Montag",
+      "2": "Dienstag",
+      "3": "Mittwoch",
+      "4": "Donnerstag",
+      "5": "Freitag",
+      "6": "Samstag"
+    },
+    "announcementChannel": {
+      "in_app": "In der App",
+      "email": "E-Mail",
+      "sms": "SMS",
+      "push": "Push-Benachrichtigung"
+    },
+    "noticeType": {
+      "general": "Mitteilung",
+      "event": "Veranstaltung"
+    },
+    "audience": {
+      "all": "Alle",
+      "students": "Schüler",
+      "staff": "Personal",
+      "parents": "Eltern"
+    },
+    "feeFrequency": {
+      "one_time": "Einmalig",
+      "monthly": "Monatlich",
+      "quarterly": "Vierteljährlich",
+      "term": "Pro Semester",
+      "annual": "Jährlich"
+    },
+    "discountType": {
+      "none": "Keiner",
+      "percentage": "Prozentsatz",
+      "fixed": "Fester Betrag"
+    },
+    "invoiceStatus": {
+      "draft": "Entwurf",
+      "issued": "Ausgestellt",
+      "partially_paid": "Teilweise bezahlt",
+      "paid": "Bezahlt",
+      "void": "Storniert"
+    },
+    "paymentMethod": {
+      "cash": "Bargeld",
+      "cheque": "Scheck",
+      "bank_transfer": "Banküberweisung",
+      "upi": "UPI",
+      "card": "Karte",
+      "other": "Andere"
+    },
+    "hostelType": {
+      "boys": "Jungen",
+      "girls": "Mädchen",
+      "mixed": "Gemischt"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "Zugewiesen",
+      "vacated": "Geräumt"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "Eingereicht",
+      "graded": "Bewertet"
+    },
+    "remarkCategory": {
+      "academic": "Akademisch",
+      "behavioral": "Verhalten",
+      "general": "Allgemein"
+    },
+    "bookIssueStatus": {
+      "issued": "Ausgeliehen",
+      "returned": "Zurückgegeben",
+      "overdue": "Überfällig"
+    },
+    "leaveStatus": {
+      "pending": "Ausstehend",
+      "approved": "Genehmigt",
+      "rejected": "Abgelehnt",
+      "cancelled": "Storniert"
+    },
+    "payslipStatus": {
+      "generated": "Erstellt",
+      "paid": "Bezahlt"
+    },
+    "questionType": {
+      "mcq": "Multiple Choice",
+      "true_false": "Wahr / Falsch"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "Seite nicht gefunden",
+    "notFoundDescription": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "backToDashboard": "Zurück zum Dashboard",
+    "somethingWentWrong": "Etwas ist schiefgelaufen",
+    "somethingWentWrongDescription": "Bitte laden Sie die Seite neu. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support.",
+    "reloadPage": "Seite neu laden",
+    "accessDenied": "Zugriff verweigert",
+    "accessDeniedDescription": "Sie haben keine Berechtigung, diese Seite anzuzeigen.",
+    "loading": "Wird geladen…"
+  }
+}

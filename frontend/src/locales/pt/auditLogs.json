@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "Registro de Auditoria",
+    "description": "Um registro das ações sensíveis realizadas em sua escola.",
+    "columnWhen": "Quando",
+    "columnBy": "Por",
+    "columnEvent": "Evento",
+    "columnSubject": "Assunto",
+    "columnDescription": "Descrição",
+    "system": "Sistema",
+    "emptyTitle": "Nenhuma atividade registrada ainda",
+    "emptyDescription": "As ações realizadas no sistema serão registradas aqui."
+  }
+}

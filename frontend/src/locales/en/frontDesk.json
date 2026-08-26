@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "name": "Name",
+    "phone": "Phone",
+    "purpose": "Purpose",
+    "whomToMeet": "Whom to Meet",
+    "notes": "Notes",
+    "checkedIn": "Checked In",
+    "checkedOut": "Checked Out"
+  },
+  "list": {
+    "title": "Visitors",
+    "description": "Front-desk visitor log.",
+    "logVisitor": "Log Visitor",
+    "columnToMeet": "To Meet",
+    "columnStatus": "Status",
+    "checkOut": "Check Out",
+    "checkedOutToast": "Visitor checked out.",
+    "emptyTitle": "No visitors logged yet",
+    "emptyDescription": "Visitors you check in at the front desk will appear here."
+  },
+  "checkInModal": {
+    "title": "Log Visitor",
+    "notesHint": "Optional",
+    "submit": "Check in",
+    "checkedInToast": "Visitor checked in."
+  }
+}

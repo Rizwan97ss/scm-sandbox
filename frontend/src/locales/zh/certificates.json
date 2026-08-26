@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "学生",
+    "type": "类型",
+    "name": "名称",
+    "status": "状态",
+    "active": "启用",
+    "inactive": "停用"
+  },
+  "list": {
+    "title": "证书",
+    "descriptionAll": "颁发给学生的所有证书。",
+    "descriptionOwn": "您已颁发的证书。",
+    "columnCertificateNumber": "证书编号",
+    "columnIssued": "颁发日期",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "下载证书 {{number}}",
+    "emptyTitle": "暂无证书",
+    "emptyDescription": "您颁发给学生的证书将显示在此处。"
+  },
+  "templates": {
+    "title": "证书模板",
+    "description": "可重复使用的证书内容——颁发给学生即可生成正式证书。",
+    "newTemplate": "新建模板",
+    "searchPlaceholder": "按名称搜索…",
+    "issue": "颁发",
+    "edit": "编辑",
+    "deleteAriaLabel": "删除 {{name}}",
+    "emptyTitleSearch": "没有与\"{{query}}\"匹配的模板",
+    "emptyTitle": "暂无证书模板",
+    "emptyDescriptionSearch": "请尝试其他名称，或清除搜索以查看全部。",
+    "editTitle": "编辑模板",
+    "newTitle": "新建模板",
+    "typeHint": "例如：在读证明、转学证明",
+    "bodyLabel": "正文",
+    "bodyHint": "占位符：{{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "保存更改",
+    "createTemplate": "创建模板",
+    "deleteConfirmTitle": "删除 {{name}}？",
+    "deleteConfirmDescription": "此操作无法撤销。",
+    "issueModal": {
+      "title": "颁发\"{{name}}\"",
+      "selectStudentPlaceholder": "选择学生",
+      "submit": "颁发证书",
+      "successToast": "证书已颁发。"
+    }
+  }
+}

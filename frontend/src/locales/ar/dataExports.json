@@ -1,0 +1,20 @@
+{
+  "dataExportsList": {
+    "loading": "جارٍ التحميل…",
+    "requestedOn": "طُلب في {{date}}",
+    "requestedBy": "بواسطة {{name}}",
+    "availableUntil": "متاح حتى {{date}}",
+    "download": "تنزيل",
+    "exportStarted": "بدأ التصدير — ستُحدَّث هذه القائمة عند اكتماله.",
+    "statusPending": "قيد الانتظار",
+    "statusProcessing": "قيد المعالجة",
+    "statusReady": "جاهز",
+    "statusFailed": "فشل"
+  },
+  "myDataExportPage": {
+    "title": "تصدير بياناتي",
+    "description": "نزّل نسخة من البيانات التي تحتفظ بها هذه المنصة عنك.",
+    "requestLabel": "طلب تصدير",
+    "emptyLabel": "لم يُطلب أي تصدير بعد"
+  }
+}

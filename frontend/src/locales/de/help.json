@@ -1,0 +1,175 @@
+{
+  "page": {
+    "title": "Einrichtungsanleitung",
+    "description": "Der vollständige, in Abhängigkeitsreihenfolge gegliederte Ablauf für die Inbetriebnahme Ihrer Schule — was zuerst eingerichtet werden muss und warum.",
+    "footer": "Jeder oben genannte Bildschirm befindet sich in der Seitenleiste links, gruppiert nach demselben Schema wie in dieser Anleitung."
+  },
+  "tabs": {
+    "start": "Erste Schritte",
+    "classes": "Klassen & Schüler",
+    "operations": "Anwesenheit & Prüfungen",
+    "fees": "Gebühren & Abrechnung",
+    "modules": "Weitere Module",
+    "communication": "Kommunikation",
+    "roles": "Rollen & Berechtigungen",
+    "faq": "FAQ"
+  },
+  "requires": "Erfordert: {{phase}}",
+  "gettingStarted": {
+    "phase1": {
+      "title": "Phase 1 — Akademische Grundlagen",
+      "steps": {
+        "academicYear": { "title": "Schuljahr", "description": "Erstellen Sie das aktuelle Schuljahr (z. B. „2025-2026“) und markieren Sie es als aktuell. Immer nur ein Schuljahr sollte gleichzeitig aktuell sein — Schüler, Klassen, Prüfungen und Gebühren beziehen sich standardmäßig darauf." },
+        "terms": { "title": "Halbjahre", "description": "Teilen Sie das Schuljahr in Bewertungszeiträume auf. Prüfungen und Zeugnisse sind jeweils einem Halbjahr zugeordnet." },
+        "departments": { "title": "Fachbereiche (optional)", "description": "Gruppieren Sie Fächer für die Berichterstattung, z. B. „Mathematik & Naturwissenschaften“." },
+        "gradeLevels": { "title": "Jahrgangsstufen", "description": "Die Stufenleiter Ihrer Schule — vom Kindergarten bis zur höchsten Jahrgangsstufe, jeweils mit einer Reihenfolgenummer." },
+        "rooms": { "title": "Räume", "description": "Physische Räume mit Kapazität und Typ. Wird vor den Klassen benötigt, da eine Klasse in der Regel einen Stammraum hat." },
+        "sections": { "title": "Klassen", "description": "Die eigentlichen Klassen, in die Schüler aufgenommen werden.", "bold": "Sie können erst dann einen Schüler aufnehmen, wenn mindestens eine Klasse existiert." },
+        "subjects": { "title": "Fächer", "description": "Was unterrichtet wird — Mathematik, Naturwissenschaften, Englisch usw." },
+        "timetablePeriods": { "title": "Stunden", "description": "Das tägliche Gerüst des Stundenplans (1. Stunde, Pause, 2. Stunde, ...), das von allen Klassen gemeinsam genutzt wird." }
+      }
+    },
+    "phase2": {
+      "title": "Phase 2 — Personal",
+      "blocked": "Phase 1",
+      "steps": {
+        "inviteStaff": { "title": "Personal einladen", "description": "Name, E-Mail-Adresse und eine Rolle — die Rolle bestimmt, was die Person tun kann. Die vollständige Übersicht finden Sie im Tab „Rollen & Berechtigungen“." },
+        "designations": { "title": "Positionen", "description": "Stellenbezeichnungen wie „Lehrkraft“ oder „Stellvertretender Schulleiter“ — weisen Sie jedem Mitarbeiter eine Position zu (mit Mitarbeiter-ID und Einstellungsdatum), wenn Sie später die Gehaltsabrechnung nutzen möchten." },
+        "classTeachers": { "title": "Klassenlehrer", "description": "Weisen Sie jeder Klasse einen Mitarbeiter als Klassenlehrer zu, getrennt von den Fachlehrern." }
+      }
+    }
+  },
+  "classes": {
+    "phase3": {
+      "title": "Phase 3 — Stundenplan & Fachzuweisungen",
+      "blocked": "Phasen 1–2",
+      "steps": {
+        "assignments": { "title": "Klasse-Fach-Lehrer-Zuweisungen", "description": "Legen Sie für jede Klasse fest, welche Lehrkraft welches Fach unterrichtet — dies sorgt dafür, dass „Meine Klassen“ für Lehrkräfte/Klassenlehrer korrekt angezeigt wird, und wird von den Bildschirmen zur Noteneingabe und für Hausaufgaben verwendet, um zu wissen, wer was bewerten darf." },
+        "timetableEntries": { "title": "Stundenplaneinträge", "description": "Ordnen Sie jede Kombination aus Klasse, Fach und Lehrkraft einem konkreten Tag/Stunde/Raum-Slot zu. Ein Eintrag pro Klasse+Stunde+Tag — das System lässt keine Doppelbelegung derselben Stunde einer Klasse am selben Tag zu." }
+      }
+    },
+    "phase4": {
+      "title": "Phase 4 — Schüler & Erziehungsberechtigte",
+      "blocked": "Phase 1 (Klassen)",
+      "steps": {
+        "admitStudents": { "title": "Schüler aufnehmen", "description": "Name, Geschlecht, Geburtsdatum, Jahrgangsstufe und Klasse (müssen bereits existieren). Bei der Aufnahme wird automatisch eine Aufnahmenummer generiert und der Einschreibungsverlauf erfasst." },
+        "addGuardians": { "title": "Erziehungsberechtigte hinzufügen", "description": "Verknüpfen Sie mit jedem Schüler Vater/Mutter/Erziehungsberechtigten, wobei einer als primär markiert wird. Laden Sie einen Erziehungsberechtigten ein, um ihm einen Eltern-Zugang zu geben — er sieht dann die Anwesenheit, Noten, Rechnungen und Hausaufgaben seines Kindes." }
+      }
+    }
+  },
+  "operations": {
+    "phase5": {
+      "title": "Phase 5 — Anwesenheit",
+      "steps": {
+        "nothingToConfigure": { "title": "Nichts zu konfigurieren", "description": "Öffnen Sie „Anwesenheit Erfassen“, wählen Sie eine Klasse und ein Datum aus und markieren Sie jeden Schüler als anwesend / abwesend / verspätet / halber Tag / entschuldigt / beurlaubt. Die Personalanwesenheit funktioniert nach demselben Prinzip." }
+      }
+    },
+    "phase6": {
+      "title": "Phase 6 — Bewertung & Prüfungen",
+      "blocked": "Phase 3 (Klassen/Fächer)",
+      "steps": {
+        "gradingScale": { "title": "Notenskala + Notenbereiche", "description": "Definieren Sie Prozentbereiche und die zugehörigen Buchstabennoten (A: 90–100, B: 80–89, ...). Markieren Sie eine Skala als Standard — jedes Prüfungsfach, das keine eigene Skala angibt, greift auf diese zurück." },
+        "exams": { "title": "Prüfungen", "description": "Name, Schuljahr, Halbjahr und eine Gewichtung (wird bei der Mittelung mehrerer Prüfungen zu einer Abschlussnote verwendet)." },
+        "examSubjects": { "title": "Prüfungsfächer", "description": "Welche Kombinationen aus Fach und Klasse tatsächlich geprüft werden, mit Höchst-/Bestehensgrenze und einem Datum. Eine Prüfung ohne Prüfungsfach für die Klasse eines Schülers wird diesem Schüler überhaupt nicht angezeigt." },
+        "enterPublishMarks": { "title": "Noten eintragen & veröffentlichen", "description": "Die Noteneingabe wird verfügbar, sobald ein Prüfungsfach existiert. Veröffentlichen Sie die Noten, sobald sie fertig sind — Schüler/Eltern können die Noten erst danach einsehen." }
+      }
+    },
+    "phase7": {
+      "title": "Phase 7 — Hausaufgaben",
+      "blocked": "Phase 3",
+      "steps": {
+        "createHomework": { "title": "Hausaufgabe erstellen", "description": "Klasse, Fach, Lehrkraft, Fälligkeitsdatum und Höchstpunktzahl. Abgaben und Bewertung erfolgen anschließend pro Schüler." }
+      }
+    }
+  },
+  "fees": {
+    "phase8": {
+      "title": "Phase 8 — Gebühren & Abrechnung (Ihre Schule stellt ihren Schülern Rechnungen)",
+      "steps": {
+        "feeCategories": { "title": "Gebührenkategorien", "description": "Schulgeld, Transport, Bibliothek, Prüfungsgebühr usw." },
+        "feeStructures": { "title": "Gebührenstrukturen", "description": "Verknüpfen Sie eine Kategorie im aktuellen Schuljahr mit einem Betrag und einer Häufigkeit, optional pro Jahrgangsstufe." },
+        "feeAssignments": { "title": "Gebührenzuweisungen für Schüler (optional)", "description": "Ein schülerspezifischer Rabatt (prozentual oder fest) auf eine Gebührenstruktur — z. B. ein Geschwisterrabatt.", "bold": "Richten Sie dies ein, bevor Sie die Rechnung dieses Schülers erstellen", "suffix": "— Rabatte gelten nicht rückwirkend." },
+        "invoices": { "title": "Rechnungen", "description": "Werden pro Schüler erstellt und übernehmen die relevanten Gebührenstrukturen sowie etwaige Rabatte als Rechnungspositionen." },
+        "payments": { "title": "Zahlungen & Gutschriften", "description": "Erfassen Sie eingegangene Zahlungen (Bar, Scheck, Überweisung, UPI, Karte) — der Status der Rechnung wird automatisch aktualisiert. Stellen Sie eine Gutschrift für teilweise Anpassungen aus, ohne die ursprüngliche Rechnung zu verändern." }
+      }
+    }
+  },
+  "modules": {
+    "phase9": {
+      "title": "Phase 9 — Bibliothek",
+      "steps": {
+        "addBooks": { "title": "Bücher hinzufügen", "description": "Titel, Autor, ISBN, Kategorie und Anzahl der Exemplare." },
+        "issueReturn": { "title": "Ausleihen & Zurückgeben", "description": "Leihen Sie ein Exemplar an einen Schüler oder Mitarbeiter aus und geben Sie es später zurück. Etwaige Gebühren werden automatisch anhand Ihrer Bibliotheks-Gebühreneinstellungen berechnet, und die Anzahl der verfügbaren Exemplare wird bei Ausleihe/Rückgabe angepasst." }
+      }
+    },
+    "phase10": {
+      "title": "Phase 10 — Transport",
+      "steps": {
+        "vehiclesRoutes": { "title": "Fahrzeuge und Routen", "description": "Können in beliebiger Reihenfolge eingerichtet werden — Kennzeichen-/Fahrerdaten für Fahrzeuge, geordnete Haltestellen für jede Route." },
+        "studentAssignments": { "title": "Schülerzuweisungen", "description": "Verknüpfen Sie einen Schüler mit einer Route, einer Haltestelle und einem Fahrzeug. Ein Schüler kann nur eine aktive Zuweisung haben — eine neue Zuweisung schließt die alte automatisch ab." }
+      }
+    },
+    "phase11": {
+      "title": "Phase 11 — Wohnheim",
+      "steps": {
+        "hostels": { "title": "Wohnheime", "description": "Jungen / Mädchen / Gemischt, jeweils mit einem Heimleiter." },
+        "rooms": { "title": "Zimmer", "description": "Jeweils mit einer Bettenkapazität." },
+        "allocations": { "title": "Zuweisungen", "description": "Weisen Sie einen Schüler einem Zimmer + Bett zu. Eine Zuweisung, die die Kapazität eines Zimmers überschreitet, wird abgelehnt — geben Sie zuerst eine bestehende Zuweisung frei, um ein Bett verfügbar zu machen." }
+      }
+    },
+    "phase12": {
+      "title": "Phase 12 — Personalwesen & Gehaltsabrechnung",
+      "blocked": "Phase 2 (Positionen)",
+      "steps": {
+        "salaryStructures": { "title": "Gehaltsstrukturen", "description": "Grundgehalt, Zulagen und Abzüge pro Mitarbeiter. Nur eine aktive Struktur pro Person — eine neue ersetzt automatisch die alte." },
+        "payslips": { "title": "Gehaltsabrechnungen", "description": "Werden für einen Monat/ein Jahr erstellt — dabei werden die Werte der aktuell aktiven Gehaltsstruktur festgehalten, sodass spätere Gehaltsänderungen bestehende Gehaltsabrechnungen nicht nachträglich verändern." },
+        "leaveTypes": { "title": "Urlaubsarten & Urlaubsanträge", "description": "Definieren Sie Urlaubsarten (Gelegentlich, Krankheit, Angesammelt, Unbezahlt) mit einem jährlichen Kontingent. Mitarbeiter stellen Anträge, Personalabteilung/Verwaltung prüft diese. Die Genehmigung eines Urlaubsantrags markiert automatisch die entsprechenden Personalanwesenheitseinträge für diesen Zeitraum als „beurlaubt“ — eine separate Erfassung der Anwesenheit ist nicht nötig." }
+      }
+    },
+    "phase13": {
+      "title": "Phase 13 — Zeugnisse",
+      "steps": {
+        "templates": { "title": "Vorlagen", "description": "Verfassen Sie einen wiederverwendbaren Text mit Platzhaltern:" },
+        "issue": { "title": "Ausstellen", "description": "Stellen Sie es für einen bestimmten Schüler aus — die Platzhalter werden eingesetzt und dauerhaft festgehalten, sodass eine spätere Bearbeitung der Vorlage bereits ausgestellte Zeugnisse nicht verändert." }
+      }
+    }
+  },
+  "communication": {
+    "phase14": {
+      "title": "Phase 14 — Kommunikation",
+      "steps": {
+        "noticeBoard": { "title": "Anschlagbrett", "description": "Allgemeine Mitteilungen oder terminierte Veranstaltungen, gerichtet an alle / Schüler / Personal / Eltern, mit optionalem Ablaufdatum." },
+        "announcements": { "title": "Ankündigungen", "description": "Eine Rundnachricht, die außerdem für jeden passenden Empfänger eine In-App-Benachrichtigung erzeugt — sie wird live über die Benachrichtigungsglocke zugestellt, sofern die Echtzeit-Zustellung konfiguriert ist; andernfalls erhalten die Empfänger sie beim nächsten automatischen Aktualisieren." },
+        "studentRemarks": { "title": "Schülerbemerkungen", "description": "Eine Lehrkraft kann akademische, verhaltensbezogene oder allgemeine Notizen zu einem Schüler hinterlassen, die optional für die Erziehungsberechtigten des Schülers sichtbar sind." }
+      }
+    }
+  },
+  "roles": {
+    "intro": "Ein Benutzer kann mehr als eine Rolle innehaben, falls sich Ihre Organisationsstruktur nicht sauber in eine dieser Rollen einordnen lässt — z. B. ein stellvertretender Schulleiter, der zusätzlich unterrichtet.",
+    "columnRole": "Rolle",
+    "columnUse": "Typische Verwendung",
+    "columnAccess": "Umfang des Zugriffs",
+    "rows": {
+      "schoolAdmin": { "role": "Schuladministrator", "use": "Das übergeordnete Administratorkonto der Schule", "access": "Alles — Benutzer, Rollen, Einstellungen, alle Module" },
+      "principal": { "role": "Schulleiter", "use": "Schulleitung", "access": "Weitreichender Lesezugriff auf alle Bereiche, verwaltet Akademisches/Stundenplan/Prüfungen" },
+      "management": { "role": "Management", "use": "Kuratoren/Eigentümer, die Einblick benötigen", "access": "Nur Lesezugriff auf fast alles" },
+      "accountant": { "role": "Buchhalter", "use": "Gebühren-/Abrechnungsvorgänge", "access": "Gebührenkategorien/-strukturen, Rechnungen, Zahlungen, Gutschriften" },
+      "hrStaff": { "role": "Personalmitarbeiter", "use": "Personalverwaltung", "access": "Benutzer, Positionen, Urlaub, Gehaltsabrechnung, Personalanwesenheit" },
+      "receptionist": { "role": "Empfangsmitarbeiter", "use": "Empfang", "access": "Anlegen von Schülern/Erziehungsberechtigten, Besucherprotokoll" },
+      "teacher": { "role": "Lehrkraft", "use": "Fachlehrkraft", "access": "Eigene Klassen: Anwesenheit, Prüfungsnoten, Hausaufgaben, Bemerkungen" },
+      "classTeacher": { "role": "Klassenlehrer", "use": "Klassenleitung", "access": "Alles, was eine Lehrkraft hat, zusätzlich Anwesenheitsexport und klassenweite Bemerkungen" },
+      "librarian": { "role": "Bibliothekar", "use": "Bibliothek", "access": "Nur Bücher und Ausleihen" },
+      "transportStaff": { "role": "Transportmitarbeiter", "use": "Transport", "access": "Nur Routen, Fahrzeuge, Zuweisungen" },
+      "student": { "role": "Schüler", "use": "Zugang für eingeschriebene Schüler", "access": "Nur Lesezugriff: eigener Stundenplan, Anwesenheit, Noten, Hausaufgaben, Rechnungen, Zeugnisse" },
+      "parent": { "role": "Eltern", "use": "Zugang für Erziehungsberechtigte (falls eingeladen)", "access": "Wie Schüler, beschränkt auf die verknüpften eigenen Kinder" }
+    }
+  },
+  "faq": {
+    "items": {
+      "tooManyAttempts": { "q": "„Zu viele Versuche“ bei der Anmeldung.", "a": "Eine kurzzeitige Sicherheitsbegrenzung bei wiederholten Anmeldeversuchen (schützt vor dem Erraten von Passwörtern). Sie hebt sich innerhalb einer Minute von selbst auf — warten Sie und versuchen Sie es erneut, anstatt es schnell hintereinander erneut zu versuchen." },
+      "emptyDropdown": { "q": "Ein Auswahlmenü enthält keine Optionen.", "a": "Das bedeutet fast immer, dass eine vorherige Einrichtungsphase fehlt — z. B. ist das Auswahlmenü „Klasse“ im Schülerformular leer, weil noch keine Klasse erstellt wurde. Überprüfen Sie die Phase vor derjenigen, in der Sie sich gerade befinden." },
+      "discountNotShowing": { "q": "Ein von mir eingerichteter Rabatt wird auf einer Rechnung nicht angezeigt.", "a": "Rabatte aus Gebührenzuweisungen für Schüler gelten nur für Rechnungen, die nach der Erstellung des Rabatts generiert wurden — sie gelten niemals rückwirkend für eine bestehende Rechnung." },
+      "recordDisappeared": { "q": "Ich habe eine neue Transportzuweisung / Wohnheimzuweisung / Gehaltsstruktur erstellt, und die alte ist verschwunden.", "a": "Das ist so vorgesehen — für all diese gilt die Regel „ein aktiver Datensatz pro Person“, die dadurch durchgesetzt wird, dass der vorherige Datensatz automatisch abgeschlossen wird, anstatt den neuen zu blockieren." }
+    }
+  }
+}

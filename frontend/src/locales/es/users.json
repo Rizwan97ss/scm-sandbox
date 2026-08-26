@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "roles": "Roles",
+    "status": "Estado",
+    "designation": "Cargo",
+    "employeeId": "ID de empleado",
+    "hireDate": "Fecha de contratación",
+    "optional": "Opcional",
+    "none": "Ninguno",
+    "edit": "Editar"
+  },
+  "list": {
+    "title": "Personal y Usuarios",
+    "description": "Gestiona todas las cuentas de usuario y sus roles.",
+    "export": "Exportar",
+    "import": "Importar",
+    "newUser": "Nuevo usuario",
+    "searchPlaceholder": "Buscar por nombre…",
+    "columnRoles": "Roles",
+    "downloadIdCardAriaLabel": "Descargar el carné de {{name}}",
+    "emptyTitleSearch": "Ningún usuario coincide con \"{{query}}\"",
+    "emptyTitle": "No se encontraron usuarios",
+    "emptyDescriptionSearch": "Prueba con otro nombre o borra la búsqueda para ver a todos."
+  },
+  "userImport": {
+    "title": "Importación masiva de personal",
+    "breadcrumbUsers": "Personal y Usuarios",
+    "breadcrumbImport": "Importar",
+    "entityLabel": "miembro del personal",
+    "descriptionBeforeCode": "Sube un archivo Excel (.xlsx) o CSV siguiendo la plantilla. ",
+    "descriptionAfterCode": " debe coincidir exactamente con el nombre de un rol existente, y solo puedes asignar roles que ya tengas permiso para asignar. Nunca incluyas una columna de contraseña: cada cuenta importada recibe una contraseña segura generada aleatoriamente y se le envía de inmediato un correo de restablecimiento de contraseña para que establezca la suya."
+  },
+  "formModal": {
+    "editTitle": "Editar usuario",
+    "newTitle": "Nuevo usuario",
+    "saveChanges": "Guardar cambios",
+    "createUser": "Crear usuario",
+    "createdToast": "Usuario creado.",
+    "updatedToast": "Usuario actualizado."
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "Más acciones",
+    "sendPasswordReset": "Enviar restablecimiento de contraseña",
+    "resetMfa": "Restablecer autenticación de dos factores",
+    "setActive": "Marcar como activo",
+    "setInactive": "Marcar como inactivo",
+    "suspend": "Suspender",
+    "statusUpdatedToast": "Estado actualizado.",
+    "passwordResetSentToast": "Enlace de restablecimiento de contraseña enviado.",
+    "mfaResetToast": "Autenticación de dos factores restablecida: podrán configurarla de nuevo en su próximo inicio de sesión."
+  }
+}

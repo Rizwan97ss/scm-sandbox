@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "العنوان",
+    "description": "الوصف",
+    "dueDate": "تاريخ الاستحقاق",
+    "maxScore": "الدرجة القصوى",
+    "subject": "المادة",
+    "section": "الشعبة",
+    "teacher": "المعلم",
+    "status": "الحالة",
+    "notSubmitted": "لم يتم التسليم",
+    "optional": "اختياري"
+  },
+  "list": {
+    "title": "الواجبات المنزلية",
+    "descriptionStudent": "الواجبات المخصصة لصفك — سلّم عملك قبل تاريخ الاستحقاق.",
+    "descriptionStaff": "خصّص وقيّم الواجبات المنزلية لصفوفك.",
+    "newHomework": "واجب جديد",
+    "columnTitle": "العنوان",
+    "columnSubject": "المادة",
+    "columnSection": "الشعبة",
+    "columnDueDate": "تاريخ الاستحقاق",
+    "columnStatus": "الحالة",
+    "columnTeacher": "المعلم",
+    "emptyTitle": "لا توجد واجبات بعد",
+    "emptyDescription": "خصّص واجبك الأول للبدء.",
+    "modalTitle": "واجب جديد",
+    "classLabel": "الصف",
+    "classHint": "الشعبة/المادة المخصص لها هذا الواجب",
+    "classPlaceholder": "اختر صفاً",
+    "dueDateLabel": "تاريخ الاستحقاق",
+    "maxScoreLabel": "الدرجة القصوى",
+    "assignHomework": "تخصيص الواجب"
+  },
+  "detail": {
+    "breadcrumbHomework": "الواجبات المنزلية",
+    "descriptionLine": "{{subject}} · {{section}} · الاستحقاق {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · الدرجة القصوى: {{score}}",
+    "instructions": "التعليمات",
+    "columnAdmissionNumber": "رقم القيد",
+    "columnName": "الاسم",
+    "columnStatus": "الحالة",
+    "columnSubmission": "التسليم",
+    "columnScore": "الدرجة",
+    "columnFeedback": "الملاحظات",
+    "saveGradeAriaLabel": "حفظ درجة {{name}}",
+    "gradeSaved": "تم حفظ الدرجة."
+  },
+  "submitModal": {
+    "descriptionLine": "الاستحقاق {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · الدرجة القصوى: {{score}}",
+    "instructions": "التعليمات",
+    "answerLabel": "إجابتك",
+    "answerPlaceholder": "اكتب إجابتك أو ملاحظاتك هنا (اختياري إذا كنت ترفق ملفاً)",
+    "attachmentLabel": "المرفق",
+    "resubmit": "إعادة التسليم",
+    "submitHomework": "تسليم الواجب",
+    "submittedSuccess": "تم تسليم الواجب."
+  }
+}

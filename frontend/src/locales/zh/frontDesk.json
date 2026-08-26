@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "name": "姓名",
+    "phone": "电话",
+    "purpose": "来访事由",
+    "whomToMeet": "拜访对象",
+    "notes": "备注",
+    "checkedIn": "已登记",
+    "checkedOut": "已签离"
+  },
+  "list": {
+    "title": "访客",
+    "description": "前台访客登记记录。",
+    "logVisitor": "登记访客",
+    "columnToMeet": "拜访对象",
+    "columnStatus": "状态",
+    "checkOut": "签离",
+    "checkedOutToast": "访客已签离。",
+    "emptyTitle": "暂无访客登记记录",
+    "emptyDescription": "在前台登记的访客将显示在此处。"
+  },
+  "checkInModal": {
+    "title": "登记访客",
+    "notesHint": "选填",
+    "submit": "登记来访",
+    "checkedInToast": "访客已登记。"
+  }
+}

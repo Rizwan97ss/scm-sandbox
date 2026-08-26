@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "Rollen & Berechtigungen",
+    "description": "Erstellen Sie benutzerdefinierte Rollen und legen Sie genau fest, was jede tun kann.",
+    "newRole": "Neue Rolle",
+    "systemRoleAriaLabel": "Systemrolle",
+    "edit": "Bearbeiten",
+    "deleteAriaLabel": "{{name}} löschen",
+    "emptyTitle": "Noch keine Rollen",
+    "permissionsCount": "{{count}} Berechtigung(en)",
+    "morePermissions": "+{{count}} weitere",
+    "deleteConfirmTitle": "Rolle \"{{name}}\" löschen?",
+    "deleteConfirmDescription": "Benutzer, die nur diese Rolle haben, verlieren alle ihre Berechtigungen.",
+    "deleteSuccessToast": "Rolle gelöscht."
+  },
+  "formModal": {
+    "editTitle": "Rolle bearbeiten",
+    "newTitle": "Neue Rolle",
+    "roleNameLabel": "Rollenname",
+    "permissionsLabel": "Berechtigungen",
+    "saveChanges": "Änderungen speichern",
+    "createRole": "Rolle erstellen",
+    "updateSuccessToast": "Rolle aktualisiert.",
+    "createSuccessToast": "Rolle erstellt."
+  }
+}

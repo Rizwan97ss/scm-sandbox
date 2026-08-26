@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "Titre",
+    "description": "Description",
+    "dueDate": "Date d'échéance",
+    "maxScore": "Note maximale",
+    "subject": "Matière",
+    "section": "Section",
+    "teacher": "Enseignant",
+    "status": "Statut",
+    "notSubmitted": "Non remis",
+    "optional": "Facultatif"
+  },
+  "list": {
+    "title": "Devoirs",
+    "descriptionStudent": "Devoirs assignés à votre classe — remettez votre travail avant la date limite.",
+    "descriptionStaff": "Assignez et corrigez les devoirs de vos classes.",
+    "newHomework": "Nouveau devoir",
+    "columnTitle": "Titre",
+    "columnSubject": "Matière",
+    "columnSection": "Section",
+    "columnDueDate": "Date d'échéance",
+    "columnStatus": "Statut",
+    "columnTeacher": "Enseignant",
+    "emptyTitle": "Aucun devoir pour le moment",
+    "emptyDescription": "Assignez votre premier devoir pour commencer.",
+    "modalTitle": "Nouveau devoir",
+    "classLabel": "Classe",
+    "classHint": "Section/matière concernée par ce devoir",
+    "classPlaceholder": "Sélectionner une classe",
+    "dueDateLabel": "Date d'échéance",
+    "maxScoreLabel": "Note maximale",
+    "assignHomework": "Assigner le devoir"
+  },
+  "detail": {
+    "breadcrumbHomework": "Devoirs",
+    "descriptionLine": "{{subject}} · {{section}} · À rendre le {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Note maximale : {{score}}",
+    "instructions": "Instructions",
+    "columnAdmissionNumber": "N° d'admission",
+    "columnName": "Nom",
+    "columnStatus": "Statut",
+    "columnSubmission": "Remise",
+    "columnScore": "Note",
+    "columnFeedback": "Commentaires",
+    "saveGradeAriaLabel": "Enregistrer la note de {{name}}",
+    "gradeSaved": "Note enregistrée."
+  },
+  "submitModal": {
+    "descriptionLine": "À rendre le {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Note maximale : {{score}}",
+    "instructions": "Instructions",
+    "answerLabel": "Votre réponse",
+    "answerPlaceholder": "Saisissez votre réponse ou vos notes ici (facultatif si vous joignez un fichier)",
+    "attachmentLabel": "Pièce jointe",
+    "resubmit": "Soumettre à nouveau",
+    "submitHomework": "Remettre le devoir",
+    "submittedSuccess": "Devoir remis."
+  }
+}

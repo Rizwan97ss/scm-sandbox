@@ -1,0 +1,67 @@
+{
+  "center": {
+    "title": "Centre d'importation",
+    "description": "Créez des enregistrements en masse à partir d'un fichier Excel ou CSV.",
+    "noPermission": "Vous n'avez pas encore la permission d'importer des enregistrements.",
+    "options": {
+      "students": {
+        "label": "Élèves",
+        "description": "Admettez des élèves en masse, avec jusqu'à deux tuteurs par ligne."
+      },
+      "staff": {
+        "label": "Personnel et utilisateurs",
+        "description": "Créez des comptes du personnel en masse, chacun avec un rôle. Les mots de passe ne sont jamais importés : chaque compte reçoit un e-mail de réinitialisation."
+      },
+      "guardians": {
+        "label": "Tuteurs",
+        "description": "Associez des tuteurs à des élèves déjà présents dans le système par numéro d'admission ; un tuteur correspondant par e-mail est réutilisé plutôt que dupliqué."
+      },
+      "departments": {
+        "label": "Départements",
+        "description": "Configurez en masse les départements de regroupement de matières, utile lors de la première configuration d'une nouvelle école."
+      },
+      "grade-levels": {
+        "label": "Niveaux scolaires",
+        "description": "Créez en masse les niveaux enseignés par votre école, avec la séquence de promotion de chacun."
+      },
+      "sections": {
+        "label": "Sections",
+        "description": "Créez en masse des sections (classes dans lesquelles les élèves sont admis) pour l'année académique en cours, avec une salle assignée en option."
+      },
+      "subjects": {
+        "label": "Matières",
+        "description": "Créez des matières en masse, éventuellement liées à un département par son code."
+      },
+      "rooms": {
+        "label": "Salles",
+        "description": "Créez en masse des salles physiques avec capacité et type."
+      }
+    }
+  },
+  "logs": {
+    "title": "Journaux d'importation",
+    "description": "Toutes les tentatives d'importation en masse de l'école, y compris les aperçus jamais confirmés.",
+    "columnWhen": "Quand",
+    "columnEntity": "Entité",
+    "columnBy": "Par",
+    "columnFile": "Fichier",
+    "columnMode": "Mode",
+    "columnResult": "Résultat",
+    "columnActions": "",
+    "unknownPerformer": "—",
+    "previewOnly": "Aperçu uniquement",
+    "createdCount": "{{count}} créé(s)",
+    "updatedCount": "{{count}} mis à jour",
+    "failedCount": "{{count}} échoué(s)",
+    "undoneAt": "Annulé le {{date}}",
+    "undo": "Annuler",
+    "emptyTitle": "Aucune importation pour le moment",
+    "emptyDescription": "Les fichiers que vous importez seront enregistrés ici, avec la possibilité d'annuler.",
+    "undoDialogTitle": "Annuler cette importation de {{entity}} ?",
+    "undoDialogDescription": "Cela supprime les {{count}} enregistrement(s) créé(s) à partir de « {{fileName}} ». Les enregistrements que cette importation a seulement mis à jour ne sont jamais touchés, et tout enregistrement ayant des dépendants créés depuis sera ignoré et signalé. Cette action ne peut pas être refaite depuis ici : les enregistrements supprimés vont à la corbeille comme pour une suppression normale.",
+    "undoConfirmLabel": "Annuler l'importation",
+    "undoBlockedItem": "{{type}} « {{label}} »",
+    "undoWarning": "{{deleted}} enregistrement(s) annulé(s). {{blockedCount}} n'ont pas pu être annulés : {{blockedList}} — autre chose en dépend désormais.",
+    "undoSuccess": "{{count}} enregistrement(s) annulé(s)."
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "topbar": {
+    "openMenu": "نیویگیشن مینو کھولیں"
+  },
+  "nav": {
+    "groups": {
+      "overview": "جائزہ",
+      "people": "افراد",
+      "attendance": "حاضری",
+      "exams": "امتحانات",
+      "teaching": "تدریس",
+      "feesAccounting": "فیس اور حساب کتاب",
+      "hrPayroll": "ایچ آر اور تنخواہ",
+      "library": "لائبریری",
+      "transport": "ٹرانسپورٹ",
+      "hostel": "ہاسٹل",
+      "frontDesk": "فرنٹ ڈیسک",
+      "certificatesIdCards": "سرٹیفکیٹس اور شناختی کارڈز",
+      "noticeBoard": "نوٹس بورڈ",
+      "communication": "رابطہ",
+      "reportsAnalytics": "رپورٹس اور تجزیات",
+      "academics": "تعلیمی امور",
+      "administration": "انتظامیہ"
+    },
+    "items": {
+      "dashboard": "ڈیش بورڈ",
+      "students": "طلبہ",
+      "guardians": "سرپرست",
+      "staffUsers": "عملہ اور صارفین",
+      "takeAttendance": "حاضری لگائیں",
+      "staffAttendance": "عملے کی حاضری",
+      "exams": "امتحانات",
+      "gradingScales": "گریڈنگ اسکیل",
+      "examConfiguration": "امتحان کی ترتیب",
+      "homework": "گھر کا کام",
+      "invoices": "انوائسز",
+      "feeStructures": "فیس ڈھانچے",
+      "feeCategories": "فیس کیٹگریز",
+      "feeReports": "فیس رپورٹس",
+      "leaveRequests": "چھٹی کی درخواستیں",
+      "payslips": "تنخواہ کی رسیدیں",
+      "designations": "عہدے",
+      "leaveTypes": "چھٹی کی اقسام",
+      "salaryStructures": "تنخواہ کے ڈھانچے",
+      "books": "کتابیں",
+      "bookIssues": "کتابوں کا اجراء",
+      "vehicles": "گاڑیاں",
+      "routes": "روٹس",
+      "studentAssignments": "طلبہ کی تفویض",
+      "hostels": "ہاسٹلز",
+      "hostelRooms": "کمرے",
+      "allocations": "تخصیصات",
+      "visitors": "زائرین",
+      "certificateTemplates": "سرٹیفکیٹ ٹیمپلیٹس",
+      "issuedCertificates": "جاری کردہ سرٹیفکیٹس",
+      "noticeBoard": "نوٹس بورڈ",
+      "announcements": "اعلانات",
+      "attendanceReport": "حاضری رپورٹ",
+      "academicPerformance": "تعلیمی کارکردگی",
+      "enrollmentReport": "داخلہ رپورٹ",
+      "operationsReport": "آپریشنز رپورٹ",
+      "academicYears": "تعلیمی سال",
+      "terms": "ٹرمز",
+      "departments": "شعبہ جات",
+      "gradeLevels": "جماعت کی سطحیں",
+      "sections": "سیکشنز",
+      "subjects": "مضامین",
+      "academicRooms": "کمرے",
+      "timetable": "ٹائم ٹیبل",
+      "holidays": "تعطیلات",
+      "rolesPermissions": "کردار اور اجازتیں",
+      "settings": "ترتیبات",
+      "systemHealth": "سسٹم کی صحت",
+      "auditLog": "آڈٹ لاگ",
+      "importLogs": "امپورٹ لاگز",
+      "dataExport": "ڈیٹا ایکسپورٹ",
+      "importCenter": "امپورٹ سینٹر",
+      "myChildren": "میرے بچے",
+      "myOnlineTests": "میرے آن لائن ٹیسٹ",
+      "myResult": "میرا نتیجہ",
+      "myFees": "میری فیس",
+      "certificates": "سرٹیفکیٹس"
+    }
+  },
+  "search": {
+    "placeholder": "طلبہ، عملہ، انوائسز تلاش کریں...",
+    "ariaLabel": "عالمی تلاش",
+    "clear": "تلاش صاف کریں",
+    "searching": "تلاش کی جا رہی ہے…",
+    "noResultsFor": "\"{{query}}\" کے لیے کوئی نتیجہ نہیں ملا۔",
+    "categories": {
+      "students": "طلبہ",
+      "guardians": "سرپرست",
+      "staff": "عملہ",
+      "books": "کتابیں",
+      "invoices": "انوائسز"
+    }
+  },
+  "notifications": {
+    "ariaLabel": "اطلاعات",
+    "ariaLabelUnread": "اطلاعات ({{count}} غیر پڑھی گئی)",
+    "title": "اطلاعات",
+    "markAllRead": "سب کو پڑھا ہوا نشان زد کریں",
+    "empty": "ابھی تک کوئی اطلاع نہیں۔"
+  },
+  "userMenu": {
+    "accountMenu": "اکاؤنٹ مینو",
+    "downloadIdCard": "میرا شناختی کارڈ ڈاؤن لوڈ کریں",
+    "exportMyData": "میرا ڈیٹا ایکسپورٹ کریں",
+    "setupGuide": "سیٹ اپ گائیڈ",
+    "deleteAccount": "میرا اکاؤنٹ حذف کریں",
+    "logout": "لاگ آؤٹ",
+    "deleteConfirmTitle": "اپنا اکاؤنٹ حذف کریں؟",
+    "deleteConfirmDescription": "اس سے آپ کا ذاتی ڈیٹا (نام، رابطے کی تفصیلات، طبی/ہنگامی معلومات) فوری طور پر ہٹا دیا جائے گا اور اسے واپس نہیں لایا جا سکتا۔ آپ کے اکاؤنٹ سے منسلک تعلیمی اور مالی ریکارڈ ضرورت کے مطابق محفوظ رکھے جائیں گے۔",
+    "deleteConfirmLabel": "میرا اکاؤنٹ حذف کریں"
+  },
+  "theme": {
+    "changeTheme": "تھیم تبدیل کریں",
+    "light": "روشن",
+    "dark": "تاریک",
+    "system": "سسٹم"
+  },
+  "language": {
+    "changeLanguage": "زبان تبدیل کریں"
+  },
+  "mfaBanner": {
+    "required": "اس اکاؤنٹ پر دو مرحلہ تصدیق لازمی ہے — {{action}}۔",
+    "setupNow": "ابھی ترتیب دیں",
+    "daysLeft_one": "ترتیب دینے کے لیے آپ کے پاس {{count}} دن باقی ہے",
+    "daysLeft_other": "ترتیب دینے کے لیے آپ کے پاس {{count}} دن باقی ہیں",
+    "link": "ابھی ترتیب دیں"
+  },
+  "offlineBanner": {
+    "message": "آپ آف لائن ہیں۔ اب کی گئی تبدیلیاں کنکشن بحال ہونے تک محفوظ نہیں ہوں گی۔"
+  },
+  "confirmDialog": {
+    "confirm": "تصدیق کریں",
+    "cancel": "منسوخ کریں"
+  },
+  "queryError": {
+    "title": "کچھ غلط ہو گیا",
+    "description": "یہ لوڈ نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔",
+    "retry": "دوبارہ کوشش کریں"
+  },
+  "pagination": {
+    "showing": "{{total}} میں سے {{from}}–{{to}} دکھایا جا رہا ہے",
+    "previousPage": "پچھلا صفحہ",
+    "nextPage": "اگلا صفحہ",
+    "pageOf": "صفحہ {{current}} از {{last}}"
+  },
+  "dataTable": {
+    "noRecordsFound": "کوئی ریکارڈ نہیں ملا",
+    "selectAll": "اس صفحے پر سب منتخب کریں",
+    "selectRow": "قطار منتخب کریں"
+  },
+  "modal": {
+    "closeDialog": "ڈائیلاگ بند کریں"
+  },
+  "bulkActions": {
+    "selected": "{{count}} منتخب",
+    "clear": "صاف کریں"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "بریڈکرمب"
+  },
+  "drawer": {
+    "closePanel": "پینل بند کریں"
+  },
+  "select": {
+    "placeholder": "منتخب کریں…",
+    "searchPlaceholder": "تلاش کریں…",
+    "noResults": "کوئی نتیجہ نہیں۔"
+  },
+  "fileUpload": {
+    "removeFile": "فائل ہٹائیں",
+    "clickToUpload": "اپ لوڈ کرنے کے لیے کلک کریں",
+    "orDragAndDrop": "یا گھسیٹ کر چھوڑیں",
+    "tooLarge": "فائل بہت بڑی ہے۔ زیادہ سے زیادہ سائز {{maxSizeMb}}MB ہے۔"
+  },
+  "importFileMapper": {
+    "dontImportColumn": "اس کالم کو امپورٹ نہ کریں",
+    "uploadPrompt": "پہلے سے موجود کالم ہیڈرز کے ساتھ ایک فائل اپ لوڈ کریں — اس کے بعد آپ ہر ایک کو صحیح فیلڈ سے ملائیں گے، پہلے کچھ بھی نام تبدیل کرنے کی ضرورت نہیں۔",
+    "readingFile": "فائل پڑھی جا رہی ہے…",
+    "matchPrompt": "اپنی فائل کے ہر کالم کو نیچے ایک فیلڈ سے ملائیں۔ \"امپورٹ نہ کریں\" پر سیٹ کالمز کو مکمل طور پر چھوڑ دیا جاتا ہے۔",
+    "truncatedNotice": " یہاں صرف پہلی قطاریں دکھائی گئی ہیں، لیکن فائل کی ہر قطار امپورٹ کی جائے گی۔",
+    "columnYourColumn": "آپ کا کالم",
+    "columnSampleValues": "نمونہ اقدار",
+    "columnMapsTo": "اس سے مماثل ہے",
+    "mapsToAriaLabel": "\"{{header}}\" کو اس سے میپ کرتا ہے",
+    "continueWithMapped_one": "{{count}} میپ شدہ کالم کے ساتھ جاری رکھیں",
+    "continueWithMapped_other": "{{count}} میپ شدہ کالمز کے ساتھ جاری رکھیں",
+    "chooseDifferentFile": "کوئی اور فائل منتخب کریں"
+  },
+  "importForm": {
+    "downloadTemplate": "ٹیمپلیٹ ڈاؤن لوڈ کریں",
+    "modeLabel": "موڈ",
+    "modeCreate": "صرف بنائیں (موجودہ کو مسترد کریں)",
+    "modeUpdate": "صرف اپ ڈیٹ کریں (نہ ملنے پر ناکام)",
+    "modeUpsert": "بنائیں یا اپ ڈیٹ کریں",
+    "tabUploadFile": "فائل اپ لوڈ کریں",
+    "tabPasteData": "ڈیٹا پیسٹ کریں",
+    "tabUploadMap": "اپ لوڈ کریں اور کالمز میپ کریں",
+    "previewImport": "امپورٹ کا پیش نظارہ",
+    "recheck": "دوبارہ چیک کریں",
+    "confirmImport": "امپورٹ کی تصدیق کریں",
+    "chooseDifferentFile": "کوئی اور فائل منتخب کریں",
+    "nothingSavedYet": "ابھی تک کچھ محفوظ نہیں ہوا — نیچے پیش نظارہ دیکھیں، پھر تصدیق کریں۔",
+    "gridInstructions": "براہ راست گرڈ میں ٹائپ کریں، یا پہلے سیل سے شروع کرتے ہوئے Excel/Google Sheets سے کاپی کی گئی قطاریں پیسٹ کریں۔ ہر قطار کی جانچ اسی طرح کی جاتی ہے جیسے اپ لوڈ کردہ فائل کی ہوتی — ناکام سیل نیچے نمایاں کیا گیا ہے؛ اسے ٹھیک کریں اور دوبارہ پیش نظارہ کریں۔",
+    "loadingGrid": "گرڈ لوڈ ہو رہا ہے…",
+    "loading": "لوڈ ہو رہا ہے…",
+    "queuedInBackground": "یہ فائل اتنی بڑی ہے کہ یہ بیک گراؤنڈ میں پروسیس ہو رہی ہے — مکمل ہونے پر یہ صفحہ اپ ڈیٹ ہو جائے گا۔",
+    "queuedNotice": "یہ فائل اتنی بڑی ہے کہ یہ بیک گراؤنڈ میں پروسیس ہو رہی ہے۔ مکمل ہونے پر یہ صفحہ خود بخود اپ ڈیٹ ہو جائے گا — اس پر رہنے کی ضرورت نہیں۔",
+    "backgroundImportFailed": "بیک گراؤنڈ امپورٹ ناکام ہو گئی۔",
+    "importAnotherFile": "کوئی اور فائل امپورٹ کریں",
+    "resultCreated": "بنائے گئے",
+    "resultUpdated": "اپ ڈیٹ ہوئے",
+    "resultNothingToImport": "امپورٹ کرنے کے لیے کچھ نہیں",
+    "resultNothingToReport": "رپورٹ کرنے کے لیے کچھ نہیں",
+    "resultWouldBeCreated": "بنائے جائیں گے",
+    "resultWouldBeUpdated": "اپ ڈیٹ ہوں گے",
+    "resultPossibleDuplicate_one": "{{count}} ممکنہ ڈپلیکیٹ",
+    "resultPossibleDuplicate_other": "{{count}} ممکنہ ڈپلیکیٹس",
+    "resultFailed": "ناکام",
+    "resultWouldFail": "ناکام ہوں گے",
+    "reviewBeforeNewRecords": "انہیں نئے ریکارڈز سمجھنے سے پہلے جائزہ لیں",
+    "rowLabel": "قطار {{row}}:",
+    "columnRow": "قطار",
+    "columnField": "فیلڈ",
+    "columnError": "خرابی",
+    "entitySummary": "{{entity}}: {{summary}}",
+    "nothingChanged": "کچھ تبدیل نہیں ہوا"
+  },
+  "enums": {
+    "gender": {
+      "male": "مرد",
+      "female": "عورت",
+      "other": "دیگر"
+    },
+    "userStatus": {
+      "active": "فعال",
+      "inactive": "غیر فعال",
+      "suspended": "معطل"
+    },
+    "studentStatus": {
+      "active": "فعال",
+      "transferred_out": "منتقل شدہ",
+      "withdrawn": "دستبردار",
+      "graduated": "فارغ التحصیل",
+      "alumni": "سابق طالب علم"
+    },
+    "enrollmentAction": {
+      "admission": "داخلہ",
+      "promotion": "ترقی",
+      "transfer_in": "منتقلی (آمد)",
+      "transfer_out": "منتقلی (روانگی)",
+      "withdrawal": "دستبرداری",
+      "graduation": "فراغت",
+      "reactivation": "دوبارہ فعال کاری"
+    },
+    "guardianRelationship": {
+      "father": "والد",
+      "mother": "والدہ",
+      "guardian": "سرپرست",
+      "other": "دیگر"
+    },
+    "roomType": {
+      "classroom": "کلاس روم",
+      "lab": "لیبارٹری",
+      "hall": "ہال",
+      "other": "دیگر"
+    },
+    "holidayType": {
+      "public": "عوامی تعطیل",
+      "school_specific": "اسکول کی مخصوص تعطیل"
+    },
+    "attendanceStatus": {
+      "present": "حاضر",
+      "absent": "غیر حاضر",
+      "late": "تاخیر سے",
+      "half_day": "آدھا دن",
+      "excused": "معذور",
+      "on_leave": "چھٹی پر"
+    },
+    "daysOfWeek": {
+      "0": "اتوار",
+      "1": "پیر",
+      "2": "منگل",
+      "3": "بدھ",
+      "4": "جمعرات",
+      "5": "جمعہ",
+      "6": "ہفتہ"
+    },
+    "announcementChannel": {
+      "in_app": "ایپ میں",
+      "email": "ای میل",
+      "sms": "ایس ایم ایس",
+      "push": "پش اطلاع"
+    },
+    "noticeType": {
+      "general": "نوٹس",
+      "event": "تقریب"
+    },
+    "audience": {
+      "all": "سب",
+      "students": "طلبہ",
+      "staff": "عملہ",
+      "parents": "والدین"
+    },
+    "feeFrequency": {
+      "one_time": "ایک بار",
+      "monthly": "ماہانہ",
+      "quarterly": "سہ ماہی",
+      "term": "ٹرم کے مطابق",
+      "annual": "سالانہ"
+    },
+    "discountType": {
+      "none": "کوئی نہیں",
+      "percentage": "فیصد",
+      "fixed": "مقررہ رقم"
+    },
+    "invoiceStatus": {
+      "draft": "مسودہ",
+      "issued": "جاری شدہ",
+      "partially_paid": "جزوی طور پر ادا شدہ",
+      "paid": "ادا شدہ",
+      "void": "منسوخ"
+    },
+    "paymentMethod": {
+      "cash": "نقد",
+      "cheque": "چیک",
+      "bank_transfer": "بینک ٹرانسفر",
+      "upi": "یو پی آئی",
+      "card": "کارڈ",
+      "other": "دیگر"
+    },
+    "hostelType": {
+      "boys": "لڑکے",
+      "girls": "لڑکیاں",
+      "mixed": "مخلوط"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "مختص شدہ",
+      "vacated": "خالی شدہ"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "جمع شدہ",
+      "graded": "نمبر دیے گئے"
+    },
+    "remarkCategory": {
+      "academic": "تعلیمی",
+      "behavioral": "رویہ جاتی",
+      "general": "عمومی"
+    },
+    "bookIssueStatus": {
+      "issued": "جاری شدہ",
+      "returned": "واپس شدہ",
+      "overdue": "میعاد گزشتہ"
+    },
+    "leaveStatus": {
+      "pending": "زیر التوا",
+      "approved": "منظور شدہ",
+      "rejected": "مسترد شدہ",
+      "cancelled": "منسوخ شدہ"
+    },
+    "payslipStatus": {
+      "generated": "تیار شدہ",
+      "paid": "ادا شدہ"
+    },
+    "questionType": {
+      "mcq": "کثیر انتخابی",
+      "true_false": "صحیح / غلط"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "صفحہ نہیں ملا",
+    "notFoundDescription": "جس صفحے کی آپ تلاش کر رہے ہیں وہ موجود نہیں ہے یا منتقل کر دیا گیا ہے۔",
+    "backToDashboard": "ڈیش بورڈ پر واپس جائیں",
+    "somethingWentWrong": "کچھ غلط ہو گیا",
+    "somethingWentWrongDescription": "براہ کرم صفحہ دوبارہ لوڈ کرنے کی کوشش کریں۔ اگر مسئلہ برقرار رہے تو سپورٹ سے رابطہ کریں۔",
+    "reloadPage": "صفحہ دوبارہ لوڈ کریں",
+    "accessDenied": "رسائی مسترد",
+    "accessDeniedDescription": "آپ کو یہ صفحہ دیکھنے کی اجازت نہیں ہے۔",
+    "loading": "لوڈ ہو رہا ہے…"
+  }
+}

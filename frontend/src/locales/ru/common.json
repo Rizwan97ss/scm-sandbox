@@ -1,0 +1,391 @@
+{
+  "topbar": {
+    "openMenu": "Открыть меню навигации"
+  },
+  "nav": {
+    "groups": {
+      "overview": "Обзор",
+      "people": "Люди",
+      "attendance": "Посещаемость",
+      "exams": "Экзамены",
+      "teaching": "Преподавание",
+      "feesAccounting": "Оплата и Бухгалтерия",
+      "hrPayroll": "Кадры и Зарплата",
+      "library": "Библиотека",
+      "transport": "Транспорт",
+      "hostel": "Общежитие",
+      "frontDesk": "Ресепшн",
+      "certificatesIdCards": "Сертификаты и Пропуска",
+      "noticeBoard": "Доска Объявлений",
+      "communication": "Коммуникация",
+      "reportsAnalytics": "Отчёты и Аналитика",
+      "academics": "Учебная Часть",
+      "administration": "Администрирование"
+    },
+    "items": {
+      "dashboard": "Панель Управления",
+      "students": "Учащиеся",
+      "guardians": "Опекуны",
+      "staffUsers": "Сотрудники и Пользователи",
+      "takeAttendance": "Отметить Посещаемость",
+      "staffAttendance": "Посещаемость Сотрудников",
+      "exams": "Экзамены",
+      "gradingScales": "Шкалы Оценивания",
+      "examConfiguration": "Настройка Экзаменов",
+      "homework": "Домашние Задания",
+      "invoices": "Счета",
+      "feeStructures": "Структуры Оплаты",
+      "feeCategories": "Категории Оплаты",
+      "feeReports": "Отчёты по Оплате",
+      "leaveRequests": "Заявления на Отпуск",
+      "payslips": "Расчётные Листки",
+      "designations": "Должности",
+      "leaveTypes": "Виды Отпусков",
+      "salaryStructures": "Структуры Зарплаты",
+      "books": "Книги",
+      "bookIssues": "Выдача Книг",
+      "vehicles": "Транспортные Средства",
+      "routes": "Маршруты",
+      "studentAssignments": "Назначения Учащихся",
+      "hostels": "Общежития",
+      "hostelRooms": "Комнаты",
+      "allocations": "Распределения",
+      "visitors": "Посетители",
+      "certificateTemplates": "Шаблоны Сертификатов",
+      "issuedCertificates": "Выданные Сертификаты",
+      "noticeBoard": "Доска Объявлений",
+      "announcements": "Объявления",
+      "attendanceReport": "Отчёт по Посещаемости",
+      "academicPerformance": "Успеваемость",
+      "enrollmentReport": "Отчёт по Зачислению",
+      "operationsReport": "Операционный Отчёт",
+      "academicYears": "Учебные Годы",
+      "terms": "Семестры",
+      "departments": "Отделения",
+      "gradeLevels": "Классы",
+      "sections": "Секции",
+      "subjects": "Предметы",
+      "academicRooms": "Кабинеты",
+      "timetable": "Расписание",
+      "holidays": "Праздники",
+      "rolesPermissions": "Роли и Права",
+      "settings": "Настройки",
+      "systemHealth": "Состояние Системы",
+      "auditLog": "Журнал Аудита",
+      "importLogs": "Журналы Импорта",
+      "dataExport": "Экспорт Данных",
+      "importCenter": "Центр Импорта",
+      "myChildren": "Мои Дети",
+      "myOnlineTests": "Мои Онлайн-Тесты",
+      "myResult": "Мой Результат",
+      "myFees": "Моя Оплата",
+      "certificates": "Сертификаты"
+    }
+  },
+  "search": {
+    "placeholder": "Поиск учащихся, сотрудников, счетов...",
+    "ariaLabel": "Глобальный поиск",
+    "clear": "Очистить поиск",
+    "searching": "Поиск…",
+    "noResultsFor": "Нет результатов по запросу «{{query}}».",
+    "categories": {
+      "students": "Учащиеся",
+      "guardians": "Опекуны",
+      "staff": "Сотрудники",
+      "books": "Книги",
+      "invoices": "Счета"
+    }
+  },
+  "notifications": {
+    "ariaLabel": "Уведомления",
+    "ariaLabelUnread": "Уведомления (непрочитанных: {{count}})",
+    "title": "Уведомления",
+    "markAllRead": "Отметить все как прочитанные",
+    "empty": "Пока нет уведомлений."
+  },
+  "userMenu": {
+    "accountMenu": "Меню аккаунта",
+    "downloadIdCard": "Скачать Мой Пропуск",
+    "exportMyData": "Экспортировать Мои Данные",
+    "setupGuide": "Руководство по Настройке",
+    "deleteAccount": "Удалить Мой Аккаунт",
+    "logout": "Выйти",
+    "deleteConfirmTitle": "Удалить ваш аккаунт?",
+    "deleteConfirmDescription": "Это немедленно удалит ваши личные данные (имя, контактные данные, медицинскую информацию/контакты на случай чрезвычайной ситуации), и это действие нельзя отменить. Учебные и финансовые записи, связанные с вашим аккаунтом, сохраняются в соответствии с требованиями.",
+    "deleteConfirmLabel": "Удалить мой аккаунт"
+  },
+  "theme": {
+    "changeTheme": "Сменить тему",
+    "light": "Светлая",
+    "dark": "Тёмная",
+    "system": "Системная"
+  },
+  "language": {
+    "changeLanguage": "Сменить язык"
+  },
+  "mfaBanner": {
+    "required": "Для этого аккаунта требуется двухфакторная аутентификация — {{action}}.",
+    "setupNow": "настройте её сейчас",
+    "daysLeft_one": "у вас остался {{count}} день на настройку",
+    "daysLeft_few": "у вас осталось {{count}} дня на настройку",
+    "daysLeft_many": "у вас осталось {{count}} дней на настройку",
+    "daysLeft_other": "у вас осталось {{count}} дня на настройку",
+    "link": "Настроить сейчас"
+  },
+  "offlineBanner": {
+    "message": "Вы не в сети. Изменения, внесённые сейчас, не будут сохранены до восстановления соединения."
+  },
+  "confirmDialog": {
+    "confirm": "Подтвердить",
+    "cancel": "Отмена"
+  },
+  "queryError": {
+    "title": "Что-то пошло не так",
+    "description": "Не удалось загрузить. Попробуйте ещё раз.",
+    "retry": "Повторить"
+  },
+  "pagination": {
+    "showing": "Показано {{from}}–{{to}} из {{total}}",
+    "previousPage": "Предыдущая страница",
+    "nextPage": "Следующая страница",
+    "pageOf": "Страница {{current}} из {{last}}"
+  },
+  "dataTable": {
+    "noRecordsFound": "Записи не найдены",
+    "selectAll": "Выбрать все на этой странице",
+    "selectRow": "Выбрать строку"
+  },
+  "modal": {
+    "closeDialog": "Закрыть диалог"
+  },
+  "bulkActions": {
+    "selected": "Выбрано: {{count}}",
+    "clear": "Очистить"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "Хлебные крошки"
+  },
+  "drawer": {
+    "closePanel": "Закрыть панель"
+  },
+  "select": {
+    "placeholder": "Выбрать…",
+    "searchPlaceholder": "Поиск…",
+    "noResults": "Нет результатов."
+  },
+  "fileUpload": {
+    "removeFile": "Удалить файл",
+    "clickToUpload": "Нажмите, чтобы загрузить",
+    "orDragAndDrop": "или перетащите сюда",
+    "tooLarge": "Файл слишком большой. Максимальный размер {{maxSizeMb}}МБ."
+  },
+  "importFileMapper": {
+    "dontImportColumn": "Не импортировать этот столбец",
+    "uploadPrompt": "Загрузите файл с уже имеющимися заголовками столбцов — далее вы сопоставите каждый с нужным полем без необходимости что-либо переименовывать заранее.",
+    "readingFile": "Чтение файла…",
+    "matchPrompt": "Сопоставьте каждый столбец вашего файла с полем ниже. Столбцы со значением «Не импортировать» полностью пропускаются.",
+    "truncatedNotice": " Здесь показаны только первые строки, но будет импортирована каждая строка файла.",
+    "columnYourColumn": "Ваш столбец",
+    "columnSampleValues": "Примеры значений",
+    "columnMapsTo": "Сопоставляется с",
+    "mapsToAriaLabel": "Сопоставляет «{{header}}» с",
+    "continueWithMapped_one": "Продолжить с {{count}} сопоставленным столбцом",
+    "continueWithMapped_few": "Продолжить с {{count}} сопоставленными столбцами",
+    "continueWithMapped_many": "Продолжить с {{count}} сопоставленными столбцами",
+    "continueWithMapped_other": "Продолжить с {{count}} сопоставленными столбцами",
+    "chooseDifferentFile": "Выбрать другой файл"
+  },
+  "importForm": {
+    "downloadTemplate": "Скачать шаблон",
+    "modeLabel": "Режим",
+    "modeCreate": "Только создание (отклонять существующие)",
+    "modeUpdate": "Только обновление (ошибка, если не найдено)",
+    "modeUpsert": "Создание или обновление",
+    "tabUploadFile": "Загрузить файл",
+    "tabPasteData": "Вставить данные",
+    "tabUploadMap": "Загрузить и сопоставить столбцы",
+    "previewImport": "Предпросмотр импорта",
+    "recheck": "Проверить снова",
+    "confirmImport": "Подтвердить импорт",
+    "chooseDifferentFile": "Выбрать другой файл",
+    "nothingSavedYet": "Пока ничего не сохранено — просмотрите предпросмотр ниже и подтвердите.",
+    "gridInstructions": "Вводите данные прямо в таблицу или вставьте строки, скопированные из Excel/Google Таблиц, начиная с первой ячейки. Каждая строка проверяется так же, как и загруженный файл — ячейка с ошибкой выделяется ниже; исправьте её и снова просмотрите предпросмотр.",
+    "loadingGrid": "Загрузка таблицы…",
+    "loading": "Загрузка…",
+    "queuedInBackground": "Этот файл достаточно большой, чтобы обрабатываться в фоновом режиме — эта страница обновится, когда обработка завершится.",
+    "queuedNotice": "Этот файл достаточно большой, чтобы обрабатываться в фоновом режиме. Эта страница обновится автоматически, когда обработка завершится — оставаться на ней не обязательно.",
+    "backgroundImportFailed": "Фоновый импорт не удался.",
+    "importAnotherFile": "Импортировать другой файл",
+    "resultCreated": "создано",
+    "resultUpdated": "обновлено",
+    "resultNothingToImport": "Нечего импортировать",
+    "resultNothingToReport": "Нечего сообщить",
+    "resultWouldBeCreated": "будет создано",
+    "resultWouldBeUpdated": "будет обновлено",
+    "resultPossibleDuplicate_one": "{{count}} возможный дубликат",
+    "resultPossibleDuplicate_few": "{{count}} возможных дубликата",
+    "resultPossibleDuplicate_many": "{{count}} возможных дубликатов",
+    "resultPossibleDuplicate_other": "{{count}} возможных дубликата",
+    "resultFailed": "с ошибкой",
+    "resultWouldFail": "завершится ошибкой",
+    "reviewBeforeNewRecords": "Проверьте перед тем, как считать их новыми записями",
+    "rowLabel": "Строка {{row}}:",
+    "columnRow": "Строка",
+    "columnField": "Поле",
+    "columnError": "Ошибка",
+    "entitySummary": "{{entity}}: {{summary}}",
+    "nothingChanged": "ничего не изменилось"
+  },
+  "enums": {
+    "gender": {
+      "male": "Мужской",
+      "female": "Женский",
+      "other": "Другое"
+    },
+    "userStatus": {
+      "active": "Активен",
+      "inactive": "Неактивен",
+      "suspended": "Заблокирован"
+    },
+    "studentStatus": {
+      "active": "Активен",
+      "transferred_out": "Переведён",
+      "withdrawn": "Отчислен",
+      "graduated": "Выпускник",
+      "alumni": "Выпускник (архив)"
+    },
+    "enrollmentAction": {
+      "admission": "Зачисление",
+      "promotion": "Перевод в следующий класс",
+      "transfer_in": "Перевод (прибытие)",
+      "transfer_out": "Перевод (убытие)",
+      "withdrawal": "Отчисление",
+      "graduation": "Выпуск",
+      "reactivation": "Восстановление"
+    },
+    "guardianRelationship": {
+      "father": "Отец",
+      "mother": "Мать",
+      "guardian": "Опекун",
+      "other": "Другое"
+    },
+    "roomType": {
+      "classroom": "Класс",
+      "lab": "Лаборатория",
+      "hall": "Зал",
+      "other": "Другое"
+    },
+    "holidayType": {
+      "public": "Государственный праздник",
+      "school_specific": "Школьный"
+    },
+    "attendanceStatus": {
+      "present": "Присутствует",
+      "absent": "Отсутствует",
+      "late": "Опоздал",
+      "half_day": "Полдня",
+      "excused": "По уважительной причине",
+      "on_leave": "В отпуске"
+    },
+    "daysOfWeek": {
+      "0": "Воскресенье",
+      "1": "Понедельник",
+      "2": "Вторник",
+      "3": "Среда",
+      "4": "Четверг",
+      "5": "Пятница",
+      "6": "Суббота"
+    },
+    "announcementChannel": {
+      "in_app": "В приложении",
+      "email": "Эл. почта",
+      "sms": "СМС",
+      "push": "Push-уведомление"
+    },
+    "noticeType": {
+      "general": "Объявление",
+      "event": "Событие"
+    },
+    "audience": {
+      "all": "Все",
+      "students": "Учащиеся",
+      "staff": "Сотрудники",
+      "parents": "Родители"
+    },
+    "feeFrequency": {
+      "one_time": "Разовый",
+      "monthly": "Ежемесячно",
+      "quarterly": "Ежеквартально",
+      "term": "За семестр",
+      "annual": "Ежегодно"
+    },
+    "discountType": {
+      "none": "Нет",
+      "percentage": "Процент",
+      "fixed": "Фиксированная сумма"
+    },
+    "invoiceStatus": {
+      "draft": "Черновик",
+      "issued": "Выставлен",
+      "partially_paid": "Частично оплачен",
+      "paid": "Оплачен",
+      "void": "Аннулирован"
+    },
+    "paymentMethod": {
+      "cash": "Наличные",
+      "cheque": "Чек",
+      "bank_transfer": "Банковский перевод",
+      "upi": "UPI",
+      "card": "Карта",
+      "other": "Другое"
+    },
+    "hostelType": {
+      "boys": "Мальчики",
+      "girls": "Девочки",
+      "mixed": "Смешанное"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "Заселён",
+      "vacated": "Выселен"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "Сдано",
+      "graded": "Оценено"
+    },
+    "remarkCategory": {
+      "academic": "Учебное",
+      "behavioral": "Поведенческое",
+      "general": "Общее"
+    },
+    "bookIssueStatus": {
+      "issued": "Выдана",
+      "returned": "Возвращена",
+      "overdue": "Просрочена"
+    },
+    "leaveStatus": {
+      "pending": "На рассмотрении",
+      "approved": "Одобрено",
+      "rejected": "Отклонено",
+      "cancelled": "Отменено"
+    },
+    "payslipStatus": {
+      "generated": "Сформирован",
+      "paid": "Оплачен"
+    },
+    "questionType": {
+      "mcq": "Множественный выбор",
+      "true_false": "Верно / Неверно"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "Страница не найдена",
+    "notFoundDescription": "Страница, которую вы ищете, не существует или была перемещена.",
+    "backToDashboard": "Назад на панель управления",
+    "somethingWentWrong": "Что-то пошло не так",
+    "somethingWentWrongDescription": "Попробуйте перезагрузить страницу. Если проблема не исчезнет, обратитесь в поддержку.",
+    "reloadPage": "Перезагрузить страницу",
+    "accessDenied": "Доступ запрещён",
+    "accessDeniedDescription": "У вас нет разрешения на просмотр этой страницы.",
+    "loading": "Загрузка…"
+  }
+}

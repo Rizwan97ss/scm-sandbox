@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "书名",
+    "author": "作者",
+    "category": "类别",
+    "status": "状态",
+    "dueDate": "到期日期",
+    "active": "启用",
+    "inactive": "停用",
+    "student": "学生",
+    "staffMember": "员工"
+  },
+  "books": {
+    "title": "图书",
+    "description": "图书馆的书目和馆藏库存。",
+    "newBook": "新增图书",
+    "searchPlaceholder": "按书名搜索…",
+    "columnAvailableTotal": "可借 / 总数",
+    "issue": "借出",
+    "edit": "编辑",
+    "deleteAriaLabel": "删除{{title}}",
+    "emptyTitleSearch": "没有与\"{{query}}\"匹配的图书",
+    "emptyTitle": "暂无图书",
+    "emptyDescription": "请尝试其他书名，或清除搜索以查看全部。",
+    "editModalTitle": "编辑图书",
+    "newModalTitle": "新增图书",
+    "isbn": "ISBN",
+    "totalCopies": "总册数",
+    "saveChanges": "保存更改",
+    "createBook": "创建图书",
+    "deleteConfirmTitle": "删除{{title}}？",
+    "deleteConfirmDescription": "此操作无法撤销。",
+    "issueModal": {
+      "title": "借出\"{{title}}\"",
+      "successToast": "图书已借出。",
+      "borrowerType": "借阅人类型",
+      "selectStudentPlaceholder": "选择学生",
+      "selectStaffPlaceholder": "选择员工",
+      "submit": "借出图书"
+    }
+  },
+  "bookIssues": {
+    "title": "图书借阅",
+    "description": "所有当前借出的图书及其归还记录。",
+    "columnBook": "图书",
+    "columnBorrower": "借阅人",
+    "columnIssued": "借出日期",
+    "columnDue": "到期",
+    "columnReturned": "归还日期",
+    "columnFine": "罚款",
+    "returnAction": "归还",
+    "returnedToast": "图书已归还。",
+    "emptyTitle": "暂无图书借阅记录",
+    "emptyDescription": "借给学生或员工的图书将显示在此处。"
+  }
+}

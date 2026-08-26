@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "الأدوار والصلاحيات",
+    "description": "أنشئ أدوارًا مخصصة وتحكم بدقة فيما يمكن لكل منها فعله.",
+    "newRole": "دور جديد",
+    "systemRoleAriaLabel": "دور النظام",
+    "edit": "تعديل",
+    "deleteAriaLabel": "حذف {{name}}",
+    "emptyTitle": "لا توجد أدوار بعد",
+    "permissionsCount": "{{count}} صلاحية (صلاحيات)",
+    "morePermissions": "+{{count}} أخرى",
+    "deleteConfirmTitle": "حذف الدور \"{{name}}\"؟",
+    "deleteConfirmDescription": "سيفقد المستخدمون الذين لديهم هذا الدور فقط جميع صلاحياته.",
+    "deleteSuccessToast": "تم حذف الدور."
+  },
+  "formModal": {
+    "editTitle": "تعديل الدور",
+    "newTitle": "دور جديد",
+    "roleNameLabel": "اسم الدور",
+    "permissionsLabel": "الصلاحيات",
+    "saveChanges": "حفظ التغييرات",
+    "createRole": "إنشاء الدور",
+    "updateSuccessToast": "تم تحديث الدور.",
+    "createSuccessToast": "تم إنشاء الدور."
+  }
+}

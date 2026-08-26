@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "总体",
+    "from": "从",
+    "to": "到"
+  },
+  "attendance": {
+    "title": "考勤报告",
+    "description": "学生与教职员工的考勤趋势。",
+    "studentAttendance": "学生考勤",
+    "staffAttendance": "教职员工考勤",
+    "bySection": "按班级",
+    "noDataForRole": "您的角色无法查看考勤数据。",
+    "noRecordsInRange": "此时间范围内没有记录。",
+    "tooltipLabel": "考勤"
+  },
+  "academic": {
+    "title": "学业表现",
+    "description": "最近发布的考试的平均分和及格率。",
+    "columnExam": "考试",
+    "columnMarksEntered": "已录入成绩",
+    "columnAverage": "平均分",
+    "columnPassRate": "及格率",
+    "noExams": "尚无已发布并录入成绩的考试。",
+    "legendAverage": "平均分 %",
+    "legendPassRate": "及格率 %"
+  },
+  "operations": {
+    "title": "运营报告",
+    "description": "图书馆、交通与宿舍概览。",
+    "noDataForRole": "您的角色无法查看运营数据。",
+    "library": "图书馆",
+    "totalBooks": "图书总数",
+    "issuedThisMonth": "本月借出",
+    "currentlyOverdue": "当前逾期",
+    "transport": "交通",
+    "activeVehicles": "在用车辆",
+    "studentsAssigned": "已分配学生",
+    "hostel": "宿舍",
+    "rooms": "房间",
+    "occupiedCapacity": "已占用 / 容量",
+    "occupancy": "入住率"
+  },
+  "enrollment": {
+    "title": "招生报告",
+    "description": "过去六个月的入学、退学与毕业情况。",
+    "activeStudents": "在校学生",
+    "legendAdmissions": "入学",
+    "legendWithdrawals": "退学",
+    "legendGraduations": "毕业",
+    "activeStudentsByGrade": "按年级划分的在校学生",
+    "noActiveStudents": "暂无在校学生。"
+  }
+}

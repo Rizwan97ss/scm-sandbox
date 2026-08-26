@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "رقم القبول",
+    "status": "الحالة",
+    "gradeSection": "المرحلة / الشعبة",
+    "dateOfBirth": "تاريخ الميلاد",
+    "date": "التاريخ",
+    "amount": "المبلغ",
+    "receiptNumber": "رقم الإيصال",
+    "attendance": "الحضور",
+    "daysMarked": "الأيام المسجَّلة",
+    "absences": "الغيابات",
+    "from": "من",
+    "to": "إلى",
+    "remarks": "الملاحظات",
+    "homework": "الواجبات المنزلية"
+  },
+  "page": {
+    "welcomeBack": "مرحبًا بعودتك، {{name}}",
+    "subtitle": "إليك ما يحدث اليوم.",
+    "stats": {
+      "totalSchools": "إجمالي المدارس",
+      "activeTrialing": "نشطة / تجريبية",
+      "currentlyTrialing": "قيد التجربة حاليًا",
+      "activeStudents": "الطلاب النشطون",
+      "staffMembers": "أعضاء الطاقم",
+      "sections": "الشعب",
+      "attendanceMarkedToday": "الحضور المسجَّل اليوم",
+      "pendingLeaveRequests": "طلبات الإجازة المعلقة",
+      "feesCollectedThisMonth": "الرسوم المحصَّلة هذا الشهر",
+      "overdueBooks": "الكتب المتأخرة",
+      "assignedSections": "الشعب المخصصة",
+      "students": "الطلاب",
+      "homeworkAwaitingGrading": "الواجبات بانتظار التصحيح",
+      "attendanceThisMonth": "الحضور هذا الشهر",
+      "homeworkDue": "الواجبات المستحقة",
+      "upcomingExams": "الامتحانات القادمة",
+      "linkedChildren": "الأبناء المرتبطون",
+      "outstandingFees": "الرسوم غير المسددة"
+    },
+    "quickActions": {
+      "takeAttendance": "تسجيل الحضور",
+      "newAdmission": "قبول جديد",
+      "invoices": "الفواتير"
+    },
+    "trends": {
+      "attendanceTitle": "الحضور — آخر 14 يومًا",
+      "feesTitle": "الرسوم المحصَّلة — آخر 6 أشهر",
+      "feesTooltipLabel": "المحصَّل"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "أبنائي",
+    "tabExams": "الامتحانات",
+    "tabFees": "الرسوم"
+  },
+  "childrenList": {
+    "title": "أبنائي",
+    "description": "اختر ابنًا لعرض ملفه الشخصي.",
+    "emptyTitle": "لا يوجد أبناء مرتبطون بحسابك بعد",
+    "emptyDescription": "تواصل مع مكتب المدرسة إذا بدا هذا غير صحيح."
+  },
+  "attendanceTab": {
+    "emptyRecords": "لا توجد سجلات حضور في هذا النطاق."
+  },
+  "examResultsTab": {
+    "tabByExam": "حسب الامتحان",
+    "tabByTerm": "نتيجة الفصل الدراسي الموحدة",
+    "selectExamPlaceholder": "اختر امتحانًا…",
+    "noPublishedExams": "لا توجد امتحانات منشورة بعد",
+    "selectTermPlaceholder": "اختر فصلاً دراسيًا…"
+  },
+  "feesTab": {
+    "totalBilled": "إجمالي المفوتر",
+    "totalPaid": "إجمالي المدفوع",
+    "totalCredited": "إجمالي المُقيَّد",
+    "outstanding": "غير مسدد",
+    "emptyTitle": "لا توجد فواتير بعد",
+    "issuedDue": "صدرت في {{issueDate}} · الاستحقاق {{dueDate}}",
+    "totalPaidBalance": "الإجمالي {{total}} · المدفوع {{paid}} · الرصيد",
+    "receipt": "الإيصال",
+    "downloadReceiptAriaLabel": "تنزيل الإيصال {{number}}"
+  },
+  "homeworkTab": {
+    "emptyTitle": "لا توجد واجبات مسندة بعد",
+    "notSubmitted": "لم يتم التسليم",
+    "subjectDue": "{{subject}} · الاستحقاق {{date}}",
+    "maxScoreSuffix": " · الدرجة القصوى: {{score}}",
+    "score": "الدرجة: {{score}}",
+    "scoreWithMax": "الدرجة: {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "لا توجد ملاحظات بعد",
+    "authoredBy": "— {{name}}"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "标题",
+    "message": "消息内容",
+    "audience": "受众",
+    "channels": "渠道"
+  },
+  "list": {
+    "title": "公告",
+    "description": "向学生、教职员工或家长发送消息。",
+    "compose": "撰写公告",
+    "columnTitle": "标题",
+    "columnAudience": "受众",
+    "columnChannels": "渠道",
+    "columnRecipients": "接收人数",
+    "columnSentBy": "发送人",
+    "columnSent": "发送时间",
+    "emptyTitle": "尚未发送任何公告",
+    "emptyDescription": "您发布的公告将显示在此处，供相应受众查看。"
+  },
+  "composeModal": {
+    "title": "撰写公告",
+    "submit": "发送公告",
+    "successToast": "公告已发送给 {{count}} 位接收人。"
+  }
+}

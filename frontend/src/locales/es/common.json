@@ -1,0 +1,385 @@
+{
+  "topbar": {
+    "openMenu": "Abrir menú de navegación"
+  },
+  "nav": {
+    "groups": {
+      "overview": "Resumen",
+      "people": "Personas",
+      "attendance": "Asistencia",
+      "exams": "Exámenes",
+      "teaching": "Docencia",
+      "feesAccounting": "Cuotas y Contabilidad",
+      "hrPayroll": "RR. HH. y Nómina",
+      "library": "Biblioteca",
+      "transport": "Transporte",
+      "hostel": "Residencia",
+      "frontDesk": "Recepción",
+      "certificatesIdCards": "Certificados y Carnés",
+      "noticeBoard": "Tablón de Anuncios",
+      "communication": "Comunicación",
+      "reportsAnalytics": "Informes y Análisis",
+      "academics": "Académico",
+      "administration": "Administración"
+    },
+    "items": {
+      "dashboard": "Panel",
+      "students": "Estudiantes",
+      "guardians": "Tutores",
+      "staffUsers": "Personal y Usuarios",
+      "takeAttendance": "Tomar Asistencia",
+      "staffAttendance": "Asistencia del Personal",
+      "exams": "Exámenes",
+      "gradingScales": "Escalas de Calificación",
+      "examConfiguration": "Configuración de Exámenes",
+      "homework": "Tareas",
+      "invoices": "Facturas",
+      "feeStructures": "Estructuras de Cuotas",
+      "feeCategories": "Categorías de Cuotas",
+      "feeReports": "Informes de Cuotas",
+      "leaveRequests": "Solicitudes de Permiso",
+      "payslips": "Recibos de Sueldo",
+      "designations": "Cargos",
+      "leaveTypes": "Tipos de Permiso",
+      "salaryStructures": "Estructuras Salariales",
+      "books": "Libros",
+      "bookIssues": "Préstamos de Libros",
+      "vehicles": "Vehículos",
+      "routes": "Rutas",
+      "studentAssignments": "Asignaciones de Estudiantes",
+      "hostels": "Residencias",
+      "hostelRooms": "Habitaciones",
+      "allocations": "Asignaciones",
+      "visitors": "Visitantes",
+      "certificateTemplates": "Plantillas de Certificados",
+      "issuedCertificates": "Certificados Emitidos",
+      "noticeBoard": "Tablón de Anuncios",
+      "announcements": "Anuncios",
+      "attendanceReport": "Informe de Asistencia",
+      "academicPerformance": "Rendimiento Académico",
+      "enrollmentReport": "Informe de Matrícula",
+      "operationsReport": "Informe de Operaciones",
+      "academicYears": "Años Académicos",
+      "terms": "Períodos",
+      "departments": "Departamentos",
+      "gradeLevels": "Niveles de Grado",
+      "sections": "Secciones",
+      "subjects": "Asignaturas",
+      "academicRooms": "Aulas",
+      "timetable": "Horario",
+      "holidays": "Días Festivos",
+      "rolesPermissions": "Roles y Permisos",
+      "settings": "Configuración",
+      "systemHealth": "Estado del Sistema",
+      "auditLog": "Registro de Auditoría",
+      "importLogs": "Registros de Importación",
+      "dataExport": "Exportar Datos",
+      "importCenter": "Centro de Importación",
+      "myChildren": "Mis Hijos",
+      "myOnlineTests": "Mis Exámenes en Línea",
+      "myResult": "Mi Resultado",
+      "myFees": "Mis Cuotas",
+      "certificates": "Certificados"
+    }
+  },
+  "search": {
+    "placeholder": "Buscar estudiantes, personal, facturas...",
+    "ariaLabel": "Búsqueda global",
+    "clear": "Borrar búsqueda",
+    "searching": "Buscando…",
+    "noResultsFor": "Sin resultados para \"{{query}}\".",
+    "categories": {
+      "students": "Estudiantes",
+      "guardians": "Tutores",
+      "staff": "Personal",
+      "books": "Libros",
+      "invoices": "Facturas"
+    }
+  },
+  "notifications": {
+    "ariaLabel": "Notificaciones",
+    "ariaLabelUnread": "Notificaciones ({{count}} sin leer)",
+    "title": "Notificaciones",
+    "markAllRead": "Marcar todas como leídas",
+    "empty": "Aún no hay notificaciones."
+  },
+  "userMenu": {
+    "accountMenu": "Menú de cuenta",
+    "downloadIdCard": "Descargar Mi Carné",
+    "exportMyData": "Exportar Mis Datos",
+    "setupGuide": "Guía de Configuración",
+    "deleteAccount": "Eliminar Mi Cuenta",
+    "logout": "Cerrar sesión",
+    "deleteConfirmTitle": "¿Eliminar tu cuenta?",
+    "deleteConfirmDescription": "Esto elimina tus datos personales (nombre, datos de contacto, información médica/de emergencia) de inmediato y no se puede deshacer. Los registros académicos y financieros vinculados a tu cuenta se conservan, según sea necesario.",
+    "deleteConfirmLabel": "Eliminar mi cuenta"
+  },
+  "theme": {
+    "changeTheme": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "language": {
+    "changeLanguage": "Cambiar idioma"
+  },
+  "mfaBanner": {
+    "required": "Se requiere autenticación en dos pasos en esta cuenta — {{action}}.",
+    "setupNow": "configúrala ahora",
+    "daysLeft_one": "te queda {{count}} día para configurarla",
+    "daysLeft_other": "te quedan {{count}} días para configurarla",
+    "link": "Configurar ahora"
+  },
+  "offlineBanner": {
+    "message": "Estás sin conexión. Los cambios que hagas ahora no se guardarán hasta que vuelva la conexión."
+  },
+  "confirmDialog": {
+    "confirm": "Confirmar",
+    "cancel": "Cancelar"
+  },
+  "queryError": {
+    "title": "Algo salió mal",
+    "description": "No se pudo cargar esto. Inténtalo de nuevo.",
+    "retry": "Reintentar"
+  },
+  "pagination": {
+    "showing": "Mostrando {{from}}–{{to}} de {{total}}",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente",
+    "pageOf": "Página {{current}} de {{last}}"
+  },
+  "dataTable": {
+    "noRecordsFound": "No se encontraron registros",
+    "selectAll": "Seleccionar todo en esta página",
+    "selectRow": "Seleccionar fila"
+  },
+  "modal": {
+    "closeDialog": "Cerrar diálogo"
+  },
+  "bulkActions": {
+    "selected": "{{count}} seleccionados",
+    "clear": "Limpiar"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "Ruta de navegación"
+  },
+  "drawer": {
+    "closePanel": "Cerrar panel"
+  },
+  "select": {
+    "placeholder": "Seleccionar…",
+    "searchPlaceholder": "Buscar…",
+    "noResults": "Sin resultados."
+  },
+  "fileUpload": {
+    "removeFile": "Eliminar archivo",
+    "clickToUpload": "Haz clic para subir",
+    "orDragAndDrop": "o arrastra y suelta",
+    "tooLarge": "El archivo es demasiado grande. El tamaño máximo es {{maxSizeMb}}MB."
+  },
+  "importFileMapper": {
+    "dontImportColumn": "No importar esta columna",
+    "uploadPrompt": "Sube un archivo con los encabezados de columna que ya tenga; a continuación harás coincidir cada uno con el campo correcto, sin necesidad de renombrar nada primero.",
+    "readingFile": "Leyendo archivo…",
+    "matchPrompt": "Haz coincidir cada columna de tu archivo con un campo a continuación. Las columnas configuradas como \"No importar\" se omiten por completo.",
+    "truncatedNotice": " Aquí solo se muestran las primeras filas, pero se importará cada fila del archivo.",
+    "columnYourColumn": "Tu columna",
+    "columnSampleValues": "Valores de muestra",
+    "columnMapsTo": "Se asigna a",
+    "mapsToAriaLabel": "Asigna \"{{header}}\" a",
+    "continueWithMapped_one": "Continuar con {{count}} columna asignada",
+    "continueWithMapped_other": "Continuar con {{count}} columnas asignadas",
+    "chooseDifferentFile": "Elegir otro archivo"
+  },
+  "importForm": {
+    "downloadTemplate": "Descargar plantilla",
+    "modeLabel": "Modo",
+    "modeCreate": "Solo crear (rechazar existentes)",
+    "modeUpdate": "Solo actualizar (falla si no se encuentra)",
+    "modeUpsert": "Crear o actualizar",
+    "tabUploadFile": "Subir archivo",
+    "tabPasteData": "Pegar datos",
+    "tabUploadMap": "Subir y asignar columnas",
+    "previewImport": "Vista previa de importación",
+    "recheck": "Volver a comprobar",
+    "confirmImport": "Confirmar importación",
+    "chooseDifferentFile": "Elegir otro archivo",
+    "nothingSavedYet": "Aún no se ha guardado nada — revisa la vista previa a continuación y luego confirma.",
+    "gridInstructions": "Escribe directamente en la cuadrícula, o pega filas copiadas de Excel/Google Sheets comenzando por la primera celda. Cada fila se verifica de la misma forma que lo haría un archivo subido — una celda con error se resalta abajo; corrígela y vuelve a previsualizar.",
+    "loadingGrid": "Cargando cuadrícula…",
+    "loading": "Cargando…",
+    "queuedInBackground": "Este archivo es lo bastante grande como para procesarse en segundo plano — esta página se actualizará cuando termine.",
+    "queuedNotice": "Este archivo es lo bastante grande como para procesarse en segundo plano. Esta página se actualizará automáticamente cuando termine — no es necesario permanecer en ella.",
+    "backgroundImportFailed": "La importación en segundo plano falló.",
+    "importAnotherFile": "Importar otro archivo",
+    "resultCreated": "creado(s)",
+    "resultUpdated": "actualizado(s)",
+    "resultNothingToImport": "Nada que importar",
+    "resultNothingToReport": "Nada que informar",
+    "resultWouldBeCreated": "se crearía(n)",
+    "resultWouldBeUpdated": "se actualizaría(n)",
+    "resultPossibleDuplicate_one": "{{count}} posible duplicado",
+    "resultPossibleDuplicate_other": "{{count}} posibles duplicados",
+    "resultFailed": "fallido(s)",
+    "resultWouldFail": "fallaría(n)",
+    "reviewBeforeNewRecords": "Revisa antes de tratarlos como registros nuevos",
+    "rowLabel": "Fila {{row}}:",
+    "columnRow": "Fila",
+    "columnField": "Campo",
+    "columnError": "Error",
+    "entitySummary": "{{entity}}(s): {{summary}}",
+    "nothingChanged": "sin cambios"
+  },
+  "enums": {
+    "gender": {
+      "male": "Masculino",
+      "female": "Femenino",
+      "other": "Otro"
+    },
+    "userStatus": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "suspended": "Suspendido"
+    },
+    "studentStatus": {
+      "active": "Activo",
+      "transferred_out": "Transferido",
+      "withdrawn": "Retirado",
+      "graduated": "Graduado",
+      "alumni": "Egresado"
+    },
+    "enrollmentAction": {
+      "admission": "Admisión",
+      "promotion": "Promoción",
+      "transfer_in": "Transferencia de entrada",
+      "transfer_out": "Transferencia de salida",
+      "withdrawal": "Retiro",
+      "graduation": "Graduación",
+      "reactivation": "Reactivación"
+    },
+    "guardianRelationship": {
+      "father": "Padre",
+      "mother": "Madre",
+      "guardian": "Tutor",
+      "other": "Otro"
+    },
+    "roomType": {
+      "classroom": "Aula",
+      "lab": "Laboratorio",
+      "hall": "Salón",
+      "other": "Otro"
+    },
+    "holidayType": {
+      "public": "Feriado público",
+      "school_specific": "Específico de la escuela"
+    },
+    "attendanceStatus": {
+      "present": "Presente",
+      "absent": "Ausente",
+      "late": "Tarde",
+      "half_day": "Medio día",
+      "excused": "Justificado",
+      "on_leave": "De permiso"
+    },
+    "daysOfWeek": {
+      "0": "Domingo",
+      "1": "Lunes",
+      "2": "Martes",
+      "3": "Miércoles",
+      "4": "Jueves",
+      "5": "Viernes",
+      "6": "Sábado"
+    },
+    "announcementChannel": {
+      "in_app": "En la app",
+      "email": "Correo electrónico",
+      "sms": "SMS",
+      "push": "Notificación push"
+    },
+    "noticeType": {
+      "general": "Aviso",
+      "event": "Evento"
+    },
+    "audience": {
+      "all": "Todos",
+      "students": "Estudiantes",
+      "staff": "Personal",
+      "parents": "Padres"
+    },
+    "feeFrequency": {
+      "one_time": "Único",
+      "monthly": "Mensual",
+      "quarterly": "Trimestral",
+      "term": "Por período",
+      "annual": "Anual"
+    },
+    "discountType": {
+      "none": "Ninguno",
+      "percentage": "Porcentaje",
+      "fixed": "Monto fijo"
+    },
+    "invoiceStatus": {
+      "draft": "Borrador",
+      "issued": "Emitida",
+      "partially_paid": "Parcialmente pagada",
+      "paid": "Pagada",
+      "void": "Anulada"
+    },
+    "paymentMethod": {
+      "cash": "Efectivo",
+      "cheque": "Cheque",
+      "bank_transfer": "Transferencia bancaria",
+      "upi": "UPI",
+      "card": "Tarjeta",
+      "other": "Otro"
+    },
+    "hostelType": {
+      "boys": "Niños",
+      "girls": "Niñas",
+      "mixed": "Mixto"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "Asignado",
+      "vacated": "Desocupado"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "Entregado",
+      "graded": "Calificado"
+    },
+    "remarkCategory": {
+      "academic": "Académico",
+      "behavioral": "Conductual",
+      "general": "General"
+    },
+    "bookIssueStatus": {
+      "issued": "Prestado",
+      "returned": "Devuelto",
+      "overdue": "Vencido"
+    },
+    "leaveStatus": {
+      "pending": "Pendiente",
+      "approved": "Aprobado",
+      "rejected": "Rechazado",
+      "cancelled": "Cancelado"
+    },
+    "payslipStatus": {
+      "generated": "Generado",
+      "paid": "Pagado"
+    },
+    "questionType": {
+      "mcq": "Opción múltiple",
+      "true_false": "Verdadero / Falso"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "Página no encontrada",
+    "notFoundDescription": "La página que buscas no existe o fue movida.",
+    "backToDashboard": "Volver al panel",
+    "somethingWentWrong": "Algo salió mal",
+    "somethingWentWrongDescription": "Intenta recargar la página. Si el problema persiste, contacta con soporte.",
+    "reloadPage": "Recargar página",
+    "accessDenied": "Acceso denegado",
+    "accessDeniedDescription": "No tienes permiso para ver esta página.",
+    "loading": "Cargando…"
+  }
+}

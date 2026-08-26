@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "عنوان",
+    "message": "پیغام",
+    "audience": "سامعین",
+    "channels": "چینلز"
+  },
+  "list": {
+    "title": "اعلانات",
+    "description": "طلباء، عملے یا سرپرستوں کو پیغام بھیجیں۔",
+    "compose": "اعلان تحریر کریں",
+    "columnTitle": "عنوان",
+    "columnAudience": "سامعین",
+    "columnChannels": "چینلز",
+    "columnRecipients": "وصول کنندگان",
+    "columnSentBy": "بھیجنے والا",
+    "columnSent": "بھیجا گیا",
+    "emptyTitle": "ابھی تک کوئی اعلان نہیں بھیجا گیا",
+    "emptyDescription": "آپ کے شائع کردہ اعلانات یہاں ان کے سامعین کے لیے ظاہر ہوں گے۔"
+  },
+  "composeModal": {
+    "title": "اعلان تحریر کریں",
+    "submit": "اعلان بھیجیں",
+    "successToast": "اعلان {{count}} وصول کنندگان کو بھیج دیا گیا۔"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "Título",
+    "author": "Autor",
+    "category": "Categoria",
+    "status": "Status",
+    "dueDate": "Data de Vencimento",
+    "active": "Ativo",
+    "inactive": "Inativo",
+    "student": "Aluno",
+    "staffMember": "Membro da Equipe"
+  },
+  "books": {
+    "title": "Livros",
+    "description": "O catálogo da biblioteca e o inventário de exemplares.",
+    "newBook": "Novo Livro",
+    "searchPlaceholder": "Buscar por título…",
+    "columnAvailableTotal": "Disponíveis / Total",
+    "issue": "Emprestar",
+    "edit": "Editar",
+    "deleteAriaLabel": "Excluir {{title}}",
+    "emptyTitleSearch": "Nenhum livro corresponde a \"{{query}}\"",
+    "emptyTitle": "Ainda não há livros",
+    "emptyDescription": "Tente um título diferente ou limpe a busca para ver todos.",
+    "editModalTitle": "Editar Livro",
+    "newModalTitle": "Novo Livro",
+    "isbn": "ISBN",
+    "totalCopies": "Total de Exemplares",
+    "saveChanges": "Salvar alterações",
+    "createBook": "Criar livro",
+    "deleteConfirmTitle": "Excluir {{title}}?",
+    "deleteConfirmDescription": "Esta ação não pode ser desfeita.",
+    "issueModal": {
+      "title": "Emprestar \"{{title}}\"",
+      "successToast": "Livro emprestado.",
+      "borrowerType": "Tipo de Tomador",
+      "selectStudentPlaceholder": "Selecione um aluno",
+      "selectStaffPlaceholder": "Selecione um membro da equipe",
+      "submit": "Emprestar livro"
+    }
+  },
+  "bookIssues": {
+    "title": "Empréstimos de Livros",
+    "description": "Todos os livros atualmente emprestados e seu histórico de devolução.",
+    "columnBook": "Livro",
+    "columnBorrower": "Tomador",
+    "columnIssued": "Emprestado",
+    "columnDue": "Vencimento",
+    "columnReturned": "Devolvido",
+    "columnFine": "Multa",
+    "returnAction": "Devolver",
+    "returnedToast": "Livro devolvido.",
+    "emptyTitle": "Ainda não há empréstimos",
+    "emptyDescription": "Livros emprestados a alunos ou à equipe aparecerão aqui."
+  }
+}

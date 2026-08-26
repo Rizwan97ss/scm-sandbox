@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "सेक्शन",
+    "date": "तिथि",
+    "period": "पीरियड",
+    "wholeDay": "पूरा दिन",
+    "status": "स्थिति",
+    "remarks": "टिप्पणी",
+    "remarksOptional": "वैकल्पिक टिप्पणी",
+    "remarksOptionalPlaceholder": "वैकल्पिक",
+    "staffMember": "स्टाफ सदस्य"
+  },
+  "takeAttendance": {
+    "title": "उपस्थिति लें",
+    "description": "किसी सेक्शन की दैनिक या पीरियड-आधारित उपस्थिति दर्ज करें।",
+    "selectSectionPlaceholder": "एक सेक्शन चुनें…",
+    "emptySelectSectionTitle": "शुरू करने के लिए एक सेक्शन चुनें",
+    "emptySelectSectionDescription": "छात्र सूची लोड करने के लिए ऊपर सेक्शन, तिथि और पीरियड चुनें।",
+    "emptyNoStudentsTitle": "इस सेक्शन में कोई छात्र नहीं है",
+    "emptyNoStudentsDescription": "इस सेक्शन में वर्तमान में कोई छात्र नामांकित नहीं है।",
+    "columnAdmissionNumber": "प्रवेश #",
+    "columnName": "नाम",
+    "columnStatus": "स्थिति",
+    "columnRemarks": "टिप्पणी",
+    "saveAttendance": "उपस्थिति सहेजें",
+    "savedSuccess": "{{count}} उपस्थिति रिकॉर्ड सहेजे गए।"
+  },
+  "staffAttendance": {
+    "title": "स्टाफ उपस्थिति",
+    "description": "स्व चेक-इन/चेक-आउट और स्टाफ उपस्थिति रिकॉर्ड।",
+    "markAttendance": "उपस्थिति दर्ज करें",
+    "today": "आज, {{date}}",
+    "checkedInAt": "{{time}} बजे चेक-इन किया गया",
+    "checkedInOutAt": "{{checkIn}} बजे चेक-इन, {{checkOut}} बजे चेक-आउट",
+    "notCheckedInYet": "आपने आज अभी तक चेक-इन नहीं किया है।",
+    "checkIn": "चेक-इन करें",
+    "checkOut": "चेक-आउट करें",
+    "checkedInSuccess": "चेक-इन हो गया।",
+    "checkedOutSuccess": "चेक-आउट हो गया।",
+    "correctAriaLabel": "{{name}} की उपस्थिति सही करें",
+    "columnDate": "तिथि",
+    "columnStaff": "स्टाफ",
+    "columnStatus": "स्थिति",
+    "columnCheckIn": "चेक-इन",
+    "columnCheckOut": "चेक-आउट",
+    "columnRemarks": "टिप्पणी",
+    "emptyTitle": "अभी तक कोई उपस्थिति रिकॉर्ड नहीं है",
+    "emptyDescription": "स्टाफ के चेक-इन करने या आपके द्वारा उपस्थिति को मैन्युअल रूप से दर्ज करने के बाद रिकॉर्ड यहां दिखाई देंगे।",
+    "markModal": {
+      "title": "स्टाफ उपस्थिति दर्ज करें",
+      "selectStaffPlaceholder": "एक स्टाफ सदस्य चुनें…",
+      "save": "सहेजें",
+      "savedSuccess": "उपस्थिति सहेजी गई।"
+    },
+    "correctModal": {
+      "title": "उपस्थिति सही करें — {{name}}",
+      "save": "सुधार सहेजें",
+      "savedSuccess": "उपस्थिति सही कर दी गई।"
+    }
+  },
+  "history": {
+    "from": "से",
+    "to": "तक",
+    "attendance": "उपस्थिति",
+    "daysMarked": "दर्ज किए गए दिन",
+    "absences": "अनुपस्थिति",
+    "columnDate": "तिथि",
+    "columnStatus": "स्थिति",
+    "columnRemarks": "टिप्पणी",
+    "emptyDescription": "इस अवधि में कोई उपस्थिति रिकॉर्ड नहीं है।"
+  }
+}

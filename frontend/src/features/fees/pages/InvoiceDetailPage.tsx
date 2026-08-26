@@ -1,0 +1,351 @@
+import { useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { toast } from 'sonner'
+import { Download, Plus } from 'lucide-react'
+import { invoicesApi, paymentsApi } from '@/api/endpoints/fees'
+import { queryKeys } from '@/api/queryKeys'
+import { usePermission } from '@/hooks/usePermission'
+import { useFeatureTranslation } from '@/hooks/useFeatureTranslation'
+import { PageHeader } from '@/components/layout/PageHeader'
+import {
+  Badge,
+  Button,
+  Card,
+  CardContent,
+  ConfirmDialog,
+  FormField,
+  Input,
+  Modal,
+  QueryErrorState,
+  Select,
+  Skeleton,
+  StatCard,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+  Textarea,
+} from '@/components/ui'
+import { formatCurrency } from '@/utils/formatCurrency'
+import { formatDate } from '@/utils/formatDate'
+import { routePaths } from '@/routes/routePaths'
+import { PAYMENT_METHODS, getPaymentMethodLabels } from '@/types/fees'
+import type { IssueCreditNotePayload, PaymentMethod, RecordPaymentPayload } from '@/types/fees'
+import type { ApiError } from '@/api/client'
+import '../i18n'
+
+const STATUS_VARIANT: Record<string, 'success' | 'warning' | 'destructive' | 'default' | 'info'> = {
+  draft: 'default',
+  issued: 'info',
+  partially_paid: 'warning',
+  paid: 'success',
+  void: 'destructive',
+}
+
+export function InvoiceDetailPage() {
+  const { t } = useFeatureTranslation('fees')
+  const { id } = useParams<{ id: string }>()
+  const invoiceId = Number(id)
+  const { can } = usePermission()
+  const queryClient = useQueryClient()
+
+  const { data: invoice, isLoading, isError, refetch } = useQuery({ queryKey: queryKeys.invoice(invoiceId), queryFn: () => invoicesApi.get(invoiceId) })
+
+  const [paymentModalOpen, setPaymentModalOpen] = useState(false)
+  const [creditNoteModalOpen, setCreditNoteModalOpen] = useState(false)
+  const [voidConfirmOpen, setVoidConfirmOpen] = useState(false)
+
+  const voidMutation = useMutation({
+    mutationFn: () => invoicesApi.void(invoiceId),
+    onSuccess: () => {
+      toast.success(t('invoiceDetail.voidedToast'))
+      queryClient.invalidateQueries({ queryKey: queryKeys.invoice(invoiceId) })
+      setVoidConfirmOpen(false)
+    },
+    onError: (error) => toast.error((error as ApiError).message),
+  })
+
+  if (isLoading) {
+    return (
+      <div className="flex flex-col gap-4">
+        <Skeleton className="h-10 w-64" />
+        <Skeleton className="h-48 w-full" />
+      </div>
+    )
+  }
+
+  if (isError || !invoice) {
+    return <QueryErrorState onRetry={refetch} />
+  }
+
+  const canRecordPayment = can('invoices.record-payment') && invoice.status !== 'void' && invoice.balance > 0
+  const canIssueCreditNote = can('invoices.issue-credit-note') && invoice.status !== 'void' && invoice.balance > 0
+  const canVoid = can('invoices.void') && invoice.status !== 'void' && invoice.amount_paid === 0
+
+  return (
+    <div>
+      <PageHeader
+        title={invoice.invoice_number}
+        description={t('invoiceDetail.descriptionLine', {
+          student: invoice.student?.full_name ?? '',
+          issueDate: formatDate(invoice.issue_date),
+          dueDate: formatDate(invoice.due_date),
+        })}
+        breadcrumbs={[{ label: t('invoiceDetail.breadcrumbInvoices'), to: routePaths.invoices }, { label: invoice.invoice_number }]}
+        actions={
+          <div className="flex gap-2">
+            {canRecordPayment && (
+              <Button onClick={() => setPaymentModalOpen(true)}>
+                <Plus className="h-4 w-4" /> {t('invoiceDetail.recordPayment')}
+              </Button>
+            )}
+            {canIssueCreditNote && (
+              <Button variant="outline" onClick={() => setCreditNoteModalOpen(true)}>
+                {t('invoiceDetail.issueCreditNote')}
+              </Button>
+            )}
+            {canVoid && (
+              <Button variant="outline" onClick={() => setVoidConfirmOpen(true)}>
+                {t('invoiceDetail.void')}
+              </Button>
+            )}
+          </div>
+        }
+      />
+
+      <div className="mb-6 flex items-center gap-2">
+        <Badge variant={STATUS_VARIANT[invoice.status] ?? 'default'}>{invoice.status_label}</Badge>
+        {invoice.is_overdue && <Badge variant="destructive">{t('fields.overdue')}</Badge>}
+      </div>
+
+      <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <StatCard label={t('invoiceDetail.statTotal')} value={formatCurrency(invoice.total)} />
+        <StatCard label={t('invoiceDetail.statPaid')} value={formatCurrency(invoice.amount_paid)} />
+        <StatCard label={t('invoiceDetail.statCredited')} value={formatCurrency(invoice.credit_total)} />
+        <StatCard label={t('invoiceDetail.statBalance')} value={formatCurrency(invoice.balance)} />
+      </div>
+
+      <Card className="mb-6">
+        <CardContent className="pt-6">
+          <h3 className="mb-3 text-sm font-semibold">{t('invoiceDetail.lineItems')}</h3>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>{t('fields.description')}</TableHead>
+                <TableHead>{t('fields.category')}</TableHead>
+                <TableHead className="text-end">{t('fields.qty')}</TableHead>
+                <TableHead className="text-end">{t('fields.unitAmount')}</TableHead>
+                <TableHead className="text-end">{t('fields.amount')}</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {invoice.items.map((item) => (
+                <TableRow key={item.id}>
+                  <TableCell>{item.description}</TableCell>
+                  <TableCell className="text-muted-foreground">{item.fee_category?.name ?? '—'}</TableCell>
+                  <TableCell className="text-end">{item.quantity}</TableCell>
+                  <TableCell className="text-end">{formatCurrency(item.unit_amount)}</TableCell>
+                  <TableCell className="text-end">{formatCurrency(item.amount)}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+          {invoice.discount_total > 0 && (
+            <p className="mt-2 text-end text-sm text-muted-foreground">
+              {t('invoiceDetail.subtotalDiscount', { subtotal: formatCurrency(invoice.subtotal), discount: formatCurrency(invoice.discount_total) })}
+            </p>
+          )}
+          {invoice.notes && <p className="mt-3 text-sm text-muted-foreground">{invoice.notes}</p>}
+        </CardContent>
+      </Card>
+
+      <Card className="mb-6">
+        <CardContent className="pt-6">
+          <h3 className="mb-3 text-sm font-semibold">{t('invoiceDetail.payments')}</h3>
+          {invoice.payments.length === 0 && <p className="text-sm text-muted-foreground">{t('invoiceDetail.noPayments')}</p>}
+          {invoice.payments.length > 0 && (
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>{t('invoiceDetail.columnReceiptNumber')}</TableHead>
+                  <TableHead>{t('fields.date')}</TableHead>
+                  <TableHead>{t('fields.method')}</TableHead>
+                  <TableHead>{t('fields.reference')}</TableHead>
+                  <TableHead className="text-end">{t('fields.amount')}</TableHead>
+                  <TableHead />
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {invoice.payments.map((payment) => (
+                  <TableRow key={payment.id}>
+                    <TableCell>{payment.payment_number}</TableCell>
+                    <TableCell>{formatDate(payment.paid_at)}</TableCell>
+                    <TableCell>{payment.method_label}</TableCell>
+                    <TableCell className="text-muted-foreground">{payment.reference_number ?? '—'}</TableCell>
+                    <TableCell className="text-end">{formatCurrency(payment.amount)}</TableCell>
+                    <TableCell>
+                      <a
+                        href={paymentsApi.receiptPdfUrl(payment.id)}
+                        target="_blank"
+                        rel="noopener"
+                        className="flex items-center gap-1 text-sm text-primary hover:underline"
+                        aria-label={t('invoiceDetail.receiptAriaLabel', { number: payment.payment_number })}
+                      >
+                        <Download className="h-3.5 w-3.5" /> {t('invoiceDetail.receipt')}
+                      </a>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          )}
+        </CardContent>
+      </Card>
+
+      {invoice.credit_notes.length > 0 && (
+        <Card className="mb-6">
+          <CardContent className="pt-6">
+            <h3 className="mb-3 text-sm font-semibold">{t('invoiceDetail.creditNotes')}</h3>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>{t('invoiceDetail.columnCreditNoteNumber')}</TableHead>
+                  <TableHead>{t('fields.date')}</TableHead>
+                  <TableHead>{t('fields.reason')}</TableHead>
+                  <TableHead className="text-end">{t('fields.amount')}</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {invoice.credit_notes.map((creditNote) => (
+                  <TableRow key={creditNote.id}>
+                    <TableCell>{creditNote.credit_note_number}</TableCell>
+                    <TableCell>{formatDate(creditNote.issued_at)}</TableCell>
+                    <TableCell className="text-muted-foreground">{creditNote.reason}</TableCell>
+                    <TableCell className="text-end">{formatCurrency(creditNote.amount)}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
+
+      {paymentModalOpen && (
+        <RecordPaymentModal invoiceId={invoiceId} balance={invoice.balance} open={paymentModalOpen} onOpenChange={setPaymentModalOpen} />
+      )}
+      {creditNoteModalOpen && (
+        <IssueCreditNoteModal invoiceId={invoiceId} balance={invoice.balance} open={creditNoteModalOpen} onOpenChange={setCreditNoteModalOpen} />
+      )}
+
+      <ConfirmDialog
+        open={voidConfirmOpen}
+        onOpenChange={setVoidConfirmOpen}
+        title={t('invoiceDetail.voidConfirmTitle')}
+        description={t('invoiceDetail.voidConfirmDescription')}
+        confirmLabel={t('invoiceDetail.voidConfirmLabel')}
+        isLoading={voidMutation.isPending}
+        onConfirm={() => {
+          if (!voidMutation.isPending) voidMutation.mutate()
+        }}
+      />
+    </div>
+  )
+}
+
+function RecordPaymentModal({ invoiceId, balance, open, onOpenChange }: { invoiceId: number; balance: number; open: boolean; onOpenChange: (open: boolean) => void }) {
+  const { t } = useFeatureTranslation('fees')
+  const queryClient = useQueryClient()
+  const today = new Date().toISOString().slice(0, 10)
+  const [form, setForm] = useState<RecordPaymentPayload>({ amount: balance, method: 'cash', reference_number: '', paid_at: today, notes: '' })
+
+  const mutation = useMutation({
+    mutationFn: () => invoicesApi.recordPayment(invoiceId, form),
+    onSuccess: () => {
+      toast.success(t('invoiceDetail.recordPaymentModal.successToast'))
+      queryClient.invalidateQueries({ queryKey: queryKeys.invoice(invoiceId) })
+      onOpenChange(false)
+    },
+    onError: (error) => toast.error((error as ApiError).message),
+  })
+
+  return (
+    <Modal open={open} onOpenChange={onOpenChange} title={t('invoiceDetail.recordPaymentModal.title')}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault()
+          if (mutation.isPending) return
+          mutation.mutate()
+        }}
+        className="flex flex-col gap-4"
+        noValidate
+      >
+        <FormField label={t('fields.amount')} htmlFor="amount" required hint={t('invoiceDetail.recordPaymentModal.amountHint', { balance: formatCurrency(balance) })}>
+          <Input id="amount" type="number" min="0.01" max={balance} step="0.01" required value={form.amount || ''} onChange={(e) => setForm({ ...form, amount: Number(e.target.value) })} />
+        </FormField>
+        <FormField label={t('fields.method')} htmlFor="method" required>
+          <Select
+            id="method"
+            value={form.method}
+            onValueChange={(value) => setForm({ ...form, method: value as PaymentMethod })}
+            options={PAYMENT_METHODS.map((m) => ({ value: m, label: getPaymentMethodLabels(t)[m] }))}
+          />
+        </FormField>
+        <FormField label={t('fields.reference')} htmlFor="reference_number" hint={t('invoiceDetail.recordPaymentModal.referenceHint')}>
+          <Input id="reference_number" value={form.reference_number ?? ''} onChange={(e) => setForm({ ...form, reference_number: e.target.value })} />
+        </FormField>
+        <FormField label={t('invoiceDetail.recordPaymentModal.datePaid')} htmlFor="paid_at" required>
+          <Input id="paid_at" type="date" required value={form.paid_at} onChange={(e) => setForm({ ...form, paid_at: e.target.value })} />
+        </FormField>
+        <FormField label={t('fields.notes')} htmlFor="notes" hint={t('invoiceDetail.recordPaymentModal.notesHint')}>
+          <Textarea id="notes" rows={2} value={form.notes ?? ''} onChange={(e) => setForm({ ...form, notes: e.target.value })} />
+        </FormField>
+        <Button type="submit" isLoading={mutation.isPending} className="mt-2">
+          {t('invoiceDetail.recordPaymentModal.submit')}
+        </Button>
+      </form>
+    </Modal>
+  )
+}
+
+function IssueCreditNoteModal({ invoiceId, balance, open, onOpenChange }: { invoiceId: number; balance: number; open: boolean; onOpenChange: (open: boolean) => void }) {
+  const { t } = useFeatureTranslation('fees')
+  const queryClient = useQueryClient()
+  const [form, setForm] = useState<IssueCreditNotePayload>({ amount: balance, reason: '' })
+
+  const mutation = useMutation({
+    mutationFn: () => invoicesApi.issueCreditNote(invoiceId, form),
+    onSuccess: () => {
+      toast.success(t('invoiceDetail.creditNoteModal.successToast'))
+      queryClient.invalidateQueries({ queryKey: queryKeys.invoice(invoiceId) })
+      onOpenChange(false)
+    },
+    onError: (error) => toast.error((error as ApiError).message),
+  })
+
+  return (
+    <Modal open={open} onOpenChange={onOpenChange} title={t('invoiceDetail.creditNoteModal.title')}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault()
+          if (mutation.isPending) return
+          mutation.mutate()
+        }}
+        className="flex flex-col gap-4"
+        noValidate
+      >
+        <FormField label={t('fields.amount')} htmlFor="cn_amount" required hint={t('invoiceDetail.creditNoteModal.amountHint', { balance: formatCurrency(balance) })}>
+          <Input id="cn_amount" type="number" min="0.01" max={balance} step="0.01" required value={form.amount || ''} onChange={(e) => setForm({ ...form, amount: Number(e.target.value) })} />
+        </FormField>
+        <FormField label={t('fields.reason')} htmlFor="reason" required>
+          <Textarea id="reason" rows={3} required value={form.reason} onChange={(e) => setForm({ ...form, reason: e.target.value })} />
+        </FormField>
+        <Button type="submit" isLoading={mutation.isPending} className="mt-2">
+          {t('invoiceDetail.creditNoteModal.submit')}
+        </Button>
+      </form>
+    </Modal>
+  )
+}

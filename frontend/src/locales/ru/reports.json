@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "Всего",
+    "from": "С",
+    "to": "По"
+  },
+  "attendance": {
+    "title": "Отчёт по Посещаемости",
+    "description": "Динамика посещаемости учащихся и сотрудников с течением времени.",
+    "studentAttendance": "Посещаемость Учащихся",
+    "staffAttendance": "Посещаемость Сотрудников",
+    "bySection": "По Классам",
+    "noDataForRole": "Для вашей роли данные о посещаемости недоступны.",
+    "noRecordsInRange": "Нет записей за этот период.",
+    "tooltipLabel": "Посещаемость"
+  },
+  "academic": {
+    "title": "Успеваемость",
+    "description": "Средний балл и процент успешной сдачи по последним опубликованным экзаменам.",
+    "columnExam": "Экзамен",
+    "columnMarksEntered": "Внесено Оценок",
+    "columnAverage": "Средний Балл",
+    "columnPassRate": "Процент Успешной Сдачи",
+    "noExams": "Пока нет опубликованных экзаменов с оценками.",
+    "legendAverage": "Средний Балл %",
+    "legendPassRate": "Успешная Сдача %"
+  },
+  "operations": {
+    "title": "Операционный Отчёт",
+    "description": "Библиотека, транспорт и общежитие — краткая сводка.",
+    "noDataForRole": "Для вашей роли операционные данные недоступны.",
+    "library": "Библиотека",
+    "totalBooks": "Всего Книг",
+    "issuedThisMonth": "Выдано за Месяц",
+    "currentlyOverdue": "Просрочено Сейчас",
+    "transport": "Транспорт",
+    "activeVehicles": "Активные Транспортные Средства",
+    "studentsAssigned": "Закреплено Учащихся",
+    "hostel": "Общежитие",
+    "rooms": "Комнаты",
+    "occupiedCapacity": "Занято / Вместимость",
+    "occupancy": "Заполняемость"
+  },
+  "enrollment": {
+    "title": "Отчёт по Зачислению",
+    "description": "Приём, отчисление и выпуск учащихся за последние шесть месяцев.",
+    "activeStudents": "Активные Учащиеся",
+    "legendAdmissions": "Приём",
+    "legendWithdrawals": "Отчисления",
+    "legendGraduations": "Выпуск",
+    "activeStudentsByGrade": "Активные Учащиеся по Классам",
+    "noActiveStudents": "Пока нет активных учащихся."
+  }
+}

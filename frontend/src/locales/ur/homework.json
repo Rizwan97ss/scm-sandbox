@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "عنوان",
+    "description": "تفصیل",
+    "dueDate": "جمع کروانے کی تاریخ",
+    "maxScore": "زیادہ سے زیادہ نمبر",
+    "subject": "مضمون",
+    "section": "سیکشن",
+    "teacher": "استاد",
+    "status": "حیثیت",
+    "notSubmitted": "جمع نہیں کروایا گیا",
+    "optional": "اختیاری"
+  },
+  "list": {
+    "title": "گھر کا کام",
+    "descriptionStudent": "آپ کی کلاس کے لیے کام — مقررہ تاریخ سے پہلے اپنا کام جمع کروائیں۔",
+    "descriptionStaff": "اپنی کلاسز کے لیے گھر کا کام دیں اور جانچیں۔",
+    "newHomework": "نیا کام",
+    "columnTitle": "عنوان",
+    "columnSubject": "مضمون",
+    "columnSection": "سیکشن",
+    "columnDueDate": "جمع کروانے کی تاریخ",
+    "columnStatus": "حیثیت",
+    "columnTeacher": "استاد",
+    "emptyTitle": "ابھی تک کوئی کام موجود نہیں",
+    "emptyDescription": "شروع کرنے کے لیے اپنا پہلا کام دیں۔",
+    "modalTitle": "نیا کام",
+    "classLabel": "کلاس",
+    "classHint": "یہ کام کس سیکشن/مضمون کے لیے ہے",
+    "classPlaceholder": "ایک کلاس منتخب کریں",
+    "dueDateLabel": "جمع کروانے کی تاریخ",
+    "maxScoreLabel": "زیادہ سے زیادہ نمبر",
+    "assignHomework": "کام تفویض کریں"
+  },
+  "detail": {
+    "breadcrumbHomework": "گھر کا کام",
+    "descriptionLine": "{{subject}} · {{section}} · آخری تاریخ {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · زیادہ سے زیادہ نمبر: {{score}}",
+    "instructions": "ہدایات",
+    "columnAdmissionNumber": "داخلہ نمبر",
+    "columnName": "نام",
+    "columnStatus": "حیثیت",
+    "columnSubmission": "جمع شدہ کام",
+    "columnScore": "نمبر",
+    "columnFeedback": "رائے",
+    "saveGradeAriaLabel": "{{name}} کا نمبر محفوظ کریں",
+    "gradeSaved": "نمبر محفوظ کر لیا گیا۔"
+  },
+  "submitModal": {
+    "descriptionLine": "آخری تاریخ {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · زیادہ سے زیادہ نمبر: {{score}}",
+    "instructions": "ہدایات",
+    "answerLabel": "آپ کا جواب",
+    "answerPlaceholder": "اپنا جواب یا نوٹس یہاں لکھیں (اگر فائل منسلک کر رہے ہیں تو یہ اختیاری ہے)",
+    "attachmentLabel": "منسلکہ",
+    "resubmit": "دوبارہ جمع کروائیں",
+    "submitHomework": "کام جمع کروائیں",
+    "submittedSuccess": "کام جمع کروا دیا گیا۔"
+  }
+}

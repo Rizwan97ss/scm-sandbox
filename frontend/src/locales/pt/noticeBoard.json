@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "Título",
+    "body": "Conteúdo",
+    "type": "Tipo",
+    "audience": "Público",
+    "eventDate": "Data do Evento",
+    "startTime": "Hora de Início",
+    "location": "Local",
+    "optional": "Opcional"
+  },
+  "list": {
+    "title": "Mural de Avisos",
+    "description": "Avisos e próximos eventos de toda a escola.",
+    "newNotice": "Novo Aviso",
+    "emptyTitle": "Ainda não há avisos",
+    "draft": "Rascunho",
+    "postedBy": "Equipe",
+    "publish": "Publicar",
+    "deleteAriaLabel": "Excluir {{title}}",
+    "deleteConfirmTitle": "Excluir “{{title}}”?",
+    "deleteConfirmDescription": "Esta ação não pode ser desfeita.",
+    "publishedToast": "Aviso publicado.",
+    "deletedToast": "Aviso excluído."
+  },
+  "createModal": {
+    "title": "Novo Aviso",
+    "submit": "Criar aviso",
+    "successToast": "Aviso criado."
+  }
+}

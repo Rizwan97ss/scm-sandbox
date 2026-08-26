@@ -1,0 +1,20 @@
+{
+  "dataExportsList": {
+    "loading": "Wird geladen…",
+    "requestedOn": "Angefordert am {{date}}",
+    "requestedBy": "von {{name}}",
+    "availableUntil": "Verfügbar bis {{date}}",
+    "download": "Herunterladen",
+    "exportStarted": "Export gestartet — diese Liste wird aktualisiert, sobald er fertig ist.",
+    "statusPending": "Ausstehend",
+    "statusProcessing": "In Bearbeitung",
+    "statusReady": "Bereit",
+    "statusFailed": "Fehlgeschlagen"
+  },
+  "myDataExportPage": {
+    "title": "Meine Daten exportieren",
+    "description": "Laden Sie eine Kopie der Daten herunter, die diese Plattform über Sie speichert.",
+    "requestLabel": "Export anfordern",
+    "emptyLabel": "Noch keine Exporte angefordert"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "№ зачисления",
+    "status": "Статус",
+    "gradeSection": "Класс / Секция",
+    "dateOfBirth": "Дата рождения",
+    "date": "Дата",
+    "amount": "Сумма",
+    "receiptNumber": "Квитанция №",
+    "attendance": "Посещаемость",
+    "daysMarked": "Отмеченные Дни",
+    "absences": "Пропуски",
+    "from": "С",
+    "to": "По",
+    "remarks": "Замечания",
+    "homework": "Домашние Задания"
+  },
+  "page": {
+    "welcomeBack": "С возвращением, {{name}}",
+    "subtitle": "Вот что происходит сегодня.",
+    "stats": {
+      "totalSchools": "Всего Школ",
+      "activeTrialing": "Активные / Пробный Период",
+      "currentlyTrialing": "Сейчас на Пробном Периоде",
+      "activeStudents": "Активные Учащиеся",
+      "staffMembers": "Сотрудники",
+      "sections": "Секции",
+      "attendanceMarkedToday": "Посещаемость Отмечена Сегодня",
+      "pendingLeaveRequests": "Ожидающие Заявки на Отпуск",
+      "feesCollectedThisMonth": "Оплата Собрана в Этом Месяце",
+      "overdueBooks": "Просроченные Книги",
+      "assignedSections": "Назначенные Секции",
+      "students": "Учащиеся",
+      "homeworkAwaitingGrading": "Домашние Задания на Проверке",
+      "attendanceThisMonth": "Посещаемость в Этом Месяце",
+      "homeworkDue": "Домашние Задания к Сдаче",
+      "upcomingExams": "Предстоящие Экзамены",
+      "linkedChildren": "Привязанные Дети",
+      "outstandingFees": "Непогашенная Оплата"
+    },
+    "quickActions": {
+      "takeAttendance": "Отметить Посещаемость",
+      "newAdmission": "Новое зачисление",
+      "invoices": "Счета"
+    },
+    "trends": {
+      "attendanceTitle": "Посещаемость — Последние 14 Дней",
+      "feesTitle": "Собранная Оплата — Последние 6 Месяцев",
+      "feesTooltipLabel": "Собрано"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "Мои Дети",
+    "tabExams": "Экзамены",
+    "tabFees": "Оплата"
+  },
+  "childrenList": {
+    "title": "Мои Дети",
+    "description": "Выберите ребёнка, чтобы посмотреть профиль.",
+    "emptyTitle": "К вашему аккаунту пока не привязаны дети",
+    "emptyDescription": "Обратитесь в канцелярию школы, если это кажется ошибкой."
+  },
+  "attendanceTab": {
+    "emptyRecords": "Нет записей о посещаемости за этот период."
+  },
+  "examResultsTab": {
+    "tabByExam": "По Экзамену",
+    "tabByTerm": "Сводный Результат за Четверть",
+    "selectExamPlaceholder": "Выберите экзамен…",
+    "noPublishedExams": "Пока нет опубликованных экзаменов",
+    "selectTermPlaceholder": "Выберите четверть…"
+  },
+  "feesTab": {
+    "totalBilled": "Всего Начислено",
+    "totalPaid": "Всего Оплачено",
+    "totalCredited": "Всего Зачтено",
+    "outstanding": "Задолженность",
+    "emptyTitle": "Пока нет счетов",
+    "issuedDue": "Выставлен {{issueDate}} · Срок оплаты {{dueDate}}",
+    "totalPaidBalance": "Всего {{total}} · Оплачено {{paid}} · Остаток",
+    "receipt": "Квитанция",
+    "downloadReceiptAriaLabel": "Скачать квитанцию {{number}}"
+  },
+  "homeworkTab": {
+    "emptyTitle": "Пока нет заданных домашних заданий",
+    "notSubmitted": "Не сдано",
+    "subjectDue": "{{subject}} · Срок сдачи {{date}}",
+    "maxScoreSuffix": " · Максимальный балл: {{score}}",
+    "score": "Балл: {{score}}",
+    "scoreWithMax": "Балл: {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "Замечаний пока нет",
+    "authoredBy": "— {{name}}"
+  }
+}

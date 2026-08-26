@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "Title",
+    "author": "Author",
+    "category": "Category",
+    "status": "Status",
+    "dueDate": "Due Date",
+    "active": "Active",
+    "inactive": "Inactive",
+    "student": "Student",
+    "staffMember": "Staff Member"
+  },
+  "books": {
+    "title": "Books",
+    "description": "The library's catalog and copy inventory.",
+    "newBook": "New Book",
+    "searchPlaceholder": "Search by title…",
+    "columnAvailableTotal": "Available / Total",
+    "issue": "Issue",
+    "edit": "Edit",
+    "deleteAriaLabel": "Delete {{title}}",
+    "emptyTitleSearch": "No books match \"{{query}}\"",
+    "emptyTitle": "No books yet",
+    "emptyDescription": "Try a different title, or clear the search to see everyone.",
+    "editModalTitle": "Edit Book",
+    "newModalTitle": "New Book",
+    "isbn": "ISBN",
+    "totalCopies": "Total Copies",
+    "saveChanges": "Save changes",
+    "createBook": "Create book",
+    "deleteConfirmTitle": "Delete {{title}}?",
+    "deleteConfirmDescription": "This cannot be undone.",
+    "issueModal": {
+      "title": "Issue “{{title}}”",
+      "successToast": "Book issued.",
+      "borrowerType": "Borrower Type",
+      "selectStudentPlaceholder": "Select a student",
+      "selectStaffPlaceholder": "Select a staff member",
+      "submit": "Issue book"
+    }
+  },
+  "bookIssues": {
+    "title": "Book Issues",
+    "description": "Every book currently on loan, and its return history.",
+    "columnBook": "Book",
+    "columnBorrower": "Borrower",
+    "columnIssued": "Issued",
+    "columnDue": "Due",
+    "columnReturned": "Returned",
+    "columnFine": "Fine",
+    "returnAction": "Return",
+    "returnedToast": "Book returned.",
+    "emptyTitle": "No book issues yet",
+    "emptyDescription": "Books issued to students or staff will appear here."
+  }
+}

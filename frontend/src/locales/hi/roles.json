@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "भूमिकाएं और अनुमतियां",
+    "description": "कस्टम भूमिकाएं बनाएं और नियंत्रित करें कि प्रत्येक क्या कर सकती है।",
+    "newRole": "नई भूमिका",
+    "systemRoleAriaLabel": "सिस्टम भूमिका",
+    "edit": "संपादित करें",
+    "deleteAriaLabel": "{{name}} हटाएं",
+    "emptyTitle": "अभी तक कोई भूमिका नहीं",
+    "permissionsCount": "{{count}} अनुमति(यां)",
+    "morePermissions": "+{{count}} और",
+    "deleteConfirmTitle": "भूमिका \"{{name}}\" हटाएं?",
+    "deleteConfirmDescription": "केवल इस भूमिका वाले उपयोगकर्ता इसकी सभी अनुमतियां खो देंगे।",
+    "deleteSuccessToast": "भूमिका हटा दी गई।"
+  },
+  "formModal": {
+    "editTitle": "भूमिका संपादित करें",
+    "newTitle": "नई भूमिका",
+    "roleNameLabel": "भूमिका का नाम",
+    "permissionsLabel": "अनुमतियां",
+    "saveChanges": "परिवर्तन सहेजें",
+    "createRole": "भूमिका बनाएं",
+    "updateSuccessToast": "भूमिका अपडेट की गई।",
+    "createSuccessToast": "भूमिका बनाई गई।"
+  }
+}

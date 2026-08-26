@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "Prüfprotokoll",
+    "description": "Eine Aufzeichnung sensibler Aktionen, die in Ihrer Schule durchgeführt wurden.",
+    "columnWhen": "Wann",
+    "columnBy": "Von",
+    "columnEvent": "Ereignis",
+    "columnSubject": "Betreff",
+    "columnDescription": "Beschreibung",
+    "system": "System",
+    "emptyTitle": "Noch keine Aktivität erfasst",
+    "emptyDescription": "Im System durchgeführte Aktionen werden hier protokolliert."
+  }
+}

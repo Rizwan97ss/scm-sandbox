@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "Roles & Permissions",
+    "description": "Create custom roles and control exactly what each one can do.",
+    "newRole": "New Role",
+    "systemRoleAriaLabel": "System role",
+    "edit": "Edit",
+    "deleteAriaLabel": "Delete {{name}}",
+    "emptyTitle": "No roles yet",
+    "permissionsCount": "{{count}} permission(s)",
+    "morePermissions": "+{{count}} more",
+    "deleteConfirmTitle": "Delete role \"{{name}}\"?",
+    "deleteConfirmDescription": "Users with only this role will lose all its permissions.",
+    "deleteSuccessToast": "Role deleted."
+  },
+  "formModal": {
+    "editTitle": "Edit Role",
+    "newTitle": "New Role",
+    "roleNameLabel": "Role name",
+    "permissionsLabel": "Permissions",
+    "saveChanges": "Save changes",
+    "createRole": "Create role",
+    "updateSuccessToast": "Role updated.",
+    "createSuccessToast": "Role created."
+  }
+}

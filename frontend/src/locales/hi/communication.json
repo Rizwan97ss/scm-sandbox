@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "शीर्षक",
+    "message": "संदेश",
+    "audience": "दर्शक वर्ग",
+    "channels": "चैनल"
+  },
+  "list": {
+    "title": "घोषणाएं",
+    "description": "छात्रों, स्टाफ़ या अभिभावकों को संदेश भेजें।",
+    "compose": "घोषणा लिखें",
+    "columnTitle": "शीर्षक",
+    "columnAudience": "दर्शक वर्ग",
+    "columnChannels": "चैनल",
+    "columnRecipients": "प्राप्तकर्ता",
+    "columnSentBy": "भेजने वाला",
+    "columnSent": "भेजा गया",
+    "emptyTitle": "अभी तक कोई घोषणा नहीं भेजी गई",
+    "emptyDescription": "आपके द्वारा प्रकाशित घोषणाएं यहां उनके दर्शक वर्ग के लिए दिखाई देंगी।"
+  },
+  "composeModal": {
+    "title": "घोषणा लिखें",
+    "submit": "घोषणा भेजें",
+    "successToast": "घोषणा {{count}} प्राप्तकर्ता(ओं) को भेजी गई।"
+  }
+}

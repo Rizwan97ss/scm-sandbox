@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "Título",
+    "message": "Mensagem",
+    "audience": "Público",
+    "channels": "Canais"
+  },
+  "list": {
+    "title": "Comunicados",
+    "description": "Envie uma mensagem para alunos, funcionários ou responsáveis.",
+    "compose": "Redigir comunicado",
+    "columnTitle": "Título",
+    "columnAudience": "Público",
+    "columnChannels": "Canais",
+    "columnRecipients": "Destinatários",
+    "columnSentBy": "Enviado por",
+    "columnSent": "Enviado",
+    "emptyTitle": "Nenhum comunicado enviado ainda",
+    "emptyDescription": "Os comunicados que você publicar aparecerão aqui para o público selecionado."
+  },
+  "composeModal": {
+    "title": "Redigir comunicado",
+    "submit": "Enviar comunicado",
+    "successToast": "Comunicado enviado a {{count}} destinatário(s)."
+  }
+}

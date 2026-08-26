@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "عنوان",
+    "author": "مصنف",
+    "category": "زمرہ",
+    "status": "صورتحال",
+    "dueDate": "مقررہ تاریخ",
+    "active": "فعال",
+    "inactive": "غیر فعال",
+    "student": "طالب علم",
+    "staffMember": "عملے کا رکن"
+  },
+  "books": {
+    "title": "کتابیں",
+    "description": "لائبریری کا کیٹلاگ اور کاپیوں کی انوینٹری۔",
+    "newBook": "نئی کتاب",
+    "searchPlaceholder": "عنوان سے تلاش کریں…",
+    "columnAvailableTotal": "دستیاب / کل",
+    "issue": "اجراء",
+    "edit": "ترمیم",
+    "deleteAriaLabel": "{{title}} حذف کریں",
+    "emptyTitleSearch": "\"{{query}}\" سے مماثل کوئی کتاب نہیں",
+    "emptyTitle": "ابھی تک کوئی کتاب نہیں",
+    "emptyDescription": "کوئی مختلف عنوان آزمائیں، یا سب دیکھنے کے لیے تلاش صاف کریں۔",
+    "editModalTitle": "کتاب میں ترمیم کریں",
+    "newModalTitle": "نئی کتاب",
+    "isbn": "آئی ایس بی این",
+    "totalCopies": "کل کاپیاں",
+    "saveChanges": "تبدیلیاں محفوظ کریں",
+    "createBook": "کتاب بنائیں",
+    "deleteConfirmTitle": "{{title}} حذف کریں؟",
+    "deleteConfirmDescription": "اسے واپس نہیں کیا جا سکتا۔",
+    "issueModal": {
+      "title": "”{{title}}“ کا اجراء",
+      "successToast": "کتاب جاری کر دی گئی۔",
+      "borrowerType": "مستعیر کی قسم",
+      "selectStudentPlaceholder": "ایک طالب علم منتخب کریں",
+      "selectStaffPlaceholder": "عملے کا ایک رکن منتخب کریں",
+      "submit": "کتاب جاری کریں"
+    }
+  },
+  "bookIssues": {
+    "title": "کتابوں کا اجراء",
+    "description": "تمام کتابیں جو فی الحال زیر استعمال ہیں، اور ان کی واپسی کی تاریخ۔",
+    "columnBook": "کتاب",
+    "columnBorrower": "مستعیر",
+    "columnIssued": "اجراء کی تاریخ",
+    "columnDue": "مقررہ تاریخ",
+    "columnReturned": "واپسی کی تاریخ",
+    "columnFine": "جرمانہ",
+    "returnAction": "واپس کریں",
+    "returnedToast": "کتاب واپس کر دی گئی۔",
+    "emptyTitle": "ابھی تک کوئی کتاب جاری نہیں کی گئی",
+    "emptyDescription": "طلبہ یا عملے کو جاری کردہ کتابیں یہاں ظاہر ہوں گی۔"
+  }
+}

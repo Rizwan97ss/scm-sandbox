@@ -1,0 +1,67 @@
+{
+  "center": {
+    "title": "Central de importação",
+    "description": "Crie registros em massa a partir de um arquivo Excel ou CSV.",
+    "noPermission": "Você ainda não tem permissão para importar nenhum registro.",
+    "options": {
+      "students": {
+        "label": "Alunos",
+        "description": "Admita alunos em massa, com até dois responsáveis por linha."
+      },
+      "staff": {
+        "label": "Equipe e usuários",
+        "description": "Crie contas de equipe em massa, cada uma com uma função. Senhas nunca são importadas: cada conta recebe um e-mail de redefinição de senha."
+      },
+      "guardians": {
+        "label": "Responsáveis",
+        "description": "Vincule responsáveis a alunos já existentes no sistema pelo número de admissão; um responsável correspondente por e-mail é reutilizado, não duplicado."
+      },
+      "departments": {
+        "label": "Departamentos",
+        "description": "Configure departamentos de agrupamento de matérias em massa, útil ao configurar uma nova escola pela primeira vez."
+      },
+      "grade-levels": {
+        "label": "Séries",
+        "description": "Crie em massa as séries que sua escola ensina, com a sequência de promoção de cada uma."
+      },
+      "sections": {
+        "label": "Turmas",
+        "description": "Crie em massa turmas (classes nas quais os alunos são admitidos) para o ano letivo atual, com uma sala atribuída opcionalmente."
+      },
+      "subjects": {
+        "label": "Matérias",
+        "description": "Crie matérias em massa, vinculadas opcionalmente a um departamento pelo seu código."
+      },
+      "rooms": {
+        "label": "Salas",
+        "description": "Crie salas físicas em massa com capacidade e tipo."
+      }
+    }
+  },
+  "logs": {
+    "title": "Registros de importação",
+    "description": "Todas as tentativas de importação em massa da escola, incluindo pré-visualizações nunca confirmadas.",
+    "columnWhen": "Quando",
+    "columnEntity": "Entidade",
+    "columnBy": "Por",
+    "columnFile": "Arquivo",
+    "columnMode": "Modo",
+    "columnResult": "Resultado",
+    "columnActions": "",
+    "unknownPerformer": "—",
+    "previewOnly": "Somente pré-visualização",
+    "createdCount": "{{count}} criado(s)",
+    "updatedCount": "{{count}} atualizado(s)",
+    "failedCount": "{{count}} falhou(aram)",
+    "undoneAt": "Desfeito em {{date}}",
+    "undo": "Desfazer",
+    "emptyTitle": "Ainda não há importações",
+    "emptyDescription": "Os arquivos que você importar serão registrados aqui, com a opção de desfazer.",
+    "undoDialogTitle": "Desfazer esta importação de {{entity}}?",
+    "undoDialogDescription": "Isso remove os {{count}} registro(s) criados a partir de \"{{fileName}}\". Registros que esta importação apenas atualizou nunca são tocados, e qualquer registro com dependentes criados desde então será ignorado e relatado. Isso não pode ser refeito a partir daqui: os registros removidos vão para a lixeira da mesma forma que uma exclusão normal.",
+    "undoConfirmLabel": "Desfazer importação",
+    "undoBlockedItem": "{{type}} \"{{label}}\"",
+    "undoWarning": "{{deleted}} registro(s) desfeito(s). {{blockedCount}} não puderam ser desfeitos: {{blockedList}} — algo mais agora depende deles.",
+    "undoSuccess": "{{count}} registro(s) desfeito(s)."
+  }
+}

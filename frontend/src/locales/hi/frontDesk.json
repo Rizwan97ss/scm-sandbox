@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "name": "नाम",
+    "phone": "फ़ोन",
+    "purpose": "उद्देश्य",
+    "whomToMeet": "किससे मिलना है",
+    "notes": "टिप्पणियाँ",
+    "checkedIn": "प्रवेश दर्ज",
+    "checkedOut": "प्रस्थान दर्ज"
+  },
+  "list": {
+    "title": "आगंतुक",
+    "description": "फ्रंट डेस्क आगंतुक रजिस्टर।",
+    "logVisitor": "आगंतुक दर्ज करें",
+    "columnToMeet": "किससे मिलना है",
+    "columnStatus": "स्थिति",
+    "checkOut": "प्रस्थान दर्ज करें",
+    "checkedOutToast": "आगंतुक का प्रस्थान दर्ज किया गया।",
+    "emptyTitle": "अभी तक कोई आगंतुक दर्ज नहीं हुआ",
+    "emptyDescription": "फ्रंट डेस्क पर दर्ज किए गए आगंतुक यहाँ दिखाई देंगे।"
+  },
+  "checkInModal": {
+    "title": "आगंतुक दर्ज करें",
+    "notesHint": "वैकल्पिक",
+    "submit": "प्रवेश दर्ज करें",
+    "checkedInToast": "आगंतुक का प्रवेश दर्ज किया गया।"
+  }
+}

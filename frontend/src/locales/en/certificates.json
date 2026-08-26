@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "Student",
+    "type": "Type",
+    "name": "Name",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "list": {
+    "title": "Certificates",
+    "descriptionAll": "Every certificate issued to a student.",
+    "descriptionOwn": "Your issued certificates.",
+    "columnCertificateNumber": "Certificate #",
+    "columnIssued": "Issued",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "Download certificate {{number}}",
+    "emptyTitle": "No certificates yet",
+    "emptyDescription": "Certificates you issue to students will appear here."
+  },
+  "templates": {
+    "title": "Certificate Templates",
+    "description": "Reusable certificate wording — issue one to a student to snapshot it as a real certificate.",
+    "newTemplate": "New Template",
+    "searchPlaceholder": "Search by name…",
+    "issue": "Issue",
+    "edit": "Edit",
+    "deleteAriaLabel": "Delete {{name}}",
+    "emptyTitleSearch": "No templates match \"{{query}}\"",
+    "emptyTitle": "No certificate templates yet",
+    "emptyDescriptionSearch": "Try a different name, or clear the search to see everyone.",
+    "editTitle": "Edit Template",
+    "newTitle": "New Template",
+    "typeHint": "e.g. Bonafide, Transfer",
+    "bodyLabel": "Body",
+    "bodyHint": "Placeholders: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "Save changes",
+    "createTemplate": "Create template",
+    "deleteConfirmTitle": "Delete {{name}}?",
+    "deleteConfirmDescription": "This cannot be undone.",
+    "issueModal": {
+      "title": "Issue “{{name}}”",
+      "selectStudentPlaceholder": "Select a student",
+      "submit": "Issue certificate",
+      "successToast": "Certificate issued."
+    }
+  }
+}

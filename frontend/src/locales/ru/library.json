@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "Название",
+    "author": "Автор",
+    "category": "Категория",
+    "status": "Статус",
+    "dueDate": "Срок Возврата",
+    "active": "Активна",
+    "inactive": "Неактивна",
+    "student": "Учащийся",
+    "staffMember": "Сотрудник"
+  },
+  "books": {
+    "title": "Книги",
+    "description": "Каталог библиотеки и учёт экземпляров.",
+    "newBook": "Новая Книга",
+    "searchPlaceholder": "Поиск по названию…",
+    "columnAvailableTotal": "Доступно / Всего",
+    "issue": "Выдать",
+    "edit": "Изменить",
+    "deleteAriaLabel": "Удалить {{title}}",
+    "emptyTitleSearch": "Нет книг, соответствующих \"{{query}}\"",
+    "emptyTitle": "Пока нет книг",
+    "emptyDescription": "Попробуйте другое название или очистите поиск, чтобы увидеть все книги.",
+    "editModalTitle": "Изменить Книгу",
+    "newModalTitle": "Новая Книга",
+    "isbn": "ISBN",
+    "totalCopies": "Всего Экземпляров",
+    "saveChanges": "Сохранить изменения",
+    "createBook": "Создать книгу",
+    "deleteConfirmTitle": "Удалить {{title}}?",
+    "deleteConfirmDescription": "Это действие нельзя отменить.",
+    "issueModal": {
+      "title": "Выдать «{{title}}»",
+      "successToast": "Книга выдана.",
+      "borrowerType": "Тип Получателя",
+      "selectStudentPlaceholder": "Выберите учащегося",
+      "selectStaffPlaceholder": "Выберите сотрудника",
+      "submit": "Выдать книгу"
+    }
+  },
+  "bookIssues": {
+    "title": "Выдача Книг",
+    "description": "Все книги, выданные в настоящее время, и история их возврата.",
+    "columnBook": "Книга",
+    "columnBorrower": "Получатель",
+    "columnIssued": "Выдана",
+    "columnDue": "Срок",
+    "columnReturned": "Возвращена",
+    "columnFine": "Штраф",
+    "returnAction": "Вернуть",
+    "returnedToast": "Книга возвращена.",
+    "emptyTitle": "Пока нет выданных книг",
+    "emptyDescription": "Книги, выданные учащимся или сотрудникам, появятся здесь."
+  }
+}

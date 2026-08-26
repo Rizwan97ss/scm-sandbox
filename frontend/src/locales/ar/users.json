@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "roles": "الأدوار",
+    "status": "الحالة",
+    "designation": "المسمى الوظيفي",
+    "employeeId": "رقم الموظف",
+    "hireDate": "تاريخ التعيين",
+    "optional": "اختياري",
+    "none": "لا شيء",
+    "edit": "تعديل"
+  },
+  "list": {
+    "title": "الموظفون والمستخدمون",
+    "description": "إدارة جميع حسابات المستخدمين وأدوارهم.",
+    "export": "تصدير",
+    "import": "استيراد",
+    "newUser": "مستخدم جديد",
+    "searchPlaceholder": "البحث بالاسم…",
+    "columnRoles": "الأدوار",
+    "downloadIdCardAriaLabel": "تنزيل بطاقة هوية {{name}}",
+    "emptyTitleSearch": "لا يوجد مستخدمون مطابقون لـ \"{{query}}\"",
+    "emptyTitle": "لم يتم العثور على مستخدمين",
+    "emptyDescriptionSearch": "جرّب اسمًا آخر، أو امسح البحث لعرض الجميع."
+  },
+  "userImport": {
+    "title": "استيراد جماعي للموظفين",
+    "breadcrumbUsers": "الموظفون والمستخدمون",
+    "breadcrumbImport": "استيراد",
+    "entityLabel": "موظف",
+    "descriptionBeforeCode": "قم بتحميل ملف Excel (.xlsx) أو CSV وفق القالب. ",
+    "descriptionAfterCode": " يجب أن يطابق اسم دور موجود تمامًا، ولا يمكنك منح سوى الأدوار المسموح لك بتعيينها بالفعل. لا تُدرج أبدًا عمود كلمة مرور — يحصل كل حساب مستورد على كلمة مرور آمنة يتم إنشاؤها عشوائيًا، ويُرسل إليه فورًا بريد إلكتروني لإعادة تعيين كلمة المرور لتحديد كلمة المرور الخاصة به."
+  },
+  "formModal": {
+    "editTitle": "تعديل المستخدم",
+    "newTitle": "مستخدم جديد",
+    "saveChanges": "حفظ التغييرات",
+    "createUser": "إنشاء مستخدم",
+    "createdToast": "تم إنشاء المستخدم.",
+    "updatedToast": "تم تحديث المستخدم."
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "المزيد من الإجراءات",
+    "sendPasswordReset": "إرسال إعادة تعيين كلمة المرور",
+    "resetMfa": "إعادة تعيين المصادقة الثنائية",
+    "setActive": "تعيين كنشط",
+    "setInactive": "تعيين كغير نشط",
+    "suspend": "تعليق",
+    "statusUpdatedToast": "تم تحديث الحالة.",
+    "passwordResetSentToast": "تم إرسال رابط إعادة تعيين كلمة المرور.",
+    "mfaResetToast": "تمت إعادة تعيين المصادقة الثنائية — يمكنهم إعدادها مرة أخرى عند تسجيل الدخول التالي."
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "داخلہ نمبر",
+    "status": "حیثیت",
+    "gradeSection": "جماعت / سیکشن",
+    "dateOfBirth": "تاریخ پیدائش",
+    "date": "تاریخ",
+    "amount": "رقم",
+    "receiptNumber": "رسید نمبر",
+    "attendance": "حاضری",
+    "daysMarked": "درج شدہ دن",
+    "absences": "غیر حاضریاں",
+    "from": "سے",
+    "to": "تک",
+    "remarks": "تبصرے",
+    "homework": "گھر کا کام"
+  },
+  "page": {
+    "welcomeBack": "خوش آمدید، {{name}}",
+    "subtitle": "آج یہ ہو رہا ہے۔",
+    "stats": {
+      "totalSchools": "کل اسکول",
+      "activeTrialing": "فعال / آزمائشی",
+      "currentlyTrialing": "فی الحال آزمائشی مرحلے میں",
+      "activeStudents": "فعال طلبہ",
+      "staffMembers": "عملے کے ارکان",
+      "sections": "سیکشنز",
+      "attendanceMarkedToday": "آج درج کی گئی حاضری",
+      "pendingLeaveRequests": "زیر التوا رخصت کی درخواستیں",
+      "feesCollectedThisMonth": "اس مہینے وصول شدہ فیس",
+      "overdueBooks": "میعاد گزشتہ کتابیں",
+      "assignedSections": "تفویض کردہ سیکشنز",
+      "students": "طلبہ",
+      "homeworkAwaitingGrading": "نمبر دینے کے منتظر گھر کا کام",
+      "attendanceThisMonth": "اس مہینے کی حاضری",
+      "homeworkDue": "واجب الادا گھر کا کام",
+      "upcomingExams": "آئندہ امتحانات",
+      "linkedChildren": "منسلک بچے",
+      "outstandingFees": "بقایا فیس"
+    },
+    "quickActions": {
+      "takeAttendance": "حاضری لگائیں",
+      "newAdmission": "نیا داخلہ",
+      "invoices": "انوائسز"
+    },
+    "trends": {
+      "attendanceTitle": "حاضری — گزشتہ 14 دن",
+      "feesTitle": "وصول شدہ فیس — گزشتہ 6 ماہ",
+      "feesTooltipLabel": "وصول شدہ"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "میرے بچے",
+    "tabExams": "امتحانات",
+    "tabFees": "فیس"
+  },
+  "childrenList": {
+    "title": "میرے بچے",
+    "description": "پروفائل دیکھنے کے لیے ایک بچہ منتخب کریں۔",
+    "emptyTitle": "ابھی تک آپ کے اکاؤنٹ سے کوئی بچہ منسلک نہیں ہے",
+    "emptyDescription": "اگر یہ غلط لگے تو اسکول کے دفتر سے رابطہ کریں۔"
+  },
+  "attendanceTab": {
+    "emptyRecords": "اس مدت میں کوئی حاضری ریکارڈ موجود نہیں ہے۔"
+  },
+  "examResultsTab": {
+    "tabByExam": "امتحان کے مطابق",
+    "tabByTerm": "مجموعی ٹرم نتیجہ",
+    "selectExamPlaceholder": "ایک امتحان منتخب کریں…",
+    "noPublishedExams": "ابھی تک کوئی امتحان شائع نہیں ہوا",
+    "selectTermPlaceholder": "ایک ٹرم منتخب کریں…"
+  },
+  "feesTab": {
+    "totalBilled": "کل بلنگ",
+    "totalPaid": "کل ادائیگی",
+    "totalCredited": "کل کریڈٹ",
+    "outstanding": "بقایا",
+    "emptyTitle": "ابھی تک کوئی انوائس نہیں",
+    "issuedDue": "اجراء {{issueDate}} · ادائیگی کی تاریخ {{dueDate}}",
+    "totalPaidBalance": "کل {{total}} · ادا شدہ {{paid}} · بقیہ",
+    "receipt": "رسید",
+    "downloadReceiptAriaLabel": "رسید {{number}} ڈاؤن لوڈ کریں"
+  },
+  "homeworkTab": {
+    "emptyTitle": "ابھی تک کوئی گھر کا کام تفویض نہیں کیا گیا",
+    "notSubmitted": "جمع نہیں کروایا گیا",
+    "subjectDue": "{{subject}} · ادائیگی کی تاریخ {{date}}",
+    "maxScoreSuffix": " · زیادہ سے زیادہ نمبر: {{score}}",
+    "score": "نمبر: {{score}}",
+    "scoreWithMax": "نمبر: {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "ابھی تک کوئی تبصرہ نہیں",
+    "authoredBy": "— {{name}}"
+  }
+}

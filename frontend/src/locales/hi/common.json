@@ -1,0 +1,385 @@
+{
+  "topbar": {
+    "openMenu": "नेविगेशन मेनू खोलें"
+  },
+  "nav": {
+    "groups": {
+      "overview": "अवलोकन",
+      "people": "लोग",
+      "attendance": "उपस्थिति",
+      "exams": "परीक्षाएं",
+      "teaching": "शिक्षण",
+      "feesAccounting": "फीस और लेखा",
+      "hrPayroll": "एचआर और वेतन",
+      "library": "पुस्तकालय",
+      "transport": "परिवहन",
+      "hostel": "छात्रावास",
+      "frontDesk": "फ्रंट डेस्क",
+      "certificatesIdCards": "प्रमाणपत्र और आईडी कार्ड",
+      "noticeBoard": "सूचना पट्ट",
+      "communication": "संचार",
+      "reportsAnalytics": "रिपोर्ट और विश्लेषण",
+      "academics": "शैक्षणिक",
+      "administration": "प्रशासन"
+    },
+    "items": {
+      "dashboard": "डैशबोर्ड",
+      "students": "छात्र",
+      "guardians": "अभिभावक",
+      "staffUsers": "स्टाफ और उपयोगकर्ता",
+      "takeAttendance": "उपस्थिति लें",
+      "staffAttendance": "स्टाफ उपस्थिति",
+      "exams": "परीक्षाएं",
+      "gradingScales": "ग्रेडिंग स्केल",
+      "examConfiguration": "परीक्षा कॉन्फ़िगरेशन",
+      "homework": "गृहकार्य",
+      "invoices": "चालान",
+      "feeStructures": "फीस संरचनाएं",
+      "feeCategories": "फीस श्रेणियां",
+      "feeReports": "फीस रिपोर्ट",
+      "leaveRequests": "अवकाश अनुरोध",
+      "payslips": "वेतन पर्ची",
+      "designations": "पदनाम",
+      "leaveTypes": "अवकाश प्रकार",
+      "salaryStructures": "वेतन संरचनाएं",
+      "books": "पुस्तकें",
+      "bookIssues": "पुस्तक निर्गम",
+      "vehicles": "वाहन",
+      "routes": "मार्ग",
+      "studentAssignments": "छात्र असाइनमेंट",
+      "hostels": "छात्रावास",
+      "hostelRooms": "कमरे",
+      "allocations": "आवंटन",
+      "visitors": "आगंतुक",
+      "certificateTemplates": "प्रमाणपत्र टेम्पलेट",
+      "issuedCertificates": "जारी प्रमाणपत्र",
+      "noticeBoard": "सूचना पट्ट",
+      "announcements": "घोषणाएं",
+      "attendanceReport": "उपस्थिति रिपोर्ट",
+      "academicPerformance": "शैक्षणिक प्रदर्शन",
+      "enrollmentReport": "नामांकन रिपोर्ट",
+      "operationsReport": "संचालन रिपोर्ट",
+      "academicYears": "शैक्षणिक वर्ष",
+      "terms": "सत्र",
+      "departments": "विभाग",
+      "gradeLevels": "ग्रेड स्तर",
+      "sections": "सेक्शन",
+      "subjects": "विषय",
+      "academicRooms": "कक्ष",
+      "timetable": "समय सारणी",
+      "holidays": "छुट्टियां",
+      "rolesPermissions": "भूमिकाएं और अनुमतियां",
+      "settings": "सेटिंग्स",
+      "systemHealth": "सिस्टम स्थिति",
+      "auditLog": "ऑडिट लॉग",
+      "importLogs": "आयात लॉग",
+      "dataExport": "डेटा निर्यात",
+      "importCenter": "आयात केंद्र",
+      "myChildren": "मेरे बच्चे",
+      "myOnlineTests": "मेरे ऑनलाइन टेस्ट",
+      "myResult": "मेरा परिणाम",
+      "myFees": "मेरी फीस",
+      "certificates": "प्रमाणपत्र"
+    }
+  },
+  "search": {
+    "placeholder": "छात्र, स्टाफ, चालान खोजें...",
+    "ariaLabel": "वैश्विक खोज",
+    "clear": "खोज साफ़ करें",
+    "searching": "खोजा जा रहा है…",
+    "noResultsFor": "\"{{query}}\" के लिए कोई परिणाम नहीं मिला।",
+    "categories": {
+      "students": "छात्र",
+      "guardians": "अभिभावक",
+      "staff": "स्टाफ",
+      "books": "पुस्तकें",
+      "invoices": "चालान"
+    }
+  },
+  "notifications": {
+    "ariaLabel": "सूचनाएं",
+    "ariaLabelUnread": "सूचनाएं ({{count}} अपठित)",
+    "title": "सूचनाएं",
+    "markAllRead": "सभी को पढ़ा हुआ चिह्नित करें",
+    "empty": "अभी तक कोई सूचना नहीं है।"
+  },
+  "userMenu": {
+    "accountMenu": "खाता मेनू",
+    "downloadIdCard": "मेरा आईडी कार्ड डाउनलोड करें",
+    "exportMyData": "मेरा डेटा निर्यात करें",
+    "setupGuide": "सेटअप गाइड",
+    "deleteAccount": "मेरा खाता हटाएं",
+    "logout": "लॉग आउट",
+    "deleteConfirmTitle": "अपना खाता हटाएं?",
+    "deleteConfirmDescription": "यह आपके व्यक्तिगत डेटा (नाम, संपर्क विवरण, चिकित्सा/आपातकालीन जानकारी) को तुरंत हटा देता है और इसे पूर्ववत नहीं किया जा सकता। आपके खाते से जुड़े शैक्षणिक और वित्तीय रिकॉर्ड आवश्यकतानुसार रखे जाते हैं।",
+    "deleteConfirmLabel": "मेरा खाता हटाएं"
+  },
+  "theme": {
+    "changeTheme": "थीम बदलें",
+    "light": "लाइट",
+    "dark": "डार्क",
+    "system": "सिस्टम"
+  },
+  "language": {
+    "changeLanguage": "भाषा बदलें"
+  },
+  "mfaBanner": {
+    "required": "इस खाते पर दो-चरणीय सत्यापन आवश्यक है — {{action}}।",
+    "setupNow": "अभी सेट करें",
+    "daysLeft_one": "इसे सेट करने के लिए आपके पास {{count}} दिन शेष है",
+    "daysLeft_other": "इसे सेट करने के लिए आपके पास {{count}} दिन शेष हैं",
+    "link": "अभी सेट करें"
+  },
+  "offlineBanner": {
+    "message": "आप ऑफ़लाइन हैं। अभी किए गए परिवर्तन तब तक सहेजे नहीं जाएंगे जब तक कनेक्शन वापस नहीं आता।"
+  },
+  "confirmDialog": {
+    "confirm": "पुष्टि करें",
+    "cancel": "रद्द करें"
+  },
+  "queryError": {
+    "title": "कुछ गलत हो गया",
+    "description": "इसे लोड नहीं किया जा सका। कृपया पुनः प्रयास करें।",
+    "retry": "पुनः प्रयास करें"
+  },
+  "pagination": {
+    "showing": "{{total}} में से {{from}}–{{to}} दिखाया जा रहा है",
+    "previousPage": "पिछला पृष्ठ",
+    "nextPage": "अगला पृष्ठ",
+    "pageOf": "पृष्ठ {{current}} / {{last}}"
+  },
+  "dataTable": {
+    "noRecordsFound": "कोई रिकॉर्ड नहीं मिला",
+    "selectAll": "इस पृष्ठ पर सभी का चयन करें",
+    "selectRow": "पंक्ति चुनें"
+  },
+  "modal": {
+    "closeDialog": "संवाद बंद करें"
+  },
+  "bulkActions": {
+    "selected": "{{count}} चयनित",
+    "clear": "साफ़ करें"
+  },
+  "breadcrumbs": {
+    "ariaLabel": "ब्रेडक्रंब"
+  },
+  "drawer": {
+    "closePanel": "पैनल बंद करें"
+  },
+  "select": {
+    "placeholder": "चुनें…",
+    "searchPlaceholder": "खोजें…",
+    "noResults": "कोई परिणाम नहीं।"
+  },
+  "fileUpload": {
+    "removeFile": "फ़ाइल हटाएं",
+    "clickToUpload": "अपलोड करने के लिए क्लिक करें",
+    "orDragAndDrop": "या खींचें और छोड़ें",
+    "tooLarge": "फ़ाइल बहुत बड़ी है। अधिकतम आकार {{maxSizeMb}}MB है।"
+  },
+  "importFileMapper": {
+    "dontImportColumn": "इस कॉलम को आयात न करें",
+    "uploadPrompt": "जो कॉलम हेडर पहले से मौजूद हैं उनके साथ एक फ़ाइल अपलोड करें — इसके बाद आप प्रत्येक को सही फ़ील्ड से मिलाएंगे, पहले कुछ भी नाम बदलने की आवश्यकता नहीं है।",
+    "readingFile": "फ़ाइल पढ़ी जा रही है…",
+    "matchPrompt": "अपनी फ़ाइल के प्रत्येक कॉलम को नीचे किसी फ़ील्ड से मिलाएं। \"आयात न करें\" पर सेट कॉलम पूरी तरह छोड़ दिए जाते हैं।",
+    "truncatedNotice": " यहां केवल पहली पंक्तियां दिखाई गई हैं, लेकिन फ़ाइल की हर पंक्ति आयात की जाएगी।",
+    "columnYourColumn": "आपका कॉलम",
+    "columnSampleValues": "नमूना मान",
+    "columnMapsTo": "इससे मेल खाता है",
+    "mapsToAriaLabel": "\"{{header}}\" को इससे मैप करता है",
+    "continueWithMapped_one": "{{count}} मैप किए गए कॉलम के साथ जारी रखें",
+    "continueWithMapped_other": "{{count}} मैप किए गए कॉलम के साथ जारी रखें",
+    "chooseDifferentFile": "कोई अन्य फ़ाइल चुनें"
+  },
+  "importForm": {
+    "downloadTemplate": "टेम्पलेट डाउनलोड करें",
+    "modeLabel": "मोड",
+    "modeCreate": "केवल बनाएं (मौजूदा को अस्वीकार करें)",
+    "modeUpdate": "केवल अपडेट करें (न मिलने पर विफल)",
+    "modeUpsert": "बनाएं या अपडेट करें",
+    "tabUploadFile": "फ़ाइल अपलोड करें",
+    "tabPasteData": "डेटा पेस्ट करें",
+    "tabUploadMap": "अपलोड करें और कॉलम मैप करें",
+    "previewImport": "आयात पूर्वावलोकन",
+    "recheck": "फिर से जांचें",
+    "confirmImport": "आयात की पुष्टि करें",
+    "chooseDifferentFile": "कोई अन्य फ़ाइल चुनें",
+    "nothingSavedYet": "अभी तक कुछ भी सहेजा नहीं गया है — नीचे पूर्वावलोकन की समीक्षा करें, फिर पुष्टि करें।",
+    "gridInstructions": "सीधे ग्रिड में टाइप करें, या पहले सेल से शुरू करते हुए Excel/Google Sheets से कॉपी की गई पंक्तियां पेस्ट करें। प्रत्येक पंक्ति की जांच उसी तरह की जाती है जैसे अपलोड की गई फ़ाइल की होती — नीचे विफल सेल हाइलाइट किया गया है; इसे ठीक करें और फिर से पूर्वावलोकन करें।",
+    "loadingGrid": "ग्रिड लोड हो रहा है…",
+    "loading": "लोड हो रहा है…",
+    "queuedInBackground": "यह फ़ाइल इतनी बड़ी है कि यह पृष्ठभूमि में संसाधित हो रही है — पूर्ण होने पर यह पृष्ठ अपडेट हो जाएगा।",
+    "queuedNotice": "यह फ़ाइल इतनी बड़ी है कि यह पृष्ठभूमि में संसाधित हो रही है। पूर्ण होने पर यह पृष्ठ अपने आप अपडेट हो जाएगा — इस पर बने रहने की आवश्यकता नहीं है।",
+    "backgroundImportFailed": "पृष्ठभूमि आयात विफल हुआ।",
+    "importAnotherFile": "कोई अन्य फ़ाइल आयात करें",
+    "resultCreated": "बनाए गए",
+    "resultUpdated": "अपडेट किए गए",
+    "resultNothingToImport": "आयात करने के लिए कुछ नहीं",
+    "resultNothingToReport": "रिपोर्ट करने के लिए कुछ नहीं",
+    "resultWouldBeCreated": "बनाए जाएंगे",
+    "resultWouldBeUpdated": "अपडेट किए जाएंगे",
+    "resultPossibleDuplicate_one": "{{count}} संभावित डुप्लिकेट",
+    "resultPossibleDuplicate_other": "{{count}} संभावित डुप्लिकेट",
+    "resultFailed": "विफल",
+    "resultWouldFail": "विफल होंगे",
+    "reviewBeforeNewRecords": "इन्हें नए रिकॉर्ड मानने से पहले समीक्षा करें",
+    "rowLabel": "पंक्ति {{row}}:",
+    "columnRow": "पंक्ति",
+    "columnField": "फ़ील्ड",
+    "columnError": "त्रुटि",
+    "entitySummary": "{{entity}}: {{summary}}",
+    "nothingChanged": "कुछ नहीं बदला"
+  },
+  "enums": {
+    "gender": {
+      "male": "पुरुष",
+      "female": "महिला",
+      "other": "अन्य"
+    },
+    "userStatus": {
+      "active": "सक्रिय",
+      "inactive": "निष्क्रिय",
+      "suspended": "निलंबित"
+    },
+    "studentStatus": {
+      "active": "सक्रिय",
+      "transferred_out": "स्थानांतरित",
+      "withdrawn": "वापस लिया गया",
+      "graduated": "स्नातक",
+      "alumni": "पूर्व छात्र"
+    },
+    "enrollmentAction": {
+      "admission": "प्रवेश",
+      "promotion": "पदोन्नति",
+      "transfer_in": "स्थानांतरण (आगमन)",
+      "transfer_out": "स्थानांतरण (प्रस्थान)",
+      "withdrawal": "निकासी",
+      "graduation": "स्नातक होना",
+      "reactivation": "पुनः सक्रियण"
+    },
+    "guardianRelationship": {
+      "father": "पिता",
+      "mother": "माता",
+      "guardian": "अभिभावक",
+      "other": "अन्य"
+    },
+    "roomType": {
+      "classroom": "कक्षा",
+      "lab": "प्रयोगशाला",
+      "hall": "हॉल",
+      "other": "अन्य"
+    },
+    "holidayType": {
+      "public": "सार्वजनिक अवकाश",
+      "school_specific": "स्कूल-विशिष्ट"
+    },
+    "attendanceStatus": {
+      "present": "उपस्थित",
+      "absent": "अनुपस्थित",
+      "late": "देर से",
+      "half_day": "आधा दिन",
+      "excused": "क्षमा प्राप्त",
+      "on_leave": "अवकाश पर"
+    },
+    "daysOfWeek": {
+      "0": "रविवार",
+      "1": "सोमवार",
+      "2": "मंगलवार",
+      "3": "बुधवार",
+      "4": "गुरुवार",
+      "5": "शुक्रवार",
+      "6": "शनिवार"
+    },
+    "announcementChannel": {
+      "in_app": "ऐप में",
+      "email": "ईमेल",
+      "sms": "एसएमएस",
+      "push": "पुश सूचना"
+    },
+    "noticeType": {
+      "general": "सूचना",
+      "event": "कार्यक्रम"
+    },
+    "audience": {
+      "all": "सभी",
+      "students": "छात्र",
+      "staff": "स्टाफ",
+      "parents": "अभिभावक"
+    },
+    "feeFrequency": {
+      "one_time": "एकबारगी",
+      "monthly": "मासिक",
+      "quarterly": "त्रैमासिक",
+      "term": "टर्म के अनुसार",
+      "annual": "वार्षिक"
+    },
+    "discountType": {
+      "none": "कोई नहीं",
+      "percentage": "प्रतिशत",
+      "fixed": "निश्चित राशि"
+    },
+    "invoiceStatus": {
+      "draft": "मसौदा",
+      "issued": "जारी किया गया",
+      "partially_paid": "आंशिक रूप से भुगतान",
+      "paid": "भुगतान किया गया",
+      "void": "रद्द"
+    },
+    "paymentMethod": {
+      "cash": "नकद",
+      "cheque": "चेक",
+      "bank_transfer": "बैंक हस्तांतरण",
+      "upi": "यूपीआई",
+      "card": "कार्ड",
+      "other": "अन्य"
+    },
+    "hostelType": {
+      "boys": "लड़के",
+      "girls": "लड़कियां",
+      "mixed": "मिश्रित"
+    },
+    "hostelAllocationStatus": {
+      "allocated": "आवंटित",
+      "vacated": "खाली किया गया"
+    },
+    "homeworkSubmissionStatus": {
+      "submitted": "जमा किया गया",
+      "graded": "मूल्यांकित"
+    },
+    "remarkCategory": {
+      "academic": "शैक्षणिक",
+      "behavioral": "व्यावहारिक",
+      "general": "सामान्य"
+    },
+    "bookIssueStatus": {
+      "issued": "जारी",
+      "returned": "वापस",
+      "overdue": "समय-सीमा पार"
+    },
+    "leaveStatus": {
+      "pending": "लंबित",
+      "approved": "स्वीकृत",
+      "rejected": "अस्वीकृत",
+      "cancelled": "रद्द"
+    },
+    "payslipStatus": {
+      "generated": "तैयार",
+      "paid": "भुगतान किया गया"
+    },
+    "questionType": {
+      "mcq": "बहुविकल्पीय",
+      "true_false": "सही / गलत"
+    }
+  },
+  "feedback": {
+    "notFoundTitle": "पृष्ठ नहीं मिला",
+    "notFoundDescription": "आप जिस पृष्ठ की तलाश कर रहे हैं वह मौजूद नहीं है या स्थानांतरित कर दिया गया है।",
+    "backToDashboard": "डैशबोर्ड पर वापस जाएं",
+    "somethingWentWrong": "कुछ गलत हो गया",
+    "somethingWentWrongDescription": "कृपया पृष्ठ को फिर से लोड करने का प्रयास करें। यदि समस्या बनी रहती है, तो सहायता से संपर्क करें।",
+    "reloadPage": "पृष्ठ पुनः लोड करें",
+    "accessDenied": "पहुंच अस्वीकृत",
+    "accessDeniedDescription": "आपको इस पृष्ठ को देखने की अनुमति नहीं है।",
+    "loading": "लोड हो रहा है…"
+  }
+}

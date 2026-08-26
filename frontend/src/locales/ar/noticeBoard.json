@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "العنوان",
+    "body": "النص",
+    "type": "النوع",
+    "audience": "الجمهور",
+    "eventDate": "تاريخ الفعالية",
+    "startTime": "وقت البدء",
+    "location": "الموقع",
+    "optional": "اختياري"
+  },
+  "list": {
+    "title": "لوحة الإعلانات",
+    "description": "إعلانات المدرسة والفعاليات القادمة.",
+    "newNotice": "إعلان جديد",
+    "emptyTitle": "لا توجد إعلانات بعد",
+    "draft": "مسودة",
+    "postedBy": "الموظفون",
+    "publish": "نشر",
+    "deleteAriaLabel": "حذف {{title}}",
+    "deleteConfirmTitle": "حذف “{{title}}”؟",
+    "deleteConfirmDescription": "لا يمكن التراجع عن هذا الإجراء.",
+    "publishedToast": "تم نشر الإعلان.",
+    "deletedToast": "تم حذف الإعلان."
+  },
+  "createModal": {
+    "title": "إعلان جديد",
+    "submit": "إنشاء الإعلان",
+    "successToast": "تم إنشاء الإعلان."
+  }
+}

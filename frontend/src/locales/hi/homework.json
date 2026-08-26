@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "शीर्षक",
+    "description": "विवरण",
+    "dueDate": "जमा करने की तिथि",
+    "maxScore": "अधिकतम अंक",
+    "subject": "विषय",
+    "section": "सेक्शन",
+    "teacher": "शिक्षक",
+    "status": "स्थिति",
+    "notSubmitted": "जमा नहीं किया गया",
+    "optional": "वैकल्पिक"
+  },
+  "list": {
+    "title": "गृहकार्य",
+    "descriptionStudent": "आपकी कक्षा के लिए कार्य — नियत तिथि से पहले अपना कार्य जमा करें।",
+    "descriptionStaff": "अपनी कक्षाओं के लिए गृहकार्य असाइन करें और मूल्यांकन करें।",
+    "newHomework": "नया गृहकार्य",
+    "columnTitle": "शीर्षक",
+    "columnSubject": "विषय",
+    "columnSection": "सेक्शन",
+    "columnDueDate": "जमा करने की तिथि",
+    "columnStatus": "स्थिति",
+    "columnTeacher": "शिक्षक",
+    "emptyTitle": "अभी तक कोई गृहकार्य नहीं",
+    "emptyDescription": "शुरू करने के लिए अपना पहला गृहकार्य असाइन करें।",
+    "modalTitle": "नया गृहकार्य",
+    "classLabel": "कक्षा",
+    "classHint": "यह गृहकार्य किस सेक्शन/विषय के लिए है",
+    "classPlaceholder": "एक कक्षा चुनें",
+    "dueDateLabel": "जमा करने की तिथि",
+    "maxScoreLabel": "अधिकतम अंक",
+    "assignHomework": "गृहकार्य असाइन करें"
+  },
+  "detail": {
+    "breadcrumbHomework": "गृहकार्य",
+    "descriptionLine": "{{subject}} · {{section}} · देय तिथि {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · अधिकतम अंक: {{score}}",
+    "instructions": "निर्देश",
+    "columnAdmissionNumber": "प्रवेश संख्या",
+    "columnName": "नाम",
+    "columnStatus": "स्थिति",
+    "columnSubmission": "प्रस्तुति",
+    "columnScore": "अंक",
+    "columnFeedback": "प्रतिक्रिया",
+    "saveGradeAriaLabel": "{{name}} का अंक सहेजें",
+    "gradeSaved": "अंक सहेजा गया।"
+  },
+  "submitModal": {
+    "descriptionLine": "देय तिथि {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · अधिकतम अंक: {{score}}",
+    "instructions": "निर्देश",
+    "answerLabel": "आपका उत्तर",
+    "answerPlaceholder": "यहां अपना उत्तर या नोट्स लिखें (यदि आप फ़ाइल संलग्न कर रहे हैं तो यह वैकल्पिक है)",
+    "attachmentLabel": "संलग्नक",
+    "resubmit": "पुनः जमा करें",
+    "submitHomework": "गृहकार्य जमा करें",
+    "submittedSuccess": "गृहकार्य जमा कर दिया गया।"
+  }
+}

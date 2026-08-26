@@ -1,0 +1,20 @@
+{
+  "dataExportsList": {
+    "loading": "لوڈ ہو رہا ہے…",
+    "requestedOn": "{{date}} کو درخواست دی گئی",
+    "requestedBy": "بذریعہ {{name}}",
+    "availableUntil": "{{date}} تک دستیاب",
+    "download": "ڈاؤن لوڈ کریں",
+    "exportStarted": "ایکسپورٹ شروع ہو گیا ہے — تیار ہوتے ہی یہ فہرست خود بخود اپ ڈیٹ ہو جائے گی۔",
+    "statusPending": "زیرِ التوا",
+    "statusProcessing": "پروسیسنگ جاری ہے",
+    "statusReady": "تیار",
+    "statusFailed": "ناکام"
+  },
+  "myDataExportPage": {
+    "title": "میرا ڈیٹا ایکسپورٹ کریں",
+    "description": "اس پلیٹ فارم کے پاس آپ کے بارے میں موجود ڈیٹا کی ایک کاپی ڈاؤن لوڈ کریں۔",
+    "requestLabel": "ایکسپورٹ کی درخواست دیں",
+    "emptyLabel": "ابھی تک کوئی ایکسپورٹ درخواست نہیں دی گئی"
+  }
+}

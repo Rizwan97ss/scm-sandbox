@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "Секция",
+    "date": "Дата",
+    "period": "Урок",
+    "wholeDay": "Весь день",
+    "status": "Статус",
+    "remarks": "Примечания",
+    "remarksOptional": "Необязательные примечания",
+    "remarksOptionalPlaceholder": "Необязательно",
+    "staffMember": "Сотрудник"
+  },
+  "takeAttendance": {
+    "title": "Отметить Посещаемость",
+    "description": "Отметьте ежедневную или поурочную посещаемость секции.",
+    "selectSectionPlaceholder": "Выберите секцию…",
+    "emptySelectSectionTitle": "Выберите секцию, чтобы начать",
+    "emptySelectSectionDescription": "Выберите секцию, дату и урок выше, чтобы загрузить список учащихся.",
+    "emptyNoStudentsTitle": "В этой секции нет учащихся",
+    "emptyNoStudentsDescription": "В этой секции в настоящее время нет зачисленных учащихся.",
+    "columnAdmissionNumber": "№ зачисления",
+    "columnName": "Имя",
+    "columnStatus": "Статус",
+    "columnRemarks": "Примечания",
+    "saveAttendance": "Сохранить Посещаемость",
+    "savedSuccess": "Сохранено записей о посещаемости: {{count}}."
+  },
+  "staffAttendance": {
+    "title": "Посещаемость Сотрудников",
+    "description": "Самостоятельная регистрация прихода/ухода и записи о посещаемости сотрудников.",
+    "markAttendance": "Отметить Посещаемость",
+    "today": "Сегодня, {{date}}",
+    "checkedInAt": "Приход отмечен в {{time}}",
+    "checkedInOutAt": "Приход в {{checkIn}}, уход в {{checkOut}}",
+    "notCheckedInYet": "Вы ещё не отметили приход сегодня.",
+    "checkIn": "Отметить Приход",
+    "checkOut": "Отметить Уход",
+    "checkedInSuccess": "Приход отмечен.",
+    "checkedOutSuccess": "Уход отмечен.",
+    "correctAriaLabel": "Исправить посещаемость для {{name}}",
+    "columnDate": "Дата",
+    "columnStaff": "Сотрудник",
+    "columnStatus": "Статус",
+    "columnCheckIn": "Приход",
+    "columnCheckOut": "Уход",
+    "columnRemarks": "Примечания",
+    "emptyTitle": "Записей о посещаемости пока нет",
+    "emptyDescription": "Записи появятся здесь, как только сотрудники отметят приход или вы отметите посещаемость вручную.",
+    "markModal": {
+      "title": "Отметить Посещаемость Сотрудника",
+      "selectStaffPlaceholder": "Выберите сотрудника…",
+      "save": "Сохранить",
+      "savedSuccess": "Посещаемость сохранена."
+    },
+    "correctModal": {
+      "title": "Исправить посещаемость — {{name}}",
+      "save": "Сохранить исправление",
+      "savedSuccess": "Посещаемость исправлена."
+    }
+  },
+  "history": {
+    "from": "С",
+    "to": "По",
+    "attendance": "Посещаемость",
+    "daysMarked": "Отмеченные Дни",
+    "absences": "Пропуски",
+    "columnDate": "Дата",
+    "columnStatus": "Статус",
+    "columnRemarks": "Примечания",
+    "emptyDescription": "Нет записей о посещаемости за этот период."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "Schüler",
+    "type": "Typ",
+    "name": "Name",
+    "status": "Status",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "list": {
+    "title": "Zeugnisse",
+    "descriptionAll": "Alle einem Schüler ausgestellten Zeugnisse.",
+    "descriptionOwn": "Ihre ausgestellten Zeugnisse.",
+    "columnCertificateNumber": "Zeugnisnummer",
+    "columnIssued": "Ausgestellt",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "Zeugnis {{number}} herunterladen",
+    "emptyTitle": "Noch keine Zeugnisse",
+    "emptyDescription": "Zeugnisse, die Sie an Schüler ausstellen, werden hier angezeigt."
+  },
+  "templates": {
+    "title": "Zeugnisvorlagen",
+    "description": "Wiederverwendbare Zeugnistexte — stellen Sie eine Vorlage einem Schüler aus, um sie als echtes Zeugnis zu übernehmen.",
+    "newTemplate": "Neue Vorlage",
+    "searchPlaceholder": "Nach Name suchen…",
+    "issue": "Ausstellen",
+    "edit": "Bearbeiten",
+    "deleteAriaLabel": "{{name}} löschen",
+    "emptyTitleSearch": "Keine Vorlage entspricht „{{query}}“",
+    "emptyTitle": "Noch keine Zeugnisvorlagen",
+    "emptyDescriptionSearch": "Versuchen Sie einen anderen Namen oder löschen Sie die Suche, um alle zu sehen.",
+    "editTitle": "Vorlage bearbeiten",
+    "newTitle": "Neue Vorlage",
+    "typeHint": "z. B. Schulbescheinigung, Wechsel",
+    "bodyLabel": "Inhalt",
+    "bodyHint": "Platzhalter: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "Änderungen speichern",
+    "createTemplate": "Vorlage erstellen",
+    "deleteConfirmTitle": "{{name}} löschen?",
+    "deleteConfirmDescription": "Dies kann nicht rückgängig gemacht werden.",
+    "issueModal": {
+      "title": "„{{name}}“ ausstellen",
+      "selectStudentPlaceholder": "Schüler auswählen",
+      "submit": "Zeugnis ausstellen",
+      "successToast": "Zeugnis ausgestellt."
+    }
+  }
+}

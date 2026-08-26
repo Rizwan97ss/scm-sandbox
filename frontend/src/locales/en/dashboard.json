@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "Admission #",
+    "status": "Status",
+    "gradeSection": "Grade / Section",
+    "dateOfBirth": "Date of Birth",
+    "date": "Date",
+    "amount": "Amount",
+    "receiptNumber": "Receipt #",
+    "attendance": "Attendance",
+    "daysMarked": "Days Marked",
+    "absences": "Absences",
+    "from": "From",
+    "to": "To",
+    "remarks": "Remarks",
+    "homework": "Homework"
+  },
+  "page": {
+    "welcomeBack": "Welcome back, {{name}}",
+    "subtitle": "Here's what's happening today.",
+    "stats": {
+      "totalSchools": "Total Schools",
+      "activeTrialing": "Active / Trialing",
+      "currentlyTrialing": "Currently Trialing",
+      "activeStudents": "Active Students",
+      "staffMembers": "Staff Members",
+      "sections": "Sections",
+      "attendanceMarkedToday": "Attendance Marked Today",
+      "pendingLeaveRequests": "Pending Leave Requests",
+      "feesCollectedThisMonth": "Fees Collected This Month",
+      "overdueBooks": "Overdue Books",
+      "assignedSections": "Assigned Sections",
+      "students": "Students",
+      "homeworkAwaitingGrading": "Homework Awaiting Grading",
+      "attendanceThisMonth": "Attendance This Month",
+      "homeworkDue": "Homework Due",
+      "upcomingExams": "Upcoming Exams",
+      "linkedChildren": "Linked Children",
+      "outstandingFees": "Outstanding Fees"
+    },
+    "quickActions": {
+      "takeAttendance": "Take Attendance",
+      "newAdmission": "New Admission",
+      "invoices": "Invoices"
+    },
+    "trends": {
+      "attendanceTitle": "Attendance — Last 14 Days",
+      "feesTitle": "Fees Collected — Last 6 Months",
+      "feesTooltipLabel": "Collected"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "My Children",
+    "tabExams": "Exams",
+    "tabFees": "Fees"
+  },
+  "childrenList": {
+    "title": "My Children",
+    "description": "Select a child to view their profile.",
+    "emptyTitle": "No children linked to your account yet",
+    "emptyDescription": "Contact the school office if this seems wrong."
+  },
+  "attendanceTab": {
+    "emptyRecords": "No attendance records in this range."
+  },
+  "examResultsTab": {
+    "tabByExam": "By Exam",
+    "tabByTerm": "Consolidated Term Result",
+    "selectExamPlaceholder": "Select an exam…",
+    "noPublishedExams": "No published exams yet",
+    "selectTermPlaceholder": "Select a term…"
+  },
+  "feesTab": {
+    "totalBilled": "Total Billed",
+    "totalPaid": "Total Paid",
+    "totalCredited": "Total Credited",
+    "outstanding": "Outstanding",
+    "emptyTitle": "No invoices yet",
+    "issuedDue": "Issued {{issueDate}} · Due {{dueDate}}",
+    "totalPaidBalance": "Total {{total}} · Paid {{paid}} · Balance",
+    "receipt": "Receipt",
+    "downloadReceiptAriaLabel": "Download receipt {{number}}"
+  },
+  "homeworkTab": {
+    "emptyTitle": "No homework assigned yet",
+    "notSubmitted": "Not submitted",
+    "subjectDue": "{{subject}} · Due {{date}}",
+    "maxScoreSuffix": " · Max score: {{score}}",
+    "score": "Score: {{score}}",
+    "scoreWithMax": "Score: {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "No remarks yet",
+    "authoredBy": "— {{name}}"
+  }
+}

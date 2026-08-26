@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "Title",
+    "description": "Description",
+    "dueDate": "Due Date",
+    "maxScore": "Max Score",
+    "subject": "Subject",
+    "section": "Section",
+    "teacher": "Teacher",
+    "status": "Status",
+    "notSubmitted": "Not submitted",
+    "optional": "Optional"
+  },
+  "list": {
+    "title": "Homework",
+    "descriptionStudent": "Assignments for your class — submit your work before the due date.",
+    "descriptionStaff": "Assign and grade homework for your classes.",
+    "newHomework": "New Homework",
+    "columnTitle": "Title",
+    "columnSubject": "Subject",
+    "columnSection": "Section",
+    "columnDueDate": "Due Date",
+    "columnStatus": "Status",
+    "columnTeacher": "Teacher",
+    "emptyTitle": "No homework yet",
+    "emptyDescription": "Assign your first homework to get started.",
+    "modalTitle": "New Homework",
+    "classLabel": "Class",
+    "classHint": "Which section/subject this homework is for",
+    "classPlaceholder": "Select a class",
+    "dueDateLabel": "Due Date",
+    "maxScoreLabel": "Max Score",
+    "assignHomework": "Assign homework"
+  },
+  "detail": {
+    "breadcrumbHomework": "Homework",
+    "descriptionLine": "{{subject}} · {{section}} · Due {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Max score: {{score}}",
+    "instructions": "Instructions",
+    "columnAdmissionNumber": "Admission #",
+    "columnName": "Name",
+    "columnStatus": "Status",
+    "columnSubmission": "Submission",
+    "columnScore": "Score",
+    "columnFeedback": "Feedback",
+    "saveGradeAriaLabel": "Save grade for {{name}}",
+    "gradeSaved": "Grade saved."
+  },
+  "submitModal": {
+    "descriptionLine": "Due {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Max score: {{score}}",
+    "instructions": "Instructions",
+    "answerLabel": "Your answer",
+    "answerPlaceholder": "Type your answer or notes here (optional if you're attaching a file)",
+    "attachmentLabel": "Attachment",
+    "resubmit": "Resubmit",
+    "submitHomework": "Submit homework",
+    "submittedSuccess": "Homework submitted."
+  }
+}

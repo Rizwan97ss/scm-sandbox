@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "Gesamt",
+    "from": "Von",
+    "to": "Bis"
+  },
+  "attendance": {
+    "title": "Anwesenheitsbericht",
+    "description": "Anwesenheitstrends von Schülern und Personal im Zeitverlauf.",
+    "studentAttendance": "Schüleranwesenheit",
+    "staffAttendance": "Personalanwesenheit",
+    "bySection": "Nach Klasse",
+    "noDataForRole": "Für Ihre Rolle sind keine Anwesenheitsdaten sichtbar.",
+    "noRecordsInRange": "Keine Einträge in diesem Zeitraum.",
+    "tooltipLabel": "Anwesenheit"
+  },
+  "academic": {
+    "title": "Akademische Leistung",
+    "description": "Durchschnittliche Punktzahl und Bestehensquote der zuletzt veröffentlichten Prüfungen.",
+    "columnExam": "Prüfung",
+    "columnMarksEntered": "Erfasste Noten",
+    "columnAverage": "Durchschnitt",
+    "columnPassRate": "Bestehensquote",
+    "noExams": "Noch keine veröffentlichten Prüfungen mit Noten.",
+    "legendAverage": "Durchschnitt %",
+    "legendPassRate": "Bestehensquote %"
+  },
+  "operations": {
+    "title": "Betriebsbericht",
+    "description": "Bibliothek, Transport und Wohnheim auf einen Blick.",
+    "noDataForRole": "Für Ihre Rolle sind keine Betriebsdaten sichtbar.",
+    "library": "Bibliothek",
+    "totalBooks": "Bücher Gesamt",
+    "issuedThisMonth": "Diesen Monat Ausgeliehen",
+    "currentlyOverdue": "Aktuell Überfällig",
+    "transport": "Transport",
+    "activeVehicles": "Aktive Fahrzeuge",
+    "studentsAssigned": "Zugewiesene Schüler",
+    "hostel": "Wohnheim",
+    "rooms": "Zimmer",
+    "occupiedCapacity": "Belegt / Kapazität",
+    "occupancy": "Auslastung"
+  },
+  "enrollment": {
+    "title": "Einschreibungsbericht",
+    "description": "Aufnahmen, Abmeldungen und Abschlüsse in den letzten sechs Monaten.",
+    "activeStudents": "Aktive Schüler",
+    "legendAdmissions": "Aufnahmen",
+    "legendWithdrawals": "Abmeldungen",
+    "legendGraduations": "Abschlüsse",
+    "activeStudentsByGrade": "Aktive Schüler nach Klassenstufe",
+    "noActiveStudents": "Noch keine aktiven Schüler."
+  }
+}

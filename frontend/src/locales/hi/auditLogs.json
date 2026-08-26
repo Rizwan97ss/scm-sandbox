@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "ऑडिट लॉग",
+    "description": "आपके विद्यालय में की गई संवेदनशील गतिविधियों का रिकॉर्ड।",
+    "columnWhen": "कब",
+    "columnBy": "द्वारा",
+    "columnEvent": "इवेंट",
+    "columnSubject": "विषय",
+    "columnDescription": "विवरण",
+    "system": "सिस्टम",
+    "emptyTitle": "अभी तक कोई गतिविधि दर्ज नहीं हुई",
+    "emptyDescription": "सिस्टम में की गई गतिविधियाँ यहाँ दर्ज की जाएँगी।"
+  }
+}

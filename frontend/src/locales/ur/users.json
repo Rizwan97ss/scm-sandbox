@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "نام",
+    "email": "ای میل",
+    "firstName": "پہلا نام",
+    "lastName": "آخری نام",
+    "password": "پاس ورڈ",
+    "confirmPassword": "پاس ورڈ کی تصدیق کریں",
+    "roles": "کردار",
+    "status": "حیثیت",
+    "designation": "عہدہ",
+    "employeeId": "ملازم آئی ڈی",
+    "hireDate": "بھرتی کی تاریخ",
+    "optional": "اختیاری",
+    "none": "کوئی نہیں",
+    "edit": "ترمیم کریں"
+  },
+  "list": {
+    "title": "عملہ اور صارفین",
+    "description": "تمام صارف اکاؤنٹس اور ان کے کردار منظم کریں۔",
+    "export": "ایکسپورٹ",
+    "import": "امپورٹ",
+    "newUser": "نیا صارف",
+    "searchPlaceholder": "نام سے تلاش کریں…",
+    "columnRoles": "کردار",
+    "downloadIdCardAriaLabel": "{{name}} کا شناختی کارڈ ڈاؤن لوڈ کریں",
+    "emptyTitleSearch": "\"{{query}}\" سے کوئی صارف مماثل نہیں",
+    "emptyTitle": "کوئی صارف نہیں ملا",
+    "emptyDescriptionSearch": "کوئی اور نام آزمائیں، یا سب دیکھنے کے لیے تلاش صاف کریں۔"
+  },
+  "userImport": {
+    "title": "عملے کی بلک امپورٹ",
+    "breadcrumbUsers": "عملہ اور صارفین",
+    "breadcrumbImport": "امپورٹ",
+    "entityLabel": "عملے کا رکن",
+    "descriptionBeforeCode": "ٹیمپلیٹ کے مطابق ایک Excel (.xlsx) یا CSV فائل اپ لوڈ کریں۔ ",
+    "descriptionAfterCode": " کسی موجودہ کردار کے نام سے بالکل مماثل ہونا چاہیے، اور آپ صرف وہی کردار دے سکتے ہیں جن کی اجازت آپ کو پہلے سے حاصل ہے۔ کبھی بھی پاس ورڈ کالم شامل نہ کریں — ہر امپورٹ شدہ اکاؤنٹ کو ایک محفوظ، بے ترتیب طور پر تیار کردہ پاس ورڈ ملتا ہے اور اسے فوری طور پر اپنا پاس ورڈ سیٹ کرنے کے لیے پاس ورڈ ری سیٹ ای میل بھیجی جاتی ہے۔"
+  },
+  "formModal": {
+    "editTitle": "صارف میں ترمیم کریں",
+    "newTitle": "نیا صارف",
+    "saveChanges": "تبدیلیاں محفوظ کریں",
+    "createUser": "صارف بنائیں",
+    "createdToast": "صارف بن گیا۔",
+    "updatedToast": "صارف اپ ڈیٹ ہو گیا۔"
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "مزید اقدامات",
+    "sendPasswordReset": "پاس ورڈ ری سیٹ بھیجیں",
+    "resetMfa": "دو مرحلہ توثیق ری سیٹ کریں",
+    "setActive": "فعال کے طور پر سیٹ کریں",
+    "setInactive": "غیر فعال کے طور پر سیٹ کریں",
+    "suspend": "معطل کریں",
+    "statusUpdatedToast": "حیثیت اپ ڈیٹ ہو گئی۔",
+    "passwordResetSentToast": "پاس ورڈ ری سیٹ لنک بھیج دیا گیا۔",
+    "mfaResetToast": "دو مرحلہ توثیق ری سیٹ ہو گئی — وہ اگلی بار لاگ ان کرتے وقت اسے دوبارہ سیٹ کر سکتے ہیں۔"
+  }
+}

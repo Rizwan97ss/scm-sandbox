@@ -1,0 +1,175 @@
+{
+  "page": {
+    "title": "Guia de Configuração",
+    "description": "O fluxo completo, em ordem de dependência, para colocar sua escola em funcionamento — o que configurar primeiro e por quê.",
+    "footer": "Todas as telas mencionadas acima estão na barra lateral à esquerda, agrupadas da mesma forma que este guia."
+  },
+  "tabs": {
+    "start": "Primeiros Passos",
+    "classes": "Turmas e Alunos",
+    "operations": "Frequência e Exames",
+    "fees": "Mensalidades e Cobrança",
+    "modules": "Outros Módulos",
+    "communication": "Comunicação",
+    "roles": "Funções e Permissões",
+    "faq": "Perguntas Frequentes"
+  },
+  "requires": "Requer: {{phase}}",
+  "gettingStarted": {
+    "phase1": {
+      "title": "Fase 1 — Fundamentos acadêmicos",
+      "steps": {
+        "academicYear": { "title": "Ano Letivo", "description": "Crie o ano atual (ex.: \"2025-2026\") e marque-o como atual. Apenas um ano deve estar atual por vez — alunos, turmas, exames e mensalidades usam esse ano como padrão." },
+        "terms": { "title": "Períodos", "description": "Divida o ano em períodos de avaliação. Exames e boletins são vinculados a um período." },
+        "departments": { "title": "Departamentos (opcional)", "description": "Agrupe disciplinas para fins de relatório, ex.: \"Matemática e Ciências\"." },
+        "gradeLevels": { "title": "Séries", "description": "A sequência de séries que sua escola oferece — do Jardim de Infância até a série mais avançada, cada uma com um número de ordem." },
+        "rooms": { "title": "Salas", "description": "Salas físicas com capacidade e tipo. Necessárias antes das Turmas, já que uma turma geralmente tem uma sala fixa." },
+        "sections": { "title": "Turmas", "description": "As turmas em que os alunos são efetivamente admitidos.", "bold": "Não é possível admitir um aluno até que pelo menos uma turma exista." },
+        "subjects": { "title": "Disciplinas", "description": "O que é ensinado — Matemática, Ciências, Inglês, e assim por diante." },
+        "timetablePeriods": { "title": "Horários", "description": "A estrutura diária do horário (Horário 1, Intervalo, Horário 2, ...), compartilhada por todas as turmas." }
+      }
+    },
+    "phase2": {
+      "title": "Fase 2 — Equipe",
+      "blocked": "Fase 1",
+      "steps": {
+        "inviteStaff": { "title": "Convidar equipe", "description": "Nome, e-mail e uma função — a função determina o que a pessoa pode fazer. Consulte a aba Funções para o detalhamento completo." },
+        "designations": { "title": "Cargos", "description": "Cargos como \"Professor\" ou \"Vice-Diretor\" — atribua um a cada membro da equipe (com ID de funcionário e data de contratação) se você planeja usar a folha de pagamento futuramente." },
+        "classTeachers": { "title": "Professores Responsáveis", "description": "Atribua um membro da equipe por turma como seu Professor Responsável, distinto dos professores de disciplina." }
+      }
+    }
+  },
+  "classes": {
+    "phase3": {
+      "title": "Fase 3 — Horário e atribuições de disciplinas",
+      "blocked": "Fases 1–2",
+      "steps": {
+        "assignments": { "title": "Atribuições de Turma–Disciplina–Professor", "description": "Para cada turma, defina qual professor leciona qual disciplina — isso é o que faz \"minhas turmas\" aparecer corretamente para um Professor/Professor Responsável, e o que as telas de lançamento de notas de exame e de tarefas usam para saber quem pode avaliar o quê." },
+        "timetableEntries": { "title": "Entradas de horário", "description": "Posicione cada (turma, disciplina, professor) em um horário/dia/sala reais. Uma entrada por turma+horário+dia — o sistema não permite agendar duas aulas na mesma turma, no mesmo horário e no mesmo dia." }
+      }
+    },
+    "phase4": {
+      "title": "Fase 4 — Alunos e Responsáveis",
+      "blocked": "Fase 1 (turmas)",
+      "steps": {
+        "admitStudents": { "title": "Admitir alunos", "description": "Nome, gênero, data de nascimento, série e turma (já devem existir). A admissão gera automaticamente um número de admissão e registra o histórico de matrícula." },
+        "addGuardians": { "title": "Adicionar responsáveis", "description": "Vincule um pai/mãe/responsável a cada aluno, marcando um como principal. Convide um responsável para conceder-lhe um login de responsável — ele poderá ver a frequência, as notas, as faturas e as tarefas do filho." }
+      }
+    }
+  },
+  "operations": {
+    "phase5": {
+      "title": "Fase 5 — Frequência",
+      "steps": {
+        "nothingToConfigure": { "title": "Nada a configurar", "description": "Acesse Registrar Frequência, escolha uma turma e uma data, e marque cada aluno como presente / ausente / atrasado / meio período / justificado / de licença. A Frequência da Equipe funciona da mesma forma." }
+      }
+    },
+    "phase6": {
+      "title": "Fase 6 — Avaliação e Exames",
+      "blocked": "Fase 3 (turmas/disciplinas)",
+      "steps": {
+        "gradingScale": { "title": "Escala de Avaliação + Faixas", "description": "Defina intervalos percentuais e seus conceitos (A: 90–100, B: 80–89, ...). Marque uma escala como padrão — qualquer disciplina de exame que não especificar sua própria escala usará essa por padrão." },
+        "exams": { "title": "Exames", "description": "Nome, ano letivo, período e peso (usado ao calcular a média de vários exames para um resultado final)." },
+        "examSubjects": { "title": "Disciplinas do Exame", "description": "Quais pares (disciplina, turma) estão de fato sendo avaliados, com notas máxima/mínima de aprovação e uma data. Um exame sem disciplina configurada para a turma de um aluno simplesmente não aparecerá para esse aluno." },
+        "enterPublishMarks": { "title": "Lançar e publicar notas", "description": "O lançamento de notas fica disponível assim que uma disciplina de exame é criada. Publique quando estiver pronto — alunos e responsáveis não conseguem ver as notas até lá." }
+      }
+    },
+    "phase7": {
+      "title": "Fase 7 — Tarefas",
+      "blocked": "Fase 3",
+      "steps": {
+        "createHomework": { "title": "Criar tarefa", "description": "Turma, disciplina, professor, data de entrega e pontuação máxima. Os envios e a avaliação acontecem por aluno depois." }
+      }
+    }
+  },
+  "fees": {
+    "phase8": {
+      "title": "Fase 8 — Mensalidades e Cobrança (sua escola cobrando seus alunos)",
+      "steps": {
+        "feeCategories": { "title": "Categorias de Mensalidade", "description": "Matrícula, Transporte, Biblioteca, Exame, e assim por diante." },
+        "feeStructures": { "title": "Estruturas de Mensalidade", "description": "Associe um valor e uma frequência a uma categoria para o ano letivo atual, opcionalmente por série." },
+        "feeAssignments": { "title": "Atribuições de Mensalidade do Aluno (opcional)", "description": "Um desconto por aluno (percentual ou fixo) sobre uma estrutura de mensalidade — por exemplo, um desconto para irmãos.", "bold": "Configure isso antes de gerar a fatura desse aluno", "suffix": "— os descontos não se aplicam retroativamente." },
+        "invoices": { "title": "Faturas", "description": "Gere por aluno, incluindo as estruturas de mensalidade relevantes e qualquer desconto como itens da fatura." },
+        "payments": { "title": "Pagamentos e Notas de Crédito", "description": "Registre o dinheiro recebido (dinheiro, cheque, transferência bancária, UPI, cartão) — o status da fatura é atualizado automaticamente. Emita uma nota de crédito para ajustes parciais sem alterar a fatura original." }
+      }
+    }
+  },
+  "modules": {
+    "phase9": {
+      "title": "Fase 9 — Biblioteca",
+      "steps": {
+        "addBooks": { "title": "Adicionar livros", "description": "Título, autor, ISBN, categoria e quantidade de exemplares." },
+        "issueReturn": { "title": "Empréstimo e devolução", "description": "Empreste um exemplar a um aluno ou membro da equipe e devolva-o depois. As multas (se houver) são calculadas automaticamente a partir das configurações de multa da Biblioteca, e a contagem de exemplares disponíveis é ajustada a cada empréstimo/devolução." }
+      }
+    },
+    "phase10": {
+      "title": "Fase 10 — Transporte",
+      "steps": {
+        "vehiclesRoutes": { "title": "Veículos e Rotas", "description": "Configure em qualquer ordem — dados de matrícula/motorista para os veículos, paragens ordenadas para cada rota." },
+        "studentAssignments": { "title": "Atribuições de Alunos", "description": "Vincule um aluno a uma rota, uma paragem e um veículo. Um aluno só pode ter uma atribuição ativa — atribuir uma nova encerra automaticamente a anterior." }
+      }
+    },
+    "phase11": {
+      "title": "Fase 11 — Alojamento",
+      "steps": {
+        "hostels": { "title": "Alojamentos", "description": "Masculino / Feminino / Misto, cada um com um responsável." },
+        "rooms": { "title": "Quartos", "description": "Cada um com uma capacidade de camas." },
+        "allocations": { "title": "Alocações", "description": "Aloque um aluno a um quarto + cama. Não é possível alocar além da capacidade do quarto — desocupe uma alocação existente para liberar uma cama primeiro." }
+      }
+    },
+    "phase12": {
+      "title": "Fase 12 — RH e Folha de Pagamento",
+      "blocked": "Fase 2 (cargos)",
+      "steps": {
+        "salaryStructures": { "title": "Estruturas Salariais", "description": "Salário básico, benefícios e deduções por membro da equipe. Apenas uma estrutura ativa por pessoa — uma nova substitui automaticamente a anterior." },
+        "payslips": { "title": "Contracheques", "description": "Gere para um mês/ano — isso registra um retrato dos valores da estrutura salarial ativa no momento, para que alterações salariais posteriores não modifiquem contracheques antigos." },
+        "leaveTypes": { "title": "Tipos de Licença e Solicitações", "description": "Defina os tipos de licença (Ocasional, Médica, Acumulada, Não remunerada) com um limite anual. A equipe solicita, e o RH/Administração analisa. Aprovar uma solicitação de licença marca automaticamente os registros de frequência correspondentes como \"de licença\" nesse período — não é necessário registrar a frequência separadamente." }
+      }
+    },
+    "phase13": {
+      "title": "Fase 13 — Certificados",
+      "steps": {
+        "templates": { "title": "Modelos", "description": "Escreva um corpo reutilizável com marcadores:" },
+        "issue": { "title": "Emitir", "description": "Emita para um aluno específico — os marcadores são substituídos e registrados permanentemente, de modo que editar o modelo depois nunca altera certificados já emitidos." }
+      }
+    }
+  },
+  "communication": {
+    "phase14": {
+      "title": "Fase 14 — Comunicação",
+      "steps": {
+        "noticeBoard": { "title": "Mural de Avisos", "description": "Avisos gerais ou eventos com data, direcionados a todos / alunos / equipe / responsáveis, com expiração opcional." },
+        "announcements": { "title": "Comunicados", "description": "Uma transmissão que também cria uma notificação no aplicativo para cada destinatário correspondente, entregue em tempo real pelo sino de notificações quando a entrega em tempo real estiver configurada — caso contrário, os destinatários ainda a recebem na próxima atualização automática." },
+        "studentRemarks": { "title": "Observações do Aluno", "description": "Um professor pode registrar observações acadêmicas, comportamentais ou gerais sobre um aluno, opcionalmente visíveis para os responsáveis desse aluno." }
+      }
+    }
+  },
+  "roles": {
+    "intro": "Um usuário pode ter mais de uma função quando o organograma da sua escola não se encaixa perfeitamente em uma destas — por exemplo, um Vice-Diretor que também leciona.",
+    "columnRole": "Função",
+    "columnUse": "Uso típico",
+    "columnAccess": "Acesso amplo",
+    "rows": {
+      "schoolAdmin": { "role": "Administrador da Escola", "use": "A conta de administrador de mais alto nível da escola", "access": "Tudo — usuários, funções, configurações, todos os módulos" },
+      "principal": { "role": "Diretor", "use": "Liderança da escola", "access": "Acesso amplo de leitura em geral, gerencia acadêmico/horário/exames" },
+      "management": { "role": "Gestão", "use": "Mantenedores/proprietários que precisam de visibilidade", "access": "Somente leitura em quase tudo" },
+      "accountant": { "role": "Contador", "use": "Operações de mensalidade/cobrança", "access": "Categorias/estruturas de mensalidade, faturas, pagamentos, notas de crédito" },
+      "hrStaff": { "role": "Equipe de RH", "use": "Operações de pessoas", "access": "Usuários, cargos, licenças, folha de pagamento, frequência da equipe" },
+      "receptionist": { "role": "Recepcionista", "use": "Recepção", "access": "Cadastro de alunos/responsáveis, registro de visitantes" },
+      "teacher": { "role": "Professor", "use": "Professor de disciplina", "access": "Suas próprias turmas: frequência, notas de exame, tarefas, observações" },
+      "classTeacher": { "role": "Professor Responsável", "use": "Professor titular da turma", "access": "Tudo o que o Professor tem, além de exportação de frequência e observações para toda a turma" },
+      "librarian": { "role": "Bibliotecário", "use": "Atendimento da biblioteca", "access": "Somente livros e empréstimos" },
+      "transportStaff": { "role": "Equipe de Transporte", "use": "Atendimento de transporte", "access": "Somente rotas, veículos e atribuições" },
+      "student": { "role": "Aluno", "use": "Login de aluno matriculado", "access": "Somente leitura: seu próprio horário, frequência, notas, tarefas, faturas, certificados" },
+      "parent": { "role": "Responsável", "use": "Login de responsável (se convidado)", "access": "O mesmo que Aluno, limitado aos filhos vinculados" }
+    }
+  },
+  "faq": {
+    "items": {
+      "tooManyAttempts": { "q": "\"Muitas tentativas\" ao fazer login.", "a": "Um limite de segurança temporário para tentativas repetidas de login (protege contra tentativas de adivinhar a senha). Ele se limpa automaticamente em cerca de um minuto — aguarde e tente novamente, em vez de tentar repetidamente." },
+      "emptyDropdown": { "q": "Um menu suspenso está sem opções.", "a": "Isso quase sempre significa que uma fase de configuração anterior está faltando — por exemplo, o menu suspenso de Turma no formulário de Aluno está vazio porque nenhuma Turma foi criada ainda. Verifique a fase anterior à que você está." },
+      "discountNotShowing": { "q": "Um desconto que configurei não está aparecendo em uma fatura.", "a": "Os descontos de Atribuição de Mensalidade do Aluno se aplicam apenas a faturas geradas após a criação do desconto — eles nunca se aplicam retroativamente a uma fatura existente." },
+      "recordDisappeared": { "q": "Criei uma nova atribuição de transporte / alocação de alojamento / estrutura salarial e a anterior desapareceu.", "a": "Isso é esperado — todos esses recursos seguem a regra de \"um registro ativo por pessoa\", aplicada encerrando automaticamente o registro anterior em vez de bloquear o novo." }
+    }
+  }
+}

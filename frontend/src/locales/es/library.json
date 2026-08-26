@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "Título",
+    "author": "Autor",
+    "category": "Categoría",
+    "status": "Estado",
+    "dueDate": "Fecha de Vencimiento",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "student": "Estudiante",
+    "staffMember": "Miembro del Personal"
+  },
+  "books": {
+    "title": "Libros",
+    "description": "El catálogo de la biblioteca y el inventario de ejemplares.",
+    "newBook": "Nuevo Libro",
+    "searchPlaceholder": "Buscar por título…",
+    "columnAvailableTotal": "Disponibles / Total",
+    "issue": "Prestar",
+    "edit": "Editar",
+    "deleteAriaLabel": "Eliminar {{title}}",
+    "emptyTitleSearch": "Ningún libro coincide con \"{{query}}\"",
+    "emptyTitle": "Aún no hay libros",
+    "emptyDescription": "Prueba con un título diferente o borra la búsqueda para ver todos.",
+    "editModalTitle": "Editar Libro",
+    "newModalTitle": "Nuevo Libro",
+    "isbn": "ISBN",
+    "totalCopies": "Total de Ejemplares",
+    "saveChanges": "Guardar cambios",
+    "createBook": "Crear libro",
+    "deleteConfirmTitle": "¿Eliminar {{title}}?",
+    "deleteConfirmDescription": "Esta acción no se puede deshacer.",
+    "issueModal": {
+      "title": "Prestar «{{title}}»",
+      "successToast": "Libro prestado.",
+      "borrowerType": "Tipo de Prestatario",
+      "selectStudentPlaceholder": "Selecciona un estudiante",
+      "selectStaffPlaceholder": "Selecciona un miembro del personal",
+      "submit": "Prestar libro"
+    }
+  },
+  "bookIssues": {
+    "title": "Préstamos de Libros",
+    "description": "Todos los libros actualmente en préstamo y su historial de devoluciones.",
+    "columnBook": "Libro",
+    "columnBorrower": "Prestatario",
+    "columnIssued": "Prestado",
+    "columnDue": "Vencimiento",
+    "columnReturned": "Devuelto",
+    "columnFine": "Multa",
+    "returnAction": "Devolver",
+    "returnedToast": "Libro devuelto.",
+    "emptyTitle": "Aún no hay préstamos de libros",
+    "emptyDescription": "Los libros prestados a estudiantes o personal aparecerán aquí."
+  }
+}

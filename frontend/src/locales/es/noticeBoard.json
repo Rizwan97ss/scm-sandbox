@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "Título",
+    "body": "Contenido",
+    "type": "Tipo",
+    "audience": "Audiencia",
+    "eventDate": "Fecha del evento",
+    "startTime": "Hora de inicio",
+    "location": "Ubicación",
+    "optional": "Opcional"
+  },
+  "list": {
+    "title": "Tablón de Anuncios",
+    "description": "Avisos y próximos eventos de todo el centro.",
+    "newNotice": "Nuevo Aviso",
+    "emptyTitle": "Aún no hay avisos",
+    "draft": "Borrador",
+    "postedBy": "Personal",
+    "publish": "Publicar",
+    "deleteAriaLabel": "Eliminar {{title}}",
+    "deleteConfirmTitle": "¿Eliminar “{{title}}”?",
+    "deleteConfirmDescription": "Esta acción no se puede deshacer.",
+    "publishedToast": "Aviso publicado.",
+    "deletedToast": "Aviso eliminado."
+  },
+  "createModal": {
+    "title": "Nuevo Aviso",
+    "submit": "Crear aviso",
+    "successToast": "Aviso creado."
+  }
+}

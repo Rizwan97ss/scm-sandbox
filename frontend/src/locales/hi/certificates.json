@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "student": "छात्र",
+    "type": "प्रकार",
+    "name": "नाम",
+    "status": "स्थिति",
+    "active": "सक्रिय",
+    "inactive": "निष्क्रिय"
+  },
+  "list": {
+    "title": "प्रमाणपत्र",
+    "descriptionAll": "किसी छात्र को जारी किया गया हर प्रमाणपत्र।",
+    "descriptionOwn": "आपके जारी किए गए प्रमाणपत्र।",
+    "columnCertificateNumber": "प्रमाणपत्र #",
+    "columnIssued": "जारी किया गया",
+    "downloadPdf": "PDF",
+    "downloadAriaLabel": "प्रमाणपत्र {{number}} डाउनलोड करें",
+    "emptyTitle": "अभी तक कोई प्रमाणपत्र नहीं",
+    "emptyDescription": "आपके द्वारा छात्रों को जारी किए गए प्रमाणपत्र यहाँ दिखाई देंगे।"
+  },
+  "templates": {
+    "title": "प्रमाणपत्र टेम्पलेट",
+    "description": "पुन: प्रयोज्य प्रमाणपत्र सामग्री — किसी छात्र को जारी करके इसे वास्तविक प्रमाणपत्र के रूप में सहेजें।",
+    "newTemplate": "नया टेम्पलेट",
+    "searchPlaceholder": "नाम से खोजें…",
+    "issue": "जारी करें",
+    "edit": "संपादित करें",
+    "deleteAriaLabel": "{{name}} हटाएं",
+    "emptyTitleSearch": "\"{{query}}\" से कोई टेम्पलेट मेल नहीं खाता",
+    "emptyTitle": "अभी तक कोई प्रमाणपत्र टेम्पलेट नहीं",
+    "emptyDescriptionSearch": "कोई भिन्न नाम आज़माएं, या सभी देखने के लिए खोज साफ़ करें।",
+    "editTitle": "टेम्पलेट संपादित करें",
+    "newTitle": "नया टेम्पलेट",
+    "typeHint": "जैसे, बोनाफाइड, स्थानांतरण",
+    "bodyLabel": "सामग्री",
+    "bodyHint": "प्लेसहोल्डर: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "saveChanges": "परिवर्तन सहेजें",
+    "createTemplate": "टेम्पलेट बनाएं",
+    "deleteConfirmTitle": "{{name}} हटाएं?",
+    "deleteConfirmDescription": "इसे पूर्ववत नहीं किया जा सकता।",
+    "issueModal": {
+      "title": "\"{{name}}\" जारी करें",
+      "selectStudentPlaceholder": "एक छात्र चुनें",
+      "submit": "प्रमाणपत्र जारी करें",
+      "successToast": "प्रमाणपत्र जारी किया गया।"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "name": "نام",
+    "phone": "فون",
+    "purpose": "مقصد",
+    "whomToMeet": "کس سے ملنا ہے",
+    "notes": "نوٹس",
+    "checkedIn": "اندراج ہو گیا",
+    "checkedOut": "روانگی درج ہو گئی"
+  },
+  "list": {
+    "title": "زائرین",
+    "description": "فرنٹ ڈیسک زائرین کا ریکارڈ۔",
+    "logVisitor": "زائر درج کریں",
+    "columnToMeet": "کس سے ملنا ہے",
+    "columnStatus": "حیثیت",
+    "checkOut": "روانگی درج کریں",
+    "checkedOutToast": "زائر کی روانگی درج کر دی گئی۔",
+    "emptyTitle": "ابھی تک کوئی زائر درج نہیں ہوا",
+    "emptyDescription": "فرنٹ ڈیسک پر درج کیے گئے زائرین یہاں ظاہر ہوں گے۔"
+  },
+  "checkInModal": {
+    "title": "زائر درج کریں",
+    "notesHint": "اختیاری",
+    "submit": "اندراج کریں",
+    "checkedInToast": "زائر کا اندراج ہو گیا۔"
+  }
+}

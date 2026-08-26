@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "الإجمالي",
+    "from": "من",
+    "to": "إلى"
+  },
+  "attendance": {
+    "title": "تقرير الحضور",
+    "description": "اتجاهات حضور الطلاب والموظفين عبر الزمن.",
+    "studentAttendance": "حضور الطلاب",
+    "staffAttendance": "حضور الموظفين",
+    "bySection": "حسب الشعبة",
+    "noDataForRole": "لا توجد بيانات حضور مرئية لدورك.",
+    "noRecordsInRange": "لا توجد سجلات في هذا النطاق.",
+    "tooltipLabel": "الحضور"
+  },
+  "academic": {
+    "title": "الأداء الأكاديمي",
+    "description": "متوسط الدرجات ومعدل النجاح عبر أحدث الامتحانات المنشورة.",
+    "columnExam": "الامتحان",
+    "columnMarksEntered": "الدرجات المُدخلة",
+    "columnAverage": "المتوسط",
+    "columnPassRate": "معدل النجاح",
+    "noExams": "لا توجد بعد امتحانات منشورة تحتوي على درجات.",
+    "legendAverage": "المتوسط %",
+    "legendPassRate": "معدل النجاح %"
+  },
+  "operations": {
+    "title": "تقرير العمليات",
+    "description": "نظرة عامة على المكتبة والنقل والسكن الداخلي.",
+    "noDataForRole": "لا توجد بيانات تشغيلية مرئية لدورك.",
+    "library": "المكتبة",
+    "totalBooks": "إجمالي الكتب",
+    "issuedThisMonth": "المُعارة هذا الشهر",
+    "currentlyOverdue": "المتأخرة حاليًا",
+    "transport": "النقل",
+    "activeVehicles": "المركبات النشطة",
+    "studentsAssigned": "الطلاب المخصصون",
+    "hostel": "السكن الداخلي",
+    "rooms": "الغرف",
+    "occupiedCapacity": "المشغول / السعة",
+    "occupancy": "نسبة الإشغال"
+  },
+  "enrollment": {
+    "title": "تقرير القيد",
+    "description": "القبول والانسحاب والتخرج خلال الأشهر الستة الماضية.",
+    "activeStudents": "الطلاب النشطون",
+    "legendAdmissions": "القبول",
+    "legendWithdrawals": "الانسحاب",
+    "legendGraduations": "التخرج",
+    "activeStudentsByGrade": "الطلاب النشطون حسب الصف",
+    "noActiveStudents": "لا يوجد طلاب نشطون بعد."
+  }
+}

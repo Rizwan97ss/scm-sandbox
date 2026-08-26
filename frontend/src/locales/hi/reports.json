@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "कुल",
+    "from": "से",
+    "to": "तक"
+  },
+  "attendance": {
+    "title": "उपस्थिति रिपोर्ट",
+    "description": "समय के साथ छात्रों और कर्मचारियों की उपस्थिति का रुझान।",
+    "studentAttendance": "छात्र उपस्थिति",
+    "staffAttendance": "कर्मचारी उपस्थिति",
+    "bySection": "अनुभाग के अनुसार",
+    "noDataForRole": "आपकी भूमिका के लिए कोई उपस्थिति डेटा दिखाई नहीं दे रहा है।",
+    "noRecordsInRange": "इस अवधि में कोई रिकॉर्ड नहीं है।",
+    "tooltipLabel": "उपस्थिति"
+  },
+  "academic": {
+    "title": "शैक्षणिक प्रदर्शन",
+    "description": "हाल ही में प्रकाशित परीक्षाओं में औसत अंक और उत्तीर्ण दर।",
+    "columnExam": "परीक्षा",
+    "columnMarksEntered": "दर्ज किए गए अंक",
+    "columnAverage": "औसत",
+    "columnPassRate": "उत्तीर्ण दर",
+    "noExams": "अभी तक अंकों के साथ कोई प्रकाशित परीक्षा नहीं है।",
+    "legendAverage": "औसत %",
+    "legendPassRate": "उत्तीर्ण दर %"
+  },
+  "operations": {
+    "title": "संचालन रिपोर्ट",
+    "description": "पुस्तकालय, परिवहन और छात्रावास एक नज़र में।",
+    "noDataForRole": "आपकी भूमिका के लिए कोई संचालन डेटा दिखाई नहीं दे रहा है।",
+    "library": "पुस्तकालय",
+    "totalBooks": "कुल पुस्तकें",
+    "issuedThisMonth": "इस माह जारी की गईं",
+    "currentlyOverdue": "वर्तमान में अतिदेय",
+    "transport": "परिवहन",
+    "activeVehicles": "सक्रिय वाहन",
+    "studentsAssigned": "नियुक्त छात्र",
+    "hostel": "छात्रावास",
+    "rooms": "कमरे",
+    "occupiedCapacity": "अधिकृत / क्षमता",
+    "occupancy": "अधिभोग"
+  },
+  "enrollment": {
+    "title": "नामांकन रिपोर्ट",
+    "description": "पिछले छह महीनों में प्रवेश, निष्कासन और स्नातक।",
+    "activeStudents": "सक्रिय छात्र",
+    "legendAdmissions": "प्रवेश",
+    "legendWithdrawals": "निष्कासन",
+    "legendGraduations": "स्नातक",
+    "activeStudentsByGrade": "ग्रेड के अनुसार सक्रिय छात्र",
+    "noActiveStudents": "अभी तक कोई सक्रिय छात्र नहीं है।"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "page": {
+    "title": "Guide de Configuration",
+    "description": "Le parcours complet, dans l'ordre des dépendances, pour mettre votre établissement en service — ce qu'il faut configurer en premier, et pourquoi.",
+    "footer": "Chaque écran mentionné ci-dessus se trouve dans la barre latérale de gauche, regroupé de la même manière que ce guide."
+  },
+  "tabs": {
+    "start": "Premiers Pas",
+    "classes": "Classes et Élèves",
+    "operations": "Présence et Examens",
+    "fees": "Frais et Facturation",
+    "modules": "Autres Modules",
+    "communication": "Communication",
+    "roles": "Rôles et Permissions",
+    "faq": "FAQ"
+  },
+  "requires": "Requiert : {{phase}}",
+  "gettingStarted": {
+    "phase1": {
+      "title": "Phase 1 — Fondations académiques",
+      "steps": {
+        "academicYear": { "title": "Année Scolaire", "description": "Créez l'année en cours (p. ex. « 2025-2026 ») et marquez-la comme actuelle. Une seule année doit être actuelle à la fois — élèves, sections, examens et frais s'y rattachent par défaut." },
+        "terms": { "title": "Trimestres", "description": "Divisez l'année en périodes d'évaluation. Les examens et les bulletins sont rattachés à un trimestre." },
+        "departments": { "title": "Départements (facultatif)", "description": "Regroupez les matières à des fins de reporting, p. ex. « Mathématiques et Sciences »." },
+        "gradeLevels": { "title": "Niveaux Scolaires", "description": "L'échelle des niveaux enseignés dans votre établissement — de la maternelle jusqu'à votre niveau le plus élevé, chacun avec un numéro de séquence." },
+        "rooms": { "title": "Salles", "description": "Salles physiques avec une capacité et un type. Nécessaires avant les Sections, car une section dispose généralement d'une salle attitrée." },
+        "sections": { "title": "Sections", "description": "Les classes réelles dans lesquelles les élèves sont admis.", "bold": "Vous ne pouvez admettre aucun élève tant qu'au moins une section n'existe pas." },
+        "subjects": { "title": "Matières", "description": "Ce qui est enseigné — mathématiques, sciences, anglais, etc." },
+        "timetablePeriods": { "title": "Créneaux", "description": "Le squelette de l'emploi du temps quotidien (Créneau 1, Pause, Créneau 2, ...), commun à toutes les sections." }
+      }
+    },
+    "phase2": {
+      "title": "Phase 2 — Personnel",
+      "blocked": "Phase 1",
+      "steps": {
+        "inviteStaff": { "title": "Inviter du personnel", "description": "Nom, e-mail et un rôle — le rôle détermine ce que la personne peut faire. Consultez l'onglet Rôles pour le détail complet." },
+        "designations": { "title": "Fonctions", "description": "Intitulés de poste comme « Professeur » ou « Directeur Adjoint » — associez-en un à chaque membre du personnel (avec un identifiant employé et une date d'embauche) si vous prévoyez d'utiliser la paie par la suite." },
+        "classTeachers": { "title": "Professeurs Principaux", "description": "Attribuez à chaque section un membre du personnel comme Professeur Principal, distinct des professeurs de matière." }
+      }
+    }
+  },
+  "classes": {
+    "phase3": {
+      "title": "Phase 3 — Emploi du temps et attributions de matières",
+      "blocked": "Phases 1–2",
+      "steps": {
+        "assignments": { "title": "Attributions Classe–Matière–Professeur", "description": "Pour chaque section, déterminez quel professeur enseigne quelle matière — c'est ce qui permet à « mes classes » de s'afficher correctement pour un Professeur ou un Professeur Principal, et ce que les écrans de saisie des notes d'examen et de devoirs utilisent pour savoir qui est autorisé à noter quoi." },
+        "timetableEntries": { "title": "Entrées d'emploi du temps", "description": "Placez chaque combinaison (section, matière, professeur) dans un jour, un créneau et une salle précis. Une entrée par section+créneau+jour — le système ne vous permet pas de réserver deux fois le même créneau d'une section le même jour." }
+      }
+    },
+    "phase4": {
+      "title": "Phase 4 — Élèves et tuteurs",
+      "blocked": "Phase 1 (sections)",
+      "steps": {
+        "admitStudents": { "title": "Admettre des élèves", "description": "Nom, genre, date de naissance, niveau scolaire et section (qui doivent déjà exister). L'admission génère automatiquement un numéro d'admission et enregistre l'historique d'inscription." },
+        "addGuardians": { "title": "Ajouter des tuteurs", "description": "Liez un père/mère/tuteur à chaque élève, l'un d'eux étant marqué comme principal. Invitez un tuteur pour lui donner un accès Parent — il pourra voir la présence, les notes, les factures et les devoirs de son enfant." }
+      }
+    }
+  },
+  "operations": {
+    "phase5": {
+      "title": "Phase 5 — Présence",
+      "steps": {
+        "nothingToConfigure": { "title": "Rien à configurer", "description": "Allez dans Prendre la Présence, choisissez une section et une date, puis marquez chaque élève présent / absent / en retard / demi-journée / excusé / en congé. La Présence du Personnel fonctionne de la même manière." }
+      }
+    },
+    "phase6": {
+      "title": "Phase 6 — Notation et examens",
+      "blocked": "Phase 3 (sections/matières)",
+      "steps": {
+        "gradingScale": { "title": "Barème de Notation et Tranches", "description": "Définissez des plages de pourcentage et leurs notes lettrées (A : 90–100, B : 80–89, ...). Définissez un barème par défaut — toute matière d'examen qui ne précise pas son propre barème utilisera celui-ci." },
+        "exams": { "title": "Examens", "description": "Nom, année scolaire, trimestre et coefficient (utilisé pour calculer la moyenne de plusieurs examens dans une note finale)." },
+        "examSubjects": { "title": "Matières d'Examen", "description": "Les paires (matière, section) réellement évaluées, avec une note maximale/de passage et une date. Un examen sans Matière d'Examen pour la section d'un élève n'apparaîtra pas du tout pour cet élève." },
+        "enterPublishMarks": { "title": "Saisir et publier les notes", "description": "La saisie des notes s'ouvre dès qu'une matière d'examen existe. Publiez lorsque vous êtes prêt — les élèves et les parents ne peuvent pas voir les notes avant cela." }
+      }
+    },
+    "phase7": {
+      "title": "Phase 7 — Devoirs",
+      "blocked": "Phase 3",
+      "steps": {
+        "createHomework": { "title": "Créer un devoir", "description": "Section, matière, professeur, date d'échéance et note maximale. Les remises et la correction se font ensuite élève par élève." }
+      }
+    }
+  },
+  "fees": {
+    "phase8": {
+      "title": "Phase 8 — Frais et facturation (votre établissement facture ses élèves)",
+      "steps": {
+        "feeCategories": { "title": "Catégories de Frais", "description": "Scolarité, Transport, Bibliothèque, Examens, etc." },
+        "feeStructures": { "title": "Structures de Frais", "description": "Associez un montant et une fréquence à une catégorie pour l'année en cours, éventuellement par niveau scolaire." },
+        "feeAssignments": { "title": "Affectations de Frais des Élèves (facultatif)", "description": "Une remise par élève (en pourcentage ou fixe) sur une structure de frais — p. ex. une remise fratrie.", "bold": "Configurez ceci avant de générer la facture de cet élève", "suffix": "— les remises ne s'appliquent pas rétroactivement." },
+        "invoices": { "title": "Factures", "description": "Générées par élève, en reprenant les structures de frais concernées et toute remise sous forme de lignes de facture." },
+        "payments": { "title": "Paiements et Avoirs", "description": "Enregistrez les sommes reçues (espèces, chèque, virement bancaire, UPI, carte) — le statut de la facture se met à jour automatiquement. Émettez un avoir pour des ajustements partiels sans modifier la facture d'origine." }
+      }
+    }
+  },
+  "modules": {
+    "phase9": {
+      "title": "Phase 9 — Bibliothèque",
+      "steps": {
+        "addBooks": { "title": "Ajouter des livres", "description": "Titre, auteur, ISBN, catégorie et nombre d'exemplaires." },
+        "issueReturn": { "title": "Emprunter et retourner", "description": "Prêtez un exemplaire à un élève ou un membre du personnel, puis retournez-le plus tard. Les amendes (le cas échéant) sont calculées automatiquement à partir de vos paramètres d'amendes de bibliothèque, et le nombre d'exemplaires disponibles s'ajuste à chaque emprunt/retour." }
+      }
+    },
+    "phase10": {
+      "title": "Phase 10 — Transport",
+      "steps": {
+        "vehiclesRoutes": { "title": "Véhicules et Itinéraires", "description": "À configurer dans l'ordre de votre choix — immatriculation et informations du chauffeur pour les véhicules, arrêts ordonnés pour chaque itinéraire." },
+        "studentAssignments": { "title": "Affectations des Élèves", "description": "Liez un élève à un itinéraire, un arrêt et un véhicule. Un élève ne peut avoir qu'une seule affectation active — en créer une nouvelle clôture automatiquement l'ancienne." }
+      }
+    },
+    "phase11": {
+      "title": "Phase 11 — Internat",
+      "steps": {
+        "hostels": { "title": "Internats", "description": "Garçons / Filles / Mixte, chacun avec un directeur." },
+        "rooms": { "title": "Chambres", "description": "Chacune avec une capacité en lits." },
+        "allocations": { "title": "Attributions", "description": "Attribuez un élève à une chambre et un lit. Toute attribution dépassant la capacité d'une chambre est refusée — libérez d'abord une attribution existante pour libérer un lit." }
+      }
+    },
+    "phase12": {
+      "title": "Phase 12 — RH et paie",
+      "blocked": "Phase 2 (fonctions)",
+      "steps": {
+        "salaryStructures": { "title": "Structures Salariales", "description": "Salaire de base, primes et retenues par membre du personnel. Une seule structure active par personne — une nouvelle structure remplace automatiquement l'ancienne." },
+        "payslips": { "title": "Fiches de Paie", "description": "Générées pour un mois/une année — cela capture les chiffres de la structure salariale actuellement active, afin que des modifications salariales ultérieures ne réécrivent pas les anciennes fiches de paie." },
+        "leaveTypes": { "title": "Types de Congé et Demandes", "description": "Définissez des types de congé (Occasionnel, Maladie, Acquis, Non payé) avec un quota annuel. Le personnel fait la demande, les RH/l'administration l'examinent. Approuver une demande de congé marque automatiquement les lignes de présence du personnel concernées comme « en congé » pour cette période — inutile de saisir la présence séparément." }
+      }
+    },
+    "phase13": {
+      "title": "Phase 13 — Certificats",
+      "steps": {
+        "templates": { "title": "Modèles", "description": "Rédigez un contenu réutilisable avec des espaces réservés :" },
+        "issue": { "title": "Délivrer", "description": "Délivrez-le à un élève spécifique — les espaces réservés sont substitués et figés définitivement, de sorte que modifier le modèle par la suite ne change jamais les certificats déjà délivrés." }
+      }
+    }
+  },
+  "communication": {
+    "phase14": {
+      "title": "Phase 14 — Communication",
+      "steps": {
+        "noticeBoard": { "title": "Tableau d'Affichage", "description": "Avis généraux ou événements datés, destinés à tous / aux élèves / au personnel / aux parents, avec une expiration facultative." },
+        "announcements": { "title": "Annonces", "description": "Une diffusion qui crée également une notification dans l'application pour chaque destinataire concerné, livrée en direct via la cloche de notifications lorsque la livraison en temps réel est configurée — sinon, les destinataires la reçoivent tout de même lors de leur prochaine actualisation automatique." },
+        "studentRemarks": { "title": "Observations sur l'Élève", "description": "Un professeur peut laisser des notes académiques, comportementales ou générales sur un élève, éventuellement visibles par les tuteurs de cet élève." }
+      }
+    }
+  },
+  "roles": {
+    "intro": "Un utilisateur peut cumuler plusieurs rôles si votre organigramme ne correspond pas exactement à l'un de ceux-ci — par exemple, un directeur adjoint qui enseigne également.",
+    "columnRole": "Rôle",
+    "columnUse": "Utilisation typique",
+    "columnAccess": "Étendue de l'accès",
+    "rows": {
+      "schoolAdmin": { "role": "Administrateur de l'Établissement", "use": "Le compte administrateur principal de l'établissement", "access": "Tout — utilisateurs, rôles, paramètres, tous les modules" },
+      "principal": { "role": "Chef d'Établissement", "use": "Direction de l'établissement", "access": "Accès en lecture étendu, gère les aspects académiques/l'emploi du temps/les examens" },
+      "management": { "role": "Conseil d'Administration", "use": "Administrateurs/propriétaires ayant besoin de visibilité", "access": "Lecture seule sur presque tout" },
+      "accountant": { "role": "Comptable", "use": "Opérations de frais/facturation", "access": "Catégories/structures de frais, factures, paiements, avoirs" },
+      "hrStaff": { "role": "Personnel RH", "use": "Gestion du personnel", "access": "Utilisateurs, fonctions, congés, paie, présence du personnel" },
+      "receptionist": { "role": "Réceptionniste", "use": "Accueil", "access": "Création d'élèves/tuteurs, registre des visiteurs" },
+      "teacher": { "role": "Professeur", "use": "Professeur de matière", "access": "Leurs propres classes : présence, notes d'examen, devoirs, observations" },
+      "classTeacher": { "role": "Professeur Principal", "use": "Professeur responsable de la section", "access": "Tout ce que possède le Professeur, plus l'export de présence et les observations à l'échelle de la section" },
+      "librarian": { "role": "Bibliothécaire", "use": "Bibliothèque", "access": "Livres et emprunts uniquement" },
+      "transportStaff": { "role": "Personnel de Transport", "use": "Transport", "access": "Itinéraires, véhicules, affectations uniquement" },
+      "student": { "role": "Élève", "use": "Connexion élève inscrit", "access": "Lecture seule : son propre emploi du temps, sa présence, ses notes, ses devoirs, ses factures, ses certificats" },
+      "parent": { "role": "Parent", "use": "Connexion tuteur (si invité)", "access": "Identique à Élève, limité aux enfants qui lui sont liés" }
+    }
+  },
+  "faq": {
+    "items": {
+      "tooManyAttempts": { "q": "« Trop de tentatives » lors de la connexion.", "a": "Il s'agit d'une limite de sécurité temporaire sur les tentatives de connexion répétées (protection contre la devinette de mot de passe). Elle se réinitialise automatiquement en moins d'une minute — patientez et réessayez plutôt que de retenter rapidement." },
+      "emptyDropdown": { "q": "Une liste déroulante ne contient aucune option.", "a": "Cela signifie presque toujours qu'une phase de configuration précédente est manquante — par exemple, la liste déroulante Section du formulaire Élève est vide parce qu'aucune section n'a encore été créée. Vérifiez la phase précédant celle où vous vous trouvez." },
+      "discountNotShowing": { "q": "Une remise que j'ai configurée n'apparaît pas sur une facture.", "a": "Les remises des Affectations de Frais des Élèves ne s'appliquent qu'aux factures générées après la création de la remise — elles ne s'appliquent jamais rétroactivement à une facture existante." },
+      "recordDisappeared": { "q": "J'ai créé une nouvelle affectation de transport / attribution d'internat / structure salariale, et l'ancienne a disparu.", "a": "C'est normal — ces enregistrements suivent tous la règle « un seul enregistrement actif par personne », appliquée en clôturant automatiquement le précédent plutôt qu'en bloquant le nouveau." }
+    }
+  }
+}

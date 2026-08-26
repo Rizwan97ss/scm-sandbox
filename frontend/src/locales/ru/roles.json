@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "Роли и права доступа",
+    "description": "Создавайте пользовательские роли и точно определяйте, что может делать каждая из них.",
+    "newRole": "Новая роль",
+    "systemRoleAriaLabel": "Системная роль",
+    "edit": "Редактировать",
+    "deleteAriaLabel": "Удалить {{name}}",
+    "emptyTitle": "Пока нет ролей",
+    "permissionsCount": "{{count}} прав(а)",
+    "morePermissions": "+{{count}} ещё",
+    "deleteConfirmTitle": "Удалить роль «{{name}}»?",
+    "deleteConfirmDescription": "Пользователи, у которых есть только эта роль, потеряют все её права.",
+    "deleteSuccessToast": "Роль удалена."
+  },
+  "formModal": {
+    "editTitle": "Редактировать роль",
+    "newTitle": "Новая роль",
+    "roleNameLabel": "Название роли",
+    "permissionsLabel": "Права доступа",
+    "saveChanges": "Сохранить изменения",
+    "createRole": "Создать роль",
+    "updateSuccessToast": "Роль обновлена.",
+    "createSuccessToast": "Роль создана."
+  }
+}

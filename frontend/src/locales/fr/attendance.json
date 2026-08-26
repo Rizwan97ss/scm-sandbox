@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "Section",
+    "date": "Date",
+    "period": "Période",
+    "wholeDay": "Journée entière",
+    "status": "Statut",
+    "remarks": "Observations",
+    "remarksOptional": "Observations facultatives",
+    "remarksOptionalPlaceholder": "Facultatif",
+    "staffMember": "Membre du personnel"
+  },
+  "takeAttendance": {
+    "title": "Prendre la Présence",
+    "description": "Enregistrez la présence quotidienne ou par période pour une section.",
+    "selectSectionPlaceholder": "Sélectionnez une section…",
+    "emptySelectSectionTitle": "Sélectionnez une section pour commencer",
+    "emptySelectSectionDescription": "Choisissez une section, une date et une période ci-dessus pour charger sa liste d'élèves.",
+    "emptyNoStudentsTitle": "Aucun élève dans cette section",
+    "emptyNoStudentsDescription": "Cette section ne compte actuellement aucun élève inscrit.",
+    "columnAdmissionNumber": "N° d'admission",
+    "columnName": "Nom",
+    "columnStatus": "Statut",
+    "columnRemarks": "Observations",
+    "saveAttendance": "Enregistrer la Présence",
+    "savedSuccess": "{{count}} enregistrement(s) de présence enregistré(s)."
+  },
+  "staffAttendance": {
+    "title": "Présence du Personnel",
+    "description": "Pointage personnel et registres de présence du personnel.",
+    "markAttendance": "Enregistrer la Présence",
+    "today": "Aujourd'hui, {{date}}",
+    "checkedInAt": "Arrivée pointée à {{time}}",
+    "checkedInOutAt": "Arrivée à {{checkIn}}, départ à {{checkOut}}",
+    "notCheckedInYet": "Vous n'avez pas encore pointé votre arrivée aujourd'hui.",
+    "checkIn": "Pointer l'Arrivée",
+    "checkOut": "Pointer le Départ",
+    "checkedInSuccess": "Arrivée pointée.",
+    "checkedOutSuccess": "Départ pointé.",
+    "correctAriaLabel": "Corriger la présence de {{name}}",
+    "columnDate": "Date",
+    "columnStaff": "Personnel",
+    "columnStatus": "Statut",
+    "columnCheckIn": "Arrivée",
+    "columnCheckOut": "Départ",
+    "columnRemarks": "Observations",
+    "emptyTitle": "Aucun registre de présence pour le moment",
+    "emptyDescription": "Les registres apparaîtront ici dès qu'un membre du personnel pointera son arrivée ou que vous enregistrerez la présence manuellement.",
+    "markModal": {
+      "title": "Enregistrer la Présence du Personnel",
+      "selectStaffPlaceholder": "Sélectionnez un membre du personnel…",
+      "save": "Enregistrer",
+      "savedSuccess": "Présence enregistrée."
+    },
+    "correctModal": {
+      "title": "Corriger la présence — {{name}}",
+      "save": "Enregistrer la correction",
+      "savedSuccess": "Présence corrigée."
+    }
+  },
+  "history": {
+    "from": "Du",
+    "to": "Au",
+    "attendance": "Présence",
+    "daysMarked": "Jours Enregistrés",
+    "absences": "Absences",
+    "columnDate": "Date",
+    "columnStatus": "Statut",
+    "columnRemarks": "Observations",
+    "emptyDescription": "Aucun registre de présence sur cette période."
+  }
+}

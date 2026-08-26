@@ -1,0 +1,67 @@
+{
+  "center": {
+    "title": "Import Center",
+    "description": "Bulk-create records from an Excel or CSV file.",
+    "noPermission": "You don't have permission to import any records yet.",
+    "options": {
+      "students": {
+        "label": "Students",
+        "description": "Bulk-admit students, with up to two guardians attached per row."
+      },
+      "staff": {
+        "label": "Staff & Users",
+        "description": "Bulk-create staff accounts with a role each. Passwords are never imported — every account gets a password-reset email."
+      },
+      "guardians": {
+        "label": "Guardians",
+        "description": "Attach guardians to students already in the system, by admission number — a guardian matched by email is reused, not duplicated."
+      },
+      "departments": {
+        "label": "Departments",
+        "description": "Set up subject-grouping departments in bulk — useful when first configuring a new school."
+      },
+      "grade-levels": {
+        "label": "Grade Levels",
+        "description": "Bulk-create the grades your school teaches, with each one's promotion sequence."
+      },
+      "sections": {
+        "label": "Sections",
+        "description": "Bulk-create sections (classes students are admitted into) for the current academic year, optionally assigned a room."
+      },
+      "subjects": {
+        "label": "Subjects",
+        "description": "Bulk-create subjects, optionally linked to a department by its code."
+      },
+      "rooms": {
+        "label": "Rooms",
+        "description": "Bulk-create physical rooms with capacity and type."
+      }
+    }
+  },
+  "logs": {
+    "title": "Import Logs",
+    "description": "Every bulk-import attempt across the school, including previews that were never confirmed.",
+    "columnWhen": "When",
+    "columnEntity": "Entity",
+    "columnBy": "By",
+    "columnFile": "File",
+    "columnMode": "Mode",
+    "columnResult": "Result",
+    "columnActions": "",
+    "unknownPerformer": "—",
+    "previewOnly": "Preview only",
+    "createdCount": "{{count}} created",
+    "updatedCount": "{{count}} updated",
+    "failedCount": "{{count}} failed",
+    "undoneAt": "Undone {{date}}",
+    "undo": "Undo",
+    "emptyTitle": "No imports yet",
+    "emptyDescription": "Files you import will be logged here, with the option to undo.",
+    "undoDialogTitle": "Undo this {{entity}} import?",
+    "undoDialogDescription": "This removes the {{count}} record(s) it created from \"{{fileName}}\". Records this import only updated are never touched, and anything with dependents created since will be skipped and reported. This can't be redone from here — the removed records go to trash the same way a normal delete does.",
+    "undoConfirmLabel": "Undo import",
+    "undoBlockedItem": "{{type}} \"{{label}}\"",
+    "undoWarning": "{{deleted}} record(s) undone. {{blockedCount}} could not be undone: {{blockedList}} — something else now depends on them.",
+    "undoSuccess": "{{count}} record(s) undone."
+  }
+}

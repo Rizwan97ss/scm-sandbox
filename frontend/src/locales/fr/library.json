@@ -1,0 +1,56 @@
+{
+  "fields": {
+    "title": "Titre",
+    "author": "Auteur",
+    "category": "Catégorie",
+    "status": "Statut",
+    "dueDate": "Date d'Échéance",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "student": "Élève",
+    "staffMember": "Membre du Personnel"
+  },
+  "books": {
+    "title": "Livres",
+    "description": "Le catalogue de la bibliothèque et l'inventaire des exemplaires.",
+    "newBook": "Nouveau Livre",
+    "searchPlaceholder": "Rechercher par titre…",
+    "columnAvailableTotal": "Disponibles / Total",
+    "issue": "Emprunter",
+    "edit": "Modifier",
+    "deleteAriaLabel": "Supprimer {{title}}",
+    "emptyTitleSearch": "Aucun livre ne correspond à « {{query}} »",
+    "emptyTitle": "Aucun livre pour le moment",
+    "emptyDescription": "Essayez un autre titre, ou effacez la recherche pour tout afficher.",
+    "editModalTitle": "Modifier le Livre",
+    "newModalTitle": "Nouveau Livre",
+    "isbn": "ISBN",
+    "totalCopies": "Nombre Total d'Exemplaires",
+    "saveChanges": "Enregistrer les modifications",
+    "createBook": "Créer le livre",
+    "deleteConfirmTitle": "Supprimer {{title}} ?",
+    "deleteConfirmDescription": "Cette action est irréversible.",
+    "issueModal": {
+      "title": "Emprunter « {{title}} »",
+      "successToast": "Livre emprunté.",
+      "borrowerType": "Type d'Emprunteur",
+      "selectStudentPlaceholder": "Sélectionner un élève",
+      "selectStaffPlaceholder": "Sélectionner un membre du personnel",
+      "submit": "Emprunter le livre"
+    }
+  },
+  "bookIssues": {
+    "title": "Emprunts de Livres",
+    "description": "Tous les livres actuellement empruntés et leur historique de retour.",
+    "columnBook": "Livre",
+    "columnBorrower": "Emprunteur",
+    "columnIssued": "Emprunté",
+    "columnDue": "Échéance",
+    "columnReturned": "Retourné",
+    "columnFine": "Amende",
+    "returnAction": "Retourner",
+    "returnedToast": "Livre retourné.",
+    "emptyTitle": "Aucun emprunt pour le moment",
+    "emptyDescription": "Les livres empruntés par les élèves ou le personnel apparaîtront ici."
+  }
+}

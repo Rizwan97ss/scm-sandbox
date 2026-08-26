@@ -1,0 +1,4 @@
+# scm
+school management system
+
+

@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "姓名",
+    "email": "电子邮箱",
+    "firstName": "名",
+    "lastName": "姓",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "roles": "角色",
+    "status": "状态",
+    "designation": "职位",
+    "employeeId": "员工编号",
+    "hireDate": "入职日期",
+    "optional": "选填",
+    "none": "无",
+    "edit": "编辑"
+  },
+  "list": {
+    "title": "员工与用户",
+    "description": "管理所有用户账户及其角色。",
+    "export": "导出",
+    "import": "导入",
+    "newUser": "新建用户",
+    "searchPlaceholder": "按姓名搜索…",
+    "columnRoles": "角色",
+    "downloadIdCardAriaLabel": "下载 {{name}} 的证件",
+    "emptyTitleSearch": "没有与“{{query}}”匹配的用户",
+    "emptyTitle": "未找到用户",
+    "emptyDescriptionSearch": "请尝试其他姓名，或清除搜索以查看所有用户。"
+  },
+  "userImport": {
+    "title": "批量导入员工",
+    "breadcrumbUsers": "员工与用户",
+    "breadcrumbImport": "导入",
+    "entityLabel": "员工",
+    "descriptionBeforeCode": "请按照模板上传 Excel (.xlsx) 或 CSV 文件。",
+    "descriptionAfterCode": " 必须与现有角色名称完全一致，并且您只能授予自己已被允许分配的角色。切勿包含密码列——每个导入的账户都会获得一个安全的随机生成密码，并会立即收到一封密码重置邮件以自行设置密码。"
+  },
+  "formModal": {
+    "editTitle": "编辑用户",
+    "newTitle": "新建用户",
+    "saveChanges": "保存更改",
+    "createUser": "创建用户",
+    "createdToast": "用户已创建。",
+    "updatedToast": "用户已更新。"
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "更多操作",
+    "sendPasswordReset": "发送密码重置",
+    "resetMfa": "重置双重身份验证",
+    "setActive": "设为在职",
+    "setInactive": "设为非在职",
+    "suspend": "停用",
+    "statusUpdatedToast": "状态已更新。",
+    "passwordResetSentToast": "密码重置链接已发送。",
+    "mfaResetToast": "双重身份验证已重置——他们可以在下次登录时重新设置。"
+  }
+}

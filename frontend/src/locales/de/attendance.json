@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "Klasse",
+    "date": "Datum",
+    "period": "Stunde",
+    "wholeDay": "Ganzer Tag",
+    "status": "Status",
+    "remarks": "Bemerkungen",
+    "remarksOptional": "Optionale Bemerkungen",
+    "remarksOptionalPlaceholder": "Optional",
+    "staffMember": "Mitarbeiter"
+  },
+  "takeAttendance": {
+    "title": "Anwesenheit Erfassen",
+    "description": "Erfassen Sie die tägliche oder stundenweise Anwesenheit einer Klasse.",
+    "selectSectionPlaceholder": "Klasse auswählen…",
+    "emptySelectSectionTitle": "Wählen Sie eine Klasse aus, um zu beginnen",
+    "emptySelectSectionDescription": "Wählen Sie oben eine Klasse, ein Datum und eine Stunde aus, um die Schülerliste zu laden.",
+    "emptyNoStudentsTitle": "Keine Schüler in dieser Klasse",
+    "emptyNoStudentsDescription": "Diese Klasse hat derzeit keine eingeschriebenen Schüler.",
+    "columnAdmissionNumber": "Aufnahme-Nr.",
+    "columnName": "Name",
+    "columnStatus": "Status",
+    "columnRemarks": "Bemerkungen",
+    "saveAttendance": "Anwesenheit Speichern",
+    "savedSuccess": "{{count}} Anwesenheitseintrag/-einträge gespeichert."
+  },
+  "staffAttendance": {
+    "title": "Personalanwesenheit",
+    "description": "Eigenständige An-/Abmeldung sowie Anwesenheitsaufzeichnungen des Personals.",
+    "markAttendance": "Anwesenheit Erfassen",
+    "today": "Heute, {{date}}",
+    "checkedInAt": "Eingecheckt um {{time}}",
+    "checkedInOutAt": "Eingecheckt um {{checkIn}}, ausgecheckt um {{checkOut}}",
+    "notCheckedInYet": "Sie haben sich heute noch nicht eingecheckt.",
+    "checkIn": "Einchecken",
+    "checkOut": "Auschecken",
+    "checkedInSuccess": "Eingecheckt.",
+    "checkedOutSuccess": "Ausgecheckt.",
+    "correctAriaLabel": "Anwesenheit von {{name}} korrigieren",
+    "columnDate": "Datum",
+    "columnStaff": "Mitarbeiter",
+    "columnStatus": "Status",
+    "columnCheckIn": "Einchecken",
+    "columnCheckOut": "Auschecken",
+    "columnRemarks": "Bemerkungen",
+    "emptyTitle": "Noch keine Anwesenheitsaufzeichnungen",
+    "emptyDescription": "Aufzeichnungen erscheinen hier, sobald sich Mitarbeiter einchecken oder Sie die Anwesenheit manuell erfassen.",
+    "markModal": {
+      "title": "Personalanwesenheit Erfassen",
+      "selectStaffPlaceholder": "Mitarbeiter auswählen…",
+      "save": "Speichern",
+      "savedSuccess": "Anwesenheit gespeichert."
+    },
+    "correctModal": {
+      "title": "Anwesenheit korrigieren — {{name}}",
+      "save": "Korrektur speichern",
+      "savedSuccess": "Anwesenheit korrigiert."
+    }
+  },
+  "history": {
+    "from": "Von",
+    "to": "Bis",
+    "attendance": "Anwesenheit",
+    "daysMarked": "Erfasste Tage",
+    "absences": "Abwesenheiten",
+    "columnDate": "Datum",
+    "columnStatus": "Status",
+    "columnRemarks": "Bemerkungen",
+    "emptyDescription": "Keine Anwesenheitsaufzeichnungen in diesem Zeitraum."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "center": {
+    "title": "Import-Center",
+    "description": "Erstellen Sie Datensätze in großen Mengen aus einer Excel- oder CSV-Datei.",
+    "noPermission": "Sie haben noch keine Berechtigung, Datensätze zu importieren.",
+    "options": {
+      "students": {
+        "label": "Schüler",
+        "description": "Schüler in großen Mengen aufnehmen, mit bis zu zwei Erziehungsberechtigten pro Zeile."
+      },
+      "staff": {
+        "label": "Personal & Benutzer",
+        "description": "Personalkonten in großen Mengen erstellen, jeweils mit einer Rolle. Passwörter werden nie importiert – jedes Konto erhält eine E-Mail zum Zurücksetzen des Passworts."
+      },
+      "guardians": {
+        "label": "Erziehungsberechtigte",
+        "description": "Erziehungsberechtigte anhand der Aufnahmenummer mit bereits im System vorhandenen Schülern verknüpfen – ein per E-Mail übereinstimmender Erziehungsberechtigter wird wiederverwendet, nicht dupliziert."
+      },
+      "departments": {
+        "label": "Abteilungen",
+        "description": "Fachgruppierungsabteilungen in großen Mengen einrichten – nützlich bei der Ersteinrichtung einer neuen Schule."
+      },
+      "grade-levels": {
+        "label": "Jahrgangsstufen",
+        "description": "Die von Ihrer Schule unterrichteten Jahrgangsstufen in großen Mengen erstellen, mit der jeweiligen Versetzungsreihenfolge."
+      },
+      "sections": {
+        "label": "Klassen",
+        "description": "Klassen (in die Schüler aufgenommen werden) für das aktuelle Schuljahr in großen Mengen erstellen, optional mit zugewiesenem Raum."
+      },
+      "subjects": {
+        "label": "Fächer",
+        "description": "Fächer in großen Mengen erstellen, optional über den Code mit einer Abteilung verknüpft."
+      },
+      "rooms": {
+        "label": "Räume",
+        "description": "Physische Räume in großen Mengen mit Kapazität und Typ erstellen."
+      }
+    }
+  },
+  "logs": {
+    "title": "Import-Protokolle",
+    "description": "Alle Massenimport-Versuche der Schule, einschließlich nie bestätigter Vorschauen.",
+    "columnWhen": "Wann",
+    "columnEntity": "Entität",
+    "columnBy": "Von",
+    "columnFile": "Datei",
+    "columnMode": "Modus",
+    "columnResult": "Ergebnis",
+    "columnActions": "",
+    "unknownPerformer": "—",
+    "previewOnly": "Nur Vorschau",
+    "createdCount": "{{count}} erstellt",
+    "updatedCount": "{{count}} aktualisiert",
+    "failedCount": "{{count}} fehlgeschlagen",
+    "undoneAt": "Rückgängig gemacht am {{date}}",
+    "undo": "Rückgängig machen",
+    "emptyTitle": "Noch keine Importe",
+    "emptyDescription": "Importierte Dateien werden hier protokolliert, mit der Möglichkeit, sie rückgängig zu machen.",
+    "undoDialogTitle": "Diesen {{entity}}-Import rückgängig machen?",
+    "undoDialogDescription": "Dadurch werden die {{count}} Datensätze entfernt, die aus \"{{fileName}}\" erstellt wurden. Datensätze, die dieser Import nur aktualisiert hat, werden nicht berührt, und alles mit seitdem erstellten abhängigen Datensätzen wird übersprungen und gemeldet. Dies kann von hier aus nicht wiederholt werden – die entfernten Datensätze wandern genau wie bei einer normalen Löschung in den Papierkorb.",
+    "undoConfirmLabel": "Import rückgängig machen",
+    "undoBlockedItem": "{{type}} \"{{label}}\"",
+    "undoWarning": "{{deleted}} Datensatz/Datensätze rückgängig gemacht. {{blockedCount}} konnten nicht rückgängig gemacht werden: {{blockedList}} — etwas anderes hängt jetzt davon ab.",
+    "undoSuccess": "{{count}} Datensatz/Datensätze rückgängig gemacht."
+  }
+}

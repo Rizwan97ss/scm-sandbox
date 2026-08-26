@@ -1,0 +1,28 @@
+{
+  "fields": {
+    "name": "الاسم",
+    "phone": "الهاتف",
+    "purpose": "الغرض",
+    "whomToMeet": "الشخص المطلوب زيارته",
+    "notes": "ملاحظات",
+    "checkedIn": "تم تسجيل الدخول",
+    "checkedOut": "تم تسجيل الخروج"
+  },
+  "list": {
+    "title": "الزوار",
+    "description": "سجل زوار الاستقبال.",
+    "logVisitor": "تسجيل زائر",
+    "columnToMeet": "الشخص المطلوب",
+    "columnStatus": "الحالة",
+    "checkOut": "تسجيل الخروج",
+    "checkedOutToast": "تم تسجيل خروج الزائر.",
+    "emptyTitle": "لا يوجد زوار مسجلون بعد",
+    "emptyDescription": "سيظهر هنا الزوار الذين يتم تسجيلهم في الاستقبال."
+  },
+  "checkInModal": {
+    "title": "تسجيل زائر",
+    "notesHint": "اختياري",
+    "submit": "تسجيل الدخول",
+    "checkedInToast": "تم تسجيل دخول الزائر."
+  }
+}

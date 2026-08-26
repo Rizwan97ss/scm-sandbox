@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "Geral",
+    "from": "De",
+    "to": "Até"
+  },
+  "attendance": {
+    "title": "Relatório de Frequência",
+    "description": "Tendências de frequência de alunos e funcionários ao longo do tempo.",
+    "studentAttendance": "Frequência dos Alunos",
+    "staffAttendance": "Frequência dos Funcionários",
+    "bySection": "Por Turma",
+    "noDataForRole": "Nenhum dado de frequência visível para sua função.",
+    "noRecordsInRange": "Nenhum registro neste período.",
+    "tooltipLabel": "Frequência"
+  },
+  "academic": {
+    "title": "Desempenho Acadêmico",
+    "description": "Pontuação média e taxa de aprovação nos exames publicados mais recentes.",
+    "columnExam": "Exame",
+    "columnMarksEntered": "Notas Lançadas",
+    "columnAverage": "Média",
+    "columnPassRate": "Taxa de Aprovação",
+    "noExams": "Ainda não há exames publicados com notas.",
+    "legendAverage": "Média %",
+    "legendPassRate": "Taxa de Aprovação %"
+  },
+  "operations": {
+    "title": "Relatório de Operações",
+    "description": "Biblioteca, transporte e alojamento de relance.",
+    "noDataForRole": "Nenhum dado operacional visível para sua função.",
+    "library": "Biblioteca",
+    "totalBooks": "Total de Livros",
+    "issuedThisMonth": "Emprestados Este Mês",
+    "currentlyOverdue": "Atualmente Atrasados",
+    "transport": "Transporte",
+    "activeVehicles": "Veículos Ativos",
+    "studentsAssigned": "Alunos Atribuídos",
+    "hostel": "Alojamento",
+    "rooms": "Quartos",
+    "occupiedCapacity": "Ocupados / Capacidade",
+    "occupancy": "Ocupação"
+  },
+  "enrollment": {
+    "title": "Relatório de Matrículas",
+    "description": "Admissões, desligamentos e formaturas nos últimos seis meses.",
+    "activeStudents": "Alunos Ativos",
+    "legendAdmissions": "Admissões",
+    "legendWithdrawals": "Desligamentos",
+    "legendGraduations": "Formaturas",
+    "activeStudentsByGrade": "Alunos Ativos por Série",
+    "noActiveStudents": "Ainda não há alunos ativos."
+  }
+}

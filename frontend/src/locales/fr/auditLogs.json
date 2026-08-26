@@ -1,0 +1,14 @@
+{
+  "list": {
+    "title": "Journal d'Audit",
+    "description": "Un enregistrement des actions sensibles effectuées dans votre établissement.",
+    "columnWhen": "Quand",
+    "columnBy": "Par",
+    "columnEvent": "Événement",
+    "columnSubject": "Sujet",
+    "columnDescription": "Description",
+    "system": "Système",
+    "emptyTitle": "Aucune activité enregistrée pour le moment",
+    "emptyDescription": "Les actions effectuées dans le système seront enregistrées ici."
+  }
+}

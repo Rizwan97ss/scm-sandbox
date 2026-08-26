@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "Nº de admissão",
+    "status": "Status",
+    "gradeSection": "Série / Turma",
+    "dateOfBirth": "Data de nascimento",
+    "date": "Data",
+    "amount": "Valor",
+    "receiptNumber": "Recibo nº",
+    "attendance": "Frequência",
+    "daysMarked": "Dias Registrados",
+    "absences": "Faltas",
+    "from": "De",
+    "to": "Até",
+    "remarks": "Observações",
+    "homework": "Tarefas"
+  },
+  "page": {
+    "welcomeBack": "Bem-vindo de volta, {{name}}",
+    "subtitle": "Veja o que está acontecendo hoje.",
+    "stats": {
+      "totalSchools": "Total de Escolas",
+      "activeTrialing": "Ativas / Em Teste",
+      "currentlyTrialing": "Atualmente em Teste",
+      "activeStudents": "Alunos Ativos",
+      "staffMembers": "Membros da Equipe",
+      "sections": "Turmas",
+      "attendanceMarkedToday": "Frequência Registrada Hoje",
+      "pendingLeaveRequests": "Solicitações de Licença Pendentes",
+      "feesCollectedThisMonth": "Mensalidades Recebidas Este Mês",
+      "overdueBooks": "Livros Atrasados",
+      "assignedSections": "Turmas Atribuídas",
+      "students": "Alunos",
+      "homeworkAwaitingGrading": "Tarefas Aguardando Correção",
+      "attendanceThisMonth": "Frequência Este Mês",
+      "homeworkDue": "Tarefas Pendentes",
+      "upcomingExams": "Próximos Exames",
+      "linkedChildren": "Filhos Vinculados",
+      "outstandingFees": "Mensalidades Pendentes"
+    },
+    "quickActions": {
+      "takeAttendance": "Registrar Frequência",
+      "newAdmission": "Nova admissão",
+      "invoices": "Faturas"
+    },
+    "trends": {
+      "attendanceTitle": "Frequência — Últimos 14 Dias",
+      "feesTitle": "Mensalidades Recebidas — Últimos 6 Meses",
+      "feesTooltipLabel": "Recebido"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "Meus Filhos",
+    "tabExams": "Exames",
+    "tabFees": "Mensalidades"
+  },
+  "childrenList": {
+    "title": "Meus Filhos",
+    "description": "Selecione um filho para ver o perfil.",
+    "emptyTitle": "Nenhum filho vinculado à sua conta ainda",
+    "emptyDescription": "Entre em contato com a secretaria da escola se isso parecer incorreto."
+  },
+  "attendanceTab": {
+    "emptyRecords": "Nenhum registro de frequência neste período."
+  },
+  "examResultsTab": {
+    "tabByExam": "Por Exame",
+    "tabByTerm": "Resultado Consolidado do Período",
+    "selectExamPlaceholder": "Selecione um exame…",
+    "noPublishedExams": "Ainda não há exames publicados",
+    "selectTermPlaceholder": "Selecione um período…"
+  },
+  "feesTab": {
+    "totalBilled": "Total Faturado",
+    "totalPaid": "Total Pago",
+    "totalCredited": "Total Creditado",
+    "outstanding": "Pendente",
+    "emptyTitle": "Ainda não há faturas",
+    "issuedDue": "Emitida em {{issueDate}} · Vencimento {{dueDate}}",
+    "totalPaidBalance": "Total {{total}} · Pago {{paid}} · Saldo",
+    "receipt": "Recibo",
+    "downloadReceiptAriaLabel": "Baixar recibo {{number}}"
+  },
+  "homeworkTab": {
+    "emptyTitle": "Ainda não há tarefas atribuídas",
+    "notSubmitted": "Não entregue",
+    "subjectDue": "{{subject}} · Vencimento {{date}}",
+    "maxScoreSuffix": " · Pontuação máxima: {{score}}",
+    "score": "Pontuação: {{score}}",
+    "scoreWithMax": "Pontuação: {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "Ainda não há observações",
+    "authoredBy": "— {{name}}"
+  }
+}

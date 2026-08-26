@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "name": "Name",
+    "email": "E-Mail",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "roles": "Rollen",
+    "status": "Status",
+    "designation": "Position",
+    "employeeId": "Mitarbeiter-ID",
+    "hireDate": "Einstellungsdatum",
+    "optional": "Optional",
+    "none": "Keine",
+    "edit": "Bearbeiten"
+  },
+  "list": {
+    "title": "Personal & Benutzer",
+    "description": "Verwalten Sie alle Benutzerkonten und ihre Rollen.",
+    "export": "Exportieren",
+    "import": "Importieren",
+    "newUser": "Neuer Benutzer",
+    "searchPlaceholder": "Nach Namen suchen…",
+    "columnRoles": "Rollen",
+    "downloadIdCardAriaLabel": "Ausweis von {{name}} herunterladen",
+    "emptyTitleSearch": "Keine Benutzer entsprechen \"{{query}}\"",
+    "emptyTitle": "Keine Benutzer gefunden",
+    "emptyDescriptionSearch": "Versuchen Sie einen anderen Namen oder löschen Sie die Suche, um alle zu sehen."
+  },
+  "userImport": {
+    "title": "Personal-Massenimport",
+    "breadcrumbUsers": "Personal & Benutzer",
+    "breadcrumbImport": "Import",
+    "entityLabel": "Mitarbeiter",
+    "descriptionBeforeCode": "Laden Sie eine Excel- (.xlsx) oder CSV-Datei gemäß der Vorlage hoch. ",
+    "descriptionAfterCode": " muss genau dem Namen einer bestehenden Rolle entsprechen, und Sie können nur Rollen vergeben, die Sie selbst zuweisen dürfen. Fügen Sie niemals eine Passwortspalte hinzu — jedes importierte Konto erhält ein sicheres, zufällig generiertes Passwort und erhält sofort eine E-Mail zum Zurücksetzen des Passworts, um ein eigenes festzulegen."
+  },
+  "formModal": {
+    "editTitle": "Benutzer bearbeiten",
+    "newTitle": "Neuer Benutzer",
+    "saveChanges": "Änderungen speichern",
+    "createUser": "Benutzer erstellen",
+    "createdToast": "Benutzer erstellt.",
+    "updatedToast": "Benutzer aktualisiert."
+  },
+  "statusMenu": {
+    "moreActionsAriaLabel": "Weitere Aktionen",
+    "sendPasswordReset": "Passwort-Reset senden",
+    "resetMfa": "Zwei-Faktor-Authentifizierung zurücksetzen",
+    "setActive": "Als aktiv festlegen",
+    "setInactive": "Als inaktiv festlegen",
+    "suspend": "Sperren",
+    "statusUpdatedToast": "Status aktualisiert.",
+    "passwordResetSentToast": "Link zum Zurücksetzen des Passworts gesendet.",
+    "mfaResetToast": "Zwei-Faktor-Authentifizierung zurückgesetzt — sie kann bei der nächsten Anmeldung erneut eingerichtet werden."
+  }
+}

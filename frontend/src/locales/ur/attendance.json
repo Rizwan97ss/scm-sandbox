@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "سیکشن",
+    "date": "تاریخ",
+    "period": "پیریڈ",
+    "wholeDay": "پورا دن",
+    "status": "حیثیت",
+    "remarks": "تبصرے",
+    "remarksOptional": "اختیاری تبصرے",
+    "remarksOptionalPlaceholder": "اختیاری",
+    "staffMember": "عملے کا رکن"
+  },
+  "takeAttendance": {
+    "title": "حاضری لگائیں",
+    "description": "کسی سیکشن کی روزانہ یا پیریڈ کے حساب سے حاضری درج کریں۔",
+    "selectSectionPlaceholder": "ایک سیکشن منتخب کریں…",
+    "emptySelectSectionTitle": "شروع کرنے کے لیے ایک سیکشن منتخب کریں",
+    "emptySelectSectionDescription": "طلبہ کی فہرست لوڈ کرنے کے لیے اوپر سیکشن، تاریخ اور پیریڈ منتخب کریں۔",
+    "emptyNoStudentsTitle": "اس سیکشن میں کوئی طالب علم نہیں ہے",
+    "emptyNoStudentsDescription": "اس سیکشن میں فی الحال کوئی طالب علم داخل نہیں ہے۔",
+    "columnAdmissionNumber": "داخلہ نمبر",
+    "columnName": "نام",
+    "columnStatus": "حیثیت",
+    "columnRemarks": "تبصرے",
+    "saveAttendance": "حاضری محفوظ کریں",
+    "savedSuccess": "{{count}} حاضری ریکارڈ محفوظ کر دیے گئے۔"
+  },
+  "staffAttendance": {
+    "title": "عملے کی حاضری",
+    "description": "خودکار چیک اِن/چیک آؤٹ اور عملے کے حاضری ریکارڈ۔",
+    "markAttendance": "حاضری درج کریں",
+    "today": "آج، {{date}}",
+    "checkedInAt": "{{time}} پر چیک اِن کیا گیا",
+    "checkedInOutAt": "{{checkIn}} پر چیک اِن، {{checkOut}} پر چیک آؤٹ",
+    "notCheckedInYet": "آپ نے آج تک چیک اِن نہیں کیا ہے۔",
+    "checkIn": "چیک اِن کریں",
+    "checkOut": "چیک آؤٹ کریں",
+    "checkedInSuccess": "چیک اِن ہو گیا۔",
+    "checkedOutSuccess": "چیک آؤٹ ہو گیا۔",
+    "correctAriaLabel": "{{name}} کی حاضری درست کریں",
+    "columnDate": "تاریخ",
+    "columnStaff": "عملہ",
+    "columnStatus": "حیثیت",
+    "columnCheckIn": "چیک اِن",
+    "columnCheckOut": "چیک آؤٹ",
+    "columnRemarks": "تبصرے",
+    "emptyTitle": "ابھی تک کوئی حاضری ریکارڈ نہیں ہے",
+    "emptyDescription": "عملے کے چیک اِن کرنے یا آپ کے دستی طور پر حاضری درج کرنے کے بعد ریکارڈز یہاں ظاہر ہوں گے۔",
+    "markModal": {
+      "title": "عملے کی حاضری درج کریں",
+      "selectStaffPlaceholder": "عملے کا رکن منتخب کریں…",
+      "save": "محفوظ کریں",
+      "savedSuccess": "حاضری محفوظ کر دی گئی۔"
+    },
+    "correctModal": {
+      "title": "حاضری درست کریں — {{name}}",
+      "save": "تصحیح محفوظ کریں",
+      "savedSuccess": "حاضری درست کر دی گئی۔"
+    }
+  },
+  "history": {
+    "from": "سے",
+    "to": "تک",
+    "attendance": "حاضری",
+    "daysMarked": "درج شدہ دن",
+    "absences": "غیر حاضریاں",
+    "columnDate": "تاریخ",
+    "columnStatus": "حیثیت",
+    "columnRemarks": "تبصرے",
+    "emptyDescription": "اس مدت میں کوئی حاضری ریکارڈ موجود نہیں ہے۔"
+  }
+}

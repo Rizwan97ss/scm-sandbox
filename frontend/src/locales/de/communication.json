@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "Titel",
+    "message": "Nachricht",
+    "audience": "Zielgruppe",
+    "channels": "Kanäle"
+  },
+  "list": {
+    "title": "Ankündigungen",
+    "description": "Senden Sie eine Nachricht an Schüler, Personal oder Eltern.",
+    "compose": "Ankündigung verfassen",
+    "columnTitle": "Titel",
+    "columnAudience": "Zielgruppe",
+    "columnChannels": "Kanäle",
+    "columnRecipients": "Empfänger",
+    "columnSentBy": "Gesendet von",
+    "columnSent": "Gesendet",
+    "emptyTitle": "Noch keine Ankündigungen gesendet",
+    "emptyDescription": "Von Ihnen veröffentlichte Ankündigungen erscheinen hier für die jeweilige Zielgruppe."
+  },
+  "composeModal": {
+    "title": "Ankündigung verfassen",
+    "submit": "Ankündigung senden",
+    "successToast": "Ankündigung an {{count}} Empfänger gesendet."
+  }
+}

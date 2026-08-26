@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "शीर्षक",
+    "body": "विवरण",
+    "type": "प्रकार",
+    "audience": "दर्शक वर्ग",
+    "eventDate": "कार्यक्रम की तिथि",
+    "startTime": "प्रारंभ समय",
+    "location": "स्थान",
+    "optional": "वैकल्पिक"
+  },
+  "list": {
+    "title": "सूचना पट्ट",
+    "description": "पूरे स्कूल की सूचनाएं और आगामी कार्यक्रम।",
+    "newNotice": "नई सूचना",
+    "emptyTitle": "अभी तक कोई सूचना नहीं",
+    "draft": "मसौदा",
+    "postedBy": "स्टाफ",
+    "publish": "प्रकाशित करें",
+    "deleteAriaLabel": "{{title}} हटाएं",
+    "deleteConfirmTitle": "“{{title}}” हटाएं?",
+    "deleteConfirmDescription": "इसे पूर्ववत नहीं किया जा सकता।",
+    "publishedToast": "सूचना प्रकाशित की गई।",
+    "deletedToast": "सूचना हटा दी गई।"
+  },
+  "createModal": {
+    "title": "नई सूचना",
+    "submit": "सूचना बनाएं",
+    "successToast": "सूचना बनाई गई।"
+  }
+}

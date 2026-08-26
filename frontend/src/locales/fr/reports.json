@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "Global",
+    "from": "Du",
+    "to": "Au"
+  },
+  "attendance": {
+    "title": "Rapport de Présence",
+    "description": "Tendances de présence des élèves et du personnel au fil du temps.",
+    "studentAttendance": "Présence des Élèves",
+    "staffAttendance": "Présence du Personnel",
+    "bySection": "Par Section",
+    "noDataForRole": "Aucune donnée de présence visible pour votre rôle.",
+    "noRecordsInRange": "Aucun enregistrement dans cette période.",
+    "tooltipLabel": "Présence"
+  },
+  "academic": {
+    "title": "Performance Académique",
+    "description": "Score moyen et taux de réussite pour les examens publiés les plus récents.",
+    "columnExam": "Examen",
+    "columnMarksEntered": "Notes Saisies",
+    "columnAverage": "Moyenne",
+    "columnPassRate": "Taux de Réussite",
+    "noExams": "Aucun examen publié avec des notes pour le moment.",
+    "legendAverage": "Moyenne %",
+    "legendPassRate": "Taux de Réussite %"
+  },
+  "operations": {
+    "title": "Rapport des Opérations",
+    "description": "Bibliothèque, transport et internat en un coup d'œil.",
+    "noDataForRole": "Aucune donnée opérationnelle visible pour votre rôle.",
+    "library": "Bibliothèque",
+    "totalBooks": "Total des Livres",
+    "issuedThisMonth": "Empruntés ce Mois-ci",
+    "currentlyOverdue": "Actuellement en Retard",
+    "transport": "Transport",
+    "activeVehicles": "Véhicules Actifs",
+    "studentsAssigned": "Élèves Assignés",
+    "hostel": "Internat",
+    "rooms": "Chambres",
+    "occupiedCapacity": "Occupées / Capacité",
+    "occupancy": "Taux d'Occupation"
+  },
+  "enrollment": {
+    "title": "Rapport d'Inscription",
+    "description": "Admissions, retraits et diplômes au cours des six derniers mois.",
+    "activeStudents": "Élèves Actifs",
+    "legendAdmissions": "Admissions",
+    "legendWithdrawals": "Retraits",
+    "legendGraduations": "Diplômes",
+    "activeStudentsByGrade": "Élèves Actifs par Niveau",
+    "noActiveStudents": "Aucun élève actif pour le moment."
+  }
+}

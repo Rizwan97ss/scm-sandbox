@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "کردار اور اجازتیں",
+    "description": "مخصوص کردار بنائیں اور کنٹرول کریں کہ ہر ایک کیا کر سکتا ہے۔",
+    "newRole": "نیا کردار",
+    "systemRoleAriaLabel": "سسٹم کردار",
+    "edit": "ترمیم کریں",
+    "deleteAriaLabel": "{{name}} حذف کریں",
+    "emptyTitle": "ابھی تک کوئی کردار نہیں",
+    "permissionsCount": "{{count}} اجازت(یں)",
+    "morePermissions": "+{{count}} مزید",
+    "deleteConfirmTitle": "کردار \"{{name}}\" حذف کریں؟",
+    "deleteConfirmDescription": "صرف اس کردار والے صارفین اس کی تمام اجازتیں کھو دیں گے۔",
+    "deleteSuccessToast": "کردار حذف ہو گیا۔"
+  },
+  "formModal": {
+    "editTitle": "کردار ترمیم کریں",
+    "newTitle": "نیا کردار",
+    "roleNameLabel": "کردار کا نام",
+    "permissionsLabel": "اجازتیں",
+    "saveChanges": "تبدیلیاں محفوظ کریں",
+    "createRole": "کردار بنائیں",
+    "updateSuccessToast": "کردار اپ ڈیٹ ہو گیا۔",
+    "createSuccessToast": "کردار بن گیا۔"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "العنوان",
+    "message": "الرسالة",
+    "audience": "الجمهور المستهدف",
+    "channels": "القنوات"
+  },
+  "list": {
+    "title": "الإعلانات",
+    "description": "أرسل رسالة إلى الطلاب أو الموظفين أو أولياء الأمور.",
+    "compose": "إنشاء إعلان",
+    "columnTitle": "العنوان",
+    "columnAudience": "الجمهور المستهدف",
+    "columnChannels": "القنوات",
+    "columnRecipients": "المستلمون",
+    "columnSentBy": "أُرسل بواسطة",
+    "columnSent": "تاريخ الإرسال",
+    "emptyTitle": "لم يتم إرسال أي إعلانات بعد",
+    "emptyDescription": "ستظهر الإعلانات التي تنشرها هنا للجمهور المستهدف."
+  },
+  "composeModal": {
+    "title": "إنشاء إعلان",
+    "submit": "إرسال الإعلان",
+    "successToast": "تم إرسال الإعلان إلى {{count}} من المستلمين."
+  }
+}

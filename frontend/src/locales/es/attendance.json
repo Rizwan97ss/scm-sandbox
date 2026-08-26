@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "Sección",
+    "date": "Fecha",
+    "period": "Período",
+    "wholeDay": "Día completo",
+    "status": "Estado",
+    "remarks": "Observaciones",
+    "remarksOptional": "Observaciones opcionales",
+    "remarksOptionalPlaceholder": "Opcional",
+    "staffMember": "Miembro del personal"
+  },
+  "takeAttendance": {
+    "title": "Tomar Asistencia",
+    "description": "Registre la asistencia diaria o por período de una sección.",
+    "selectSectionPlaceholder": "Seleccione una sección…",
+    "emptySelectSectionTitle": "Seleccione una sección para comenzar",
+    "emptySelectSectionDescription": "Elija una sección, fecha y período arriba para cargar su lista de alumnos.",
+    "emptyNoStudentsTitle": "No hay estudiantes en esta sección",
+    "emptyNoStudentsDescription": "Esta sección no tiene estudiantes matriculados actualmente.",
+    "columnAdmissionNumber": "N.º de admisión",
+    "columnName": "Nombre",
+    "columnStatus": "Estado",
+    "columnRemarks": "Observaciones",
+    "saveAttendance": "Guardar Asistencia",
+    "savedSuccess": "Se guardaron {{count}} registro(s) de asistencia."
+  },
+  "staffAttendance": {
+    "title": "Asistencia del Personal",
+    "description": "Registro de entrada/salida y registros de asistencia del personal.",
+    "markAttendance": "Registrar Asistencia",
+    "today": "Hoy, {{date}}",
+    "checkedInAt": "Entrada registrada a las {{time}}",
+    "checkedInOutAt": "Entrada a las {{checkIn}}, salida a las {{checkOut}}",
+    "notCheckedInYet": "Aún no ha registrado su entrada hoy.",
+    "checkIn": "Registrar Entrada",
+    "checkOut": "Registrar Salida",
+    "checkedInSuccess": "Entrada registrada.",
+    "checkedOutSuccess": "Salida registrada.",
+    "correctAriaLabel": "Corregir asistencia de {{name}}",
+    "columnDate": "Fecha",
+    "columnStaff": "Personal",
+    "columnStatus": "Estado",
+    "columnCheckIn": "Entrada",
+    "columnCheckOut": "Salida",
+    "columnRemarks": "Observaciones",
+    "emptyTitle": "Aún no hay registros de asistencia",
+    "emptyDescription": "Los registros aparecerán aquí una vez que el personal registre su entrada o usted registre la asistencia manualmente.",
+    "markModal": {
+      "title": "Registrar Asistencia del Personal",
+      "selectStaffPlaceholder": "Seleccione un miembro del personal…",
+      "save": "Guardar",
+      "savedSuccess": "Asistencia guardada."
+    },
+    "correctModal": {
+      "title": "Corregir asistencia — {{name}}",
+      "save": "Guardar corrección",
+      "savedSuccess": "Asistencia corregida."
+    }
+  },
+  "history": {
+    "from": "Desde",
+    "to": "Hasta",
+    "attendance": "Asistencia",
+    "daysMarked": "Días Registrados",
+    "absences": "Ausencias",
+    "columnDate": "Fecha",
+    "columnStatus": "Estado",
+    "columnRemarks": "Observaciones",
+    "emptyDescription": "No hay registros de asistencia en este período."
+  }
+}

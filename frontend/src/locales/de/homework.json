@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "Titel",
+    "description": "Beschreibung",
+    "dueDate": "Fälligkeitsdatum",
+    "maxScore": "Höchstpunktzahl",
+    "subject": "Fach",
+    "section": "Klasse",
+    "teacher": "Lehrkraft",
+    "status": "Status",
+    "notSubmitted": "Nicht eingereicht",
+    "optional": "Optional"
+  },
+  "list": {
+    "title": "Hausaufgaben",
+    "descriptionStudent": "Aufgaben für Ihre Klasse — reichen Sie Ihre Arbeit vor dem Fälligkeitsdatum ein.",
+    "descriptionStaff": "Weisen Sie Hausaufgaben zu und bewerten Sie diese für Ihre Klassen.",
+    "newHomework": "Neue Hausaufgabe",
+    "columnTitle": "Titel",
+    "columnSubject": "Fach",
+    "columnSection": "Klasse",
+    "columnDueDate": "Fälligkeitsdatum",
+    "columnStatus": "Status",
+    "columnTeacher": "Lehrkraft",
+    "emptyTitle": "Noch keine Hausaufgaben",
+    "emptyDescription": "Weisen Sie Ihre erste Hausaufgabe zu, um zu beginnen.",
+    "modalTitle": "Neue Hausaufgabe",
+    "classLabel": "Klasse",
+    "classHint": "Für welche Klasse/welches Fach diese Hausaufgabe bestimmt ist",
+    "classPlaceholder": "Klasse auswählen",
+    "dueDateLabel": "Fälligkeitsdatum",
+    "maxScoreLabel": "Höchstpunktzahl",
+    "assignHomework": "Hausaufgabe zuweisen"
+  },
+  "detail": {
+    "breadcrumbHomework": "Hausaufgaben",
+    "descriptionLine": "{{subject}} · {{section}} · Fällig am {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Höchstpunktzahl: {{score}}",
+    "instructions": "Anweisungen",
+    "columnAdmissionNumber": "Zulassungs-Nr.",
+    "columnName": "Name",
+    "columnStatus": "Status",
+    "columnSubmission": "Abgabe",
+    "columnScore": "Punktzahl",
+    "columnFeedback": "Rückmeldung",
+    "saveGradeAriaLabel": "Note für {{name}} speichern",
+    "gradeSaved": "Note gespeichert."
+  },
+  "submitModal": {
+    "descriptionLine": "Fällig am {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Höchstpunktzahl: {{score}}",
+    "instructions": "Anweisungen",
+    "answerLabel": "Ihre Antwort",
+    "answerPlaceholder": "Geben Sie hier Ihre Antwort oder Notizen ein (optional, wenn Sie eine Datei anhängen)",
+    "attachmentLabel": "Anhang",
+    "resubmit": "Erneut einreichen",
+    "submitHomework": "Hausaufgabe einreichen",
+    "submittedSuccess": "Hausaufgabe eingereicht."
+  }
+}

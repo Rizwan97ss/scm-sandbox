@@ -1,0 +1,60 @@
+{
+  "fields": {
+    "title": "Título",
+    "description": "Descripción",
+    "dueDate": "Fecha de entrega",
+    "maxScore": "Puntuación máxima",
+    "subject": "Asignatura",
+    "section": "Sección",
+    "teacher": "Profesor",
+    "status": "Estado",
+    "notSubmitted": "No entregado",
+    "optional": "Opcional"
+  },
+  "list": {
+    "title": "Tareas",
+    "descriptionStudent": "Tareas asignadas a tu clase — entrega tu trabajo antes de la fecha límite.",
+    "descriptionStaff": "Asigna y califica tareas para tus clases.",
+    "newHomework": "Nueva tarea",
+    "columnTitle": "Título",
+    "columnSubject": "Asignatura",
+    "columnSection": "Sección",
+    "columnDueDate": "Fecha de entrega",
+    "columnStatus": "Estado",
+    "columnTeacher": "Profesor",
+    "emptyTitle": "Aún no hay tareas",
+    "emptyDescription": "Asigna tu primera tarea para comenzar.",
+    "modalTitle": "Nueva tarea",
+    "classLabel": "Clase",
+    "classHint": "A qué sección/asignatura corresponde esta tarea",
+    "classPlaceholder": "Selecciona una clase",
+    "dueDateLabel": "Fecha de entrega",
+    "maxScoreLabel": "Puntuación máxima",
+    "assignHomework": "Asignar tarea"
+  },
+  "detail": {
+    "breadcrumbHomework": "Tareas",
+    "descriptionLine": "{{subject}} · {{section}} · Entrega {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Puntuación máxima: {{score}}",
+    "instructions": "Instrucciones",
+    "columnAdmissionNumber": "N.º de admisión",
+    "columnName": "Nombre",
+    "columnStatus": "Estado",
+    "columnSubmission": "Entrega",
+    "columnScore": "Puntuación",
+    "columnFeedback": "Comentarios",
+    "saveGradeAriaLabel": "Guardar calificación de {{name}}",
+    "gradeSaved": "Calificación guardada."
+  },
+  "submitModal": {
+    "descriptionLine": "Entrega {{dueDate}}{{maxScore}}",
+    "maxScoreSuffix": " · Puntuación máxima: {{score}}",
+    "instructions": "Instrucciones",
+    "answerLabel": "Tu respuesta",
+    "answerPlaceholder": "Escribe tu respuesta o notas aquí (opcional si adjuntas un archivo)",
+    "attachmentLabel": "Archivo adjunto",
+    "resubmit": "Volver a entregar",
+    "submitHomework": "Entregar tarea",
+    "submittedSuccess": "Tarea entregada."
+  }
+}

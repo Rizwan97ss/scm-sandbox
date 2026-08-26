@@ -1,0 +1,26 @@
+{
+  "list": {
+    "title": "角色与权限",
+    "description": "创建自定义角色，精确控制每个角色的可执行操作。",
+    "newRole": "新建角色",
+    "systemRoleAriaLabel": "系统角色",
+    "edit": "编辑",
+    "deleteAriaLabel": "删除 {{name}}",
+    "emptyTitle": "暂无角色",
+    "permissionsCount": "{{count}} 项权限",
+    "morePermissions": "+{{count}} 更多",
+    "deleteConfirmTitle": "删除角色“{{name}}”？",
+    "deleteConfirmDescription": "仅拥有此角色的用户将失去其所有权限。",
+    "deleteSuccessToast": "角色已删除。"
+  },
+  "formModal": {
+    "editTitle": "编辑角色",
+    "newTitle": "新建角色",
+    "roleNameLabel": "角色名称",
+    "permissionsLabel": "权限",
+    "saveChanges": "保存更改",
+    "createRole": "创建角色",
+    "updateSuccessToast": "角色已更新。",
+    "createSuccessToast": "角色已创建。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "fields": {
+    "title": "Titre",
+    "body": "Contenu",
+    "type": "Type",
+    "audience": "Public",
+    "eventDate": "Date de l'événement",
+    "startTime": "Heure de début",
+    "location": "Lieu",
+    "optional": "Facultatif"
+  },
+  "list": {
+    "title": "Tableau d'Affichage",
+    "description": "Avis et événements à venir pour tout l'établissement.",
+    "newNotice": "Nouvel Avis",
+    "emptyTitle": "Aucun avis pour le moment",
+    "draft": "Brouillon",
+    "postedBy": "Personnel",
+    "publish": "Publier",
+    "deleteAriaLabel": "Supprimer {{title}}",
+    "deleteConfirmTitle": "Supprimer « {{title}} » ?",
+    "deleteConfirmDescription": "Cette action est irréversible.",
+    "publishedToast": "Avis publié.",
+    "deletedToast": "Avis supprimé."
+  },
+  "createModal": {
+    "title": "Nouvel Avis",
+    "submit": "Créer l'avis",
+    "successToast": "Avis créé."
+  }
+}

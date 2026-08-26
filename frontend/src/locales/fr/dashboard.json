@@ -1,0 +1,96 @@
+{
+  "fields": {
+    "admissionNumber": "N° d'admission",
+    "status": "Statut",
+    "gradeSection": "Niveau / Section",
+    "dateOfBirth": "Date de naissance",
+    "date": "Date",
+    "amount": "Montant",
+    "receiptNumber": "Reçu n°",
+    "attendance": "Présence",
+    "daysMarked": "Jours Enregistrés",
+    "absences": "Absences",
+    "from": "De",
+    "to": "À",
+    "remarks": "Observations",
+    "homework": "Devoirs"
+  },
+  "page": {
+    "welcomeBack": "Bon retour, {{name}}",
+    "subtitle": "Voici ce qui se passe aujourd'hui.",
+    "stats": {
+      "totalSchools": "Total des Écoles",
+      "activeTrialing": "Actives / À l'Essai",
+      "currentlyTrialing": "Actuellement à l'Essai",
+      "activeStudents": "Élèves Actifs",
+      "staffMembers": "Membres du Personnel",
+      "sections": "Sections",
+      "attendanceMarkedToday": "Présence Enregistrée Aujourd'hui",
+      "pendingLeaveRequests": "Demandes de Congé en Attente",
+      "feesCollectedThisMonth": "Frais Perçus Ce Mois-ci",
+      "overdueBooks": "Livres en Retard",
+      "assignedSections": "Sections Assignées",
+      "students": "Élèves",
+      "homeworkAwaitingGrading": "Devoirs en Attente de Notation",
+      "attendanceThisMonth": "Présence Ce Mois-ci",
+      "homeworkDue": "Devoirs à Rendre",
+      "upcomingExams": "Examens à Venir",
+      "linkedChildren": "Enfants Liés",
+      "outstandingFees": "Frais Impayés"
+    },
+    "quickActions": {
+      "takeAttendance": "Prendre la Présence",
+      "newAdmission": "Nouvelle admission",
+      "invoices": "Factures"
+    },
+    "trends": {
+      "attendanceTitle": "Présence — 14 Derniers Jours",
+      "feesTitle": "Frais Perçus — 6 Derniers Mois",
+      "feesTooltipLabel": "Perçu"
+    }
+  },
+  "childProfile": {
+    "breadcrumbMyChildren": "Mes Enfants",
+    "tabExams": "Examens",
+    "tabFees": "Frais"
+  },
+  "childrenList": {
+    "title": "Mes Enfants",
+    "description": "Sélectionnez un enfant pour voir son profil.",
+    "emptyTitle": "Aucun enfant lié à votre compte pour le moment",
+    "emptyDescription": "Contactez le secrétariat de l'école si cela semble incorrect."
+  },
+  "attendanceTab": {
+    "emptyRecords": "Aucun registre de présence sur cette période."
+  },
+  "examResultsTab": {
+    "tabByExam": "Par Examen",
+    "tabByTerm": "Résultat Consolidé du Trimestre",
+    "selectExamPlaceholder": "Sélectionner un examen…",
+    "noPublishedExams": "Aucun examen publié pour le moment",
+    "selectTermPlaceholder": "Sélectionner un trimestre…"
+  },
+  "feesTab": {
+    "totalBilled": "Total Facturé",
+    "totalPaid": "Total Payé",
+    "totalCredited": "Total Crédité",
+    "outstanding": "Impayé",
+    "emptyTitle": "Aucune facture pour le moment",
+    "issuedDue": "Émise le {{issueDate}} · Échéance {{dueDate}}",
+    "totalPaidBalance": "Total {{total}} · Payé {{paid}} · Solde",
+    "receipt": "Reçu",
+    "downloadReceiptAriaLabel": "Télécharger le reçu {{number}}"
+  },
+  "homeworkTab": {
+    "emptyTitle": "Aucun devoir assigné pour le moment",
+    "notSubmitted": "Non remis",
+    "subjectDue": "{{subject}} · Échéance {{date}}",
+    "maxScoreSuffix": " · Note maximale : {{score}}",
+    "score": "Note : {{score}}",
+    "scoreWithMax": "Note : {{score}} / {{max}}"
+  },
+  "remarksTab": {
+    "emptyTitle": "Aucune observation pour le moment",
+    "authoredBy": "— {{name}}"
+  }
+}

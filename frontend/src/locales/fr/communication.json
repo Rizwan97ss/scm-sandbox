@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "Titre",
+    "message": "Message",
+    "audience": "Public",
+    "channels": "Canaux"
+  },
+  "list": {
+    "title": "Annonces",
+    "description": "Diffusez un message aux élèves, au personnel ou aux parents.",
+    "compose": "Rédiger une annonce",
+    "columnTitle": "Titre",
+    "columnAudience": "Public",
+    "columnChannels": "Canaux",
+    "columnRecipients": "Destinataires",
+    "columnSentBy": "Envoyé par",
+    "columnSent": "Envoyé",
+    "emptyTitle": "Aucune annonce envoyée pour le moment",
+    "emptyDescription": "Les annonces que vous publiez apparaîtront ici pour leur public."
+  },
+  "composeModal": {
+    "title": "Rédiger une annonce",
+    "submit": "Envoyer l'annonce",
+    "successToast": "Annonce envoyée à {{count}} destinataire(s)."
+  }
+}

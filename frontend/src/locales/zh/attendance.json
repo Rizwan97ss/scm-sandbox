@@ -1,0 +1,72 @@
+{
+  "fields": {
+    "section": "班级",
+    "date": "日期",
+    "period": "节次",
+    "wholeDay": "全天",
+    "status": "状态",
+    "remarks": "备注",
+    "remarksOptional": "备注（可选）",
+    "remarksOptionalPlaceholder": "可选",
+    "staffMember": "员工"
+  },
+  "takeAttendance": {
+    "title": "签到",
+    "description": "为某个班级记录每日或按节次的考勤。",
+    "selectSectionPlaceholder": "请选择班级…",
+    "emptySelectSectionTitle": "请选择一个班级以开始",
+    "emptySelectSectionDescription": "请在上方选择班级、日期和节次以加载学生名单。",
+    "emptyNoStudentsTitle": "该班级暂无学生",
+    "emptyNoStudentsDescription": "该班级目前没有已注册的学生。",
+    "columnAdmissionNumber": "学号",
+    "columnName": "姓名",
+    "columnStatus": "状态",
+    "columnRemarks": "备注",
+    "saveAttendance": "保存考勤",
+    "savedSuccess": "已保存 {{count}} 条考勤记录。"
+  },
+  "staffAttendance": {
+    "title": "员工考勤",
+    "description": "员工自助签到/签退及考勤记录。",
+    "markAttendance": "登记考勤",
+    "today": "今天，{{date}}",
+    "checkedInAt": "签到时间 {{time}}",
+    "checkedInOutAt": "签到时间 {{checkIn}}，签退时间 {{checkOut}}",
+    "notCheckedInYet": "您今天尚未签到。",
+    "checkIn": "签到",
+    "checkOut": "签退",
+    "checkedInSuccess": "签到成功。",
+    "checkedOutSuccess": "签退成功。",
+    "correctAriaLabel": "更正 {{name}} 的考勤",
+    "columnDate": "日期",
+    "columnStaff": "员工",
+    "columnStatus": "状态",
+    "columnCheckIn": "签到",
+    "columnCheckOut": "签退",
+    "columnRemarks": "备注",
+    "emptyTitle": "暂无考勤记录",
+    "emptyDescription": "员工签到或您手动登记考勤后，记录将显示在此处。",
+    "markModal": {
+      "title": "登记员工考勤",
+      "selectStaffPlaceholder": "请选择员工…",
+      "save": "保存",
+      "savedSuccess": "考勤已保存。"
+    },
+    "correctModal": {
+      "title": "更正考勤 — {{name}}",
+      "save": "保存更正",
+      "savedSuccess": "考勤已更正。"
+    }
+  },
+  "history": {
+    "from": "起始日期",
+    "to": "结束日期",
+    "attendance": "考勤",
+    "daysMarked": "已记录天数",
+    "absences": "缺勤次数",
+    "columnDate": "日期",
+    "columnStatus": "状态",
+    "columnRemarks": "备注",
+    "emptyDescription": "此时间段内没有考勤记录。"
+  }
+}

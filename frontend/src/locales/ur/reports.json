@@ -1,0 +1,54 @@
+{
+  "fields": {
+    "overall": "مجموعی",
+    "from": "سے",
+    "to": "تک"
+  },
+  "attendance": {
+    "title": "حاضری رپورٹ",
+    "description": "وقت کے ساتھ طلباء اور عملے کی حاضری کے رجحانات۔",
+    "studentAttendance": "طلباء کی حاضری",
+    "staffAttendance": "عملے کی حاضری",
+    "bySection": "سیکشن کے لحاظ سے",
+    "noDataForRole": "آپ کے کردار کے لیے کوئی حاضری ڈیٹا دستیاب نہیں ہے۔",
+    "noRecordsInRange": "اس مدت میں کوئی ریکارڈ موجود نہیں ہے۔",
+    "tooltipLabel": "حاضری"
+  },
+  "academic": {
+    "title": "تعلیمی کارکردگی",
+    "description": "حالیہ شائع شدہ امتحانات میں اوسط نمبر اور کامیابی کی شرح۔",
+    "columnExam": "امتحان",
+    "columnMarksEntered": "درج کردہ نمبر",
+    "columnAverage": "اوسط",
+    "columnPassRate": "کامیابی کی شرح",
+    "noExams": "ابھی تک نمبروں کے ساتھ کوئی شائع شدہ امتحان موجود نہیں ہے۔",
+    "legendAverage": "اوسط %",
+    "legendPassRate": "کامیابی کی شرح %"
+  },
+  "operations": {
+    "title": "آپریشنز رپورٹ",
+    "description": "لائبریری، ٹرانسپورٹ اور ہاسٹل ایک نظر میں۔",
+    "noDataForRole": "آپ کے کردار کے لیے کوئی آپریشنل ڈیٹا دستیاب نہیں ہے۔",
+    "library": "لائبریری",
+    "totalBooks": "کل کتابیں",
+    "issuedThisMonth": "اس ماہ جاری کی گئیں",
+    "currentlyOverdue": "فی الحال زائد المیعاد",
+    "transport": "ٹرانسپورٹ",
+    "activeVehicles": "فعال گاڑیاں",
+    "studentsAssigned": "تفویض کردہ طلباء",
+    "hostel": "ہاسٹل",
+    "rooms": "کمرے",
+    "occupiedCapacity": "مقبوضہ / گنجائش",
+    "occupancy": "قبضے کی شرح"
+  },
+  "enrollment": {
+    "title": "داخلہ رپورٹ",
+    "description": "پچھلے چھ مہینوں میں داخلے، اخراج اور فراغت۔",
+    "activeStudents": "فعال طلباء",
+    "legendAdmissions": "داخلے",
+    "legendWithdrawals": "اخراج",
+    "legendGraduations": "فراغت",
+    "activeStudentsByGrade": "گریڈ کے لحاظ سے فعال طلباء",
+    "noActiveStudents": "ابھی تک کوئی فعال طالب علم موجود نہیں ہے۔"
+  }
+}
