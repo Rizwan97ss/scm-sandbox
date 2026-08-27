@@ -76,7 +76,8 @@
       "myOnlineTests": "My Online Tests",
       "myResult": "My Result",
       "myFees": "My Fees",
-      "certificates": "Certificates"
+      "certificates": "Certificates",
+      "examTimetable": "Exam Timetable"
     }
   },
   "search": {

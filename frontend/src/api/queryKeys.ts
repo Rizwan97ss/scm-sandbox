@@ -72,6 +72,7 @@ export const queryKeys = {
   examSubjectGroup: (groupId: number) => ['exam-subject-groups', groupId] as const,
   groupResult: (examId: number, groupId: number, studentId: number) => ['exams', examId, 'groups', groupId, 'result', studentId] as const,
   reportCard: (examId: number, studentId: number) => ['exams', examId, 'report-card', studentId] as const,
+  examTimetable: (examId: number, params: { sectionId?: number; studentId?: number }) => ['exams', examId, 'timetable', params] as const,
   termResult: (termId: number, studentId: number) => ['terms', termId, 'result', studentId] as const,
   onlineTestAttempt: (attemptId: number) => ['online-test-attempts', attemptId] as const,
   myOnlineTests: ['online-tests', 'mine'] as const,

@@ -149,7 +149,8 @@
     "termNone": "Aucune",
     "title": "Examens",
     "weight": "Coefficient",
-    "weightHint": "Contribution relative au résultat de la période (p. ex. Mi-parcours 1, Final 2)"
+    "weightHint": "Contribution relative au résultat de la période (p. ex. Mi-parcours 1, Final 2)",
+    "columnSection": "Section"
   },
   "marksEntry": {
     "breadcrumbExams": "Examens",
@@ -307,5 +308,16 @@
     "rank": "Rang",
     "weightedGpa": "GPA pondéré",
     "weightedPercentage": "Pourcentage pondéré"
+  },
+  "timetable": {
+    "title": "Emploi du Temps des Examens",
+    "description": "Date et heure de chaque matière, par classe et section.",
+    "examLabel": "Examen",
+    "selectExam": "Sélectionnez un examen…",
+    "save": "Enregistrer l'Emploi du Temps",
+    "savedToast": "Emploi du temps enregistré.",
+    "startTime": "Heure de début",
+    "endTime": "Heure de fin",
+    "dateTBA": "Date à confirmer"
   }
 }

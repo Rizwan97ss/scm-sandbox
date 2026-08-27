@@ -149,7 +149,8 @@
     "termNone": "Keines",
     "title": "Prüfungen",
     "weight": "Gewichtung",
-    "weightHint": "Relativer Beitrag zum Halbjahresergebnis (z. B. Zwischenprüfung 1, Abschluss 2)"
+    "weightHint": "Relativer Beitrag zum Halbjahresergebnis (z. B. Zwischenprüfung 1, Abschluss 2)",
+    "columnSection": "Klasse"
   },
   "marksEntry": {
     "breadcrumbExams": "Prüfungen",
@@ -307,5 +308,16 @@
     "rank": "Rang",
     "weightedGpa": "Gewichteter GPA",
     "weightedPercentage": "Gewichteter Prozentsatz"
+  },
+  "timetable": {
+    "title": "Prüfungsplan",
+    "description": "Datum und Uhrzeit für jedes Fach, nach Klasse und Abteilung.",
+    "examLabel": "Prüfung",
+    "selectExam": "Prüfung auswählen…",
+    "save": "Plan Speichern",
+    "savedToast": "Plan gespeichert.",
+    "startTime": "Startzeit",
+    "endTime": "Endzeit",
+    "dateTBA": "Datum noch offen"
   }
 }

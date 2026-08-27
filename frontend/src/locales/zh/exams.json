@@ -149,7 +149,8 @@
     "termNone": "无",
     "title": "考试",
     "weight": "权重",
-    "weightHint": "对学期成绩的相对贡献（如期中1、期末2）"
+    "weightHint": "对学期成绩的相对贡献（如期中1、期末2）",
+    "columnSection": "班级"
   },
   "marksEntry": {
     "breadcrumbExams": "考试",
@@ -307,5 +308,16 @@
     "rank": "排名",
     "weightedGpa": "加权绩点",
     "weightedPercentage": "加权百分比"
+  },
+  "timetable": {
+    "title": "考试时间表",
+    "description": "按班级和分组显示每门科目的日期和时间。",
+    "examLabel": "考试",
+    "selectExam": "选择一场考试…",
+    "save": "保存时间表",
+    "savedToast": "时间表已保存。",
+    "startTime": "开始时间",
+    "endTime": "结束时间",
+    "dateTBA": "日期待定"
   }
 }

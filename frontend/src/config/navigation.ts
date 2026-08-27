@@ -86,6 +86,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
     labelKey: 'nav.groups.exams',
     items: [
       { labelKey: 'nav.items.exams', to: routePaths.exams, icon: ClipboardList, permissions: ['exams.view'] },
+      { labelKey: 'nav.items.examTimetable', to: routePaths.examTimetable, icon: CalendarClock, permissions: ['exam-timetable.view'] },
       { labelKey: 'nav.items.gradingScales', to: routePaths.gradingScales, icon: Sigma, permissions: ['grading.view'] },
       { labelKey: 'nav.items.examConfiguration', to: routePaths.examConfiguration, icon: Settings, permissions: ['grading.view'] },
     ],
@@ -212,6 +213,7 @@ export const STUDENT_NAV_GROUPS: NavGroupConfig[] = [
       { labelKey: 'nav.items.homework', to: routePaths.homework, icon: NotebookPen },
       { labelKey: 'nav.items.myOnlineTests', to: routePaths.myOnlineTests, icon: FileQuestion },
       { labelKey: 'nav.items.myResult', to: routePaths.myResults, icon: ClipboardList },
+      { labelKey: 'nav.items.examTimetable', to: routePaths.examTimetable, icon: CalendarClock },
       { labelKey: 'nav.items.myFees', to: routePaths.invoices, icon: Receipt },
       { labelKey: 'nav.items.noticeBoard', to: routePaths.noticeBoard, icon: Newspaper },
       { labelKey: 'nav.items.certificates', to: routePaths.certificates, icon: Award },

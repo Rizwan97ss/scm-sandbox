@@ -28,6 +28,7 @@ use App\Http\Controllers\Api\V1\DepartmentImportController;
 use App\Http\Controllers\Api\V1\DesignationController;
 use App\Http\Controllers\Api\V1\ExamController;
 use App\Http\Controllers\Api\V1\ExamMarkController;
+use App\Http\Controllers\Api\V1\ExamTimetableController;
 use App\Http\Controllers\Api\V1\ExamMarkImportController;
 use App\Http\Controllers\Api\V1\ExamTypeController;
 use App\Http\Controllers\Api\V1\QuestionImportController;
@@ -276,6 +277,8 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
         Route::post('exams/{exam}/exam-subject-groups/{group}/unpublish', [ExamController::class, 'unpublishGroup'])->name('exams.exam-subject-groups.unpublish');
         Route::get('exams/{exam}/exam-subject-groups/{group}/result', [ExamController::class, 'groupResult'])->name('exams.exam-subject-groups.result');
         Route::delete('exams/{exam}/exam-subject-groups/{group}/components/{examSubject}', [ExamController::class, 'destroyComponent'])->name('exams.exam-subject-groups.components.destroy');
+        Route::get('exams/{exam}/timetable', [ExamTimetableController::class, 'show'])->name('exams.timetable.show');
+        Route::put('exams/{exam}/timetable', [ExamTimetableController::class, 'update'])->name('exams.timetable.update');
         // Standalone (not nested under exams/{exam}) — the caller may only know the group's own
         // ID, e.g. MarksEntryPage resolving section_id without first loading the whole exam.
         Route::get('exam-subject-groups/{group}', [ExamController::class, 'showGroup'])->name('exam-subject-groups.show');

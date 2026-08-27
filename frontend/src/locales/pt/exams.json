@@ -149,7 +149,8 @@
     "termNone": "Nenhum",
     "title": "Exames",
     "weight": "Peso",
-    "weightHint": "Contribuição relativa ao resultado do período (ex.: Bimestral 1, Final 2)"
+    "weightHint": "Contribuição relativa ao resultado do período (ex.: Bimestral 1, Final 2)",
+    "columnSection": "Turma"
   },
   "marksEntry": {
     "breadcrumbExams": "Exames",
@@ -307,5 +308,16 @@
     "rank": "Posição",
     "weightedGpa": "GPA ponderado",
     "weightedPercentage": "Percentual ponderado"
+  },
+  "timetable": {
+    "title": "Horário de Exames",
+    "description": "Data e hora de cada disciplina, por turma e secção.",
+    "examLabel": "Exame",
+    "selectExam": "Selecione um exame…",
+    "save": "Guardar Horário",
+    "savedToast": "Horário guardado.",
+    "startTime": "Hora de início",
+    "endTime": "Hora de fim",
+    "dateTBA": "Data a definir"
   }
 }

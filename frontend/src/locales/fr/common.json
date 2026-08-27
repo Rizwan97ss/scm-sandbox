@@ -79,7 +79,8 @@
       "myOnlineTests": "Mes Tests en Ligne",
       "myResult": "Mon Résultat",
       "myFees": "Mes Frais",
-      "certificates": "Certificats"
+      "certificates": "Certificats",
+      "examTimetable": "Emploi du Temps des Examens"
     }
   },
   "search": {

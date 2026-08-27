@@ -149,7 +149,8 @@
     "termNone": "None",
     "title": "Exams",
     "weight": "Weight",
-    "weightHint": "Relative contribution toward the term result (e.g. Midterm 1, Final 2)"
+    "weightHint": "Relative contribution toward the term result (e.g. Midterm 1, Final 2)",
+    "columnSection": "Section"
   },
   "marksEntry": {
     "breadcrumbExams": "Exams",
@@ -307,5 +308,16 @@
     "rank": "Rank",
     "weightedGpa": "Weighted GPA",
     "weightedPercentage": "Weighted Percentage"
+  },
+  "timetable": {
+    "title": "Exam Timetable",
+    "description": "Date and time for each subject, by class and section.",
+    "examLabel": "Exam",
+    "selectExam": "Select an exam…",
+    "save": "Save Timetable",
+    "savedToast": "Timetable saved.",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "dateTBA": "Date TBA"
   }
 }
