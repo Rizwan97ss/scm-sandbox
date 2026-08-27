@@ -2,7 +2,15 @@ import type { HTMLAttributes, ReactNode } from 'react'
 import { cn } from '@/utils/cn'
 
 export function Card({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('rounded-lg border border-border bg-card text-card-foreground shadow-sm', className)} {...props} />
+  return (
+    <div
+      className={cn(
+        'rounded-xl border border-border bg-card text-card-foreground shadow-sm transition-shadow hover:shadow-md hover:shadow-primary/5',
+        className
+      )}
+      {...props}
+    />
+  )
 }
 
 export function CardHeader({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
@@ -25,16 +33,32 @@ export function CardFooter({ className, ...props }: HTMLAttributes<HTMLDivElemen
   return <div className={cn('flex items-center gap-2 p-4 pt-0 sm:p-6 sm:pt-0', className)} {...props} />
 }
 
+export type StatTone = 'primary' | 'success' | 'warning' | 'destructive' | 'info' | 'violet' | 'rose' | 'cyan'
+
+/** Solid tone fill, not a pale tint — the one deliberately saturated accent against an otherwise plain-white card. */
+export const STAT_TONE_CLASSES: Record<StatTone, string> = {
+  primary: 'bg-primary text-primary-foreground shadow-sm shadow-primary/30',
+  success: 'bg-success text-success-foreground shadow-sm shadow-success/30',
+  warning: 'bg-warning text-warning-foreground shadow-sm shadow-warning/30',
+  destructive: 'bg-destructive text-destructive-foreground shadow-sm shadow-destructive/30',
+  info: 'bg-info text-info-foreground shadow-sm shadow-info/30',
+  violet: 'bg-violet-500 text-white shadow-sm shadow-violet-500/30',
+  rose: 'bg-rose-500 text-white shadow-sm shadow-rose-500/30',
+  cyan: 'bg-cyan-500 text-white shadow-sm shadow-cyan-500/30',
+}
+
 export function StatCard({
   label,
   value,
   icon,
   trend,
+  tone = 'primary',
 }: {
   label: string
   value: ReactNode
   icon?: ReactNode
   trend?: { direction: 'up' | 'down'; label: string }
+  tone?: StatTone
 }) {
   return (
     <Card>
@@ -46,7 +70,7 @@ export function StatCard({
             <span className={cn('text-xs', trend.direction === 'up' ? 'text-success' : 'text-destructive')}>{trend.label}</span>
           )}
         </div>
-        {icon && <div className="rounded-full bg-primary/10 p-3 text-primary">{icon}</div>}
+        {icon && <div className={cn('rounded-full p-3', STAT_TONE_CLASSES[tone])}>{icon}</div>}
       </CardContent>
     </Card>
   )
