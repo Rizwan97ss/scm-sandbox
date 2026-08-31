@@ -4,6 +4,7 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YA
 import { reportsApi } from '@/api/endpoints/reports'
 import { queryKeys } from '@/api/queryKeys'
 import { useFeatureTranslation } from '@/hooks/useFeatureTranslation'
+import { CHART_LTR_STYLE, useChartDirection } from '@/hooks/useChartDirection'
 import { PageHeader } from '@/components/layout/PageHeader'
 import { Card, CardContent, FormField, Input, Skeleton, StatCard } from '@/components/ui'
 import '../i18n'
@@ -84,6 +85,7 @@ export function AttendanceReportPage() {
 
 function TrendChart({ trend }: { trend: { month: string; percentage: number | null }[] }) {
   const { t } = useFeatureTranslation('reports')
+  const chartDir = useChartDirection()
   if (trend.length === 0) {
     return <p className="text-sm text-muted-foreground">{t('attendance.noRecordsInRange')}</p>
   }
@@ -91,11 +93,11 @@ function TrendChart({ trend }: { trend: { month: string; percentage: number | nu
   return (
     <Card>
       <CardContent className="pt-6">
-        <ResponsiveContainer width="100%" height={240}>
+        <ResponsiveContainer style={CHART_LTR_STYLE} width="100%" height={240}>
           <LineChart data={trend}>
             <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
-            <XAxis dataKey="month" fontSize={12} />
-            <YAxis domain={[0, 100]} fontSize={12} />
+            <XAxis dataKey="month" fontSize={12} {...chartDir.horizontalAxisProps} />
+            <YAxis domain={[0, 100]} fontSize={12} orientation={chartDir.startOrientation} />
             <Tooltip formatter={(value) => [`${value}%`, t('attendance.tooltipLabel')]} />
             <Line type="monotone" dataKey="percentage" stroke="var(--color-primary)" strokeWidth={2} connectNulls />
           </LineChart>

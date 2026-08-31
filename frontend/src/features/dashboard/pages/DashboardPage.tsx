@@ -20,6 +20,7 @@ import { queryKeys } from '@/api/queryKeys'
 import { useAuth } from '@/context/AuthContext'
 import { usePermission } from '@/hooks/usePermission'
 import { useFeatureTranslation } from '@/hooks/useFeatureTranslation'
+import { CHART_LTR_STYLE, useChartDirection } from '@/hooks/useChartDirection'
 // Direct file imports, not the `@/components/ui` barrel — see docs/testing.md's
 // Rolldown chunking gotcha. This page (lazy-loaded) was the first place to pull
 // CardHeader/CardTitle/CardContent through the barrel, which fully re-exports
@@ -92,6 +93,7 @@ function QuickActionLink({ to, children }: { to: string; children: ReactNode }) 
 
 function DashboardTrends() {
   const { t } = useFeatureTranslation('dashboard')
+  const chartDir = useChartDirection()
   const { data: trends } = useQuery({
     queryKey: queryKeys.dashboardTrends,
     queryFn: dashboardApi.trends,
@@ -117,11 +119,11 @@ function DashboardTrends() {
             <CardTitle className="text-base">{t('page.trends.attendanceTitle')}</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={220}>
+            <ResponsiveContainer style={CHART_LTR_STYLE} width="100%" height={220}>
               <LineChart data={attendancePoints}>
                 <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
-                <XAxis dataKey="date" fontSize={12} />
-                <YAxis domain={[0, 100]} fontSize={12} />
+                <XAxis dataKey="date" fontSize={12} {...chartDir.horizontalAxisProps} />
+                <YAxis domain={[0, 100]} fontSize={12} orientation={chartDir.startOrientation} />
                 <Tooltip formatter={(value) => [value === null ? '—' : `${value}%`, t('fields.attendance')]} />
                 <Line type="monotone" dataKey="percentage" stroke="var(--color-primary)" strokeWidth={2} connectNulls />
               </LineChart>
@@ -135,11 +137,11 @@ function DashboardTrends() {
             <CardTitle className="text-base">{t('page.trends.feesTitle')}</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={220}>
+            <ResponsiveContainer style={CHART_LTR_STYLE} width="100%" height={220}>
               <BarChart data={feePoints}>
                 <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
-                <XAxis dataKey="month" fontSize={12} />
-                <YAxis fontSize={12} />
+                <XAxis dataKey="month" fontSize={12} {...chartDir.horizontalAxisProps} />
+                <YAxis fontSize={12} orientation={chartDir.startOrientation} />
                 <Tooltip formatter={(value) => [formatCurrency(value as number), t('page.trends.feesTooltipLabel')]} />
                 <Bar dataKey="total" fill="var(--color-success)" radius={[4, 4, 0, 0]} />
               </BarChart>
