@@ -71,6 +71,56 @@ class StudentImportExportTest extends TestCase
         $this->assertDatabaseMissing('students', ['first_name' => 'Invalid']);
     }
 
+    public function test_a_student_name_containing_junk_special_characters_fails_the_row(): void
+    {
+        Storage::fake('local');
+
+        $admin = $this->createUserWithRole('School Admin');
+        $year = AcademicYear::factory()->create(['is_current' => true]);
+        $gradeLevel = GradeLevel::factory()->create(['code' => 'G1']);
+        Section::factory()->create(['academic_year_id' => $year->id, 'grade_level_id' => $gradeLevel->id, 'name' => 'A']);
+
+        $rows = [
+            ['@@#@', 'Student', 'female', '2018-05-01', 'G1', 'A', '', now()->toDateString(), '', '', '', '', ''],
+        ];
+
+        Excel::store(new class($rows) implements FromArray, WithHeadings
+        {
+            public function __construct(private array $rows) {}
+
+            public function array(): array
+            {
+                return $this->rows;
+            }
+
+            public function headings(): array
+            {
+                return [
+                    'first_name', 'last_name', 'gender', 'date_of_birth', 'grade_level_code', 'section_name',
+                    'roll_number', 'admission_date', 'blood_group', 'nationality', 'previous_school_name',
+                    'emergency_contact_name', 'emergency_contact_phone',
+                ];
+            }
+        }, 'junk-name-import-test.xlsx', 'local');
+
+        $uploadedFile = new UploadedFile(
+            Storage::disk('local')->path('junk-name-import-test.xlsx'),
+            'junk-name-import-test.xlsx',
+            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            null,
+            true
+        );
+
+        $response = $this->actingAs($admin)->post('/api/v1/students/import', [
+            'file' => $uploadedFile,
+        ], ['Accept' => 'application/json']);
+
+        $response->assertOk();
+        $this->assertEquals(0, $response->json('data.imported_count'));
+        $this->assertEquals(1, $response->json('data.failed_count'));
+        $this->assertDatabaseMissing('students', ['last_name' => 'Student']);
+    }
+
     public function test_admin_can_import_students_with_guardians_via_guardian_slots(): void
     {
         Storage::fake('local');
