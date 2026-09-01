@@ -6,10 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Models\Student;
 use App\Models\User;
 use App\Services\SettingsService;
-use App\Support\QrCodeGenerator;
+use App\Support\BarcodeGenerator;
+use App\Support\CardGradientGenerator;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
+use Spatie\MediaLibrary\HasMedia;
 
 class IdCardController extends Controller
 {
@@ -19,33 +23,20 @@ class IdCardController extends Controller
 
         $this->authorize('view', $student);
 
+        $primaryColor = $settings->get('branding.primary_color', '#2563eb');
+        $secondaryColor = $settings->get('branding.secondary_color', '#0f172a');
+
         $pdf = Pdf::loadView('pdf.id-card-student', [
             'student' => $student,
             'schoolName' => $settings->get('school.name', ''),
-            'primaryColor' => $settings->get('branding.primary_color', '#2a4d8f'),
-            'photoUrl' => $this->photoDataUri($student),
-            'qrCode' => QrCodeGenerator::dataUri($student->uuid),
+            'logo' => $this->logoDataUri($settings),
+            'background' => CardGradientGenerator::diagonalDataUri($primaryColor, $secondaryColor, 486, 306),
+            'barcode' => BarcodeGenerator::dataUri($student->admission_number),
+            'photo' => $this->mediaDataUri($student, 'photo'),
+            'accentColor' => $primaryColor,
         ])->setPaper([0, 0, 243, 153]);
 
         return $pdf->download(str($student->full_name.'-id-card')->slug().'.pdf');
-    }
-
-    /**
-     * dompdf can't fetch external image URLs reliably (enable_remote is off
-     * — see QrCodeGenerator's docblock), so the photo is read straight off
-     * local disk and embedded as a base64 data URI, same technique as the
-     * QR code. Returns null when the student has no photo uploaded, which
-     * the view falls back to an initials placeholder for.
-     */
-    private function photoDataUri(Student $student): ?string
-    {
-        $media = $student->getFirstMedia('photo');
-
-        if (! $media || ! is_file($media->getPath())) {
-            return null;
-        }
-
-        return 'data:'.$media->mime_type.';base64,'.base64_encode(file_get_contents($media->getPath()));
     }
 
     public function staff(Request $request, int $id, SettingsService $settings): Response
@@ -57,9 +48,66 @@ class IdCardController extends Controller
         $pdf = Pdf::loadView('pdf.id-card-staff', [
             'staff' => $user,
             'schoolName' => $settings->get('school.name', ''),
-            'qrCode' => QrCodeGenerator::dataUri($user->uuid),
+            'logo' => $this->logoDataUri($settings),
+            'website' => strtoupper(preg_replace('#^https?://#', '', rtrim(config('app.url'), '/'))),
+            'barcode' => BarcodeGenerator::dataUri($user->employee_id ?: $user->uuid),
+            'photo' => $this->mediaDataUri($user, 'avatar'),
+            'accentColor' => $settings->get('branding.primary_color', '#2563eb'),
         ])->setPaper([0, 0, 243, 153]);
 
         return $pdf->download(str($user->full_name.'-id-card')->slug().'.pdf');
+    }
+
+    /**
+     * dompdf can't fetch external image URLs reliably (see
+     * QrCodeGenerator's docblock) — a media file's public URL is no
+     * exception, so this reads it straight off disk and embeds it the same
+     * way the QR code already is. Null when no photo/avatar has been
+     * uploaded, so the view can fall back to an initials placeholder.
+     */
+    private function mediaDataUri(HasMedia $model, string $collection): ?string
+    {
+        $media = $model->getFirstMedia($collection);
+        if (! $media) {
+            return null;
+        }
+
+        $path = $media->getPath();
+        if (! is_file($path)) {
+            return null;
+        }
+
+        return 'data:'.$media->mime_type.';base64,'.base64_encode(file_get_contents($path));
+    }
+
+    /**
+     * branding.logo_url (see SettingSeeder) is a plain admin-entered URL,
+     * not a MediaLibrary file, so it has to be fetched over HTTP rather
+     * than read off disk. A short timeout and a swallowed failure keep an
+     * unreachable/misconfigured URL from blocking ID card generation — the
+     * view falls back to a monogram, the same graceful-degradation the
+     * photo/avatar path already follows.
+     */
+    private function logoDataUri(SettingsService $settings): ?string
+    {
+        $url = $settings->get('branding.logo_url', '');
+        if (! $url) {
+            return null;
+        }
+
+        try {
+            $response = Http::timeout(3)->get($url);
+            if (! $response->successful()) {
+                return null;
+            }
+
+            $mime = $response->header('Content-Type') ?: 'image/png';
+
+            return "data:{$mime};base64,".base64_encode($response->body());
+        } catch (\Throwable $e) {
+            Log::warning('ID card: failed to fetch branding.logo_url', ['url' => $url, 'error' => $e->getMessage()]);
+
+            return null;
+        }
     }
 }

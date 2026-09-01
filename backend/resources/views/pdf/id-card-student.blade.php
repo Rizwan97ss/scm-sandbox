@@ -4,103 +4,87 @@
     <meta charset="utf-8">
     <title>{{ $student->full_name }} — ID Card</title>
     <style>
-        /* DomPDF applies its own default @page margin regardless of body's
-           margin — on a page this small (153pt tall) that default alone
-           exceeds the whole page, which is what was actually forcing this
-           onto a second page. size must be spelled out here too, matching
-           IdCardController's setPaper([0, 0, 243, 153]) exactly — an @page
-           rule with only `margin` and no `size` makes dompdf's CSS engine
-           take over sizing and silently fall back to A4, overriding the
-           controller's setPaper() call (the card rendered correctly at
-           1 page, but as a tiny card adrift on a full A4 page).
-
-           Everything below is table-based, not position:absolute — dompdf's
-           pagination pass doesn't reliably treat stacked absolutely
-           positioned boxes as out-of-flow on a page this small, and spawns
-           a spurious second page with the same content adrift on it
-           (reproduced directly while iterating on this file). Tables/normal
-           flow, same technique the original single-page version of this
-           card used, doesn't have that failure mode. */
+        /* See id-card-staff.blade.php's matching comment -- dompdf needs an
+           exact @page size spelled out here too, and every element below is
+           position:absolute against this exact 243x153 canvas rather than
+           table/flow layout, for the same "guarantees one page regardless
+           of content length" reasoning. */
         @page { size: 243pt 153pt; margin: 0; }
         * { box-sizing: border-box; }
-        body { font-family: DejaVu Sans, sans-serif; font-size: 8px; color: #1a1a1a; margin: 0; padding: 6px; }
-        .card { border: 1pt solid #d8dce3; width: 100%; height: 141pt; }
-        table.outer { width: 100%; height: 100%; border-collapse: collapse; table-layout: fixed; }
-        table.outer td { vertical-align: top; padding: 0; }
-        .content { width: 223pt; padding: 6pt 8pt; }
-        /* A rotated label (transform: rotate) doesn't reflow its layout box
-           correctly against a column this narrow in dompdf — its pre-
-           rotation width still gets used for clipping, cutting the text off
-           (reproduced directly: "STUDENT" rendered as "STUDEN"). Stacked
-           single-letter lines read the same top-to-bottom without any
-           transform involved. */
-        .accent { width: 14pt; background: {{ $primaryColor }}; text-align: center; padding-top: 8pt; }
-        .accent span { display: block; color: #fff; font-size: 7px; font-weight: bold; line-height: 1.5; }
-
-        .school-name { font-size: 8px; font-weight: bold; color: {{ $primaryColor }}; margin-bottom: 8pt; }
-
-        /* table-layout: fixed here too — dompdf's default auto column
-           sizing let the photo cell's content push wider than the
-           `.content` td actually has room for, overflowing visibly into
-           the accent column next to it (reproduced directly). */
-        table.top-row { width: 100%; border-collapse: collapse; table-layout: fixed; }
-        table.top-row td { vertical-align: top; padding: 0; }
-        .name-details p { margin: 1.5px 0; line-height: 1.3; }
-        .name-details .name { font-size: 10px; font-weight: bold; margin-bottom: 3px !important; }
-        .label { color: #666; }
-
-        .photo { width: 52pt; text-align: center; }
-        .photo-box { width: 50pt; height: 58pt; border: 1pt solid {{ $primaryColor }}; background: #f1f3f6; }
-        .photo-box img { width: 100%; height: 100%; object-fit: cover; }
-        .photo-box .initials { display: block; padding-top: 18pt; font-size: 16px; font-weight: bold; color: #9aa2b1; }
-
-        table.bottom-row { width: 100%; border-collapse: collapse; margin-top: 12pt; }
-        table.bottom-row td { vertical-align: middle; padding: 0; }
-        .qr { width: 38pt; }
-        .qr img { width: 34pt; height: 34pt; }
-        .footer-text p { margin: 1.5px 0; line-height: 1.3; }
-        .footer-text .sid { font-weight: bold; font-size: 8px; }
+        body { font-family: DejaVu Sans, sans-serif; font-size: 8px; color: #1a1a1a; margin: 0; padding: 0; width: 243pt; height: 153pt; }
+        .card { position: relative; width: 243pt; height: 153pt; border-radius: 6px; overflow: hidden; }
+        /* The gradient itself is a real raster image (CardGradientGenerator),
+           not CSS -- dompdf's linear-gradient background silently renders
+           nothing on this installed version (confirmed directly: the page
+           came back plain white). Painted first, everything else layers on
+           top of it in DOM order. */
+        .bg { position: absolute; top: 0; left: 0; width: 243pt; height: 153pt; }
+        .abs { position: absolute; }
+        .logo-badge { top: 9pt; left: 9pt; width: 18pt; height: 18pt; border-radius: 50%; background: #ffffff; text-align: center; overflow: hidden; }
+        .logo-badge img { width: 18pt; height: 18pt; }
+        .logo-badge .monogram { display: block; font-size: 10px; font-weight: bold; color: #1a1a1a; line-height: 18pt; }
+        .school-name { top: 11pt; left: 31pt; width: 100pt; font-size: 7px; font-weight: bold; color: #ffffff; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.2; }
+        .title { top: 10pt; left: 130pt; width: 104pt; font-size: 11px; font-weight: bold; color: #ffffff; text-align: right; line-height: 1.2; }
+        .photo-ring { top: 40pt; left: 12pt; width: 54pt; height: 54pt; border-radius: 50%; background: #ffffff; padding: 2pt; }
+        .photo { width: 50pt; height: 50pt; border-radius: 50%; overflow: hidden; background: #eef2f7; text-align: center; }
+        .photo img { width: 50pt; height: 50pt; }
+        .initials { display: block; font-size: 16px; font-weight: bold; color: #94a3b8; line-height: 50pt; }
+        .barcode-panel { top: 100pt; left: 8pt; width: 62pt; height: 44pt; background: #ffffff; border-radius: 4pt; text-align: center; padding-top: 3pt; }
+        .barcode-panel img { width: 56pt; height: 24pt; }
+        .barcode-value { font-size: 6px; color: #555555; margin-top: 2pt; letter-spacing: 0.3px; }
+        .info-panel { top: 34pt; left: 82pt; width: 152pt; height: 112pt; background: rgba(255,255,255,0.94); border-radius: 6pt; }
+        .info-row { left: 92pt; width: 132pt; }
+        .info-label { font-size: 6.5px; color: #6b7280; text-transform: uppercase; letter-spacing: 0.4px; }
+        .info-value { font-size: 9px; font-weight: bold; color: #16213e; line-height: 1.2; }
     </style>
 </head>
 <body>
     <div class="card">
-        <table class="outer">
-            <tr>
-                <td class="content">
-                    <div class="school-name">{{ $schoolName }}</div>
+        <img class="bg abs" src="{{ $background }}" alt="">
 
-                    <table class="top-row">
-                        <tr>
-                            <td class="name-details">
-                                <p class="name">{{ $student->full_name }}</p>
-                                <p><span class="label">Grade:</span> {{ $student->currentGradeLevel?->name }} @if($student->currentSection) - {{ $student->currentSection->name }} @endif</p>
-                                <p><span class="label">DOB:</span> {{ $student->date_of_birth?->toDateString() }}</p>
-                            </td>
-                            <td class="photo">
-                                <div class="photo-box">
-                                    @if($photoUrl)
-                                        <img src="{{ $photoUrl }}" alt="">
-                                    @else
-                                        <span class="initials">{{ strtoupper(substr($student->first_name, 0, 1).substr($student->last_name, 0, 1)) }}</span>
-                                    @endif
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+        <div class="abs logo-badge">
+            @if($logo)
+                <img src="{{ $logo }}" alt="">
+            @else
+                <span class="monogram">{{ strtoupper(substr($schoolName, 0, 1)) }}</span>
+            @endif
+        </div>
+        <div class="abs school-name">{{ $schoolName }}</div>
 
-                    <table class="bottom-row">
-                        <tr>
-                            <td class="qr"><img src="{{ $qrCode }}" alt="QR"></td>
-                            <td class="footer-text">
-                                <p class="sid">Student ID: {{ $student->admission_number }}</p>
-                                <p><span class="label">Issued:</span> {{ $student->admission_date?->toDateString() }}</p>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td class="accent">@foreach(str_split('STUDENT') as $letter)<span>{{ $letter }}</span>@endforeach</td>
-            </tr>
-        </table>
+        <div class="abs title">STUDENT<br>ID CARD</div>
+
+        <div class="abs photo-ring">
+            <div class="photo">
+                @if($photo)
+                    <img src="{{ $photo }}" alt="">
+                @else
+                    <span class="initials">{{ strtoupper(substr($student->first_name, 0, 1).substr($student->last_name, 0, 1)) }}</span>
+                @endif
+            </div>
+        </div>
+
+        <div class="abs barcode-panel">
+            <img src="{{ $barcode }}" alt="">
+            <div class="barcode-value">{{ $student->admission_number }}</div>
+        </div>
+
+        <div class="abs info-panel"></div>
+        <div class="abs info-row" style="top: 42pt;">
+            <div class="info-label">Name</div>
+            <div class="info-value">{{ $student->full_name }}</div>
+        </div>
+        <div class="abs info-row" style="top: 64pt;">
+            <div class="info-label">Student ID</div>
+            <div class="info-value">{{ $student->admission_number }}</div>
+        </div>
+        <div class="abs info-row" style="top: 86pt;">
+            <div class="info-label">D.O.B</div>
+            <div class="info-value">{{ $student->date_of_birth?->toDateString() ?? '—' }}</div>
+        </div>
+        <div class="abs info-row" style="top: 108pt;">
+            <div class="info-label">Address</div>
+            <div class="info-value">{{ $student->address_line1 ? $student->address_line1.($student->city ? ', '.$student->city : '') : '—' }}</div>
+        </div>
     </div>
 </body>
 </html>

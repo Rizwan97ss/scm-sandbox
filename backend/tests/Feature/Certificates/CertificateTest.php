@@ -124,6 +124,18 @@ class CertificateTest extends TestCase
         $this->assertSame('application/pdf', $response->headers->get('content-type'));
     }
 
+    /** An unreachable/misconfigured branding.logo_url must not break card generation -- the card falls back to a monogram, same as a missing photo already does. */
+    public function test_staff_id_card_still_renders_when_the_branding_logo_url_is_unreachable(): void
+    {
+        $admin = $this->createUserWithRole('School Admin');
+        app(\App\Services\SettingsService::class)->set('branding.logo_url', 'https://this-domain-does-not-exist.invalid/logo.png', isPublic: true);
+
+        $response = $this->actingAs($admin)->get("/api/v1/users/{$admin->id}/id-card/pdf");
+
+        $response->assertOk();
+        $this->assertSame('application/pdf', $response->headers->get('content-type'));
+    }
+
     private function makeStudent(): Student
     {
         $year = AcademicYear::factory()->create();
