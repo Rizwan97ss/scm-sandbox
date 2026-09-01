@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "Take Attendance",
       "newAdmission": "New Admission",
-      "invoices": "Invoices"
+      "invoices": "Invoices",
+      "createInvoice": "Create Invoice",
+      "postAnnouncement": "Post Announcement"
     },
     "trends": {
       "attendanceTitle": "Attendance — Last 14 Days",
       "feesTitle": "Fees Collected — Last 6 Months",
-      "feesTooltipLabel": "Collected"
-    }
+      "feesTooltipLabel": "Collected",
+      "enrollmentTitle": "Enrollment Trend",
+      "gradeDistributionTitle": "Students by Grade"
+    },
+    "viewAll": "View all",
+    "quickActionsTitle": "Quick Actions",
+    "recentAnnouncements": "Recent Announcements",
+    "noUpcomingExams": "No upcoming exams scheduled.",
+    "noAnnouncements": "No announcements yet.",
+    "noPendingLeave": "No pending leave requests."
   },
   "childProfile": {
     "breadcrumbMyChildren": "My Children",

@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "حاضری لگائیں",
       "newAdmission": "نیا داخلہ",
-      "invoices": "انوائسز"
+      "invoices": "انوائسز",
+      "createInvoice": "انوائس بنائیں",
+      "postAnnouncement": "اعلان پوسٹ کریں"
     },
     "trends": {
       "attendanceTitle": "حاضری — گزشتہ 14 دن",
       "feesTitle": "وصول شدہ فیس — گزشتہ 6 ماہ",
-      "feesTooltipLabel": "وصول شدہ"
-    }
+      "feesTooltipLabel": "وصول شدہ",
+      "enrollmentTitle": "داخلہ رجحان",
+      "gradeDistributionTitle": "درجہ کے لحاظ سے طلباء"
+    },
+    "viewAll": "سب دیکھیں",
+    "quickActionsTitle": "فوری اعمال",
+    "recentAnnouncements": "حالیہ اعلانات",
+    "noUpcomingExams": "کوئی آئندہ امتحان طے شدہ نہیں۔",
+    "noAnnouncements": "ابھی تک کوئی اعلان نہیں۔",
+    "noPendingLeave": "کوئی زیر التواء رخصت کی درخواست نہیں۔"
   },
   "childProfile": {
     "breadcrumbMyChildren": "میرے بچے",

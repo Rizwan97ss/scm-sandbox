@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "उपस्थिति लें",
       "newAdmission": "नया प्रवेश",
-      "invoices": "चालान"
+      "invoices": "चालान",
+      "createInvoice": "चालान बनाएं",
+      "postAnnouncement": "घोषणा पोस्ट करें"
     },
     "trends": {
       "attendanceTitle": "उपस्थिति — पिछले 14 दिन",
       "feesTitle": "प्राप्त फीस — पिछले 6 महीने",
-      "feesTooltipLabel": "प्राप्त"
-    }
+      "feesTooltipLabel": "प्राप्त",
+      "enrollmentTitle": "नामांकन प्रवृत्ति",
+      "gradeDistributionTitle": "ग्रेड के अनुसार छात्र"
+    },
+    "viewAll": "सभी देखें",
+    "quickActionsTitle": "त्वरित कार्रवाई",
+    "recentAnnouncements": "हाल की घोषणाएं",
+    "noUpcomingExams": "कोई आगामी परीक्षा निर्धारित नहीं है।",
+    "noAnnouncements": "अभी तक कोई घोषणा नहीं।",
+    "noPendingLeave": "कोई लंबित अवकाश अनुरोध नहीं।"
   },
   "childProfile": {
     "breadcrumbMyChildren": "मेरे बच्चे",

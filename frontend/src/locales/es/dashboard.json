@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "Tomar Asistencia",
       "newAdmission": "Nueva admisión",
-      "invoices": "Facturas"
+      "invoices": "Facturas",
+      "createInvoice": "Crear factura",
+      "postAnnouncement": "Publicar anuncio"
     },
     "trends": {
       "attendanceTitle": "Asistencia — Últimos 14 Días",
       "feesTitle": "Cuotas Cobradas — Últimos 6 Meses",
-      "feesTooltipLabel": "Cobrado"
-    }
+      "feesTooltipLabel": "Cobrado",
+      "enrollmentTitle": "Tendencia de matrícula",
+      "gradeDistributionTitle": "Estudiantes por grado"
+    },
+    "viewAll": "Ver todo",
+    "quickActionsTitle": "Acciones rápidas",
+    "recentAnnouncements": "Anuncios recientes",
+    "noUpcomingExams": "No hay exámenes próximos programados.",
+    "noAnnouncements": "Aún no hay anuncios.",
+    "noPendingLeave": "No hay solicitudes de permiso pendientes."
   },
   "childProfile": {
     "breadcrumbMyChildren": "Mis Hijos",

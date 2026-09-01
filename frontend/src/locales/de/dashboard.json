@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "Anwesenheit Erfassen",
       "newAdmission": "Neue Aufnahme",
-      "invoices": "Rechnungen"
+      "invoices": "Rechnungen",
+      "createInvoice": "Rechnung erstellen",
+      "postAnnouncement": "Ankündigung veröffentlichen"
     },
     "trends": {
       "attendanceTitle": "Anwesenheit — Letzte 14 Tage",
       "feesTitle": "Eingenommene Gebühren — Letzte 6 Monate",
-      "feesTooltipLabel": "Eingenommen"
-    }
+      "feesTooltipLabel": "Eingenommen",
+      "enrollmentTitle": "Einschreibungstrend",
+      "gradeDistributionTitle": "Schüler nach Klassenstufe"
+    },
+    "viewAll": "Alle anzeigen",
+    "quickActionsTitle": "Schnellaktionen",
+    "recentAnnouncements": "Neueste Ankündigungen",
+    "noUpcomingExams": "Keine bevorstehenden Prüfungen geplant.",
+    "noAnnouncements": "Noch keine Ankündigungen.",
+    "noPendingLeave": "Keine ausstehenden Urlaubsanträge."
   },
   "childProfile": {
     "breadcrumbMyChildren": "Meine Kinder",

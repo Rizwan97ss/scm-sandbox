@@ -80,4 +80,24 @@ class DashboardTrendsTest extends TestCase
 
         $response->assertOk()->assertJsonPath('data.fee_collection_trend', null);
     }
+
+    /** enrollment_trend/grade_distribution are never permission-gated (unlike the two above) -- every staff member sees them, same as the student/staff counts on the summary endpoint. */
+    public function test_enrollment_trend_and_grade_distribution_report_current_state(): void
+    {
+        $admin = $this->createUserWithRole('School Admin');
+        $year = AcademicYear::factory()->create();
+        $gradeLevel = GradeLevel::factory()->create(['name' => 'Grade 5']);
+        $section = Section::factory()->create(['academic_year_id' => $year->id, 'grade_level_id' => $gradeLevel->id]);
+        Student::factory()->create([
+            'academic_year_id' => $year->id, 'current_grade_level_id' => $gradeLevel->id,
+            'current_section_id' => $section->id, 'status' => 'active', 'admission_date' => now()->toDateString(),
+        ]);
+
+        $response = $this->actingAs($admin)->getJson('/api/v1/dashboard/trends');
+
+        $response->assertOk()
+            ->assertJsonPath('data.grade_distribution.0.grade_level', 'Grade 5')
+            ->assertJsonPath('data.grade_distribution.0.count', 1)
+            ->assertJsonCount(6, 'data.enrollment_trend');
+    }
 }

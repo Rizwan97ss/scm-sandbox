@@ -7,8 +7,32 @@ import type { FeeStatement } from '@/types/fees'
 import type { Homework, StudentRemark } from '@/types/homework'
 import type { Student } from '@/types/student'
 
+export interface UpcomingExamSummary {
+  id: number
+  name: string
+  date: string
+}
+
+export interface RecentAnnouncementSummary {
+  id: number
+  title: string
+  sent_at: string | null
+}
+
+export interface PendingLeaveRequestSummary {
+  id: number
+  staff_name: string
+  leave_type: string
+  from: string
+  to: string
+}
+
 export interface DashboardSummary {
   role_context: 'staff' | 'teacher' | 'student' | 'parent' | 'super-admin'
+  outstanding_fees_total?: number | null
+  upcoming_exams?: UpcomingExamSummary[] | null
+  recent_announcements?: RecentAnnouncementSummary[]
+  pending_leave_requests?: PendingLeaveRequestSummary[] | null
   [key: string]: unknown
 }
 
@@ -23,9 +47,22 @@ export interface FeeCollectionTrendPoint {
   total: number
 }
 
+export interface EnrollmentTrendPoint {
+  month: string
+  label: string
+  count: number
+}
+
+export interface GradeDistributionPoint {
+  grade_level: string
+  count: number
+}
+
 export interface DashboardTrends {
   attendance_trend: AttendanceTrendPoint[] | null
   fee_collection_trend: FeeCollectionTrendPoint[] | null
+  enrollment_trend: EnrollmentTrendPoint[]
+  grade_distribution: GradeDistributionPoint[]
 }
 
 export const dashboardApi = {

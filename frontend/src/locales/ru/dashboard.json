@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "Отметить Посещаемость",
       "newAdmission": "Новое зачисление",
-      "invoices": "Счета"
+      "invoices": "Счета",
+      "createInvoice": "Создать счёт",
+      "postAnnouncement": "Опубликовать объявление"
     },
     "trends": {
       "attendanceTitle": "Посещаемость — Последние 14 Дней",
       "feesTitle": "Собранная Оплата — Последние 6 Месяцев",
-      "feesTooltipLabel": "Собрано"
-    }
+      "feesTooltipLabel": "Собрано",
+      "enrollmentTitle": "Динамика зачисления",
+      "gradeDistributionTitle": "Ученики по классам"
+    },
+    "viewAll": "Показать все",
+    "quickActionsTitle": "Быстрые действия",
+    "recentAnnouncements": "Последние объявления",
+    "noUpcomingExams": "Предстоящих экзаменов не запланировано.",
+    "noAnnouncements": "Пока нет объявлений.",
+    "noPendingLeave": "Нет ожидающих заявок на отпуск."
   },
   "childProfile": {
     "breadcrumbMyChildren": "Мои Дети",

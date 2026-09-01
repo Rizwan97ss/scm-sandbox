@@ -3,8 +3,10 @@
 namespace Tests\Feature\Dashboard;
 
 use App\Models\AcademicYear;
+use App\Models\Announcement;
 use App\Models\GradeLevel;
 use App\Models\Guardian;
+use App\Models\Invoice;
 use App\Models\LeaveRequest;
 use App\Models\Section;
 use App\Models\Student;
@@ -117,5 +119,27 @@ class DashboardSummaryTest extends TestCase
         $response = $this->actingAs($hr)->getJson('/api/v1/dashboard/summary');
 
         $response->assertOk()->assertJsonPath('data.pending_leave_requests_count', 1);
+    }
+
+    public function test_staff_dashboard_reports_lists_and_totals_for_an_admin(): void
+    {
+        $admin = $this->createUserWithRole('School Admin');
+        $year = AcademicYear::factory()->create();
+        $gradeLevel = GradeLevel::factory()->create(['name' => 'Grade 5']);
+        $section = Section::factory()->create(['academic_year_id' => $year->id, 'grade_level_id' => $gradeLevel->id]);
+        $student = Student::factory()->create([
+            'academic_year_id' => $year->id, 'current_grade_level_id' => $gradeLevel->id,
+            'current_section_id' => $section->id, 'status' => 'active',
+        ]);
+        Invoice::factory()->create(['student_id' => $student->id, 'academic_year_id' => $year->id, 'total' => 1000, 'amount_paid' => 400, 'status' => 'partially_paid']);
+        Announcement::factory()->create(['title' => 'Sports Day', 'sent_at' => now()]);
+        LeaveRequest::factory()->create(['user_id' => $admin->id, 'status' => 'pending']);
+
+        $response = $this->actingAs($admin)->getJson('/api/v1/dashboard/summary');
+
+        $response->assertOk()
+            ->assertJsonPath('data.outstanding_fees_total', 600)
+            ->assertJsonPath('data.recent_announcements.0.title', 'Sports Day')
+            ->assertJsonCount(1, 'data.pending_leave_requests');
     }
 }

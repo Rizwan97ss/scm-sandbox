@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "Registrar Frequência",
       "newAdmission": "Nova admissão",
-      "invoices": "Faturas"
+      "invoices": "Faturas",
+      "createInvoice": "Criar fatura",
+      "postAnnouncement": "Publicar anúncio"
     },
     "trends": {
       "attendanceTitle": "Frequência — Últimos 14 Dias",
       "feesTitle": "Mensalidades Recebidas — Últimos 6 Meses",
-      "feesTooltipLabel": "Recebido"
-    }
+      "feesTooltipLabel": "Recebido",
+      "enrollmentTitle": "Tendência de matrículas",
+      "gradeDistributionTitle": "Alunos por série"
+    },
+    "viewAll": "Ver tudo",
+    "quickActionsTitle": "Ações rápidas",
+    "recentAnnouncements": "Anúncios recentes",
+    "noUpcomingExams": "Nenhum exame futuro agendado.",
+    "noAnnouncements": "Ainda não há anúncios.",
+    "noPendingLeave": "Nenhuma solicitação de licença pendente."
   },
   "childProfile": {
     "breadcrumbMyChildren": "Meus Filhos",

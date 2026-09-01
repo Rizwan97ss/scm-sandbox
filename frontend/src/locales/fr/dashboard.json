@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "Prendre la Présence",
       "newAdmission": "Nouvelle admission",
-      "invoices": "Factures"
+      "invoices": "Factures",
+      "createInvoice": "Créer une facture",
+      "postAnnouncement": "Publier une annonce"
     },
     "trends": {
       "attendanceTitle": "Présence — 14 Derniers Jours",
       "feesTitle": "Frais Perçus — 6 Derniers Mois",
-      "feesTooltipLabel": "Perçu"
-    }
+      "feesTooltipLabel": "Perçu",
+      "enrollmentTitle": "Tendance des inscriptions",
+      "gradeDistributionTitle": "Élèves par niveau"
+    },
+    "viewAll": "Voir tout",
+    "quickActionsTitle": "Actions rapides",
+    "recentAnnouncements": "Annonces récentes",
+    "noUpcomingExams": "Aucun examen à venir prévu.",
+    "noAnnouncements": "Aucune annonce pour le moment.",
+    "noPendingLeave": "Aucune demande de congé en attente."
   },
   "childProfile": {
     "breadcrumbMyChildren": "Mes Enfants",

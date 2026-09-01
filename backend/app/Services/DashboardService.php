@@ -3,9 +3,11 @@
 namespace App\Services;
 
 use App\Enums\AttendanceStatus;
+use App\Models\Announcement;
 use App\Models\BookIssue;
 use App\Models\ClassSubjectTeacher;
 use App\Models\ExamSubject;
+use App\Models\GradeLevel;
 use App\Models\Guardian;
 use App\Models\Homework;
 use App\Models\HomeworkSubmission;
@@ -62,7 +64,53 @@ class DashboardService
         return [
             'attendance_trend' => $user->can('student-attendance.view') ? $this->attendanceTrend() : null,
             'fee_collection_trend' => $user->can('invoices.view-reports') ? $this->feeCollectionTrend() : null,
+            'enrollment_trend' => $this->enrollmentTrend(),
+            'grade_distribution' => $this->gradeDistribution(),
         ];
+    }
+
+    /** @return array<int, array{month: string, label: string, count: int}> */
+    private function enrollmentTrend(): array
+    {
+        $from = now()->startOfMonth()->subMonths(5);
+
+        $byMonth = Student::query()
+            ->where('admission_date', '>=', $from)
+            ->get(['admission_date'])
+            ->groupBy(fn (Student $student) => $student->admission_date->format('Y-m'));
+
+        return collect(range(5, 0))->map(function (int $monthsAgo) use ($byMonth) {
+            $month = now()->startOfMonth()->subMonths($monthsAgo);
+            $key = $month->format('Y-m');
+
+            return [
+                'month' => $key,
+                'label' => $month->format('M Y'),
+                'count' => $byMonth->get($key, collect())->count(),
+            ];
+        })->values()->all();
+    }
+
+    /** @return array<int, array{grade_level: string, count: int}> */
+    private function gradeDistribution(): array
+    {
+        $counts = Student::query()
+            ->where('status', 'active')
+            ->whereNotNull('current_grade_level_id')
+            ->selectRaw('current_grade_level_id, count(*) as count')
+            ->groupBy('current_grade_level_id')
+            ->pluck('count', 'current_grade_level_id');
+
+        return GradeLevel::query()
+            ->whereIn('id', $counts->keys())
+            ->orderBy('sequence')
+            ->get(['id', 'name'])
+            ->map(fn (GradeLevel $level) => [
+                'grade_level' => $level->name,
+                'count' => (int) $counts->get($level->id, 0),
+            ])
+            ->values()
+            ->all();
     }
 
     private function attendanceTrend(): array
@@ -142,10 +190,72 @@ class DashboardService
             'fee_collected_this_month' => $user->can('invoices.view-reports')
                 ? round(Payment::query()->whereDate('paid_at', '>=', now()->startOfMonth())->sum('amount'), 2)
                 : null,
+            'outstanding_fees_total' => $user->can('invoices.view-reports')
+                ? round(Invoice::query()->whereIn('status', ['issued', 'partially_paid'])->get()->sum(fn (Invoice $invoice) => $invoice->balance), 2)
+                : null,
             'library_overdue_count' => $user->can('library.view')
                 ? BookIssue::query()->where('status', 'issued')->whereDate('due_date', '<', now())->count()
                 : null,
+            'upcoming_exams' => $user->can('exams.view') ? $this->upcomingExams() : null,
+            'recent_announcements' => $this->recentAnnouncements(),
+            'pending_leave_requests' => $user->can('leave.manage') ? $this->pendingLeaveRequests() : null,
         ];
+    }
+
+    /** @return array<int, array{id: int, name: string, date: string}> */
+    private function upcomingExams(): array
+    {
+        return ExamSubject::query()
+            ->whereDate('exam_date', '>=', now())
+            ->with('exam:id,name')
+            ->orderBy('exam_date')
+            ->get(['id', 'exam_id', 'exam_date'])
+            ->unique('exam_id')
+            ->take(5)
+            ->map(fn (ExamSubject $subject) => [
+                'id' => $subject->exam_id,
+                'name' => $subject->exam?->name ?? '—',
+                'date' => $subject->exam_date->toDateString(),
+            ])
+            ->values()
+            ->all();
+    }
+
+    /** @return array<int, array{id: int, title: string, sent_at: ?string}> */
+    private function recentAnnouncements(): array
+    {
+        return Announcement::query()
+            ->whereNotNull('sent_at')
+            ->orderByDesc('sent_at')
+            ->take(5)
+            ->get(['id', 'title', 'sent_at'])
+            ->map(fn (Announcement $announcement) => [
+                'id' => $announcement->id,
+                'title' => $announcement->title,
+                'sent_at' => $announcement->sent_at?->toIso8601String(),
+            ])
+            ->values()
+            ->all();
+    }
+
+    /** @return array<int, array{id: int, staff_name: string, leave_type: string, from: string, to: string}> */
+    private function pendingLeaveRequests(): array
+    {
+        return LeaveRequest::query()
+            ->where('status', 'pending')
+            ->with(['user:id,first_name,last_name', 'leaveType:id,name'])
+            ->orderBy('start_date')
+            ->take(5)
+            ->get(['id', 'user_id', 'leave_type_id', 'start_date', 'end_date'])
+            ->map(fn (LeaveRequest $request) => [
+                'id' => $request->id,
+                'staff_name' => trim(($request->user?->first_name ?? '').' '.($request->user?->last_name ?? '')),
+                'leave_type' => $request->leaveType?->name ?? '—',
+                'from' => $request->start_date->toDateString(),
+                'to' => $request->end_date->toDateString(),
+            ])
+            ->values()
+            ->all();
     }
 
     private function teacherSummary(User $user): array

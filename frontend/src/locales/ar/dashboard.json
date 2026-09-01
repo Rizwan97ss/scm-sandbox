@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "تسجيل الحضور",
       "newAdmission": "قبول جديد",
-      "invoices": "الفواتير"
+      "invoices": "الفواتير",
+      "createInvoice": "إنشاء فاتورة",
+      "postAnnouncement": "نشر إعلان"
     },
     "trends": {
       "attendanceTitle": "الحضور — آخر 14 يومًا",
       "feesTitle": "الرسوم المحصَّلة — آخر 6 أشهر",
-      "feesTooltipLabel": "المحصَّل"
-    }
+      "feesTooltipLabel": "المحصَّل",
+      "enrollmentTitle": "اتجاه التسجيل",
+      "gradeDistributionTitle": "الطلاب حسب الصف"
+    },
+    "viewAll": "عرض الكل",
+    "quickActionsTitle": "إجراءات سريعة",
+    "recentAnnouncements": "أحدث الإعلانات",
+    "noUpcomingExams": "لا توجد امتحانات قادمة مجدولة.",
+    "noAnnouncements": "لا توجد إعلانات حتى الآن.",
+    "noPendingLeave": "لا توجد طلبات إجازة معلقة."
   },
   "childProfile": {
     "breadcrumbMyChildren": "أبنائي",

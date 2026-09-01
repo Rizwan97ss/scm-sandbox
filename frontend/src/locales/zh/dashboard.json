@@ -41,13 +41,23 @@
     "quickActions": {
       "takeAttendance": "签到",
       "newAdmission": "新生入学",
-      "invoices": "账单"
+      "invoices": "账单",
+      "createInvoice": "创建发票",
+      "postAnnouncement": "发布公告"
     },
     "trends": {
       "attendanceTitle": "考勤 — 最近14天",
       "feesTitle": "已收费用 — 最近6个月",
-      "feesTooltipLabel": "已收"
-    }
+      "feesTooltipLabel": "已收",
+      "enrollmentTitle": "入学趋势",
+      "gradeDistributionTitle": "各年级学生人数"
+    },
+    "viewAll": "查看全部",
+    "quickActionsTitle": "快捷操作",
+    "recentAnnouncements": "最新公告",
+    "noUpcomingExams": "暂无即将举行的考试。",
+    "noAnnouncements": "暂无公告。",
+    "noPendingLeave": "没有待处理的请假申请。"
   },
   "childProfile": {
     "breadcrumbMyChildren": "我的孩子",
