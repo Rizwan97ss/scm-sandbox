@@ -17,7 +17,9 @@
     "descriptionAcademic": "अपने स्कूल सिस्टम से मेल खाने के लिए लेबल अनुकूलित करें।",
     "descriptionStudents": "प्रवेश संख्या निर्माण नियम।",
     "descriptionNotifications": "सूचना चैनल सक्षम या अक्षम करें।",
-    "descriptionRetention": "ऑडिट लॉग और डेटा निर्यात कितने समय तक रखे जाते हैं, और निष्क्रिय खातों का वैकल्पिक स्वचालित अनामीकरण।"
+    "descriptionRetention": "ऑडिट लॉग और डेटा निर्यात कितने समय तक रखे जाते हैं, और निष्क्रिय खातों का वैकल्पिक स्वचालित अनामीकरण।",
+    "tabIdCards": "आईडी कार्ड",
+    "descriptionIdCards": "चुनें कि मुद्रित स्टाफ और छात्र आईडी कार्ड पर कौन से फ़ील्ड दिखाई दें।"
   },
   "fields": {
     "schoolName": "स्कूल का नाम",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "डेटा निर्यात उपलब्धता (दिन)",
     "dataExportAvailabilityDaysHint": "जनरेट किया गया एक्सपोर्ट ZIP हटाए जाने से पहले कितने समय तक डाउनलोड करने योग्य रहता है। डिफ़ॉल्ट 7।",
     "autoAnonymizeInactiveDays": "इतने दिनों बाद निष्क्रिय खातों को स्वतः अनाम करें (दिन)",
-    "autoAnonymizeInactiveDaysHint": "अक्षम करने के लिए खाली छोड़ें (डिफ़ॉल्ट)। यदि सेट किया गया है, तो इतने दिनों तक लॉगिन न करने वाले खाते स्वचालित रूप से अनाम कर दिए जाते हैं।"
+    "autoAnonymizeInactiveDaysHint": "अक्षम करने के लिए खाली छोड़ें (डिफ़ॉल्ट)। यदि सेट किया गया है, तो इतने दिनों तक लॉगिन न करने वाले खाते स्वचालित रूप से अनाम कर दिए जाते हैं।",
+    "idCardsStaffShowEmail": "ईमेल दिखाएं",
+    "idCardsStaffShowPhone": "फ़ोन नंबर दिखाएं",
+    "idCardsStaffShowWebsite": "स्कूल वेबसाइट दिखाएं",
+    "idCardsStaffShowBarcode": "बारकोड दिखाएं",
+    "idCardsStudentShowDob": "जन्म तिथि दिखाएं",
+    "idCardsStudentShowAddress": "पता दिखाएं",
+    "idCardsStudentShowBarcode": "बारकोड दिखाएं"
   },
   "dataExports": {
     "title": "स्कूल डेटा निर्यात",

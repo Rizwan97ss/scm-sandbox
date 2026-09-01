@@ -25,15 +25,33 @@ class IdCardController extends Controller
 
         $primaryColor = $settings->get('branding.primary_color', '#2563eb');
         $secondaryColor = $settings->get('branding.secondary_color', '#0f172a');
+        $showBarcode = $settings->get('id_cards.student.show_barcode', true);
+
+        // Name and Student ID are the card's whole point and always shown;
+        // everything else is School Admin-configurable (Settings > ID
+        // Cards) — built as a list rather than separate @if blocks in the
+        // view so a hidden row doesn't leave a gap, the next one just moves
+        // up into its place.
+        $infoRows = [
+            ['label' => 'Name', 'value' => $student->full_name],
+            ['label' => 'Student ID', 'value' => $student->admission_number],
+        ];
+        if ($settings->get('id_cards.student.show_dob', true)) {
+            $infoRows[] = ['label' => 'D.O.B', 'value' => $student->date_of_birth?->toDateString() ?? '—'];
+        }
+        if ($settings->get('id_cards.student.show_address', true)) {
+            $infoRows[] = ['label' => 'Address', 'value' => $student->address_line1 ? $student->address_line1.($student->city ? ', '.$student->city : '') : '—'];
+        }
 
         $pdf = Pdf::loadView('pdf.id-card-student', [
             'student' => $student,
             'schoolName' => $settings->get('school.name', ''),
             'logo' => $this->logoDataUri($settings),
             'background' => CardGradientGenerator::diagonalDataUri($primaryColor, $secondaryColor, 486, 306),
-            'barcode' => BarcodeGenerator::dataUri($student->admission_number),
+            'barcode' => $showBarcode ? BarcodeGenerator::dataUri($student->admission_number) : null,
             'photo' => $this->mediaDataUri($student, 'photo'),
             'accentColor' => $primaryColor,
+            'infoRows' => $infoRows,
         ])->setPaper([0, 0, 243, 153]);
 
         return $pdf->download(str($student->full_name.'-id-card')->slug().'.pdf');
@@ -45,14 +63,33 @@ class IdCardController extends Controller
 
         $this->authorize('view', $user);
 
+        $showBarcode = $settings->get('id_cards.staff.show_barcode', true);
+        $website = $settings->get('id_cards.staff.show_website', true)
+            ? strtoupper(preg_replace('#^https?://#', '', rtrim(config('app.url'), '/')))
+            : null;
+
+        // Same "list of visible rows, not separate @if blocks" reasoning as
+        // the student card's info panel — a hidden contact row shouldn't
+        // leave a gap between the ones still shown.
+        $contactRows = [];
+        if ($settings->get('id_cards.staff.show_email', true)) {
+            $contactRows[] = ['icon' => '&#9993;', 'value' => $user->email];
+        }
+        if ($settings->get('id_cards.staff.show_phone', true)) {
+            $contactRows[] = ['icon' => '&#9742;', 'value' => $user->phone ?? '—'];
+        }
+        if ($website) {
+            $contactRows[] = ['icon' => '&#8853;', 'value' => $website];
+        }
+
         $pdf = Pdf::loadView('pdf.id-card-staff', [
             'staff' => $user,
             'schoolName' => $settings->get('school.name', ''),
             'logo' => $this->logoDataUri($settings),
-            'website' => strtoupper(preg_replace('#^https?://#', '', rtrim(config('app.url'), '/'))),
-            'barcode' => BarcodeGenerator::dataUri($user->employee_id ?: $user->uuid),
+            'barcode' => $showBarcode ? BarcodeGenerator::dataUri($user->employee_id ?: $user->uuid) : null,
             'photo' => $this->mediaDataUri($user, 'avatar'),
             'accentColor' => $settings->get('branding.primary_color', '#2563eb'),
+            'contactRows' => $contactRows,
         ])->setPaper([0, 0, 243, 153]);
 
         return $pdf->download(str($user->full_name.'-id-card')->slug().'.pdf');

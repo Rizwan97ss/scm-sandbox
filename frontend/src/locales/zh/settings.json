@@ -17,7 +17,9 @@
     "descriptionAcademic": "自定义标签以匹配您学校的体系。",
     "descriptionStudents": "学号生成规则。",
     "descriptionNotifications": "启用或禁用通知渠道。",
-    "descriptionRetention": "审计日志和数据导出的保留时长，以及可选的非活跃账户自动匿名化。"
+    "descriptionRetention": "审计日志和数据导出的保留时长，以及可选的非活跃账户自动匿名化。",
+    "tabIdCards": "证件卡",
+    "descriptionIdCards": "选择打印的教职工和学生证件上显示哪些字段。"
   },
   "fields": {
     "schoolName": "学校名称",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "数据导出可用期（天）",
     "dataExportAvailabilityDaysHint": "生成的导出 ZIP 文件在被删除前可供下载的时长。默认 7。",
     "autoAnonymizeInactiveDays": "非活跃账户自动匿名化天数",
-    "autoAnonymizeInactiveDaysHint": "留空则禁用（默认）。如设置，超过此天数未登录的账户将被自动匿名化。"
+    "autoAnonymizeInactiveDaysHint": "留空则禁用（默认）。如设置，超过此天数未登录的账户将被自动匿名化。",
+    "idCardsStaffShowEmail": "显示电子邮件",
+    "idCardsStaffShowPhone": "显示电话号码",
+    "idCardsStaffShowWebsite": "显示学校网站",
+    "idCardsStaffShowBarcode": "显示条形码",
+    "idCardsStudentShowDob": "显示出生日期",
+    "idCardsStudentShowAddress": "显示地址",
+    "idCardsStudentShowBarcode": "显示条形码"
   },
   "dataExports": {
     "title": "学校数据导出",

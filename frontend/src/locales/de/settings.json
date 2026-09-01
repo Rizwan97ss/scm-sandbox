@@ -17,7 +17,9 @@
     "descriptionAcademic": "Passen Sie Bezeichnungen an das System Ihrer Schule an.",
     "descriptionStudents": "Regeln zur Generierung der Aufnahmenummer.",
     "descriptionNotifications": "Benachrichtigungskanäle aktivieren oder deaktivieren.",
-    "descriptionRetention": "Wie lange Prüfprotokolle und Datenexporte aufbewahrt werden, sowie optionale automatische Anonymisierung inaktiver Konten."
+    "descriptionRetention": "Wie lange Prüfprotokolle und Datenexporte aufbewahrt werden, sowie optionale automatische Anonymisierung inaktiver Konten.",
+    "tabIdCards": "Ausweise",
+    "descriptionIdCards": "Wählen Sie, welche Felder auf gedruckten Mitarbeiter- und Schüler-Ausweisen erscheinen."
   },
   "fields": {
     "schoolName": "Schulname",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "Verfügbarkeit des Datenexports (Tage)",
     "dataExportAvailabilityDaysHint": "Wie lange eine erzeugte Export-ZIP-Datei herunterladbar bleibt, bevor sie gelöscht wird. Standard: 7.",
     "autoAnonymizeInactiveDays": "Inaktive Konten automatisch anonymisieren nach (Tagen)",
-    "autoAnonymizeInactiveDaysHint": "Leer lassen zum Deaktivieren (Standard). Wenn festgelegt, werden Konten ohne Anmeldung für diese Anzahl von Tagen automatisch anonymisiert."
+    "autoAnonymizeInactiveDaysHint": "Leer lassen zum Deaktivieren (Standard). Wenn festgelegt, werden Konten ohne Anmeldung für diese Anzahl von Tagen automatisch anonymisiert.",
+    "idCardsStaffShowEmail": "E-Mail anzeigen",
+    "idCardsStaffShowPhone": "Telefonnummer anzeigen",
+    "idCardsStaffShowWebsite": "Schul-Website anzeigen",
+    "idCardsStaffShowBarcode": "Barcode anzeigen",
+    "idCardsStudentShowDob": "Geburtsdatum anzeigen",
+    "idCardsStudentShowAddress": "Adresse anzeigen",
+    "idCardsStudentShowBarcode": "Barcode anzeigen"
   },
   "dataExports": {
     "title": "Schulweiter Datenexport",

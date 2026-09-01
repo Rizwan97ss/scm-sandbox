@@ -17,7 +17,9 @@
     "descriptionAcademic": "تخصيص التسميات لتتوافق مع نظام مدرستك.",
     "descriptionStudents": "قواعد إنشاء رقم القبول.",
     "descriptionNotifications": "تفعيل أو تعطيل قنوات الإشعارات.",
-    "descriptionRetention": "المدة التي يتم فيها الاحتفاظ بسجلات التدقيق وتصديرات البيانات، وإخفاء الهوية التلقائي الاختياري للحسابات غير النشطة."
+    "descriptionRetention": "المدة التي يتم فيها الاحتفاظ بسجلات التدقيق وتصديرات البيانات، وإخفاء الهوية التلقائي الاختياري للحسابات غير النشطة.",
+    "tabIdCards": "بطاقات الهوية",
+    "descriptionIdCards": "اختر الحقول التي تظهر في بطاقات هوية الموظفين والطلاب المطبوعة."
   },
   "fields": {
     "schoolName": "اسم المدرسة",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "مدة توفر تصدير البيانات (أيام)",
     "dataExportAvailabilityDaysHint": "المدة التي يظل فيها ملف التصدير المضغوط قابلاً للتنزيل قبل حذفه. الافتراضي 7.",
     "autoAnonymizeInactiveDays": "إخفاء هوية الحسابات غير النشطة تلقائيًا بعد (أيام)",
-    "autoAnonymizeInactiveDaysHint": "اتركه فارغًا للتعطيل (الافتراضي). إذا تم تعيينه، يتم تلقائيًا إخفاء هوية الحسابات التي لم تسجل الدخول لهذا العدد من الأيام."
+    "autoAnonymizeInactiveDaysHint": "اتركه فارغًا للتعطيل (الافتراضي). إذا تم تعيينه، يتم تلقائيًا إخفاء هوية الحسابات التي لم تسجل الدخول لهذا العدد من الأيام.",
+    "idCardsStaffShowEmail": "إظهار البريد الإلكتروني",
+    "idCardsStaffShowPhone": "إظهار رقم الهاتف",
+    "idCardsStaffShowWebsite": "إظهار موقع المدرسة الإلكتروني",
+    "idCardsStaffShowBarcode": "إظهار الباركود",
+    "idCardsStudentShowDob": "إظهار تاريخ الميلاد",
+    "idCardsStudentShowAddress": "إظهار العنوان",
+    "idCardsStudentShowBarcode": "إظهار الباركود"
   },
   "dataExports": {
     "title": "تصدير بيانات المدرسة",

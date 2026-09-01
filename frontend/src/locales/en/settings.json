@@ -17,7 +17,9 @@
     "descriptionAcademic": "Customize labels to match your school system.",
     "descriptionStudents": "Admission number generation rules.",
     "descriptionNotifications": "Enable or disable notification channels.",
-    "descriptionRetention": "How long audit logs and data exports are kept, and optional auto-anonymization of inactive accounts."
+    "descriptionRetention": "How long audit logs and data exports are kept, and optional auto-anonymization of inactive accounts.",
+    "tabIdCards": "ID Cards",
+    "descriptionIdCards": "Choose which fields appear on printed staff and student ID cards."
   },
   "fields": {
     "schoolName": "School name",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "Data export availability (days)",
     "dataExportAvailabilityDaysHint": "How long a generated export ZIP stays downloadable before it's deleted. Default 7.",
     "autoAnonymizeInactiveDays": "Auto-anonymize inactive accounts after (days)",
-    "autoAnonymizeInactiveDaysHint": "Leave blank to disable (default). If set, accounts with no login for this many days are automatically anonymized."
+    "autoAnonymizeInactiveDaysHint": "Leave blank to disable (default). If set, accounts with no login for this many days are automatically anonymized.",
+    "idCardsStaffShowEmail": "Show email",
+    "idCardsStaffShowPhone": "Show phone number",
+    "idCardsStaffShowWebsite": "Show school website",
+    "idCardsStaffShowBarcode": "Show barcode",
+    "idCardsStudentShowDob": "Show date of birth",
+    "idCardsStudentShowAddress": "Show address",
+    "idCardsStudentShowBarcode": "Show barcode"
   },
   "dataExports": {
     "title": "School data export",

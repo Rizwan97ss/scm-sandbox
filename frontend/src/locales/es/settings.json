@@ -17,7 +17,9 @@
     "descriptionAcademic": "Personaliza las etiquetas para que coincidan con el sistema de tu escuela.",
     "descriptionStudents": "Reglas de generación del número de admisión.",
     "descriptionNotifications": "Activa o desactiva los canales de notificación.",
-    "descriptionRetention": "Durante cuánto tiempo se conservan los registros de auditoría y las exportaciones de datos, y la anonimización automática opcional de cuentas inactivas."
+    "descriptionRetention": "Durante cuánto tiempo se conservan los registros de auditoría y las exportaciones de datos, y la anonimización automática opcional de cuentas inactivas.",
+    "tabIdCards": "Tarjetas de identificación",
+    "descriptionIdCards": "Elija qué campos aparecen en las tarjetas de identificación impresas del personal y los estudiantes."
   },
   "fields": {
     "schoolName": "Nombre de la escuela",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "Disponibilidad de exportación de datos (días)",
     "dataExportAvailabilityDaysHint": "Cuánto tiempo permanece descargable un ZIP de exportación generado antes de eliminarse. Predeterminado: 7.",
     "autoAnonymizeInactiveDays": "Anonimizar automáticamente cuentas inactivas después de (días)",
-    "autoAnonymizeInactiveDaysHint": "Déjalo en blanco para desactivarlo (predeterminado). Si se establece, las cuentas sin inicio de sesión durante este número de días se anonimizan automáticamente."
+    "autoAnonymizeInactiveDaysHint": "Déjalo en blanco para desactivarlo (predeterminado). Si se establece, las cuentas sin inicio de sesión durante este número de días se anonimizan automáticamente.",
+    "idCardsStaffShowEmail": "Mostrar correo electrónico",
+    "idCardsStaffShowPhone": "Mostrar número de teléfono",
+    "idCardsStaffShowWebsite": "Mostrar sitio web de la escuela",
+    "idCardsStaffShowBarcode": "Mostrar código de barras",
+    "idCardsStudentShowDob": "Mostrar fecha de nacimiento",
+    "idCardsStudentShowAddress": "Mostrar dirección",
+    "idCardsStudentShowBarcode": "Mostrar código de barras"
   },
   "dataExports": {
     "title": "Exportación de datos de la escuela",

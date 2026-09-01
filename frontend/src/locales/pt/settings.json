@@ -17,7 +17,9 @@
     "descriptionAcademic": "Personalize os rótulos para corresponder ao sistema da sua escola.",
     "descriptionStudents": "Regras de geração do número de matrícula.",
     "descriptionNotifications": "Ative ou desative os canais de notificação.",
-    "descriptionRetention": "Por quanto tempo os registros de auditoria e as exportações de dados são mantidos, e anonimização automática opcional de contas inativas."
+    "descriptionRetention": "Por quanto tempo os registros de auditoria e as exportações de dados são mantidos, e anonimização automática opcional de contas inativas.",
+    "tabIdCards": "Cartões de identificação",
+    "descriptionIdCards": "Escolha quais campos aparecem nos cartões de identificação impressos de funcionários e alunos."
   },
   "fields": {
     "schoolName": "Nome da escola",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "Disponibilidade de exportação de dados (dias)",
     "dataExportAvailabilityDaysHint": "Por quanto tempo um ZIP de exportação gerado fica disponível para download antes de ser excluído. Padrão: 7.",
     "autoAnonymizeInactiveDays": "Anonimizar automaticamente contas inativas após (dias)",
-    "autoAnonymizeInactiveDaysHint": "Deixe em branco para desativar (padrão). Se definido, contas sem login por esse número de dias são anonimizadas automaticamente."
+    "autoAnonymizeInactiveDaysHint": "Deixe em branco para desativar (padrão). Se definido, contas sem login por esse número de dias são anonimizadas automaticamente.",
+    "idCardsStaffShowEmail": "Mostrar e-mail",
+    "idCardsStaffShowPhone": "Mostrar número de telefone",
+    "idCardsStaffShowWebsite": "Mostrar site da escola",
+    "idCardsStaffShowBarcode": "Mostrar código de barras",
+    "idCardsStudentShowDob": "Mostrar data de nascimento",
+    "idCardsStudentShowAddress": "Mostrar endereço",
+    "idCardsStudentShowBarcode": "Mostrar código de barras"
   },
   "dataExports": {
     "title": "Exportação de dados da escola",

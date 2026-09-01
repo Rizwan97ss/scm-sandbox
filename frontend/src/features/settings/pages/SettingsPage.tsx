@@ -19,6 +19,16 @@ interface FieldConfig {
   type: 'string' | 'integer' | 'boolean'
   isPublic?: boolean
   inputType?: string
+  /**
+   * What a boolean field means when no row exists yet for it — a school
+   * only gets rows once an admin saves this group at least once (or the
+   * one-time SettingSeeder ran, which a new key added after that doesn't
+   * retroactively get), so "no row" isn't an edge case here. Without this,
+   * the toggle would render unchecked/off even though the backend's own
+   * `get($key, true)` default is actually on, silently lying to the admin
+   * about what's currently happening.
+   */
+  defaultValue?: boolean
 }
 
 const FIELDS: FieldConfig[] = [
@@ -47,6 +57,13 @@ const FIELDS: FieldConfig[] = [
   { key: 'students.admission_number_format', labelKey: 'fields.admissionNumberFormat', hintKey: 'fields.admissionNumberFormatHint', group: 'students', type: 'string' },
   { key: 'students.admission_number_padding', labelKey: 'fields.admissionNumberPadding', hintKey: 'fields.admissionNumberPaddingHint', group: 'students', type: 'integer' },
   { key: 'notifications.email_enabled', labelKey: 'fields.emailNotificationsEnabled', group: 'notifications', type: 'boolean' },
+  { key: 'id_cards.staff.show_email', labelKey: 'fields.idCardsStaffShowEmail', group: 'id_cards', type: 'boolean', defaultValue: true },
+  { key: 'id_cards.staff.show_phone', labelKey: 'fields.idCardsStaffShowPhone', group: 'id_cards', type: 'boolean', defaultValue: true },
+  { key: 'id_cards.staff.show_website', labelKey: 'fields.idCardsStaffShowWebsite', group: 'id_cards', type: 'boolean', defaultValue: true },
+  { key: 'id_cards.staff.show_barcode', labelKey: 'fields.idCardsStaffShowBarcode', group: 'id_cards', type: 'boolean', defaultValue: true },
+  { key: 'id_cards.student.show_dob', labelKey: 'fields.idCardsStudentShowDob', group: 'id_cards', type: 'boolean', defaultValue: true },
+  { key: 'id_cards.student.show_address', labelKey: 'fields.idCardsStudentShowAddress', group: 'id_cards', type: 'boolean', defaultValue: true },
+  { key: 'id_cards.student.show_barcode', labelKey: 'fields.idCardsStudentShowBarcode', group: 'id_cards', type: 'boolean', defaultValue: true },
   {
     key: 'retention.activity_log_days',
     labelKey: 'fields.auditLogRetentionDays',
@@ -69,6 +86,12 @@ const FIELDS: FieldConfig[] = [
     type: 'integer',
   },
 ]
+
+/** No stored row yet (see FieldConfig.defaultValue's docblock) falls back to the field's declared default rather than reading as off. */
+function resolveBooleanValue(field: FieldConfig, values: SettingsMap): boolean {
+  const value = values[field.key]
+  return value === undefined || value === null ? (field.defaultValue ?? false) : !!value
+}
 
 export function SettingsPage() {
   const { t } = useFeatureTranslation('settings')
@@ -94,7 +117,13 @@ export function SettingsPage() {
   function submitGroup(group: string) {
     const settings: SettingUpdateItem[] = FIELDS.filter((field) => field.group === group).map((field) => ({
       key: field.key,
-      value: values[field.key],
+      // A field the admin never touched (no row exists yet -- see
+      // defaultValue's own docblock) is undefined/null here, not its
+      // actual displayed state -- resolving through the same fallback the
+      // toggle renders with keeps "save because I changed one other field
+      // in this tab" from silently persisting every untouched boolean in
+      // it as off.
+      value: field.type === 'boolean' ? resolveBooleanValue(field, values) : values[field.key],
       type: field.type,
       group: field.group,
       is_public: field.isPublic ?? false,
@@ -107,7 +136,7 @@ export function SettingsPage() {
     return (
       <FormField key={field.key} label={t(field.labelKey)} htmlFor={field.key} hint={field.hintKey ? t(field.hintKey) : undefined}>
         {field.type === 'boolean' ? (
-          <Switch checked={!!value} onCheckedChange={(checked) => setValues({ ...values, [field.key]: checked })} />
+          <Switch checked={resolveBooleanValue(field, values)} onCheckedChange={(checked) => setValues({ ...values, [field.key]: checked })} />
         ) : (
           <Input
             id={field.key}
@@ -150,6 +179,7 @@ export function SettingsPage() {
             { value: 'academic', label: t('page.tabAcademic'), content: groupPanel('academic', t('page.descriptionAcademic')) },
             { value: 'students', label: t('page.tabStudents'), content: groupPanel('students', t('page.descriptionStudents')) },
             { value: 'notifications', label: t('page.tabNotifications'), content: groupPanel('notifications', t('page.descriptionNotifications')) },
+            { value: 'id_cards', label: t('page.tabIdCards'), content: groupPanel('id_cards', t('page.descriptionIdCards')) },
             { value: 'retention', label: t('page.tabRetention'), content: groupPanel('retention', t('page.descriptionRetention')) },
           ]}
         />

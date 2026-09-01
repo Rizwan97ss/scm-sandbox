@@ -17,7 +17,9 @@
     "descriptionAcademic": "Personnalisez les libellés pour qu'ils correspondent à votre système scolaire.",
     "descriptionStudents": "Règles de génération du numéro d'admission.",
     "descriptionNotifications": "Activez ou désactivez les canaux de notification.",
-    "descriptionRetention": "Durée de conservation des journaux d'audit et des exports de données, et anonymisation automatique optionnelle des comptes inactifs."
+    "descriptionRetention": "Durée de conservation des journaux d'audit et des exports de données, et anonymisation automatique optionnelle des comptes inactifs.",
+    "tabIdCards": "Cartes d'identité",
+    "descriptionIdCards": "Choisissez les champs qui apparaissent sur les cartes d'identité imprimées du personnel et des élèves."
   },
   "fields": {
     "schoolName": "Nom de l'établissement",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "Disponibilité de l'export de données (jours)",
     "dataExportAvailabilityDaysHint": "Durée pendant laquelle un fichier ZIP d'export généré reste téléchargeable avant suppression. Par défaut : 7.",
     "autoAnonymizeInactiveDays": "Anonymiser automatiquement les comptes inactifs après (jours)",
-    "autoAnonymizeInactiveDaysHint": "Laissez vide pour désactiver (par défaut). Si défini, les comptes sans connexion pendant ce nombre de jours sont automatiquement anonymisés."
+    "autoAnonymizeInactiveDaysHint": "Laissez vide pour désactiver (par défaut). Si défini, les comptes sans connexion pendant ce nombre de jours sont automatiquement anonymisés.",
+    "idCardsStaffShowEmail": "Afficher l'e-mail",
+    "idCardsStaffShowPhone": "Afficher le numéro de téléphone",
+    "idCardsStaffShowWebsite": "Afficher le site Web de l'école",
+    "idCardsStaffShowBarcode": "Afficher le code-barres",
+    "idCardsStudentShowDob": "Afficher la date de naissance",
+    "idCardsStudentShowAddress": "Afficher l'adresse",
+    "idCardsStudentShowBarcode": "Afficher le code-barres"
   },
   "dataExports": {
     "title": "Export des données de l'établissement",

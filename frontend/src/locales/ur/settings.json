@@ -17,7 +17,9 @@
     "descriptionAcademic": "اپنے اسکول کے نظام سے مماثل لیبلز کو حسب ضرورت بنائیں۔",
     "descriptionStudents": "داخلہ نمبر بنانے کے قواعد۔",
     "descriptionNotifications": "اطلاعاتی چینلز کو فعال یا غیر فعال کریں۔",
-    "descriptionRetention": "آڈٹ لاگز اور ڈیٹا ایکسپورٹس کتنی دیر تک رکھے جاتے ہیں، اور غیر فعال اکاؤنٹس کی اختیاری خودکار گمنامی۔"
+    "descriptionRetention": "آڈٹ لاگز اور ڈیٹا ایکسپورٹس کتنی دیر تک رکھے جاتے ہیں، اور غیر فعال اکاؤنٹس کی اختیاری خودکار گمنامی۔",
+    "tabIdCards": "شناختی کارڈ",
+    "descriptionIdCards": "منتخب کریں کہ پرنٹ شدہ عملے اور طلباء کے شناختی کارڈ پر کون سے فیلڈز ظاہر ہوں۔"
   },
   "fields": {
     "schoolName": "اسکول کا نام",
@@ -59,7 +61,14 @@
     "dataExportAvailabilityDays": "ڈیٹا ایکسپورٹ دستیابی (دن)",
     "dataExportAvailabilityDaysHint": "تیار کردہ ایکسپورٹ ZIP حذف ہونے سے پہلے کتنی دیر ڈاؤن لوڈ کے قابل رہتی ہے۔ ڈیفالٹ 7۔",
     "autoAnonymizeInactiveDays": "اتنے دنوں بعد غیر فعال اکاؤنٹس کو خودکار طور پر گمنام کریں (دن)",
-    "autoAnonymizeInactiveDaysHint": "غیر فعال کرنے کے لیے خالی چھوڑیں (ڈیفالٹ)۔ اگر سیٹ کیا گیا ہے تو، اتنے دنوں تک لاگ ان نہ ہونے والے اکاؤنٹس خود بخود گمنام کر دیے جاتے ہیں۔"
+    "autoAnonymizeInactiveDaysHint": "غیر فعال کرنے کے لیے خالی چھوڑیں (ڈیفالٹ)۔ اگر سیٹ کیا گیا ہے تو، اتنے دنوں تک لاگ ان نہ ہونے والے اکاؤنٹس خود بخود گمنام کر دیے جاتے ہیں۔",
+    "idCardsStaffShowEmail": "ای میل دکھائیں",
+    "idCardsStaffShowPhone": "فون نمبر دکھائیں",
+    "idCardsStaffShowWebsite": "اسکول کی ویب سائٹ دکھائیں",
+    "idCardsStaffShowBarcode": "بارکوڈ دکھائیں",
+    "idCardsStudentShowDob": "تاریخ پیدائش دکھائیں",
+    "idCardsStudentShowAddress": "پتہ دکھائیں",
+    "idCardsStudentShowBarcode": "بارکوڈ دکھائیں"
   },
   "dataExports": {
     "title": "اسکول ڈیٹا ایکسپورٹ",
