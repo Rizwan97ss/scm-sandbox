@@ -16,6 +16,7 @@
   },
   "requires": "Erfordert: {{phase}}",
   "gettingStarted": {
+    "subdomainCard": { "title": "Die eigene Adresse Ihrer Schule", "descriptionBefore": "Alles für Ihre Schule findet auf Ihrer eigenen Subdomain statt — Sie sind gerade darauf:", "descriptionAfter": ". Setzen Sie ein Lesezeichen. Wenn Sie jemals Login- oder „Netzwerk“-Fehler sehen, prüfen Sie zuerst, ob Sie sich auf der richtigen Subdomain befinden und nicht auf einer zentralen Adresse." },
     "phase1": {
       "title": "Phase 1 — Akademische Grundlagen",
       "steps": {
@@ -92,6 +93,11 @@
         "invoices": { "title": "Rechnungen", "description": "Werden pro Schüler erstellt und übernehmen die relevanten Gebührenstrukturen sowie etwaige Rabatte als Rechnungspositionen." },
         "payments": { "title": "Zahlungen & Gutschriften", "description": "Erfassen Sie eingegangene Zahlungen (Bar, Scheck, Überweisung, UPI, Karte) — der Status der Rechnung wird automatisch aktualisiert. Stellen Sie eine Gutschrift für teilweise Anpassungen aus, ohne die ursprüngliche Rechnung zu verändern." }
       }
+    },
+    "subscriptionCard": {
+      "title": "Phase 15 — Ihr eigenes Abonnement",
+      "subtitle": "Dies ist getrennt von Phase 8 — es ist das, was diese Plattform Ihrer Schule berechnet, nicht das, was Ihre Schule den Eltern berechnet.",
+      "description": "Unter Einstellungen → Abrechnung sehen Sie Ihren aktuellen Plan, das Ende der Testphase und die Nutzung im Verhältnis zu den Schüler-/Personalgrenzen Ihres Plans, und können Pläne wechseln. Das Erstellen eines neuen Mitarbeiters über das Limit Ihres Plans hinaus liefert einen klaren Fehler „Planlimit erreicht“, statt stillschweigend zu gelingen."
     }
   },
   "modules": {
@@ -150,8 +156,8 @@
     "columnUse": "Typische Verwendung",
     "columnAccess": "Umfang des Zugriffs",
     "rows": {
-      "schoolAdmin": { "role": "Schuladministrator", "use": "Das übergeordnete Administratorkonto der Schule", "access": "Alles — Benutzer, Rollen, Einstellungen, alle Module" },
-      "principal": { "role": "Schulleiter", "use": "Schulleitung", "access": "Weitreichender Lesezugriff auf alle Bereiche, verwaltet Akademisches/Stundenplan/Prüfungen" },
+      "schoolAdmin": { "role": "Schuladministrator", "use": "Das übergeordnete Administratorkonto der Schule", "access": "Alles — Benutzer, Rollen, Einstellungen, Abrechnung, alle Module" },
+      "principal": { "role": "Schulleiter", "use": "Schulleitung", "access": "Umfassender Lesezugriff, verwaltet Akademisches/Stundenplan/Prüfungen, keine Abrechnung" },
       "management": { "role": "Management", "use": "Kuratoren/Eigentümer, die Einblick benötigen", "access": "Nur Lesezugriff auf fast alles" },
       "accountant": { "role": "Buchhalter", "use": "Gebühren-/Abrechnungsvorgänge", "access": "Gebührenkategorien/-strukturen, Rechnungen, Zahlungen, Gutschriften" },
       "hrStaff": { "role": "Personalmitarbeiter", "use": "Personalverwaltung", "access": "Benutzer, Positionen, Urlaub, Gehaltsabrechnung, Personalanwesenheit" },
@@ -166,6 +172,7 @@
   },
   "faq": {
     "items": {
+      "wrongSubdomain": { "q": "„Netzwerkfehler“ oder CORS-ähnliche Fehler direkt nach der Anmeldung.", "a": "Sie befinden sich sehr wahrscheinlich auf der falschen Adresse — es muss Ihre eigene Subdomain {{slug}} sein, niemals eine zentrale Adresse. Überprüfen Sie die URL-Leiste." },
       "tooManyAttempts": { "q": "„Zu viele Versuche“ bei der Anmeldung.", "a": "Eine kurzzeitige Sicherheitsbegrenzung bei wiederholten Anmeldeversuchen (schützt vor dem Erraten von Passwörtern). Sie hebt sich innerhalb einer Minute von selbst auf — warten Sie und versuchen Sie es erneut, anstatt es schnell hintereinander erneut zu versuchen." },
       "emptyDropdown": { "q": "Ein Auswahlmenü enthält keine Optionen.", "a": "Das bedeutet fast immer, dass eine vorherige Einrichtungsphase fehlt — z. B. ist das Auswahlmenü „Klasse“ im Schülerformular leer, weil noch keine Klasse erstellt wurde. Überprüfen Sie die Phase vor derjenigen, in der Sie sich gerade befinden." },
       "discountNotShowing": { "q": "Ein von mir eingerichteter Rabatt wird auf einer Rechnung nicht angezeigt.", "a": "Rabatte aus Gebührenzuweisungen für Schüler gelten nur für Rechnungen, die nach der Erstellung des Rabatts generiert wurden — sie gelten niemals rückwirkend für eine bestehende Rechnung." },

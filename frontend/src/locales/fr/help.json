@@ -16,6 +16,7 @@
   },
   "requires": "Requiert : {{phase}}",
   "gettingStarted": {
+    "subdomainCard": { "title": "L'adresse propre de votre école", "descriptionBefore": "Tout pour votre école se passe sur votre propre sous-domaine — vous y êtes actuellement :", "descriptionAfter": ". Ajoutez-le à vos favoris. Si vous voyez des erreurs de connexion ou de « réseau », vérifiez d'abord que vous êtes sur le bon sous-domaine, et non sur une adresse centrale générique." },
     "phase1": {
       "title": "Phase 1 — Fondations académiques",
       "steps": {
@@ -92,6 +93,11 @@
         "invoices": { "title": "Factures", "description": "Générées par élève, en reprenant les structures de frais concernées et toute remise sous forme de lignes de facture." },
         "payments": { "title": "Paiements et Avoirs", "description": "Enregistrez les sommes reçues (espèces, chèque, virement bancaire, UPI, carte) — le statut de la facture se met à jour automatiquement. Émettez un avoir pour des ajustements partiels sans modifier la facture d'origine." }
       }
+    },
+    "subscriptionCard": {
+      "title": "Phase 15 — Votre propre abonnement",
+      "subtitle": "Ceci est distinct de la Phase 8 — c'est ce que cette plateforme facture à votre école, pas ce que votre école facture aux parents.",
+      "description": "Sous Paramètres → Facturation, vous pouvez voir votre forfait actuel, la date de fin d'essai, et l'utilisation par rapport aux limites d'élèves/personnel de votre forfait, et changer de forfait. Créer un nouvel utilisateur du personnel au-delà de la limite de votre forfait renvoie une erreur claire « limite du forfait atteinte » plutôt que de réussir silencieusement."
     }
   },
   "modules": {
@@ -150,8 +156,8 @@
     "columnUse": "Utilisation typique",
     "columnAccess": "Étendue de l'accès",
     "rows": {
-      "schoolAdmin": { "role": "Administrateur de l'Établissement", "use": "Le compte administrateur principal de l'établissement", "access": "Tout — utilisateurs, rôles, paramètres, tous les modules" },
-      "principal": { "role": "Chef d'Établissement", "use": "Direction de l'établissement", "access": "Accès en lecture étendu, gère les aspects académiques/l'emploi du temps/les examens" },
+      "schoolAdmin": { "role": "Administrateur de l'Établissement", "use": "Le compte administrateur principal de l'établissement", "access": "Tout — utilisateurs, rôles, paramètres, facturation, tous les modules" },
+      "principal": { "role": "Chef d'Établissement", "use": "Direction de l'établissement", "access": "Accès en lecture étendu, gère les aspects académiques/emploi du temps/examens, pas de facturation" },
       "management": { "role": "Conseil d'Administration", "use": "Administrateurs/propriétaires ayant besoin de visibilité", "access": "Lecture seule sur presque tout" },
       "accountant": { "role": "Comptable", "use": "Opérations de frais/facturation", "access": "Catégories/structures de frais, factures, paiements, avoirs" },
       "hrStaff": { "role": "Personnel RH", "use": "Gestion du personnel", "access": "Utilisateurs, fonctions, congés, paie, présence du personnel" },
@@ -166,6 +172,7 @@
   },
   "faq": {
     "items": {
+      "wrongSubdomain": { "q": "Erreurs « réseau » ou de type CORS juste après la connexion.", "a": "Vous êtes très probablement sur la mauvaise adresse — ce doit être votre propre sous-domaine {{slug}}, jamais une adresse centrale générique. Revérifiez la barre d'adresse." },
       "tooManyAttempts": { "q": "« Trop de tentatives » lors de la connexion.", "a": "Il s'agit d'une limite de sécurité temporaire sur les tentatives de connexion répétées (protection contre la devinette de mot de passe). Elle se réinitialise automatiquement en moins d'une minute — patientez et réessayez plutôt que de retenter rapidement." },
       "emptyDropdown": { "q": "Une liste déroulante ne contient aucune option.", "a": "Cela signifie presque toujours qu'une phase de configuration précédente est manquante — par exemple, la liste déroulante Section du formulaire Élève est vide parce qu'aucune section n'a encore été créée. Vérifiez la phase précédant celle où vous vous trouvez." },
       "discountNotShowing": { "q": "Une remise que j'ai configurée n'apparaît pas sur une facture.", "a": "Les remises des Affectations de Frais des Élèves ne s'appliquent qu'aux factures générées après la création de la remise — elles ne s'appliquent jamais rétroactivement à une facture existante." },

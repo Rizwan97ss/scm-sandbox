@@ -16,6 +16,7 @@
   },
   "requires": "Requires: {{phase}}",
   "gettingStarted": {
+    "subdomainCard": { "title": "Your school's own address", "descriptionBefore": "Everything for your school happens at your own subdomain — you're on it right now:", "descriptionAfter": ". Bookmark it. If you ever see login or \"network\" errors, the first thing to check is that you're on the right subdomain, not a bare central address." },
     "phase1": {
       "title": "Phase 1 — Academic foundations",
       "steps": {
@@ -92,6 +93,11 @@
         "invoices": { "title": "Invoices", "description": "Generate per-student, pulling in the relevant fee structures and any discount as line items." },
         "payments": { "title": "Payments & Credit Notes", "description": "Record money received (cash, cheque, bank transfer, UPI, card) — the invoice's status updates automatically. Issue a credit note for partial adjustments without altering the original invoice." }
       }
+    },
+    "subscriptionCard": {
+      "title": "Phase 15 — Your own subscription",
+      "subtitle": "This is separate from Phase 8 — it's what this platform charges your school, not what your school charges parents.",
+      "description": "Under Settings → Billing you can see your current plan, trial end date, and usage against your plan's student/staff limits, and change plans. Creating a new staff user past your plan's limit returns a clear \"plan limit reached\" error rather than silently succeeding."
     }
   },
   "modules": {
@@ -150,8 +156,8 @@
     "columnUse": "Typical use",
     "columnAccess": "Broad access",
     "rows": {
-      "schoolAdmin": { "role": "School Admin", "use": "The school's top-level administrator account", "access": "Everything — users, roles, settings, all modules" },
-      "principal": { "role": "Principal", "use": "School leadership", "access": "Read-heavy across the board, manages academics/timetable/exams" },
+      "schoolAdmin": { "role": "School Admin", "use": "The school's top-level administrator account", "access": "Everything — users, roles, settings, billing, all modules" },
+      "principal": { "role": "Principal", "use": "School leadership", "access": "Read-heavy across the board, manages academics/timetable/exams, no billing" },
       "management": { "role": "Management", "use": "Trustees/owners who need visibility", "access": "Read-only across almost everything" },
       "accountant": { "role": "Accountant", "use": "Fees/billing operations", "access": "Fee categories/structures, invoices, payments, credit notes" },
       "hrStaff": { "role": "HR Staff", "use": "People operations", "access": "Users, designations, leave, payroll, staff attendance" },
@@ -166,6 +172,7 @@
   },
   "faq": {
     "items": {
+      "wrongSubdomain": { "q": "\"Network error\" or CORS-looking errors right after signing in.", "a": "You're very likely on the wrong address — it must be your own {{slug}} subdomain, never a bare central address. Re-check the URL bar." },
       "tooManyAttempts": { "q": "\"Too Many Attempts\" when logging in.", "a": "A short-lived safety limit on repeated login tries (protects against password guessing). It clears on its own within a minute — wait and try again rather than retrying rapidly." },
       "emptyDropdown": { "q": "A dropdown has no options in it.", "a": "That almost always means an earlier setup phase is missing — e.g. the Student form's Section dropdown is empty because no Section has been created yet. Check the phase before the one you're on." },
       "discountNotShowing": { "q": "A discount I set up isn't showing on an invoice.", "a": "Student Fee Assignment discounts only apply to invoices generated after the discount was created — they never apply retroactively to an existing invoice." },

@@ -16,6 +16,7 @@
   },
   "requires": "Requer: {{phase}}",
   "gettingStarted": {
+    "subdomainCard": { "title": "O endereço próprio da sua escola", "descriptionBefore": "Tudo para a sua escola acontece no seu próprio subdomínio — você está nele agora:", "descriptionAfter": ". Adicione aos favoritos. Se você ver erros de login ou de \"rede\", a primeira coisa a verificar é se está no subdomínio correto, não em um endereço central genérico." },
     "phase1": {
       "title": "Fase 1 — Fundamentos acadêmicos",
       "steps": {
@@ -92,6 +93,11 @@
         "invoices": { "title": "Faturas", "description": "Gere por aluno, incluindo as estruturas de mensalidade relevantes e qualquer desconto como itens da fatura." },
         "payments": { "title": "Pagamentos e Notas de Crédito", "description": "Registre o dinheiro recebido (dinheiro, cheque, transferência bancária, UPI, cartão) — o status da fatura é atualizado automaticamente. Emita uma nota de crédito para ajustes parciais sem alterar a fatura original." }
       }
+    },
+    "subscriptionCard": {
+      "title": "Fase 15 — Sua própria assinatura",
+      "subtitle": "Isso é separado da Fase 8 — é o que esta plataforma cobra da sua escola, não o que sua escola cobra dos pais.",
+      "description": "Em Configurações → Faturamento você pode ver seu plano atual, a data de término do teste e o uso em relação aos limites de alunos/funcionários do seu plano, além de mudar de plano. Criar um novo usuário funcionário além do limite do seu plano retorna um erro claro de \"limite do plano atingido\" em vez de ter sucesso silenciosamente."
     }
   },
   "modules": {
@@ -150,8 +156,8 @@
     "columnUse": "Uso típico",
     "columnAccess": "Acesso amplo",
     "rows": {
-      "schoolAdmin": { "role": "Administrador da Escola", "use": "A conta de administrador de mais alto nível da escola", "access": "Tudo — usuários, funções, configurações, todos os módulos" },
-      "principal": { "role": "Diretor", "use": "Liderança da escola", "access": "Acesso amplo de leitura em geral, gerencia acadêmico/horário/exames" },
+      "schoolAdmin": { "role": "Administrador da Escola", "use": "A conta de administrador de mais alto nível da escola", "access": "Tudo — usuários, funções, configurações, faturamento, todos os módulos" },
+      "principal": { "role": "Diretor", "use": "Liderança da escola", "access": "Acesso de leitura amplo em geral, gerencia acadêmico/horário/provas, sem faturamento" },
       "management": { "role": "Gestão", "use": "Mantenedores/proprietários que precisam de visibilidade", "access": "Somente leitura em quase tudo" },
       "accountant": { "role": "Contador", "use": "Operações de mensalidade/cobrança", "access": "Categorias/estruturas de mensalidade, faturas, pagamentos, notas de crédito" },
       "hrStaff": { "role": "Equipe de RH", "use": "Operações de pessoas", "access": "Usuários, cargos, licenças, folha de pagamento, frequência da equipe" },
@@ -166,6 +172,7 @@
   },
   "faq": {
     "items": {
+      "wrongSubdomain": { "q": "Erros de \"rede\" ou parecidos com CORS logo após fazer login.", "a": "É muito provável que você esteja no endereço errado — deve ser o seu próprio subdomínio {{slug}}, nunca um endereço central genérico. Verifique novamente a barra de endereços." },
       "tooManyAttempts": { "q": "\"Muitas tentativas\" ao fazer login.", "a": "Um limite de segurança temporário para tentativas repetidas de login (protege contra tentativas de adivinhar a senha). Ele se limpa automaticamente em cerca de um minuto — aguarde e tente novamente, em vez de tentar repetidamente." },
       "emptyDropdown": { "q": "Um menu suspenso está sem opções.", "a": "Isso quase sempre significa que uma fase de configuração anterior está faltando — por exemplo, o menu suspenso de Turma no formulário de Aluno está vazio porque nenhuma Turma foi criada ainda. Verifique a fase anterior à que você está." },
       "discountNotShowing": { "q": "Um desconto que configurei não está aparecendo em uma fatura.", "a": "Os descontos de Atribuição de Mensalidade do Aluno se aplicam apenas a faturas geradas após a criação do desconto — eles nunca se aplicam retroativamente a uma fatura existente." },

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { AlertTriangle, ArrowRight } from 'lucide-react'
 import { PageHeader } from '@/components/layout/PageHeader'
-import { Card, CardContent, CardHeader, CardTitle, Tabs, Badge } from '@/components/ui'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, Tabs, Badge } from '@/components/ui'
 import { useFeatureTranslation } from '@/hooks/useFeatureTranslation'
 import type { TFunction } from 'i18next'
 import '../i18n'
@@ -34,11 +34,24 @@ function Phase({ title, blocked, t, children }: { title: string; blocked?: strin
   )
 }
 
-function GettingStartedTab({ t }: { t: TFunction }) {
+function GettingStartedTab({ t, slug }: { t: TFunction; slug: string }) {
   const p1 = 'gettingStarted.phase1.steps'
   const p2 = 'gettingStarted.phase2.steps'
   return (
     <div className="flex flex-col gap-4">
+      <Card>
+        <CardHeader>
+          <CardTitle>{t('gettingStarted.subdomainCard.title')}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground">
+            {t('gettingStarted.subdomainCard.descriptionBefore')}{' '}
+            <code className="rounded bg-muted px-1.5 py-0.5 text-foreground">{slug}</code>
+            {t('gettingStarted.subdomainCard.descriptionAfter')}
+          </p>
+        </CardContent>
+      </Card>
+
       <Phase title={t('gettingStarted.phase1.title')} t={t}>
         <Step n={1} title={t(`${p1}.academicYear.title`)}>{t(`${p1}.academicYear.description`)}</Step>
         <Step n={2} title={t(`${p1}.terms.title`)}>{t(`${p1}.terms.description`)}</Step>
@@ -116,6 +129,16 @@ function FeesTab({ t }: { t: TFunction }) {
         <Step n={4} title={t(`${p8}.invoices.title`)}>{t(`${p8}.invoices.description`)}</Step>
         <Step n={5} title={t(`${p8}.payments.title`)}>{t(`${p8}.payments.description`)}</Step>
       </Phase>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>{t('fees.subscriptionCard.title')}</CardTitle>
+          <CardDescription>{t('fees.subscriptionCard.subtitle')}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground">{t('fees.subscriptionCard.description')}</p>
+        </CardContent>
+      </Card>
     </div>
   )
 }
@@ -224,9 +247,9 @@ function RolesTab({ t }: { t: TFunction }) {
   )
 }
 
-const FAQ_KEYS = ['tooManyAttempts', 'emptyDropdown', 'discountNotShowing', 'recordDisappeared'] as const
+const FAQ_KEYS = ['wrongSubdomain', 'tooManyAttempts', 'emptyDropdown', 'discountNotShowing', 'recordDisappeared'] as const
 
-function FaqTab({ t }: { t: TFunction }) {
+function FaqTab({ t, slug }: { t: TFunction; slug: string }) {
   return (
     <div className="flex flex-col gap-4">
       {FAQ_KEYS.map((key) => (
@@ -235,7 +258,7 @@ function FaqTab({ t }: { t: TFunction }) {
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-warning" />
             <div className="flex flex-col gap-1">
               <p className="text-sm font-medium">{t(`faq.items.${key}.q`)}</p>
-              <p className="text-sm text-muted-foreground">{t(`faq.items.${key}.a`)}</p>
+              <p className="text-sm text-muted-foreground">{t(`faq.items.${key}.a`, { slug })}</p>
             </div>
           </CardContent>
         </Card>
@@ -246,6 +269,7 @@ function FaqTab({ t }: { t: TFunction }) {
 
 export function HelpGuidePage() {
   const { t } = useFeatureTranslation('help')
+  const slug = window.location.hostname
 
   return (
     <div>
@@ -253,14 +277,14 @@ export function HelpGuidePage() {
 
       <Tabs
         items={[
-          { value: 'start', label: t('tabs.start'), content: <GettingStartedTab t={t} /> },
+          { value: 'start', label: t('tabs.start'), content: <GettingStartedTab t={t} slug={slug} /> },
           { value: 'classes', label: t('tabs.classes'), content: <ClassesTab t={t} /> },
           { value: 'operations', label: t('tabs.operations'), content: <OperationsTab t={t} /> },
           { value: 'fees', label: t('tabs.fees'), content: <FeesTab t={t} /> },
           { value: 'modules', label: t('tabs.modules'), content: <OtherModulesTab t={t} /> },
           { value: 'communication', label: t('tabs.communication'), content: <CommunicationTab t={t} /> },
           { value: 'roles', label: t('tabs.roles'), content: <RolesTab t={t} /> },
-          { value: 'faq', label: t('tabs.faq'), content: <FaqTab t={t} /> },
+          { value: 'faq', label: t('tabs.faq'), content: <FaqTab t={t} slug={slug} /> },
         ]}
       />
 

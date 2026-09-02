@@ -16,6 +16,7 @@
   },
   "requires": "Requiere: {{phase}}",
   "gettingStarted": {
+    "subdomainCard": { "title": "La dirección propia de tu escuela", "descriptionBefore": "Todo para tu escuela ocurre en tu propio subdominio — estás en él ahora mismo:", "descriptionAfter": ". Guárdalo en marcadores. Si alguna vez ves errores de inicio de sesión o de \"red\", lo primero que debes comprobar es que estás en el subdominio correcto, no en una dirección central genérica." },
     "phase1": {
       "title": "Fase 1 — Fundamentos académicos",
       "steps": {
@@ -92,6 +93,11 @@
         "invoices": { "title": "Facturas", "description": "Se generan por estudiante, incorporando las estructuras de cuotas correspondientes y cualquier descuento como líneas de factura." },
         "payments": { "title": "Pagos y Notas de Crédito", "description": "Registra el dinero recibido (efectivo, cheque, transferencia bancaria, UPI, tarjeta): el estado de la factura se actualiza automáticamente. Emite una nota de crédito para ajustes parciales sin alterar la factura original." }
       }
+    },
+    "subscriptionCard": {
+      "title": "Fase 15 — Tu propia suscripción",
+      "subtitle": "Esto es independiente de la Fase 8 — es lo que esta plataforma le cobra a tu escuela, no lo que tu escuela cobra a los padres.",
+      "description": "En Configuración → Facturación puedes ver tu plan actual, la fecha de fin de la prueba y el uso frente a los límites de estudiantes/personal de tu plan, y cambiar de plan. Crear un nuevo usuario de personal que supere el límite de tu plan devuelve un error claro de \"límite del plan alcanzado\" en lugar de tener éxito silenciosamente."
     }
   },
   "modules": {
@@ -150,8 +156,8 @@
     "columnUse": "Uso típico",
     "columnAccess": "Acceso general",
     "rows": {
-      "schoolAdmin": { "role": "Administrador Escolar", "use": "La cuenta de administrador de nivel superior de la escuela", "access": "Todo: usuarios, roles, configuración, todos los módulos" },
-      "principal": { "role": "Director", "use": "Dirección del centro", "access": "Acceso de lectura amplio en general, gestiona lo académico/horario/exámenes" },
+      "schoolAdmin": { "role": "Administrador Escolar", "use": "La cuenta de administrador de nivel superior de la escuela", "access": "Todo — usuarios, roles, configuración, facturación, todos los módulos" },
+      "principal": { "role": "Director", "use": "Dirección del centro", "access": "Acceso de lectura amplio en general, gestiona académicos/horario/exámenes, sin facturación" },
       "management": { "role": "Gerencia", "use": "Fideicomisarios/propietarios que necesitan visibilidad", "access": "Solo lectura en casi todo" },
       "accountant": { "role": "Contador", "use": "Operaciones de cuotas/facturación", "access": "Categorías/estructuras de cuotas, facturas, pagos, notas de crédito" },
       "hrStaff": { "role": "Personal de RR. HH.", "use": "Gestión de personas", "access": "Usuarios, cargos, permisos, nómina, asistencia del personal" },
@@ -166,6 +172,7 @@
   },
   "faq": {
     "items": {
+      "wrongSubdomain": { "q": "Errores de \"red\" o similares a CORS justo después de iniciar sesión.", "a": "Es muy probable que estés en la dirección incorrecta — debe ser tu propio subdominio {{slug}}, nunca una dirección central genérica. Vuelve a revisar la barra de direcciones." },
       "tooManyAttempts": { "q": "\"Demasiados intentos\" al iniciar sesión.", "a": "Es un límite de seguridad temporal ante intentos repetidos de inicio de sesión (protege contra la adivinación de contraseñas). Se restablece por sí solo en un minuto: espera e inténtalo de nuevo en lugar de reintentar rápidamente." },
       "emptyDropdown": { "q": "Una lista desplegable no tiene opciones.", "a": "Casi siempre significa que falta completar una fase de configuración anterior; por ejemplo, la lista desplegable de Sección en el formulario de estudiante está vacía porque aún no se ha creado ninguna Sección. Revisa la fase anterior a la que te encuentras." },
       "discountNotShowing": { "q": "Un descuento que configuré no aparece en una factura.", "a": "Los descuentos de Asignación de Cuota de Estudiante solo se aplican a las facturas generadas después de crear el descuento; nunca se aplican de forma retroactiva a una factura existente." },
