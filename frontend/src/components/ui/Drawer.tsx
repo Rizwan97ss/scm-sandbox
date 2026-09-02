@@ -22,7 +22,12 @@ export function Drawer({ open, onOpenChange, title, children, footer, side = 'ri
         <Dialog.Content
           className={cn(
             'fixed top-0 z-50 flex h-full w-full max-w-md flex-col border-border bg-card shadow-xl',
-            side === 'right' ? 'right-0 border-l' : 'left-0 border-r'
+            // 'left'/'right' describe the prop's intent (a nav drawer belongs
+            // at the reading-start edge, a detail panel at the reading-end
+            // edge) but render as logical start/end so the side that's
+            // actually correct flips automatically under RTL instead of
+            // pinning to a physical screen edge regardless of language.
+            side === 'right' ? 'end-0 border-s' : 'start-0 border-e'
           )}
         >
           <div className="flex items-center justify-between gap-4 border-b border-border p-4">
