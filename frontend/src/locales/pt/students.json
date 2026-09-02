@@ -84,7 +84,8 @@
     "address": "Endereço",
     "medicalInfo": "Informações médicas",
     "portalReady": "Conta do portal pronta. Usuário: {{username}} · Senha temporária: {{password}}",
-    "recordUpdated": "Cadastro do aluno atualizado."
+    "recordUpdated": "Cadastro do aluno atualizado.",
+    "emergencyContact": "Contato de emergência"
   },
   "guardiansList": {
     "title": "Responsáveis",

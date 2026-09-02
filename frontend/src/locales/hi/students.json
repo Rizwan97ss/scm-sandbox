@@ -84,7 +84,8 @@
     "address": "पता",
     "medicalInfo": "चिकित्सा जानकारी",
     "portalReady": "पोर्टल खाता तैयार है। उपयोगकर्ता नाम: {{username}} · अस्थायी पासवर्ड: {{password}}",
-    "recordUpdated": "छात्र रिकॉर्ड अपडेट किया गया।"
+    "recordUpdated": "छात्र रिकॉर्ड अपडेट किया गया।",
+    "emergencyContact": "आपातकालीन संपर्क"
   },
   "guardiansList": {
     "title": "अभिभावक",

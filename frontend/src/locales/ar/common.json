@@ -382,6 +382,11 @@
     "questionType": {
       "mcq": "اختيار من متعدد",
       "true_false": "صح / خطأ"
+    },
+    "academicYearStatus": {
+      "upcoming": "قادم",
+      "active": "نشط",
+      "closed": "مغلق"
     }
   },
   "feedback": {

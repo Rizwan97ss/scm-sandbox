@@ -84,7 +84,8 @@
     "address": "地址",
     "medicalInfo": "医疗信息",
     "portalReady": "门户账户已就绪。用户名：{{username}} · 临时密码：{{password}}",
-    "recordUpdated": "学生档案已更新。"
+    "recordUpdated": "学生档案已更新。",
+    "emergencyContact": "紧急联系人"
   },
   "guardiansList": {
     "title": "监护人",

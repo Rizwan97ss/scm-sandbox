@@ -84,7 +84,8 @@
     "address": "Address",
     "medicalInfo": "Medical info",
     "portalReady": "Portal account ready. Username: {{username}} · Temp password: {{password}}",
-    "recordUpdated": "Student record updated."
+    "recordUpdated": "Student record updated.",
+    "emergencyContact": "Emergency Contact"
   },
   "guardiansList": {
     "title": "Guardians",

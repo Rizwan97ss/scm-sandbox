@@ -86,6 +86,11 @@ export const getHolidayTypeLabels = (t: TFunction): Record<HolidayType, string> 
 
 export const ACADEMIC_YEAR_STATUSES = ['upcoming', 'active', 'closed'] as const
 export type AcademicYearStatus = (typeof ACADEMIC_YEAR_STATUSES)[number]
+export const getAcademicYearStatusLabels = (t: TFunction): Record<AcademicYearStatus, string> => ({
+  upcoming: t('common:enums.academicYearStatus.upcoming'),
+  active: t('common:enums.academicYearStatus.active'),
+  closed: t('common:enums.academicYearStatus.closed'),
+})
 
 export const ATTENDANCE_STATUSES = ['present', 'absent', 'late', 'half_day', 'excused', 'on_leave'] as const
 export type AttendanceStatus = (typeof ATTENDANCE_STATUSES)[number]

@@ -84,7 +84,8 @@
     "address": "Dirección",
     "medicalInfo": "Información médica",
     "portalReady": "Cuenta del portal lista. Usuario: {{username}} · Contraseña temporal: {{password}}",
-    "recordUpdated": "Registro del estudiante actualizado."
+    "recordUpdated": "Registro del estudiante actualizado.",
+    "emergencyContact": "Contacto de emergencia"
   },
   "guardiansList": {
     "title": "Tutores",

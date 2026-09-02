@@ -84,7 +84,8 @@
     "address": "العنوان",
     "medicalInfo": "المعلومات الطبية",
     "portalReady": "حساب البوابة جاهز. اسم المستخدم: {{username}} · كلمة المرور المؤقتة: {{password}}",
-    "recordUpdated": "تم تحديث سجل الطالب."
+    "recordUpdated": "تم تحديث سجل الطالب.",
+    "emergencyContact": "جهة اتصال الطوارئ"
   },
   "guardiansList": {
     "title": "أولياء الأمور",

@@ -370,6 +370,11 @@
     "questionType": {
       "mcq": "Multiple Choice",
       "true_false": "True / False"
+    },
+    "academicYearStatus": {
+      "upcoming": "Upcoming",
+      "active": "Active",
+      "closed": "Closed"
     }
   },
   "feedback": {

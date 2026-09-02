@@ -367,6 +367,11 @@
     "questionType": {
       "mcq": "选择题",
       "true_false": "判断题"
+    },
+    "academicYearStatus": {
+      "upcoming": "即将开始",
+      "active": "进行中",
+      "closed": "已结束"
     }
   },
   "feedback": {

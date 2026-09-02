@@ -370,6 +370,11 @@
     "questionType": {
       "mcq": "बहुविकल्पीय",
       "true_false": "सही / गलत"
+    },
+    "academicYearStatus": {
+      "upcoming": "आगामी",
+      "active": "सक्रिय",
+      "closed": "बंद"
     }
   },
   "feedback": {

@@ -84,7 +84,8 @@
     "address": "پتہ",
     "medicalInfo": "طبی معلومات",
     "portalReady": "پورٹل اکاؤنٹ تیار ہے۔ صارف نام: {{username}} · عارضی پاس ورڈ: {{password}}",
-    "recordUpdated": "طالب علم کا ریکارڈ اپ ڈیٹ ہو گیا۔"
+    "recordUpdated": "طالب علم کا ریکارڈ اپ ڈیٹ ہو گیا۔",
+    "emergencyContact": "ہنگامی رابطہ"
   },
   "guardiansList": {
     "title": "سرپرست",

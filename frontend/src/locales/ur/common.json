@@ -370,6 +370,11 @@
     "questionType": {
       "mcq": "کثیر انتخابی",
       "true_false": "صحیح / غلط"
+    },
+    "academicYearStatus": {
+      "upcoming": "آئندہ",
+      "active": "فعال",
+      "closed": "بند"
     }
   },
   "feedback": {

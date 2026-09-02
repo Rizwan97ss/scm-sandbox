@@ -84,7 +84,8 @@
     "address": "Adresse",
     "medicalInfo": "Informations médicales",
     "portalReady": "Compte du portail prêt. Identifiant : {{username}} · Mot de passe temporaire : {{password}}",
-    "recordUpdated": "Dossier de l'élève mis à jour."
+    "recordUpdated": "Dossier de l'élève mis à jour.",
+    "emergencyContact": "Contact d'urgence"
   },
   "guardiansList": {
     "title": "Tuteurs",

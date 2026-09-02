@@ -84,7 +84,8 @@
     "address": "Адрес",
     "medicalInfo": "Медицинская информация",
     "portalReady": "Учётная запись портала готова. Логин: {{username}} · Временный пароль: {{password}}",
-    "recordUpdated": "Личное дело учащегося обновлено."
+    "recordUpdated": "Личное дело учащегося обновлено.",
+    "emergencyContact": "Контакт для экстренной связи"
   },
   "guardiansList": {
     "title": "Опекуны",

@@ -376,6 +376,11 @@
     "questionType": {
       "mcq": "Множественный выбор",
       "true_false": "Верно / Неверно"
+    },
+    "academicYearStatus": {
+      "upcoming": "Предстоящий",
+      "active": "Активный",
+      "closed": "Закрыт"
     }
   },
   "feedback": {

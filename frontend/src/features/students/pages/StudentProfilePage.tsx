@@ -112,7 +112,7 @@ export function StudentProfilePage() {
 
       <div className="mb-6 flex flex-col gap-4 rounded-lg border border-border bg-card p-4 sm:flex-row sm:items-center sm:gap-6">
         <Avatar name={student.full_name} src={student.photo_url} size={64} />
-        <div className="grid flex-1 grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-4">
+        <div className="grid flex-1 grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-5">
           <div>
             <p className="text-muted-foreground">{t('profile.admissionNumber')}</p>
             <p className="font-medium">{student.admission_number}</p>

@@ -15,7 +15,7 @@ import '../i18n'
 export function TermsPage() {
   const { t } = useFeatureTranslation('academics')
   const { can } = usePermission()
-  const { setPage, queryParams } = usePagination('sequence')
+  const { sort, setPage, setSort, queryParams } = usePagination('sequence')
   const { listQuery, createMutation, updateMutation } = useCrudResource(termsApi, queryKeys.terms, queryParams, 'Term')
   const { data: academicYears } = useQuery({ queryKey: queryKeys.academicYears({ per_page: 100 }), queryFn: () => academicYearsApi.list({ per_page: 100 }) })
 
@@ -87,6 +87,8 @@ export function TermsPage() {
         isLoading={listQuery.isLoading} isError={listQuery.isError} onRetry={listQuery.refetch}
         meta={listQuery.data?.meta}
         onPageChange={setPage}
+        sort={sort}
+        onSortChange={setSort}
         emptyTitle={t('terms.emptyTitle')}
         emptyDescription={t('terms.emptyDescription')}
       />

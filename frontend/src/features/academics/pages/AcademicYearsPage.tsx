@@ -9,6 +9,7 @@ import { useFeatureTranslation } from '@/hooks/useFeatureTranslation'
 import { PageHeader } from '@/components/layout/PageHeader'
 import { Badge, Button, DataTable, FormField, Input, Modal, Switch, type DataTableColumn } from '@/components/ui'
 import type { AcademicYear, AcademicYearPayload } from '@/types/academic'
+import { getAcademicYearStatusLabels } from '@/types/enums'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import '../i18n'
@@ -69,7 +70,7 @@ export function AcademicYearsPage() {
       header: t('fields.status'),
       render: (row) => (
         <div className="flex items-center gap-2">
-          <Badge variant={row.status === 'active' ? 'success' : row.status === 'closed' ? 'default' : 'info'}>{row.status}</Badge>
+          <Badge variant={row.status === 'active' ? 'success' : row.status === 'closed' ? 'default' : 'info'}>{getAcademicYearStatusLabels(t)[row.status]}</Badge>
           {row.is_current && <Badge variant="primary">{t('fields.current')}</Badge>}
         </div>
       ),

@@ -84,7 +84,8 @@
     "address": "Adresse",
     "medicalInfo": "Medizinische Angaben",
     "portalReady": "Portalkonto bereit. Benutzername: {{username}} · Vorläufiges Passwort: {{password}}",
-    "recordUpdated": "Schülerdatensatz aktualisiert."
+    "recordUpdated": "Schülerdatensatz aktualisiert.",
+    "emergencyContact": "Notfallkontakt"
   },
   "guardiansList": {
     "title": "Erziehungsberechtigte",
