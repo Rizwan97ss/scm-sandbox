@@ -35,7 +35,8 @@
     "emptyTitleSearch": "Aucun élève ne correspond à « {{query}} »",
     "emptyTitle": "Aucun élève trouvé",
     "emptyDescriptionSearch": "Essayez un autre nom, ou effacez la recherche pour voir tout le monde.",
-    "emptyDescriptionCreate": "Admettez votre premier élève pour commencer."
+    "emptyDescriptionCreate": "Admettez votre premier élève pour commencer.",
+    "columnDepartment": "Département"
   },
   "admission": {
     "title": "Nouvelle admission d'élève",

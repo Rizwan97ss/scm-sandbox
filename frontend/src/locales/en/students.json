@@ -35,7 +35,8 @@
     "emptyTitleSearch": "No students match \"{{query}}\"",
     "emptyTitle": "No students found",
     "emptyDescriptionSearch": "Try a different name, or clear the search to see everyone.",
-    "emptyDescriptionCreate": "Admit your first student to get started."
+    "emptyDescriptionCreate": "Admit your first student to get started.",
+    "columnDepartment": "Department"
   },
   "admission": {
     "title": "New Student Admission",

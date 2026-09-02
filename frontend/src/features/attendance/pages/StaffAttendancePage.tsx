@@ -24,7 +24,7 @@ export function StaffAttendancePage() {
   const { user } = useAuth()
   const { can } = usePermission()
   const queryClient = useQueryClient()
-  const { setPage, queryParams } = usePagination('-date')
+  const { sort, setPage, setSort, queryParams } = usePagination('-date')
 
   const { data, isLoading, isError, refetch } = useQuery({
     queryKey: queryKeys.staffAttendance(queryParams),
@@ -132,6 +132,8 @@ export function StaffAttendancePage() {
         isLoading={isLoading} isError={isError} onRetry={refetch}
         meta={data?.meta}
         onPageChange={setPage}
+        sort={sort}
+        onSortChange={setSort}
         emptyTitle={t('staffAttendance.emptyTitle')}
         emptyDescription={t('staffAttendance.emptyDescription')}
       />

@@ -35,7 +35,8 @@
     "emptyTitleSearch": "\"{{query}}\" से मेल खाने वाला कोई छात्र नहीं",
     "emptyTitle": "कोई छात्र नहीं मिला",
     "emptyDescriptionSearch": "कोई अन्य नाम आज़माएं, या सभी को देखने के लिए खोज साफ़ करें।",
-    "emptyDescriptionCreate": "शुरू करने के लिए अपने पहले छात्र को प्रवेश दें।"
+    "emptyDescriptionCreate": "शुरू करने के लिए अपने पहले छात्र को प्रवेश दें।",
+    "columnDepartment": "विभाग"
   },
   "admission": {
     "title": "नया छात्र प्रवेश",

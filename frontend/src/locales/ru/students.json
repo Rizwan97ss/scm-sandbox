@@ -35,7 +35,8 @@
     "emptyTitleSearch": "Нет учащихся, соответствующих запросу «{{query}}»",
     "emptyTitle": "Учащиеся не найдены",
     "emptyDescriptionSearch": "Попробуйте другое имя или очистите поиск, чтобы увидеть всех.",
-    "emptyDescriptionCreate": "Зачислите первого учащегося, чтобы начать."
+    "emptyDescriptionCreate": "Зачислите первого учащегося, чтобы начать.",
+    "columnDepartment": "Отделение"
   },
   "admission": {
     "title": "Зачисление нового учащегося",

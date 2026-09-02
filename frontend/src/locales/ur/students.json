@@ -35,7 +35,8 @@
     "emptyTitleSearch": "\"{{query}}\" سے مماثل کوئی طالب علم نہیں",
     "emptyTitle": "کوئی طالب علم نہیں ملا",
     "emptyDescriptionSearch": "کوئی اور نام آزمائیں، یا سب کو دیکھنے کے لیے تلاش صاف کریں۔",
-    "emptyDescriptionCreate": "شروع کرنے کے لیے اپنے پہلے طالب علم کو داخل کریں۔"
+    "emptyDescriptionCreate": "شروع کرنے کے لیے اپنے پہلے طالب علم کو داخل کریں۔",
+    "columnDepartment": "شعبہ"
   },
   "admission": {
     "title": "نیا طالب علم داخلہ",

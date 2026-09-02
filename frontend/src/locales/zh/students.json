@@ -35,7 +35,8 @@
     "emptyTitleSearch": "没有与“{{query}}”匹配的学生",
     "emptyTitle": "未找到学生",
     "emptyDescriptionSearch": "尝试其他姓名，或清除搜索以查看所有学生。",
-    "emptyDescriptionCreate": "录入您的第一位学生以开始使用。"
+    "emptyDescriptionCreate": "录入您的第一位学生以开始使用。",
+    "columnDepartment": "部门"
   },
   "admission": {
     "title": "新生入学登记",

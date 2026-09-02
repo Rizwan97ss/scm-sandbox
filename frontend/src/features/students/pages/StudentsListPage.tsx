@@ -36,6 +36,7 @@ export function StudentsListPage() {
     { key: 'name', header: t('list.columnName'), sortable: true, render: (row) => <span className="font-medium">{row.full_name}</span> },
     { key: 'grade_level', header: t('list.columnGrade'), render: (row) => row.grade_level?.name ?? '—' },
     { key: 'section', header: t('list.columnSection'), render: (row) => row.section?.name ?? '—' },
+    { key: 'department', header: t('list.columnDepartment'), render: (row) => row.department?.name ?? '—' },
     {
       key: 'status',
       header: t('list.columnStatus'),

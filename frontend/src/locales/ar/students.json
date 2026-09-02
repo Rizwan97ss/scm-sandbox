@@ -35,7 +35,8 @@
     "emptyTitleSearch": "لا يوجد طلاب مطابقون لـ \"{{query}}\"",
     "emptyTitle": "لم يتم العثور على طلاب",
     "emptyDescriptionSearch": "جرّب اسمًا آخر، أو امسح البحث لعرض الجميع.",
-    "emptyDescriptionCreate": "اقبل أول طالب لديك للبدء."
+    "emptyDescriptionCreate": "اقبل أول طالب لديك للبدء.",
+    "columnDepartment": "القسم"
   },
   "admission": {
     "title": "قبول طالب جديد",

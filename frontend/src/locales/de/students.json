@@ -35,7 +35,8 @@
     "emptyTitleSearch": "Keine Schüler entsprechen „{{query}}“",
     "emptyTitle": "Keine Schüler gefunden",
     "emptyDescriptionSearch": "Versuchen Sie einen anderen Namen, oder löschen Sie die Suche, um alle anzuzeigen.",
-    "emptyDescriptionCreate": "Nehmen Sie Ihren ersten Schüler auf, um zu beginnen."
+    "emptyDescriptionCreate": "Nehmen Sie Ihren ersten Schüler auf, um zu beginnen.",
+    "columnDepartment": "Abteilung"
   },
   "admission": {
     "title": "Neue Schüleraufnahme",
