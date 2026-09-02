@@ -62,7 +62,7 @@ class AnonymizationTest extends TestCase
         $user = $this->createUserWithRole('Teacher', ['email' => 'self-delete@mfa.test']);
         $this->actingAs($user);
 
-        $this->deleteJson('/api/v1/account')->assertStatus(200);
+        $this->deleteJson('/api/v1/account', ['password' => 'password'])->assertStatus(200);
 
         $user->refresh();
         $this->assertSoftDeleted($user);

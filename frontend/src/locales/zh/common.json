@@ -113,7 +113,8 @@
     "logout": "退出登录",
     "deleteConfirmTitle": "删除您的账户？",
     "deleteConfirmDescription": "这将立即删除您的个人数据（姓名、联系方式、医疗/紧急联系信息），且无法撤销。与您账户相关的学业和财务记录将根据需要予以保留。",
-    "deleteConfirmLabel": "删除我的账户"
+    "deleteConfirmLabel": "删除我的账户",
+    "confirmPassword": "确认您的密码"
   },
   "theme": {
     "changeTheme": "切换主题",

@@ -113,7 +113,8 @@
     "logout": "Se déconnecter",
     "deleteConfirmTitle": "Supprimer votre compte ?",
     "deleteConfirmDescription": "Cela supprime immédiatement vos données personnelles (nom, coordonnées, informations médicales/d'urgence) et ne peut pas être annulé. Les dossiers académiques et financiers liés à votre compte sont conservés, si nécessaire.",
-    "deleteConfirmLabel": "Supprimer mon compte"
+    "deleteConfirmLabel": "Supprimer mon compte",
+    "confirmPassword": "Confirmez votre mot de passe"
   },
   "theme": {
     "changeTheme": "Changer de thème",

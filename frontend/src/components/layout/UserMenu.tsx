@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Download, HelpCircle, IdCard, LogOut, Trash2, User as UserIcon } from 'lucide-react'
-import { toast } from 'sonner'
 import { idCardsApi } from '@/api/endpoints/certificates'
 import { deleteAccount } from '@/api/endpoints/auth'
 import { Avatar } from '@/components/ui/Avatar'
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog'
 import { Dropdown } from '@/components/ui/Dropdown'
+import { FormField, Input } from '@/components/ui'
 import { useAuth } from '@/context/AuthContext'
 import { routePaths } from '@/routes/routePaths'
 import type { ApiError } from '@/api/client'
@@ -18,21 +18,31 @@ export function UserMenu() {
   const navigate = useNavigate()
   const [deleteOpen, setDeleteOpen] = useState(false)
   const [isDeleting, setIsDeleting] = useState(false)
+  const [deletePassword, setDeletePassword] = useState('')
+  const [deleteError, setDeleteError] = useState<string | null>(null)
 
   if (!user) return null
 
   const isStaff = !hasRole('Student', 'Parent')
 
+  function closeDeleteDialog(open: boolean) {
+    setDeleteOpen(open)
+    if (!open) {
+      setDeletePassword('')
+      setDeleteError(null)
+    }
+  }
+
   async function handleDeleteAccount() {
+    setDeleteError(null)
     setIsDeleting(true)
     try {
-      await deleteAccount()
+      await deleteAccount(deletePassword)
       navigate(routePaths.login, { replace: true })
     } catch (error) {
-      toast.error((error as ApiError).message)
+      setDeleteError((error as ApiError).message)
     } finally {
       setIsDeleting(false)
-      setDeleteOpen(false)
     }
   }
 
@@ -93,13 +103,24 @@ export function UserMenu() {
 
       <ConfirmDialog
         open={deleteOpen}
-        onOpenChange={setDeleteOpen}
+        onOpenChange={closeDeleteDialog}
         title={t('userMenu.deleteConfirmTitle')}
         description={t('userMenu.deleteConfirmDescription')}
         confirmLabel={t('userMenu.deleteConfirmLabel')}
         isLoading={isDeleting}
         onConfirm={handleDeleteAccount}
-      />
+      >
+        <FormField label={t('userMenu.confirmPassword')} htmlFor="delete-account-password" error={deleteError ?? undefined}>
+          <Input
+            id="delete-account-password"
+            type="password"
+            autoComplete="current-password"
+            value={deletePassword}
+            onChange={(e) => setDeletePassword(e.target.value)}
+            invalid={!!deleteError}
+          />
+        </FormField>
+      </ConfirmDialog>
     </>
   )
 }

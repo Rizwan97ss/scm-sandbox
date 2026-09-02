@@ -45,8 +45,8 @@ export async function logout(): Promise<void> {
   await httpClient.post('/auth/logout')
 }
 
-export async function deleteAccount(): Promise<void> {
-  await httpClient.delete('/account')
+export async function deleteAccount(password: string): Promise<void> {
+  await httpClient.delete('/account', { data: { password } })
 }
 
 export async function fetchMe(): Promise<User> {

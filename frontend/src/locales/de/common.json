@@ -113,7 +113,8 @@
     "logout": "Abmelden",
     "deleteConfirmTitle": "Konto löschen?",
     "deleteConfirmDescription": "Dies entfernt Ihre persönlichen Daten (Name, Kontaktdaten, medizinische Angaben/Notfallkontakte) sofort und kann nicht rückgängig gemacht werden. Akademische und finanzielle Datensätze, die mit Ihrem Konto verknüpft sind, werden nach Bedarf aufbewahrt.",
-    "deleteConfirmLabel": "Mein Konto löschen"
+    "deleteConfirmLabel": "Mein Konto löschen",
+    "confirmPassword": "Bestätigen Sie Ihr Passwort"
   },
   "theme": {
     "changeTheme": "Design ändern",

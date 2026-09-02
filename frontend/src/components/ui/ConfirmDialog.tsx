@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Modal } from './Modal'
 import { Button, type ButtonVariant } from './Button'
@@ -12,6 +13,8 @@ export interface ConfirmDialogProps {
   confirmVariant?: ButtonVariant
   isLoading?: boolean
   onConfirm: () => void
+  /** Extra content rendered in the modal body — e.g. a "type to confirm" or password-recheck field for an especially destructive action. */
+  children?: ReactNode
 }
 
 /** Use for any destructive or hard-to-undo action (delete, withdraw, deactivate). */
@@ -25,6 +28,7 @@ export function ConfirmDialog({
   confirmVariant = 'destructive',
   isLoading,
   onConfirm,
+  children,
 }: ConfirmDialogProps) {
   const { t } = useTranslation()
   const resolvedConfirmLabel = confirmLabel ?? t('confirmDialog.confirm')
@@ -48,7 +52,7 @@ export function ConfirmDialog({
         </>
       }
     >
-      <></>
+      {children ?? <></>}
     </Modal>
   )
 }
