@@ -196,9 +196,15 @@
     "title": "我的在线测验"
   },
   "myResults": {
+    "component": "科目组成",
+    "dateTBA": "日期待定",
+    "declaredResults": "已公布成绩",
     "description": "考试成绩与学期汇总成绩 — 科目成绩在教师或管理员公布后显示。",
     "emptyDescription": "您的账户尚未关联学生记录 — 请联系学校管理员。",
     "emptyTitle": "未找到学生记录",
+    "examSchedule": "考试日程",
+    "noExamsScheduledYet": "尚未安排考试。",
+    "resultsDeclared": "成绩已公布",
     "title": "我的成绩"
   },
   "onlineTestConfig": {

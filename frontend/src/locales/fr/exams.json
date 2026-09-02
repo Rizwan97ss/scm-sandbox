@@ -196,9 +196,15 @@
     "title": "Mes tests en ligne"
   },
   "myResults": {
+    "component": "Composant",
+    "dateTBA": "Date à confirmer",
+    "declaredResults": "Résultats publiés",
     "description": "Résultats d'examens et résultats consolidés de la période — une matière apparaît une fois déclarée par votre enseignant ou l'administration.",
     "emptyDescription": "Votre compte n'est pas encore lié à un dossier d'élève — contactez l'administration de votre établissement.",
     "emptyTitle": "Aucun dossier d'élève trouvé",
+    "examSchedule": "Calendrier des examens",
+    "noExamsScheduledYet": "Aucun examen programmé pour le moment.",
+    "resultsDeclared": "Résultats publiés",
     "title": "Mon résultat"
   },
   "onlineTestConfig": {

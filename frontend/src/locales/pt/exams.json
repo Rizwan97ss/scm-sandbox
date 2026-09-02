@@ -196,9 +196,15 @@
     "title": "Meus testes on-line"
   },
   "myResults": {
+    "component": "Componente",
+    "dateTBA": "Data a definir",
+    "declaredResults": "Resultados Divulgados",
     "description": "Resultados de exames e resultados consolidados do período — uma disciplina aparece assim que seu professor ou administrador a declarar.",
     "emptyDescription": "Sua conta ainda não está vinculada a um registro de aluno — entre em contato com a administração da sua escola.",
     "emptyTitle": "Nenhum registro de aluno encontrado",
+    "examSchedule": "Cronograma de provas",
+    "noExamsScheduledYet": "Nenhuma prova agendada ainda.",
+    "resultsDeclared": "Resultados divulgados",
     "title": "Meu resultado"
   },
   "onlineTestConfig": {

@@ -196,9 +196,15 @@
     "title": "My Online Tests"
   },
   "myResults": {
+    "component": "Component",
+    "dateTBA": "Date TBA",
+    "declaredResults": "Declared Results",
     "description": "Exam results and consolidated term results — a subject appears once your teacher or admin declares it.",
     "emptyDescription": "Your account isn't linked to a student record yet — contact your school admin.",
     "emptyTitle": "No student record found",
+    "examSchedule": "Exam schedule",
+    "noExamsScheduledYet": "No exams scheduled yet.",
+    "resultsDeclared": "Results declared",
     "title": "My Result"
   },
   "onlineTestConfig": {

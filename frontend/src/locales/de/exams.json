@@ -196,9 +196,15 @@
     "title": "Meine Online-Tests"
   },
   "myResults": {
+    "component": "Komponente",
+    "dateTBA": "Datum noch offen",
+    "declaredResults": "Veröffentlichte Ergebnisse",
     "description": "Prüfungsergebnisse und konsolidierte Halbjahresergebnisse — ein Fach erscheint, sobald es von Ihrer Lehrkraft oder der Verwaltung erklärt wird.",
     "emptyDescription": "Ihr Konto ist noch nicht mit einem Schülerdatensatz verknüpft — wenden Sie sich an die Schulverwaltung.",
     "emptyTitle": "Kein Schülerdatensatz gefunden",
+    "examSchedule": "Prüfungsplan",
+    "noExamsScheduledYet": "Noch keine Prüfungen geplant.",
+    "resultsDeclared": "Ergebnisse veröffentlicht",
     "title": "Mein Ergebnis"
   },
   "onlineTestConfig": {

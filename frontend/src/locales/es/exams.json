@@ -196,9 +196,15 @@
     "title": "Mis pruebas en línea"
   },
   "myResults": {
+    "component": "Componente",
+    "dateTBA": "Fecha por confirmar",
+    "declaredResults": "Resultados publicados",
     "description": "Resultados de exámenes y resultados consolidados del período — una asignatura aparece una vez que su docente o administrador la declara.",
     "emptyDescription": "Su cuenta aún no está vinculada a un registro de estudiante — contacte a la administración de su institución.",
     "emptyTitle": "No se encontró registro de estudiante",
+    "examSchedule": "Horario de exámenes",
+    "noExamsScheduledYet": "Aún no hay exámenes programados.",
+    "resultsDeclared": "Resultados publicados",
     "title": "Mi resultado"
   },
   "onlineTestConfig": {
