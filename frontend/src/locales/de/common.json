@@ -388,5 +388,9 @@
     "accessDenied": "Zugriff verweigert",
     "accessDeniedDescription": "Sie haben keine Berechtigung, diese Seite anzuzeigen.",
     "loading": "Wird geladen…"
+  },
+  "sidebar": {
+    "expand": "Seitenleiste erweitern",
+    "collapse": "Seitenleiste einklappen"
   }
 }

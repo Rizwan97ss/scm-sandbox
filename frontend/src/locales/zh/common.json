@@ -385,5 +385,9 @@
     "accessDenied": "拒绝访问",
     "accessDeniedDescription": "您没有权限查看此页面。",
     "loading": "加载中…"
+  },
+  "sidebar": {
+    "expand": "展开侧边栏",
+    "collapse": "收起侧边栏"
   }
 }

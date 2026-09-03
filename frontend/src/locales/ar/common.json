@@ -400,5 +400,9 @@
     "accessDenied": "تم رفض الوصول",
     "accessDeniedDescription": "ليس لديك إذن لعرض هذه الصفحة.",
     "loading": "جارٍ التحميل…"
+  },
+  "sidebar": {
+    "expand": "توسيع الشريط الجانبي",
+    "collapse": "طي الشريط الجانبي"
   }
 }

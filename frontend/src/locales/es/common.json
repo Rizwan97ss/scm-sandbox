@@ -388,5 +388,9 @@
     "accessDenied": "Acceso denegado",
     "accessDeniedDescription": "No tienes permiso para ver esta página.",
     "loading": "Cargando…"
+  },
+  "sidebar": {
+    "expand": "Expandir barra lateral",
+    "collapse": "Contraer barra lateral"
   }
 }

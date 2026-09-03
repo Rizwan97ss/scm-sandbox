@@ -388,5 +388,9 @@
     "accessDenied": "Access denied",
     "accessDeniedDescription": "You don't have permission to view this page.",
     "loading": "Loading…"
+  },
+  "sidebar": {
+    "expand": "Expand sidebar",
+    "collapse": "Collapse sidebar"
   }
 }

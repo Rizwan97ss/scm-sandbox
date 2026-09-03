@@ -388,5 +388,9 @@
     "accessDenied": "رسائی مسترد",
     "accessDeniedDescription": "آپ کو یہ صفحہ دیکھنے کی اجازت نہیں ہے۔",
     "loading": "لوڈ ہو رہا ہے…"
+  },
+  "sidebar": {
+    "expand": "سائیڈ بار پھیلائیں",
+    "collapse": "سائیڈ بار سکیڑیں"
   }
 }

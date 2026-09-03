@@ -59,16 +59,27 @@ export interface NavItemConfig {
 
 export interface NavGroupConfig {
   labelKey: string
+  icon: ComponentType<{ className?: string }>
+  /**
+   * True only for the single "Overview" entry in every nav variant — always
+   * rendered as a flat list of top-level links (no header row, no
+   * expand/collapse, no icon-rail flyout), never as a collapsible
+   * parent-with-submenu, regardless of sidebar collapse state.
+   */
+  flat?: boolean
   items: NavItemConfig[]
 }
 
 export const NAV_GROUPS: NavGroupConfig[] = [
   {
     labelKey: 'nav.groups.overview',
+    icon: LayoutDashboard,
+    flat: true,
     items: [{ labelKey: 'nav.items.dashboard', to: routePaths.dashboard, icon: LayoutDashboard }],
   },
   {
     labelKey: 'nav.groups.people',
+    icon: Users,
     items: [
       { labelKey: 'nav.items.students', to: routePaths.students, icon: GraduationCap, permissions: ['students.view'] },
       { labelKey: 'nav.items.guardians', to: routePaths.guardians, icon: UsersRound, permissions: ['guardians.view'] },
@@ -77,6 +88,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.attendance',
+    icon: CalendarCheck,
     items: [
       { labelKey: 'nav.items.takeAttendance', to: routePaths.attendanceTake, icon: CalendarCheck, permissions: ['student-attendance.mark'] },
       { labelKey: 'nav.items.staffAttendance', to: routePaths.attendanceStaff, icon: ClipboardCheck },
@@ -84,6 +96,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.exams',
+    icon: ClipboardList,
     items: [
       { labelKey: 'nav.items.exams', to: routePaths.exams, icon: ClipboardList, permissions: ['exams.view'] },
       { labelKey: 'nav.items.examTimetable', to: routePaths.examTimetable, icon: CalendarClock, permissions: ['exam-timetable.view'] },
@@ -93,10 +106,12 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.teaching',
+    icon: NotebookPen,
     items: [{ labelKey: 'nav.items.homework', to: routePaths.homework, icon: NotebookPen, permissions: ['homework.view'] }],
   },
   {
     labelKey: 'nav.groups.feesAccounting',
+    icon: Wallet,
     items: [
       { labelKey: 'nav.items.invoices', to: routePaths.invoices, icon: Receipt, permissions: ['invoices.view'] },
       { labelKey: 'nav.items.feeStructures', to: routePaths.feeStructures, icon: Wallet, permissions: ['fees.view'] },
@@ -106,6 +121,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.hrPayroll',
+    icon: Banknote,
     items: [
       { labelKey: 'nav.items.leaveRequests', to: routePaths.leaveRequests, icon: CalendarOff },
       { labelKey: 'nav.items.payslips', to: routePaths.payslips, icon: Banknote },
@@ -116,6 +132,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.library',
+    icon: BookMarked,
     items: [
       { labelKey: 'nav.items.books', to: routePaths.books, icon: BookMarked, permissions: ['library.view'] },
       { labelKey: 'nav.items.bookIssues', to: routePaths.bookIssues, icon: BookCopy, permissions: ['library.view'] },
@@ -123,6 +140,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.transport',
+    icon: Bus,
     items: [
       { labelKey: 'nav.items.vehicles', to: routePaths.vehicles, icon: Bus, permissions: ['transport.view'] },
       { labelKey: 'nav.items.routes', to: routePaths.routes, icon: Map, permissions: ['transport.view'] },
@@ -131,6 +149,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.hostel',
+    icon: Building,
     items: [
       { labelKey: 'nav.items.hostels', to: routePaths.hostels, icon: Building, permissions: ['hostel.view'] },
       { labelKey: 'nav.items.hostelRooms', to: routePaths.hostelRooms, icon: Bed, permissions: ['hostel.view'] },
@@ -139,10 +158,12 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.frontDesk',
+    icon: UserPlus,
     items: [{ labelKey: 'nav.items.visitors', to: routePaths.visitors, icon: UserPlus, permissions: ['front-desk.view'] }],
   },
   {
     labelKey: 'nav.groups.certificatesIdCards',
+    icon: Award,
     items: [
       { labelKey: 'nav.items.certificateTemplates', to: routePaths.certificateTemplates, icon: FileBadge, permissions: ['certificates.create'] },
       { labelKey: 'nav.items.issuedCertificates', to: routePaths.certificates, icon: Award, permissions: ['certificates.view'] },
@@ -150,14 +171,17 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.noticeBoard',
+    icon: Newspaper,
     items: [{ labelKey: 'nav.items.noticeBoard', to: routePaths.noticeBoard, icon: Newspaper }],
   },
   {
     labelKey: 'nav.groups.communication',
+    icon: Megaphone,
     items: [{ labelKey: 'nav.items.announcements', to: routePaths.announcements, icon: Megaphone, permissions: ['communication.view'] }],
   },
   {
     labelKey: 'nav.groups.reportsAnalytics',
+    icon: LineChart,
     items: [
       { labelKey: 'nav.items.attendanceReport', to: routePaths.reportsAttendance, icon: LineChart, permissions: ['student-attendance.view', 'staff-attendance.view'] },
       { labelKey: 'nav.items.academicPerformance', to: routePaths.reportsAcademic, icon: TrendingUp, permissions: ['exam-marks.view'] },
@@ -167,6 +191,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.academics',
+    icon: GraduationCap,
     items: [
       { labelKey: 'nav.items.academicYears', to: routePaths.academicYears, icon: CalendarDays, permissions: ['academic-years.view'] },
       { labelKey: 'nav.items.terms', to: routePaths.terms, icon: CalendarClock, permissions: ['academic-years.view'] },
@@ -181,6 +206,7 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   },
   {
     labelKey: 'nav.groups.administration',
+    icon: Settings,
     items: [
       { labelKey: 'nav.items.rolesPermissions', to: routePaths.roles, icon: ShieldCheck, permissions: ['roles.view'] },
       { labelKey: 'nav.items.settings', to: routePaths.settings, icon: Settings, permissions: ['settings.view'] },
@@ -196,6 +222,8 @@ export const NAV_GROUPS: NavGroupConfig[] = [
 export const PARENT_NAV_GROUPS: NavGroupConfig[] = [
   {
     labelKey: 'nav.groups.overview',
+    icon: LayoutDashboard,
+    flat: true,
     items: [
       { labelKey: 'nav.items.dashboard', to: routePaths.dashboard, icon: LayoutDashboard },
       { labelKey: 'nav.items.myChildren', to: routePaths.parentChildren, icon: GraduationCap },
@@ -208,6 +236,8 @@ export const PARENT_NAV_GROUPS: NavGroupConfig[] = [
 export const STUDENT_NAV_GROUPS: NavGroupConfig[] = [
   {
     labelKey: 'nav.groups.overview',
+    icon: LayoutDashboard,
+    flat: true,
     items: [
       { labelKey: 'nav.items.dashboard', to: routePaths.dashboard, icon: LayoutDashboard },
       { labelKey: 'nav.items.homework', to: routePaths.homework, icon: NotebookPen },
