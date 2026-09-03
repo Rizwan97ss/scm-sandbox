@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Str;
 
-#[Fillable(['student_id', 'certificate_template_id', 'certificate_number', 'issued_date', 'issued_by', 'content'])]
+#[Fillable(['student_id', 'certificate_template_id', 'certificate_number', 'issued_date', 'issued_by', 'content', 'verification_token'])]
 class Certificate extends Model
 {
     use HasFactory;
@@ -18,6 +19,13 @@ class Certificate extends Model
         return [
             'issued_date' => 'date',
         ];
+    }
+
+    protected static function booted(): void
+    {
+        static::creating(function (Certificate $certificate) {
+            $certificate->verification_token ??= (string) Str::uuid();
+        });
     }
 
     public function student(): BelongsTo

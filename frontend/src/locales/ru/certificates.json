@@ -5,7 +5,8 @@
     "name": "Название",
     "status": "Статус",
     "active": "Активен",
-    "inactive": "Неактивен"
+    "inactive": "Неактивен",
+    "layout": "Макет"
   },
   "list": {
     "title": "Сертификаты",
@@ -34,6 +35,17 @@
     "typeHint": "например, Справка, Перевод",
     "bodyLabel": "Текст",
     "bodyHint": "Плейсхолдеры: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "Выберите дизайн сертификата, который будет использоваться при выдаче по этому шаблону.",
+    "layoutClassic": "Классический",
+    "layoutRecognition": "Признание",
+    "layoutAchievement": "Достижение",
+    "layoutMerit": "Заслуга",
+    "signatoriesLabel": "Подписанты",
+    "signatoriesHint": "Добавьте до 2 имён и должностей для печати в качестве подписей на сертификате.",
+    "addSignatory": "Добавить подписанта",
+    "removeSignatory": "Удалить подписанта",
+    "signatoryNamePlaceholder": "Имя подписанта",
+    "signatoryTitlePlaceholder": "Должность подписанта",
     "saveChanges": "Сохранить изменения",
     "createTemplate": "Создать шаблон",
     "deleteConfirmTitle": "Удалить {{name}}?",
@@ -44,5 +56,15 @@
       "submit": "Выдать сертификат",
       "successToast": "Сертификат выдан."
     }
+  },
+  "verify": {
+    "validTitle": "Сертификат подтверждён",
+    "validDescription": "Этот сертификат выдан {{school}}.",
+    "student": "Учащийся",
+    "template": "Сертификат",
+    "number": "№ сертификата",
+    "issuedDate": "Выдан",
+    "invalidTitle": "Сертификат не найден",
+    "invalidDescription": "Эта ссылка не соответствует действительному сертификату. Возможно, она введена с ошибкой, либо сертификат больше не существует."
   }
 }

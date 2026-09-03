@@ -5,7 +5,8 @@
     "name": "Nom",
     "status": "Statut",
     "active": "Actif",
-    "inactive": "Inactif"
+    "inactive": "Inactif",
+    "layout": "Mise en page"
   },
   "list": {
     "title": "Certificats",
@@ -34,6 +35,17 @@
     "typeHint": "p. ex. Attestation, Transfert",
     "bodyLabel": "Contenu",
     "bodyHint": "Espaces réservés : {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "Choisissez le modèle de certificat utilisé lors de la délivrance de ce modèle.",
+    "layoutClassic": "Classique",
+    "layoutRecognition": "Reconnaissance",
+    "layoutAchievement": "Réussite",
+    "layoutMerit": "Mérite",
+    "signatoriesLabel": "Signataires",
+    "signatoriesHint": "Ajoutez jusqu'à 2 noms et titres à imprimer comme signatures sur le certificat.",
+    "addSignatory": "Ajouter un signataire",
+    "removeSignatory": "Supprimer le signataire",
+    "signatoryNamePlaceholder": "Nom du signataire",
+    "signatoryTitlePlaceholder": "Titre du signataire",
     "saveChanges": "Enregistrer les modifications",
     "createTemplate": "Créer le modèle",
     "deleteConfirmTitle": "Supprimer {{name}} ?",
@@ -44,5 +56,15 @@
       "submit": "Délivrer le certificat",
       "successToast": "Certificat délivré."
     }
+  },
+  "verify": {
+    "validTitle": "Certificat vérifié",
+    "validDescription": "Ce certificat a été délivré par {{school}}.",
+    "student": "Étudiant",
+    "template": "Certificat",
+    "number": "N° de certificat",
+    "issuedDate": "Délivré",
+    "invalidTitle": "Certificat introuvable",
+    "invalidDescription": "Ce lien ne correspond à aucun certificat valide. Il a peut-être été mal saisi, ou le certificat n'existe plus."
   }
 }

@@ -3,6 +3,7 @@ export const routePaths = {
   login: '/login',
   forgotPassword: '/forgot-password',
   resetPassword: '/reset-password',
+  verifyCertificate: (token: string = ':token') => `/verify-certificate/${token}`,
   forbidden: '/forbidden',
   mfaSetup: '/mfa/setup',
 

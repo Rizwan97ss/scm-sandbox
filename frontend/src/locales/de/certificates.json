@@ -5,7 +5,8 @@
     "name": "Name",
     "status": "Status",
     "active": "Aktiv",
-    "inactive": "Inaktiv"
+    "inactive": "Inaktiv",
+    "layout": "Layout"
   },
   "list": {
     "title": "Zeugnisse",
@@ -34,6 +35,17 @@
     "typeHint": "z. B. Schulbescheinigung, Wechsel",
     "bodyLabel": "Inhalt",
     "bodyHint": "Platzhalter: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "Wählen Sie das Zertifikatsdesign, das bei der Ausstellung dieser Vorlage verwendet wird.",
+    "layoutClassic": "Klassisch",
+    "layoutRecognition": "Anerkennung",
+    "layoutAchievement": "Leistung",
+    "layoutMerit": "Verdienst",
+    "signatoriesLabel": "Unterzeichner",
+    "signatoriesHint": "Fügen Sie bis zu 2 Namen und Titel hinzu, die als Unterschriften auf dem Zertifikat gedruckt werden.",
+    "addSignatory": "Unterzeichner hinzufügen",
+    "removeSignatory": "Unterzeichner entfernen",
+    "signatoryNamePlaceholder": "Name des Unterzeichners",
+    "signatoryTitlePlaceholder": "Titel des Unterzeichners",
     "saveChanges": "Änderungen speichern",
     "createTemplate": "Vorlage erstellen",
     "deleteConfirmTitle": "{{name}} löschen?",
@@ -44,5 +56,15 @@
       "submit": "Zeugnis ausstellen",
       "successToast": "Zeugnis ausgestellt."
     }
+  },
+  "verify": {
+    "validTitle": "Zertifikat verifiziert",
+    "validDescription": "Dieses Zertifikat wurde von {{school}} ausgestellt.",
+    "student": "Schüler",
+    "template": "Zertifikat",
+    "number": "Zeugnisnummer",
+    "issuedDate": "Ausgestellt",
+    "invalidTitle": "Zertifikat nicht gefunden",
+    "invalidDescription": "Dieser Link entspricht keinem gültigen Zertifikat. Er wurde möglicherweise falsch eingegeben, oder das Zertifikat existiert nicht mehr."
   }
 }

@@ -5,7 +5,8 @@
     "name": "नाम",
     "status": "स्थिति",
     "active": "सक्रिय",
-    "inactive": "निष्क्रिय"
+    "inactive": "निष्क्रिय",
+    "layout": "लेआउट"
   },
   "list": {
     "title": "प्रमाणपत्र",
@@ -34,6 +35,17 @@
     "typeHint": "जैसे, बोनाफाइड, स्थानांतरण",
     "bodyLabel": "सामग्री",
     "bodyHint": "प्लेसहोल्डर: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "इस टेम्पलेट को जारी करते समय उपयोग किया जाने वाला प्रमाणपत्र डिज़ाइन चुनें।",
+    "layoutClassic": "क्लासिक",
+    "layoutRecognition": "मान्यता",
+    "layoutAchievement": "उपलब्धि",
+    "layoutMerit": "योग्यता",
+    "signatoriesLabel": "हस्ताक्षरकर्ता",
+    "signatoriesHint": "प्रमाणपत्र पर हस्ताक्षर के रूप में छापने के लिए 2 तक नाम और पद जोड़ें।",
+    "addSignatory": "हस्ताक्षरकर्ता जोड़ें",
+    "removeSignatory": "हस्ताक्षरकर्ता हटाएं",
+    "signatoryNamePlaceholder": "हस्ताक्षरकर्ता का नाम",
+    "signatoryTitlePlaceholder": "हस्ताक्षरकर्ता का पद",
     "saveChanges": "परिवर्तन सहेजें",
     "createTemplate": "टेम्पलेट बनाएं",
     "deleteConfirmTitle": "{{name}} हटाएं?",
@@ -44,5 +56,15 @@
       "submit": "प्रमाणपत्र जारी करें",
       "successToast": "प्रमाणपत्र जारी किया गया।"
     }
+  },
+  "verify": {
+    "validTitle": "प्रमाणपत्र सत्यापित",
+    "validDescription": "यह प्रमाणपत्र {{school}} द्वारा जारी किया गया था।",
+    "student": "छात्र",
+    "template": "प्रमाणपत्र",
+    "number": "प्रमाणपत्र #",
+    "issuedDate": "जारी किया गया",
+    "invalidTitle": "प्रमाणपत्र नहीं मिला",
+    "invalidDescription": "यह लिंक किसी मान्य प्रमाणपत्र से मेल नहीं खाता। हो सकता है यह गलत टाइप हुआ हो या प्रमाणपत्र अब मौजूद न हो।"
   }
 }

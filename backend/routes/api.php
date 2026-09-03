@@ -124,6 +124,8 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
 
     // ---- Public (no auth) ---------------------------------------------
     Route::get('settings/public', [SettingController::class, 'public'])->name('settings.public');
+    Route::get('certificates/verify/{token}', [CertificateController::class, 'verify'])
+        ->name('certificates.verify')->middleware('throttle:30,1');
 
     // ---- Everything below requires an authenticated session -----------
     Route::middleware('auth:sanctum')->group(function () {

@@ -12,11 +12,19 @@ import { useDebounce } from '@/hooks/useDebounce'
 import { useFeatureTranslation } from '@/hooks/useFeatureTranslation'
 import { PageHeader } from '@/components/layout/PageHeader'
 import { Badge, Button, ConfirmDialog, DataTable, FormField, Input, Modal, SearchInput, Select, Textarea, type DataTableColumn } from '@/components/ui'
-import type { CertificateTemplate, CertificateTemplatePayload } from '@/types/certificates'
+import { CERTIFICATE_LAYOUTS } from '@/types/certificates'
+import type { CertificateLayout, CertificateTemplate, CertificateTemplatePayload } from '@/types/certificates'
 import type { ApiError } from '@/api/client'
 import '../i18n'
 
-const EMPTY_FORM: CertificateTemplatePayload = { name: '', type: '', body: '', is_active: true }
+const EMPTY_FORM: CertificateTemplatePayload = { name: '', type: '', body: '', layout: 'classic', signatories: [], is_active: true }
+
+const LAYOUT_LABEL_KEYS: Record<CertificateLayout, string> = {
+  classic: 'templates.layoutClassic',
+  recognition: 'templates.layoutRecognition',
+  achievement: 'templates.layoutAchievement',
+  merit: 'templates.layoutMerit',
+}
 
 export function CertificateTemplatesPage() {
   const { t } = useFeatureTranslation('certificates')
@@ -45,8 +53,28 @@ export function CertificateTemplatesPage() {
 
   function openEdit(template: CertificateTemplate) {
     setEditing(template)
-    setForm({ name: template.name, type: template.type, body: template.body, is_active: template.is_active })
+    setForm({
+      name: template.name,
+      type: template.type,
+      body: template.body,
+      layout: template.layout,
+      signatories: template.signatories,
+      is_active: template.is_active,
+    })
     setModalOpen(true)
+  }
+
+  function setSignatory(index: number, field: 'name' | 'title', value: string) {
+    setForm((prev) => {
+      const signatories = [...prev.signatories]
+      const current = signatories[index] ?? { name: '', title: '' }
+      signatories[index] = { ...current, [field]: value }
+      return { ...prev, signatories }
+    })
+  }
+
+  function removeSignatory(index: number) {
+    setForm((prev) => ({ ...prev, signatories: prev.signatories.filter((_, i) => i !== index) }))
   }
 
   async function onSubmit(event: React.FormEvent) {
@@ -59,6 +87,7 @@ export function CertificateTemplatesPage() {
   const columns: DataTableColumn<CertificateTemplate>[] = [
     { key: 'name', header: t('fields.name'), sortable: true, render: (row) => <span className="font-medium">{row.name}</span> },
     { key: 'type', header: t('fields.type'), render: (row) => row.type },
+    { key: 'layout', header: t('fields.layout'), render: (row) => t(LAYOUT_LABEL_KEYS[row.layout]) },
     { key: 'status', header: t('fields.status'), render: (row) => <Badge variant={row.is_active ? 'success' : 'default'}>{row.is_active ? t('fields.active') : t('fields.inactive')}</Badge> },
     {
       key: 'actions',
@@ -135,6 +164,55 @@ export function CertificateTemplatesPage() {
           >
             <Textarea id="body" rows={6} required value={form.body} onChange={(e) => setForm({ ...form, body: e.target.value })} />
           </FormField>
+          <FormField label={t('fields.layout')} htmlFor="layout" hint={t('templates.layoutHint')}>
+            <Select
+              id="layout"
+              value={form.layout}
+              onValueChange={(value) => setForm({ ...form, layout: value as CertificateLayout })}
+              options={CERTIFICATE_LAYOUTS.map((layout) => ({ value: layout, label: t(LAYOUT_LABEL_KEYS[layout]) }))}
+            />
+          </FormField>
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-medium text-foreground">{t('templates.signatoriesLabel')}</p>
+              {form.signatories.length < 2 && (
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setForm((prev) => ({ ...prev, signatories: [...prev.signatories, { name: '', title: '' }] }))}
+                >
+                  <Plus className="h-3.5 w-3.5" /> {t('templates.addSignatory')}
+                </Button>
+              )}
+            </div>
+            {form.signatories.length === 0 && <p className="text-xs text-muted-foreground">{t('templates.signatoriesHint')}</p>}
+            {form.signatories.map((signatory, index) => (
+              <div key={index} className="grid grid-cols-1 gap-2 rounded-md border border-border p-3 sm:grid-cols-[1fr_1fr_auto]">
+                <Input
+                  aria-label={t('templates.signatoryNamePlaceholder')}
+                  placeholder={t('templates.signatoryNamePlaceholder')}
+                  value={signatory.name}
+                  onChange={(e) => setSignatory(index, 'name', e.target.value)}
+                />
+                <Input
+                  aria-label={t('templates.signatoryTitlePlaceholder')}
+                  placeholder={t('templates.signatoryTitlePlaceholder')}
+                  value={signatory.title}
+                  onChange={(e) => setSignatory(index, 'title', e.target.value)}
+                />
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  onClick={() => removeSignatory(index)}
+                  aria-label={t('templates.removeSignatory')}
+                >
+                  <Trash2 className="h-3.5 w-3.5" />
+                </Button>
+              </div>
+            ))}
+          </div>
           <Button type="submit" isLoading={createMutation.isPending || updateMutation.isPending} className="mt-2">
             {editing ? t('templates.saveChanges') : t('templates.createTemplate')}
           </Button>

@@ -5,7 +5,8 @@
     "name": "Name",
     "status": "Status",
     "active": "Active",
-    "inactive": "Inactive"
+    "inactive": "Inactive",
+    "layout": "Layout"
   },
   "list": {
     "title": "Certificates",
@@ -34,6 +35,17 @@
     "typeHint": "e.g. Bonafide, Transfer",
     "bodyLabel": "Body",
     "bodyHint": "Placeholders: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "Choose the certificate design used when this template is issued.",
+    "layoutClassic": "Classic",
+    "layoutRecognition": "Recognition",
+    "layoutAchievement": "Achievement",
+    "layoutMerit": "Merit",
+    "signatoriesLabel": "Signatories",
+    "signatoriesHint": "Add up to 2 names and titles to print as signatures on the certificate.",
+    "addSignatory": "Add signatory",
+    "removeSignatory": "Remove signatory",
+    "signatoryNamePlaceholder": "Signatory name",
+    "signatoryTitlePlaceholder": "Signatory title",
     "saveChanges": "Save changes",
     "createTemplate": "Create template",
     "deleteConfirmTitle": "Delete {{name}}?",
@@ -44,5 +56,15 @@
       "submit": "Issue certificate",
       "successToast": "Certificate issued."
     }
+  },
+  "verify": {
+    "validTitle": "Certificate verified",
+    "validDescription": "This certificate was issued by {{school}}.",
+    "student": "Student",
+    "template": "Certificate",
+    "number": "Certificate #",
+    "issuedDate": "Issued",
+    "invalidTitle": "Certificate not found",
+    "invalidDescription": "This link doesn't match a valid certificate. It may have been mistyped, or the certificate may no longer exist."
   }
 }

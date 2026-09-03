@@ -5,7 +5,8 @@
     "name": "名称",
     "status": "状态",
     "active": "启用",
-    "inactive": "停用"
+    "inactive": "停用",
+    "layout": "版式"
   },
   "list": {
     "title": "证书",
@@ -34,6 +35,17 @@
     "typeHint": "例如：在读证明、转学证明",
     "bodyLabel": "正文",
     "bodyHint": "占位符：{{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "选择颁发此模板时使用的证书设计。",
+    "layoutClassic": "经典",
+    "layoutRecognition": "表彰",
+    "layoutAchievement": "成就",
+    "layoutMerit": "优秀",
+    "signatoriesLabel": "签署人",
+    "signatoriesHint": "最多添加 2 个姓名和职称，作为证书上的签名打印。",
+    "addSignatory": "添加签署人",
+    "removeSignatory": "删除签署人",
+    "signatoryNamePlaceholder": "签署人姓名",
+    "signatoryTitlePlaceholder": "签署人职称",
     "saveChanges": "保存更改",
     "createTemplate": "创建模板",
     "deleteConfirmTitle": "删除 {{name}}？",
@@ -44,5 +56,15 @@
       "submit": "颁发证书",
       "successToast": "证书已颁发。"
     }
+  },
+  "verify": {
+    "validTitle": "证书已验证",
+    "validDescription": "此证书由 {{school}} 颁发。",
+    "student": "学生",
+    "template": "证书",
+    "number": "证书编号",
+    "issuedDate": "颁发日期",
+    "invalidTitle": "未找到证书",
+    "invalidDescription": "此链接与任何有效证书都不匹配。可能是输入有误，或该证书已不存在。"
   }
 }

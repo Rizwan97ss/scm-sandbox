@@ -5,7 +5,8 @@
     "name": "Nombre",
     "status": "Estado",
     "active": "Activo",
-    "inactive": "Inactivo"
+    "inactive": "Inactivo",
+    "layout": "Diseño"
   },
   "list": {
     "title": "Certificados",
@@ -34,6 +35,17 @@
     "typeHint": "p. ej., Constancia, Traslado",
     "bodyLabel": "Cuerpo",
     "bodyHint": "Marcadores: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "Elige el diseño del certificado que se usará al emitir esta plantilla.",
+    "layoutClassic": "Clásico",
+    "layoutRecognition": "Reconocimiento",
+    "layoutAchievement": "Logro",
+    "layoutMerit": "Mérito",
+    "signatoriesLabel": "Firmantes",
+    "signatoriesHint": "Agrega hasta 2 nombres y cargos para imprimir como firmas en el certificado.",
+    "addSignatory": "Agregar firmante",
+    "removeSignatory": "Eliminar firmante",
+    "signatoryNamePlaceholder": "Nombre del firmante",
+    "signatoryTitlePlaceholder": "Cargo del firmante",
     "saveChanges": "Guardar cambios",
     "createTemplate": "Crear plantilla",
     "deleteConfirmTitle": "¿Eliminar {{name}}?",
@@ -44,5 +56,15 @@
       "submit": "Emitir certificado",
       "successToast": "Certificado emitido."
     }
+  },
+  "verify": {
+    "validTitle": "Certificado verificado",
+    "validDescription": "Este certificado fue emitido por {{school}}.",
+    "student": "Estudiante",
+    "template": "Certificado",
+    "number": "N.º de certificado",
+    "issuedDate": "Emitido",
+    "invalidTitle": "Certificado no encontrado",
+    "invalidDescription": "Este enlace no corresponde a un certificado válido. Puede que se haya escrito mal o que el certificado ya no exista."
   }
 }

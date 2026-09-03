@@ -5,7 +5,8 @@
     "name": "الاسم",
     "status": "الحالة",
     "active": "نشط",
-    "inactive": "غير نشط"
+    "inactive": "غير نشط",
+    "layout": "التخطيط"
   },
   "list": {
     "title": "الشهادات",
@@ -34,6 +35,17 @@
     "typeHint": "مثال: شهادة قيد، نقل",
     "bodyLabel": "النص",
     "bodyHint": "العناصر النائبة: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "اختر تصميم الشهادة المستخدم عند إصدار هذا القالب.",
+    "layoutClassic": "كلاسيكي",
+    "layoutRecognition": "تقدير",
+    "layoutAchievement": "إنجاز",
+    "layoutMerit": "امتياز",
+    "signatoriesLabel": "الموقّعون",
+    "signatoriesHint": "أضف حتى اسمين ولقبين ليتم طباعتهما كتوقيعات على الشهادة.",
+    "addSignatory": "إضافة موقّع",
+    "removeSignatory": "إزالة موقّع",
+    "signatoryNamePlaceholder": "اسم الموقّع",
+    "signatoryTitlePlaceholder": "لقب الموقّع",
     "saveChanges": "حفظ التغييرات",
     "createTemplate": "إنشاء قالب",
     "deleteConfirmTitle": "حذف {{name}}؟",
@@ -44,5 +56,15 @@
       "submit": "إصدار الشهادة",
       "successToast": "تم إصدار الشهادة."
     }
+  },
+  "verify": {
+    "validTitle": "تم التحقق من الشهادة",
+    "validDescription": "تم إصدار هذه الشهادة من قِبل {{school}}.",
+    "student": "الطالب",
+    "template": "الشهادة",
+    "number": "رقم الشهادة",
+    "issuedDate": "تاريخ الإصدار",
+    "invalidTitle": "الشهادة غير موجودة",
+    "invalidDescription": "لا يتطابق هذا الرابط مع أي شهادة صالحة. ربما كُتب بشكل خاطئ أو لم تعد الشهادة موجودة."
   }
 }

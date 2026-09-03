@@ -5,7 +5,8 @@
     "name": "نام",
     "status": "صورتحال",
     "active": "فعال",
-    "inactive": "غیر فعال"
+    "inactive": "غیر فعال",
+    "layout": "لے آؤٹ"
   },
   "list": {
     "title": "سرٹیفکیٹس",
@@ -34,6 +35,17 @@
     "typeHint": "مثلاً بونا فائیڈ، ٹرانسفر",
     "bodyLabel": "متن",
     "bodyHint": "پلیس ہولڈرز: {{student_name}}, {{admission_number}}, {{grade_level}}, {{section}}, {{school_name}}, {{date}}",
+    "layoutHint": "اس ٹیمپلیٹ کے جاری ہونے پر استعمال ہونے والا سرٹیفکیٹ ڈیزائن منتخب کریں۔",
+    "layoutClassic": "کلاسک",
+    "layoutRecognition": "پذیرائی",
+    "layoutAchievement": "کامیابی",
+    "layoutMerit": "قابلیت",
+    "signatoriesLabel": "دستخط کنندگان",
+    "signatoriesHint": "سرٹیفکیٹ پر دستخط کے طور پر چھاپنے کے لیے 2 تک نام اور عہدے شامل کریں۔",
+    "addSignatory": "دستخط کنندہ شامل کریں",
+    "removeSignatory": "دستخط کنندہ ہٹائیں",
+    "signatoryNamePlaceholder": "دستخط کنندہ کا نام",
+    "signatoryTitlePlaceholder": "دستخط کنندہ کا عہدہ",
     "saveChanges": "تبدیلیاں محفوظ کریں",
     "createTemplate": "ٹیمپلیٹ بنائیں",
     "deleteConfirmTitle": "{{name}} حذف کریں؟",
@@ -44,5 +56,15 @@
       "submit": "سرٹیفکیٹ جاری کریں",
       "successToast": "سرٹیفکیٹ جاری کر دیا گیا۔"
     }
+  },
+  "verify": {
+    "validTitle": "سرٹیفکیٹ کی تصدیق ہو گئی",
+    "validDescription": "یہ سرٹیفکیٹ {{school}} کی جانب سے جاری کیا گیا تھا۔",
+    "student": "طالب علم",
+    "template": "سرٹیفکیٹ",
+    "number": "سرٹیفکیٹ نمبر",
+    "issuedDate": "جاری کردہ",
+    "invalidTitle": "سرٹیفکیٹ نہیں ملا",
+    "invalidDescription": "یہ لنک کسی درست سرٹیفکیٹ سے مماثل نہیں۔ ہو سکتا ہے یہ غلط ٹائپ ہوا ہو یا سرٹیفکیٹ اب موجود نہ ہو۔"
   }
 }

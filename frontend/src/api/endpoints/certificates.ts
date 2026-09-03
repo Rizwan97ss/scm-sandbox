@@ -2,7 +2,7 @@ import { httpClient } from '@/api/client'
 import { createCrudEndpoints } from './crudFactory'
 import { apiFileUrl } from '@/utils/apiFileUrl'
 import type { ApiResponse, ListQueryParams, PaginatedResponse } from '@/types/api'
-import type { Certificate, CertificateTemplate, CertificateTemplatePayload, IssueCertificatePayload } from '@/types/certificates'
+import type { Certificate, CertificateTemplate, CertificateTemplatePayload, CertificateVerificationResult, IssueCertificatePayload } from '@/types/certificates'
 
 export const certificateTemplatesApi = {
   ...createCrudEndpoints<CertificateTemplate, CertificateTemplatePayload>('certificate-templates'),
@@ -18,6 +18,10 @@ export const certificatesApi = {
     return data
   },
   pdfUrl: (id: number) => apiFileUrl(`/certificates/${id}/pdf`),
+  verify: async (token: string): Promise<CertificateVerificationResult> => {
+    const { data } = await httpClient.get<ApiResponse<CertificateVerificationResult>>(`/certificates/verify/${token}`)
+    return data.data
+  },
 }
 
 export const idCardsApi = {
