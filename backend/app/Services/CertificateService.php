@@ -51,7 +51,8 @@ class CertificateService
         ]);
     }
 
-    private function nextCertificateNumber(): string
+    /** Public so TenantDemoDataSeeder can reuse it — demo certificates must go through the same race-safe counter real issuance does, or a seeded number collides with the first real one (see IdSequenceService's docblock). */
+    public function nextCertificateNumber(): string
     {
         $year = Carbon::now()->year;
         $format = (string) $this->settings->get('certificates.certificate_number_format', 'CERT-{YEAR}-{SEQ}');
