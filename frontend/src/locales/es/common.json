@@ -1,5 +1,7 @@
 {
   "topbar": {
+    "disableNotifications": "Desactivar notificaciones",
+    "enableNotifications": "Activar notificaciones",
     "openMenu": "Abrir menú de navegación"
   },
   "nav": {

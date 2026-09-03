@@ -1,5 +1,7 @@
 {
   "topbar": {
+    "disableNotifications": "إيقاف الإشعارات",
+    "enableNotifications": "تفعيل الإشعارات",
     "openMenu": "فتح قائمة التنقل"
   },
   "nav": {

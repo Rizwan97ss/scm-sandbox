@@ -1,5 +1,7 @@
 {
   "topbar": {
+    "disableNotifications": "关闭通知",
+    "enableNotifications": "启用通知",
     "openMenu": "打开导航菜单"
   },
   "nav": {

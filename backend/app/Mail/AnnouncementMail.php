@@ -5,16 +5,16 @@ namespace App\Mail;
 use App\Models\Announcement;
 use App\Models\User;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 /**
- * Sent synchronously by AnnouncementService — see its class docblock for
- * why this isn't queued yet.
+ * Queued by AnnouncementService (Mail::queue(), not send()).
  */
-class AnnouncementMail extends Mailable
+class AnnouncementMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 

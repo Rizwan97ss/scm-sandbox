@@ -95,6 +95,8 @@
     }
   },
   "topbar": {
+    "disableNotifications": "Disable notifications",
+    "enableNotifications": "Enable notifications",
     "openMenu": "Open navigation menu"
   },
   "notifications": {

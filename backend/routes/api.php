@@ -57,6 +57,7 @@ use App\Http\Controllers\Api\V1\ParentPortalController;
 use App\Http\Controllers\Api\V1\PaymentController;
 use App\Http\Controllers\Api\V1\PayslipController;
 use App\Http\Controllers\Api\V1\PermissionController;
+use App\Http\Controllers\Api\V1\PushSubscriptionController;
 use App\Http\Controllers\Api\V1\QuestionController;
 use App\Http\Controllers\Api\V1\ReportController;
 use App\Http\Controllers\Api\V1\RoleController;
@@ -409,6 +410,8 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
         Route::get('notifications', [AppNotificationController::class, 'index'])->name('notifications.index');
         Route::post('notifications/{id}/read', [AppNotificationController::class, 'markRead'])->name('notifications.read');
         Route::post('notifications/read-all', [AppNotificationController::class, 'markAllRead'])->name('notifications.read-all');
+        Route::post('push-subscriptions', [PushSubscriptionController::class, 'store'])->name('push-subscriptions.store');
+        Route::delete('push-subscriptions', [PushSubscriptionController::class, 'destroy'])->name('push-subscriptions.destroy');
 
         // ---- Reports & Analytics (Phase 12) -------------------------------
         Route::get('reports/attendance', [ReportController::class, 'attendance'])->name('reports.attendance');

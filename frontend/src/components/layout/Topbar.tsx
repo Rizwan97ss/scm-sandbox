@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { GlobalSearch } from './GlobalSearch'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { NotificationBell } from './NotificationBell'
+import { PushNotificationToggle } from './PushNotificationToggle'
 import { ThemeToggle } from './ThemeToggle'
 import { UserMenu } from './UserMenu'
 import { Button } from '@/components/ui/Button'
@@ -22,6 +23,7 @@ export function Topbar({ onMenuClick, breadcrumbs }: { onMenuClick: () => void; 
       <div className="flex shrink-0 items-center gap-2">
         <LanguageSwitcher />
         <ThemeToggle />
+        <PushNotificationToggle />
         <NotificationBell />
         <UserMenu />
       </div>

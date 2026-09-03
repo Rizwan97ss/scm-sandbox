@@ -1,5 +1,7 @@
 {
   "topbar": {
+    "disableNotifications": "सूचनाएं अक्षम करें",
+    "enableNotifications": "सूचनाएं सक्षम करें",
     "openMenu": "नेविगेशन मेनू खोलें"
   },
   "nav": {

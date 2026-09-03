@@ -100,6 +100,11 @@ class User extends Authenticatable implements HasMedia, MustVerifyEmail
         return $this->hasMany(Payslip::class);
     }
 
+    public function pushSubscriptions(): HasMany
+    {
+        return $this->hasMany(PushSubscription::class);
+    }
+
     /** "Staff" = any role other than Student/Parent. */
     public function isStaff(): bool
     {
