@@ -41,6 +41,11 @@ return [
         'exam-timetable' => ['view', 'edit'],
         'homework' => ['view', 'create', 'edit', 'delete', 'grade'],
         'remarks' => ['view', 'create', 'edit', 'delete'],
+        // Course Resource Library — teacher-uploaded materials (documents/
+        // links/videos) scoped by section+subject, same shape as homework.
+        // Marking your own view/completion progress needs no permission,
+        // same self-service shape as homework submission.
+        'course-materials' => ['view', 'create', 'edit', 'delete'],
         'dashboard' => ['view'],
         // Phase 8 — school-to-parent billing config: fee categories and
         // fee structures (the templates invoices are generated from).

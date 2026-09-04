@@ -61,6 +61,8 @@ export const routePaths = {
   homework: '/homework',
   homeworkDetail: (id: number | string = ':id') => `/homework/${id}`,
 
+  courseMaterials: '/course-materials',
+
   feeCategories: '/fees/categories',
   feeStructures: '/fees/structures',
   invoices: '/fees/invoices',

@@ -64,6 +64,7 @@ const MyOnlineTestsPage = lazy(() => import('@/features/exams/pages/MyOnlineTest
 const MyResultsPage = lazy(() => import('@/features/exams/pages/MyResultsPage').then((m) => ({ default: m.MyResultsPage })))
 const ExamTimetablePage = lazy(() => import('@/features/exams/pages/ExamTimetablePage').then((m) => ({ default: m.ExamTimetablePage })))
 const HomeworkListPage = lazy(() => import('@/features/homework/pages/HomeworkListPage').then((m) => ({ default: m.HomeworkListPage })))
+const CourseMaterialListPage = lazy(() => import('@/features/courseMaterials/pages/CourseMaterialListPage').then((m) => ({ default: m.CourseMaterialListPage })))
 const HomeworkDetailPage = lazy(() => import('@/features/homework/pages/HomeworkDetailPage').then((m) => ({ default: m.HomeworkDetailPage })))
 const FeeCategoriesPage = lazy(() => import('@/features/fees/pages/FeeCategoriesPage').then((m) => ({ default: m.FeeCategoriesPage })))
 const FeeStructuresPage = lazy(() => import('@/features/fees/pages/FeeStructuresPage').then((m) => ({ default: m.FeeStructuresPage })))
@@ -219,6 +220,9 @@ export function AppRouter() {
               <Route element={<PermissionRoute permissions={['homework.view']} />}>
                 <Route path={routePaths.homework} element={<HomeworkListPage />} />
                 <Route path={routePaths.homeworkDetail()} element={<HomeworkDetailPage />} />
+              </Route>
+              <Route element={<PermissionRoute permissions={['course-materials.view']} />}>
+                <Route path={routePaths.courseMaterials} element={<CourseMaterialListPage />} />
               </Route>
 
               <Route element={<PermissionRoute permissions={['fees.view']} />}>

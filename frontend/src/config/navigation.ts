@@ -19,6 +19,7 @@ import {
   UsersRound,
   BookOpen,
   CalendarClock,
+  FolderOpen,
   NotebookPen,
   Receipt,
   Tags,
@@ -107,7 +108,10 @@ export const NAV_GROUPS: NavGroupConfig[] = [
   {
     labelKey: 'nav.groups.teaching',
     icon: NotebookPen,
-    items: [{ labelKey: 'nav.items.homework', to: routePaths.homework, icon: NotebookPen, permissions: ['homework.view'] }],
+    items: [
+      { labelKey: 'nav.items.homework', to: routePaths.homework, icon: NotebookPen, permissions: ['homework.view'] },
+      { labelKey: 'nav.items.courseMaterials', to: routePaths.courseMaterials, icon: FolderOpen, permissions: ['course-materials.view'] },
+    ],
   },
   {
     labelKey: 'nav.groups.feesAccounting',
@@ -227,6 +231,7 @@ export const PARENT_NAV_GROUPS: NavGroupConfig[] = [
     items: [
       { labelKey: 'nav.items.dashboard', to: routePaths.dashboard, icon: LayoutDashboard },
       { labelKey: 'nav.items.myChildren', to: routePaths.parentChildren, icon: GraduationCap },
+      { labelKey: 'nav.items.courseMaterials', to: routePaths.courseMaterials, icon: FolderOpen },
       { labelKey: 'nav.items.noticeBoard', to: routePaths.noticeBoard, icon: Newspaper },
       { labelKey: 'nav.items.certificates', to: routePaths.certificates, icon: Award },
     ],
@@ -241,6 +246,7 @@ export const STUDENT_NAV_GROUPS: NavGroupConfig[] = [
     items: [
       { labelKey: 'nav.items.dashboard', to: routePaths.dashboard, icon: LayoutDashboard },
       { labelKey: 'nav.items.homework', to: routePaths.homework, icon: NotebookPen },
+      { labelKey: 'nav.items.courseMaterials', to: routePaths.courseMaterials, icon: FolderOpen },
       { labelKey: 'nav.items.myOnlineTests', to: routePaths.myOnlineTests, icon: FileQuestion },
       { labelKey: 'nav.items.myResult', to: routePaths.myResults, icon: ClipboardList },
       { labelKey: 'nav.items.examTimetable', to: routePaths.examTimetable, icon: CalendarClock },
